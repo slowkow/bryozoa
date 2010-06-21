@@ -4,7 +4,7 @@
  * Kamil Slowikowski
  * Summer 2010
  * 
- * This script reads Bryan Quach's master file and spits out a full hierarchy.
+ * This script reads Bryan Quach's valid.txt and spits out a full hierarchy.
  * 
  */
 
