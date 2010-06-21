@@ -1,0 +1,8 @@
+taxon	taxon	taxon	taxon	taxon	taxon	taxon	rank	description	synonyms
+Plantae							kingdom	description2	plantae1|plantae2
+Plantae	Polypodiophyta						phylum	description3	
+Plantae	Polypodiophyta	Polypodiopsida					class	description4	
+Plantae	Polypodiophyta	Polypodiopsida	Schizaeales				order	description5	
+Plantae	Polypodiophyta	Polypodiopsida	Schizaeales	Schizaeaceae			family	description6	
+Plantae	Polypodiophyta	Polypodiopsida	Schizaeales	Schizaeaceae	Schizaea		genus	description7	
+Plantae	Polypodiophyta	Polypodiopsida	Schizaeales	Schizaeaceae	Schizaea	Schizaea montis-petrae Brade	species	Bradea 1:289 (1972)	mont1|mont2|mont3

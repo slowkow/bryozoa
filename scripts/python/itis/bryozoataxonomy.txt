@@ -1,0 +1,1920 @@
+name	author	rank
+Bryozoa		Phylum
+Ectoprocta		Phylum
+Gymnolaemata		Class
+Ctenostomata	Busk, 1852	Order
+Carnosa	Gray, 1841	Suborder
+Alcyonidiidae	Johnston, 1837	Family
+Alcyonidium	Lamouroux, 1813	Genus
+Alcyonidium polyoum	Hassall	Species
+Alcyonidium mamillatum	Alder, 1857	Species
+Alcyonidium mamillatum mamillatum	Alder, 1857	Subspecies
+Alcyonidium mamillatum erectum	Andersson, 1902	Subspecies
+Alcyonidium pedunculatum	(Wyville Thomson, 1858)	Species
+Alcyonidium disciforme	Smitt, 1872	Species
+Alcyonidium enteromorpha	(Wyville Thomson, 1858)	Species
+Alcyonidium parasiticum	(Fleming, 1828)	Species
+Alcyonidium verrilli	Osburn	Species
+Alcyonidium mytili	Dalyell, 1847	Species
+Alcyonidium vermiculare	Okada, 1925	Species
+Alcyonidium gelatinosum	(Linnaeus, 1767)	Species
+Alcyonium gelatinosum	Linnaeus, 1767	Species
+Alcyonidium gelatinosum gelatinosum	(Linnaeus, 1767)	Subspecies
+Alcyonidium gelatinosum diaphanum	(Farre, 1837)	Subspecies
+Alcyonidium gelatinosum anderssoni	Abrikossov, 1932	Subspecies
+Alcyonidium gelatinosum pachydermatum	Kluge, 1962	Subspecies
+Alcyonidium albidum	Alder, 1857	Species
+Alcyonidium polypylum	(Wyville Thomson, 1858)	Species
+Alcyonidium hirsutum	(Flemming, 1828)	Species
+Alcyonidium proboscideum	Kluge, 1962	Species
+Alcyonidium radicellatum	Kluge, 1946	Species
+Alcyonidium excavatum	Hincks, 1880	Species
+Alcyonidium irregulare	Kluge, 1962	Species
+Flustrellidridae	Bassler, 1953	Family
+Flustrellidra	Bassler, 1953	Genus
+Flustrella	Gray, 1848	Genus
+Flustrellidra hispida	(Fabricius, 1780)	Species
+Flustrella hispida	(Fabricius, 1780)	Species
+Flustrellidra corniculata	(Smitt, 1872)	Species
+Flustra corniculata	Fabricius, 1780	Species
+Flustrellidra gigantea	(Silen, 1947)	Species
+Flustrella corniculata	(Smitt, 1872)	Species
+Flustrellidra cervicornis	(Robertson, 1900)	Species
+Flustrella gigantea	(Wyville Thomson, 1858)	Species
+Flustrellidra vegae	(Silen, 1947)	Species
+Flustrella vegae	Silen, 1947	Species
+Flustrella cervicornis	(Wyville Thomson, 1858)	Species
+Alcyonidium cervicornis	(Wyville Thomson, 1858)	Species
+Claviporidae	(Wyville Thomson, 1858)	Family
+Clavipora	(Wyville Thomson, 1858)	Genus
+Clavipora occidentalis	(Wyville Thomson, 1858)	Species
+Pseudalcyonidium	(Wyville Thomson, 1858)	Genus
+Pseudalcyonidium bobinae	(Wyville Thomson, 1858)	Species
+Pherusellidae	(Wyville Thomson, 1858)	Family
+Paludicelloidea	(Wyville Thomson, 1858)	Superfamily
+Victorellidae	(Wyville Thomson, 1858)	Family
+Victorella	(Wyville Thomson, 1858)	Genus
+Victorella pavida	Saville Kent	Species
+Sundanella	(Wyville Thomson, 1858)	Genus
+Sundanella sibogae	(Wyville Thomson, 1858)	Species
+Arachnidiidae	Hincks, 1880	Family
+Arachnidium	Hincks, 1859	Genus
+Arachnidium clavatum	Hincks, 1877	Species
+Arachnidium hippothoides	Hincks, 1862	Species
+Arachnidium simplex	Hincks, 1880	Species
+Arachnoidea	J. Moore, 1903	Genus
+Arachnoidea barentsia	Kluge, 1962	Species
+Nolellidae	Harmer, 1915	Family
+Nolella	Gosse, 1855	Genus
+Nolella stipata	Gosse, 1855	Species
+Nolella gigantea	(Wyville Thomson, 1858)	Species
+Nolella dilatata	(Hincks, 1860)	Species
+Anquinella	(Wyville Thomson, 1858)	Genus
+Anquinella palmata	(Wyville Thomson, 1858)	Species
+Anguinella	Van Beneden, 1845	Genus
+Anguinella palmata	Van Beneden, 1845	Species
+Paludicellidae	(Wyville Thomson, 1858)	Family
+Paludicella	(Wyville Thomson, 1858)	Genus
+Paludicella articella	(Wyville Thomson, 1858)	Species
+Paludicella articulata	(Ehrenberg, 1831)	Species
+Alcyonella articulata	Ehrenberg, 1831	Species
+Pottsiella	(Wyville Thomson, 1858)	Genus
+Pottsiella erecta	(Potts)	Species
+Vesicularioidea	(Wyville Thomson, 1858)	Superfamily
+Vesiculariidae	Johnston, 1838	Family
+Amathia	(Wyville Thomson, 1858)	Genus
+Amathia convoluta	Lamouroux	Species
+Amathia vidovici	Heller	Species
+Amathia alternata	(Wyville Thomson, 1858)	Species
+Amathia distans	(Wyville Thomson, 1858)	Species
+Amathia lendigera	(Wyville Thomson, 1858)	Species
+Bowerbankia	Farre, 1837	Genus
+Bowerbankia gracilis	Leidy	Species
+Bowerbankia gracilis aggregata	(Wyville Thomson, 1858)	Subspecies
+Bowerbankia gracilis gracilis	(Wyville Thomson, 1858)	Subspecies
+Bowerbankia imbricata	(Adams, 1800)	Species
+Bowerbankia maxima	(Wyville Thomson, 1858)	Species
+Bowerbankia pustulosa	(Ellis and Solander, 1786)	Species
+Vesicularia pustulosa	Ellis and Solander, 1786	Species
+Bowerbankia arctica	Busk, 1880	Species
+Bowerbankia caudata	(Hincks, 1877)	Species
+Bowerbankia composita	Kluge, 1955	Species
+Vesicularia	Thompson, 1830	Genus
+Vesicularia	Thompson, 1830	Genus
+Vesicularia fasciculata	(Wyville Thomson, 1858)	Species
+Farrella	(Wyville Thomson, 1858)	Genus
+Farrella gigantea	(Wyville Thomson, 1858)	Species
+Farrella repens	(Wyville Thomson, 1858)	Species
+Zoobotryon	Ehrenbreg, 1829	Genus
+Zoobotryon verticillatum	(Della Chiaje, 1822)	Species
+Stolonifera	Ehlers, 1876	Suborder
+Stolonifera	Ehlers, 1876	Suborder
+Walkeriidae	(Wyville Thomson, 1858)	Family
+Aeverrillia	(Wyville Thomson, 1858)	Genus
+Aeverrillia armata	Verrill	Species
+Aeverrillia setigera	Hincks	Species
+Mimosellidae	Hincks, 1877	Family
+Buskiidae	Hincks, 1880	Family
+Buskia	Alder, 1857	Genus
+Buskia australis	(Wyville Thomson, 1858)	Species
+Buskia nitens	Alder, 1857	Species
+Triticellidae	G. O. Sars, 1874	Family
+Triticella	Dalyell, 1847	Genus
+Triticella elongata	Osburn	Species
+Triticella pedicellata	(Alder, 1857)	Species
+Triticella flava	Dalyell, 1847	Species
+Valkeriidae	Hincks, 1877	Family
+Valkeria	Fleming, 1823	Genus
+Valkeria atlantica	(Wyville Thomson, 1858)	Species
+Valkeria uva	(Linnaeus, 1767)	Species
+Sertularia cuscuta	Linnaeus, 1767	Species
+Sertularia uva	Linnaeus, 1767	Species
+Terebriporina	(Wyville Thomson, 1858)	Suborder
+Terebriporidae	(Wyville Thomson, 1858)	Family
+Penetrantiidae	Silen, 1946	Family
+Immergentiidae	(Wyville Thomson, 1858)	Family
+Cyclostomata	Busk, 1852	Order
+Articulata	Busk, 1859	Suborder
+Articulata	(Wyville Thomson, 1858)	Suborder
+Crisiidae	Johnston, 1838	Family
+Crisia	Lamouroux, 1812	Genus
+Crisia eburnea	(Linnaeus, 1758)	Species
+Sertularia eburnea	Linnaeus, 1758	Species
+Crisia cribraria	(Wyville Thomson, 1858)	Species
+Crisia occidentalis	(Wyville Thomson, 1858)	Species
+Crisia denticulata	(Lamarck, 1816)	Species
+Crisia denticulata denticulata	(Lamarck, 1816)	Subspecies
+Crisia denticulata borgi	Kluge, 1962	Subspecies
+Crisia denticulata arctica	M. Sars, 1863	Subspecies
+Crisia elongata	(Wyville Thomson, 1858)	Species
+Crisia aculeata	Hassall, 1841	Species
+Crisia aculeata aculeata	Hassall, 1841	Subspecies
+Crisia aculeata bathyalis	Kluge, 1946	Subspecies
+Crisia eburneo-denticulata	Smitt, 1875	Species
+Crisia constans	Kluge, 1946	Species
+Bicrisia	D'orbigny, 1853	Genus
+Bicrisia edwardsiana	(d'Orbigny, 1852)	Species
+Bicrisia abyssicola	Kluge, 1962	Species
+Filicrisia	D'orbigny, 1853	Genus
+Filicrisia franciscana	(Wyville Thomson, 1858)	Species
+Filicrisia geniculata	(Milne-Edwards, 1838)	Species
+Crisia geniculata	Milne-Edwards, 1838	Species
+Filicrisia smitti	(Kluge, 1946)	Species
+Crisidia	Milne-Edwards, 1838	Genus
+Crisidia cornuta	(Linnaeus, 1758)	Species
+Sertularia cornuta	Linnaeus, 1758	Species
+Crisidia orientalis	Kluge, 1962	Species
+Crisulipora	(Wyville Thomson, 1858)	Genus
+Crisulipora orientalis	(Wyville Thomson, 1858)	Species
+Crisulipora occidentalis	Robertson, 1910	Species
+Crisiella	Borg, 1924	Genus
+Crisiella producta	(Smitt, 1865)	Species
+Crisia producta	Smitt, 1865	Species
+Crisiella diversa	(Kluge, 1955)	Species
+Crisiella complecta	(Kluge, 1955)	Species
+Tubuliporina	Milne-Edwards, 1838	Suborder
+Diastoporidae	Busk, 1859	Family
+Diplosolen	(Wyville Thomson, 1858)	Genus
+Diplosolen obelia	(Johnston, 1838)	Species
+Berenicea obelia	Johnston, 1838	Species
+Diplosolen obelia obelia	(Johnston, 1838)	Subspecies
+Diplosolen obelia arctica	(Waters, 1904)	Subspecies
+Diplosolen intricarius	(Smitt, 1872)	Species
+Berenicea	Lamouroux, 1821	Genus
+Berenicea arctica	Kluge, 1946	Species
+Berenicea oblonga	Kluge, 1946	Species
+Berenicea patina	(Lamarck, 1816)	Species
+Berenicea meandrina	(S. Woods, 1844)	Species
+Tubuliporidae	Johnston, 1838	Family
+Tubulipora	Lamarck, 1816	Genus
+Tubulipora flabellaris	(Fabricius, 1780)	Species
+Tubulipora atlantica	(Wyville Thomson, 1858)	Species
+Tubulipora liliacea	(Pallas, 1766)	Species
+Tubulipora lobulata	Hassall	Species
+Tubulipora transversa	Lamarck, 1816	Species
+Tubulipora maris-albi	Gostilovskaya, 1955	Species
+Tubulipora eminens	Kluge, 1955	Species
+Tubulipora dilatans	(Johnson, 1847)	Species
+Tubulipora fructuosa	Gostilovskaya, 1955	Species
+Tubulipora smitti	Kluge, 1962	Species
+Tubulipora uniformis	Gostilovskaya, 1955	Species
+Tubulipora aperta	Harmer, 1898	Species
+Tubulipora minuta	(Kluge, 1915)	Species
+Tubulipora borgi	Kluge, 1946	Species
+Tubulipora murmanica	Kluge, 1915	Species
+Tubulipora ventricosa	Busk, 1855	Species
+Tubulipora soluta	Kluge, 1946	Species
+Tubulipora penicillata	(Fabricius, 1780)	Species
+Tubulipora nordgaardi	Kluge, 1946	Species
+Tubulipora fruticosa	Kluge, 1946	Species
+Bathysoecia	(Wyville Thomson, 1858)	Genus
+Bathysoecia bassleri	(Wyville Thomson, 1858)	Species
+Bathysoecia hastingsae	(Wyville Thomson, 1858)	Species
+Idmonea	Lamouroux, 1821	Genus
+Idmonea atlantica	Forbes, 1847	Species
+Idmonea atlantica atlantica	Forbes, 1847	Subspecies
+Idmonea atlantica gracilima	Busk, 1875	Subspecies
+Idmonea fenestrata	Busk, 1859	Species
+Idmonea tumida	(Smitt, 1872)	Species
+Idmonea bidenkapi	Kluge, 1955	Species
+Idmidronea	Canu and Bassler, 1920	Genus
+Idmidronea atlantica	(Forbes In Johnson, 1847)	Species
+Stomatopora	Milne-Edwards, 1838	Genus
+Stomatopora granulata	Milne-Edwards, 1838	Species
+Idmoneoides	Kluge, 1955	Genus
+Idmoneoides arctoflabellaris	(Kluge, 1946)	Species
+Tubulipora arctoflabellaris	Kluge, 1946	Species
+Idmoneoides simplex	Kluge, 1955	Species
+Oncousoeciidae	(Wyville Thomson, 1858)	Family
+Oncousoecia	Canu, 1918	Genus
+Oncousoecia canadensis	(Osburn, 1933)	Species
+Oncousoecia diastroporides	(Norman, 1869)	Species
+Alecto diastroporides	Norman, 1869	Species
+Oncousoecia polygonales	(Kluge, 1915)	Species
+Proboscina	Audouin, 1826	Genus
+Proboscina incrassata	(Smitt, 1866)	Species
+Tubulipora incrassata	Smitt, 1866	Species
+Proboscina gracilis	(Kluge, 1915)	Species
+Proboscina fecunda	Kluge, 1962	Species
+Proboscina major	(Johnston, 1847)	Species
+Proboscina boryi	Audouin, 1826	Species
+Terviidae	(Wyville Thomson, 1858)	Family
+Entalophoridae	Reuss, 1869	Family
+Entalophora	Lamouroux, 1821	Genus
+Entalophora capitata	(Wyville Thomson, 1858)	Species
+Entalophora proboscideoides	(Wyville Thomson, 1858)	Species
+Entalophora cellarioides	Lamouroux, 1821	Species
+Entalophora clavata	(Busk, 1859)	Species
+Entalophora harmeri	(Osburn, 1933)	Species
+Bientalophora	(Wyville Thomson, 1858)	Genus
+Bientalophora cylindrica	(Wyville Thomson, 1858)	Species
+Diaperoeciidae	(Wyville Thomson, 1858)	Family
+Diaperoecia	(Wyville Thomson, 1858)	Genus
+Diaperoecia johnstoni	(Wyville Thomson, 1858)	Species
+Diaperoecia intermedia	(Wyville Thomson, 1858)	Species
+Diaperoecia floridana	(Wyville Thomson, 1858)	Species
+Diaperoecia harmeri	(Wyville Thomson, 1858)	Species
+Diaperoecia californica	(D'orbigny, 1852)	Species
+Plagioeciidae	(Wyville Thomson, 1858)	Family
+Plagioecia	(Wyville Thomson, 1858)	Genus
+Plagioecia ambigua	(Wyville Thomson, 1858)	Species
+Plagioecia grimaldii	(Wyville Thomson, 1858)	Species
+Plagioecia patina	(Wyville Thomson, 1858)	Species
+Plagioecia dispar	(Wyville Thomson, 1858)	Species
+Hastingsiidae	(Wyville Thomson, 1858)	Family
+Frondiporidae	Busk, 1886	Family
+Filifascigera	(Wyville Thomson, 1858)	Genus
+Filifascigera fasciculata	(Wyville Thomson, 1858)	Species
+Fasciculiporoides	Kluge, 1955	Genus
+Fasciculiporoides americana	(D'orbigny, 1853)	Species
+Fasciculipora americana	D'orbigny, 1853	Species
+Theonoidae	(Wyville Thomson, 1858)	Family
+Mecynoeciidae	(Wyville Thomson, 1858)	Family
+Cancellata	(Wyville Thomson, 1858)	Suborder
+Horneridae	Smitt, 1867	Family
+Cytididae	(Wyville Thomson, 1858)	Family
+Petaloporidae	(Wyville Thomson, 1858)	Family
+Pseudidmoneidae	(Wyville Thomson, 1858)	Family
+Calvetiidae	(Wyville Thomson, 1858)	Family
+Stigmatoechidae	Brood, 1972	Family
+Stegohorneridae	(Wyville Thomson, 1858)	Family
+Stigmatoechos	Marsson, 1887	Genus
+Stegohornera	Borg, 1944	Genus
+Stigmatoechos violacea	(M. Sars, 1863)	Species
+Stigmatoechos arctica	(Kluge, 1946)	Species
+Hornera	Lamouroux, 1821	Genus
+Hornera	Lamouroux, 1821	Genus
+Hornera frondiculata	Lamouroux, 1821	Species
+Hornera violacea	(Linnaeus, 1758)	Species
+Cerioporina	(Wyville Thomson, 1858)	Suborder
+Heteroporidae	Waters, 1880	Family
+Heteropora	de Blainville, 1830	Genus
+Heteropora alaskensis	(Wyville Thomson, 1858)	Species
+Heteropora pacifica	(Wyville Thomson, 1858)	Species
+Heteropora magna	(Wyville Thomson, 1858)	Species
+Heteropora pelliculata	Waters, 1879	Species
+Borgiola	(Wyville Thomson, 1858)	Genus
+Borgiola pustulosa	(Wyville Thomson, 1858)	Species
+Borgella	Kluge, 1955	Genus
+Borgella tumulosa	Kluge, 1955	Species
+Corymboporidae	Smitt, 1867	Family
+Domopora	D'orbigny, 1850	Genus
+Domopora stellata	(Goldfuss, 1827)	Species
+Domopora diadema	(Goldfuss, 1827)	Species
+Ceriopora diadema	Goldfuss, 1827	Species
+Defrancia	Bronn, 1825	Genus
+Defrancia clypeata	(Lamouroux, 1821)	Species
+Pelagia clypeata	Lamouroux, 1821	Species
+Defrancia lucernaria	M. Sars, 1851	Species
+Defrancia lucernaria lucernaria	M. Sars, 1851	Subspecies
+Defrancia lucernaria prolifera	Kluge, 1946	Subspecies
+Tretocycloeciidae	(Wyville Thomson, 1858)	Family
+Rectangulata	(Wyville Thomson, 1858)	Suborder
+Lichenoporidae	Smitt, 1867	Family
+Lichenopora	Defrance, 1823	Genus
+Lichenopora canaliculata	(Wyville Thomson, 1858)	Species
+Lichenopora verrucaria	(Fabricius, 1780)	Species
+Lichenopora hispida	(Fleming, 1828)	Species
+Disporella hispida	(Wyville Thomson, 1858)	Species
+Lichenopora radiata	(Audouin, 1828)	Species
+Lichenopora turbinata	Defrance, 1823	Species
+Lichenopora multicentra	Kluge, 1955	Species
+Lichenopora sibirica	Kluge, 1955	Species
+Lichenopora crassiuscula	(Smitt, 1867)	Species
+Disporella	(Wyville Thomson, 1858)	Genus
+Disporella alaskensis	(Wyville Thomson, 1858)	Species
+Disporella umbellata	(Wyville Thomson, 1858)	Species
+Disporella umbellata depressa	(Wyville Thomson, 1858)	Subspecies
+Disporella umbellata umbellata	(Wyville Thomson, 1858)	Subspecies
+Fungella	Hagenow, 1851	Genus
+Fungella dujardini	Hagenow, 1851	Species
+Fungella dalli	Kluge, 1955	Species
+Cheilostomata	Busk, 1852	Order
+Anasca	Levinsen, 1909	Suborder
+Aeteidae	Smitt, 1867	Family
+Aetea	Lamouroux, 1812	Genus
+Aetea anguina	(Linnaeus, 1758)	Species
+Aetea truncata	(Wyville Thomson, 1858)	Species
+Aetea sica	(Wyville Thomson, 1858)	Species
+Aetea recta	(Wyville Thomson, 1858)	Species
+Scrupariidae	Busk, 1852	Family
+Eucratea	Lamouroux, 1812	Genus
+Eucratea loricata	(Linnaeus, 1758)	Species
+Sertularia loricata	Linnaeus, 1758	Species
+Eucratea loricata loricata	(Linnaeus, 1758)	Subspecies
+Eucratea loricata arctica	(Kluge, 1915)	Subspecies
+Eucratea loricata cornuta	(Osburn, 1932)	Subspecies
+Eucratea loricata macrostoma	(Ortmann, 1890)	Subspecies
+Haplota	(Wyville Thomson, 1858)	Genus
+Haplota clavata	(Wyville Thomson, 1858)	Species
+Scruparia clavata	(Wyville Thomson, 1858)	Species
+Scruparia	(Wyville Thomson, 1858)	Genus
+Scruparia ambigua	D'orbigny	Species
+Scruparia chelata	(Linnaeus, 1758)	Species
+Labiostomellidae	(Wyville Thomson, 1858)	Family
+Membraniporidae	Busk, 1854	Family
+Membranipora	de Blainville, 1830	Genus
+Membranipora membranacea	(Linnaeus, 1767)	Species
+Flustra membranacea	Linnaeus, 1767	Species
+Membranipora pachytheca	(Wyville Thomson, 1858)	Species
+Membranipora tenuis	Desor	Species
+Membranipora tuberculata	(Bosc, 1802)	Species
+Membranipora monostachys	(Wyville Thomson, 1858)	Species
+Membranipora aborescens	(Wyville Thomson, 1858)	Species
+Membranipora savartii	(Wyville Thomson, 1858)	Species
+Membranipora tenella	(Wyville Thomson, 1858)	Species
+Membranipora villosa	Hincks, 1880	Species
+Conopeum	(Wyville Thomson, 1858)	Genus
+Conopeum reticulum	L.	Species
+Membranipora lacroixii	(Wyville Thomson, 1858)	Species
+Conopeum truitti	Osburn	Species
+Conopeum seurati	(Wyville Thomson, 1858)	Species
+Conopeum tenuissimum	Canu	Species
+Desmacystis	(Wyville Thomson, 1858)	Genus
+Desmacystis sandalia	(Wyville Thomson, 1858)	Species
+Cupuladria	(Wyville Thomson, 1858)	Genus
+Cupuladria canariensis	Busk	Species
+Cupuladria doma	(Wyville Thomson, 1858)	Species
+Cupuladria biporosa	(Wyville Thomson, 1858)	Species
+Ramphonotus	Norman, 1894	Genus
+Ramphonotus minax	(Busk, 1860)	Species
+Ramphonotus gorbunovi	Kluge, 1946	Species
+Larnacicus	Norman, 1903	Genus
+Larnacicus corniger	(Busk, 1859)	Species
+Membranipora corniger	Busk, 1859	Species
+Megapora	Hincks, 1877	Genus
+Megapora ringens	(Busk, 1856)	Species
+Lepralia ringens	Busk, 1856	Species
+Reussina	Kluge, 1962	Genus
+Reussina impressa	(Reuss, 1846)	Species
+Escharina impressa	Reuss, 1846	Species
+Electridae	(Wyville Thomson, 1858)	Family
+Electra	Lamouroux, 1816	Genus
+Electra crustulenta	(Pallas, 1776)	Species
+Membranipora crustulenta	(Pallas, 1776)	Species
+Eschara crustulenta	Pallas, 1776	Species
+Electra crustulenta arctica	Borg, 1931	Subspecies
+Electra crustulenta baltica	Borg, 1931	Subspecies
+Electra crustulenta catenularia-similis	Kluge, 1962	Subspecies
+Electra crustulenta crustulenta	(Pallas, 1776)	Subspecies
+Electra hastingsae	(Wyville Thomson, 1858)	Species
+Electra pilosa	(Linnaeus, 1768)	Species
+Electra pilosa pilosa	(Linnaeus, 1768)	Subspecies
+Electra pilosa dentata	(Ellis and Solander, 1786)	Subspecies
+Electra bellula	(Wyville Thomson, 1858)	Species
+Electra laciniosa	(Wyville Thomson, 1858)	Species
+Electra arctica	(Wyville Thomson, 1858)	Species
+Electra verticillata	(Ellis and Solander, 1786)	Species
+Flustra verticillata	Ellis and Solander, 1786	Species
+Electra catenularia	(Jameson, 1811)	Species
+Pyripora	(Wyville Thomson, 1858)	Genus
+Pyripora catenularia	(Wyville Thomson, 1858)	Species
+Flustridae	Lamouroux, 1821	Family
+Flustra	Linnaeus, 1767	Genus
+Carbasea	(Wyville Thomson, 1858)	Genus
+Flustra carbasea	(Ellis and Solander, 1786)	Species
+Carbasea carbasea	Ellis and Solander, 1786	Species
+Flustra serrulata	Busk, 1880	Species
+Carbasea serrulata	(Busk, 1880)	Species
+Flustra foliacea	(Linnaeus, 1758)	Species
+Flustra nordenskjoldi	Kluge, 1929	Species
+Flustra barleei	Busk, 1860	Species
+Flustra securifrons	(Pallas, 1766)	Species
+Terminoflustra	(Wyville Thomson, 1858)	Genus
+Terminoflustra membranaceo-truncata	(Smitt, 1868)	Species
+Flustra membranaceo-truncata	Smitt, 1868	Species
+Securiflustra	Silen, 1941	Genus
+Securiflustra securifrons	(Pallas, 1766)	Species
+Sarsiflustra	Jullien and Calvet, 1903	Genus
+Sarsiflustra abyssicola	(G. Sars, 1872)	Species
+Hincksinidae	(Wyville Thomson, 1858)	Family
+Hincksina	(Wyville Thomson, 1858)	Genus
+Hincksina gothica	(Wyville Thomson, 1858)	Species
+Cauloramphus	Norman, 1903	Genus
+Cauloramphus cymbaeformis	(Hincks, 1877)	Species
+Cauloramphus echinus	(Wyville Thomson, 1858)	Species
+Cauloramphus spiniferum	(Johnston, 1832)	Species
+Flustra spinifera	Johnston, 1832	Species
+Cauloramphus intermedius	Kluge, 1962	Species
+Aplousina	(Wyville Thomson, 1858)	Genus
+Aplousina gigantea	(Wyville Thomson, 1858)	Species
+Antropora	(Wyville Thomson, 1858)	Genus
+Antropora tincta	(Wyville Thomson, 1858)	Species
+Antropora leucocypha	(Wyville Thomson, 1858)	Species
+Calloporidae	Norman, 1903	Family
+Alderinidae	(Wyville Thomson, 1858)	Family
+Callopora	Gray, 1848	Genus
+Callopora aurita	(Hincks, 1877)	Species
+Callopora craticula	(Alder, 1857)	Species
+Callopora craticula craticula	(Alder, 1857)	Subspecies
+Callopora craticula sedovi	Kluge, 1962	Subspecies
+Callopora exilis	(Wyville Thomson, 1858)	Species
+Callopora lineata	(Linnaeus, 1767)	Species
+Flustra lineata	Linnaeus, 1767	Species
+Callopora whiteavesi	Norman, 1903	Species
+Callopora horrida	(Wyville Thomson, 1858)	Species
+Callopora dumerilii	(Audouin, 1826)	Species
+Callopora smitti	Kluge, 1946	Species
+Callopora lata	(Kluge, 1907)	Species
+Callopora obesa	Kluge, 1952	Species
+Callopora derjugini	(Kluge, 1915)	Species
+Callopora circumclathrata	(Hincks, 1877)	Species
+Amphiblestrum	Gray, 1848	Genus
+Amphiblestrum trifolium	(S. Wood, 1844)	Species
+Amphiblestrum trifolium trifolium	(S. Wood, 1844)	Subspecies
+Amphiblestrum trifolium guadrata	(Hincks, 1880)	Subspecies
+Amphiblestrum flemingi	(Busk, 1854)	Species
+Membrainipora flemingi	Busk, 1854	Species
+Amphiblestrum osburni	(Wyville Thomson, 1858)	Species
+Amphiblestrum septentrionalis	(Kluge, 1906)	Species
+Bidenkapia	(Wyville Thomson, 1858)	Genus
+Bidenkapia spitsbergensis	(Wyville Thomson, 1858)	Species
+Bidenkapia spitsbergensis alaskensis	(Wyville Thomson, 1858)	Subspecies
+Bidenkapia spitsbergensis spitsbergensis	(Wyville Thomson, 1858)	Subspecies
+Doryporella	Norman, 1903	Genus
+Doryporella spathulifera	(Smitt, 1868)	Species
+Lepralia spathulifera	Smitt, 1868	Species
+Tegella	Levinsen, 1909	Genus
+Tegella armifera	(Hincks, 1880)	Species
+Tegella arctica	(D'orbigny, 185)	Species
+Tegella arctica arctica	(D'orbigny, 185)	Subspecies
+Tegella arctica retroversa	Kluge, 1952	Subspecies
+Tegella unicornis	(Fleming, 1828)	Species
+Membranipora unicornis	(Wyville Thomson, 1858)	Species
+Tegella magnipora	(Wyville Thomson, 1858)	Species
+Tegella robertsonae	(Wyville Thomson, 1858)	Species
+Tegella aquilirostris	(Wyville Thomson, 1858)	Species
+Tegella armiferoides	Kluge, 1955	Species
+Tegella kildinensis	Kluge, 1955	Species
+Tegella spitzbergensis	(Bidenkap, 1897)	Species
+Tegella nigrans	(Hincks, 1882)	Species
+Tegella anguloavicularis	Kluge, 1952	Species
+Tegella inermis	Kluge, 1959	Species
+Tegella amissavicularis	(Kluge, 1952)	Species
+Tegella norvegica	(Nordgaard, 1918)	Species
+Alderina	Norman, 1903	Genus
+Alderina smitti	(Wyville Thomson, 1858)	Species
+Alderina imbellis	(Hincks, 1860)	Species
+Copidozoum	(Wyville Thomson, 1858)	Genus
+Copidozoum tenuirostre	(Hincks, 1880)	Species
+Parellisina	(Wyville Thomson, 1858)	Genus
+Parellisina curvirostris	(Wyville Thomson, 1858)	Species
+Parellisina latirostris	(Wyville Thomson, 1858)	Species
+Crassimarginatella	Canu, 1900	Genus
+Crassimarginatella tuberosa	(Wyville Thomson, 1858)	Species
+Aplousina tuberosa	(Wyville Thomson, 1858)	Species
+Retevirgula	Brown, 1948	Genus
+Retevirgula acuta	(Hincks, 1885)	Species
+Chaperiidae	Jullien, 1888	Family
+Chaperia	Jullien, 1881	Genus
+Chaperia acanthina	(Lamouroux, 1825)	Species
+Chaperia quadrispinosa	(Wyville Thomson, 1858)	Species
+Chaperia cervicornis	(Wyville Thomson, 1858)	Species
+Chaperia spinosissima	(Wyville Thomson, 1858)	Species
+Chaperia galeata	(Wyville Thomson, 1858)	Species
+Hiantoporidae	Gregory, 1893	Family
+Arachnopusiidae	Jullien, 1888	Family
+Arachnopodiidae	Of Authors	Family
+Exechonella	Duvergier, 1924	Genus
+Exechonella antillea	(Wyville Thomson, 1858)	Species
+Tremogasterina	(Wyville Thomson, 1858)	Genus
+Tremogasterina lanceotata	(Wyville Thomson, 1858)	Species
+Tremogasterina muronata	(Wyville Thomson, 1858)	Species
+Onychocellidae	Jullien, 1882	Family
+Floridina	(Wyville Thomson, 1858)	Genus
+Floridina antique	(Wyville Thomson, 1858)	Species
+Floridina parvicella	(Wyville Thomson, 1858)	Species
+Smittipora	Jullien, 1882	Genus
+Smittipora levinseni	(Wyville Thomson, 1858)	Species
+Smittipora abyssicola	(Smitt)	Species
+Vincularia abyssicola	(Smitt)	Species
+Smittipora solida	(Nordgaard, 1907)	Species
+Microporidae	Gray, 1948	Family
+Micropora	Gray, 1848	Genus
+Micropora coriacea	(Johnston, 1847)	Species
+Mollia	Lamouroux, 1821	Genus
+Mollia potellaria	(Wyville Thomson, 1858)	Species
+Selenaria	(Wyville Thomson, 1858)	Genus
+Selenaria maculata	(Wyville Thomson, 1858)	Species
+Lunulitidae	(Wyville Thomson, 1858)	Family
+Lunularidae	(Wyville Thomson, 1858)	Family
+Calpensiidae	(Wyville Thomson, 1858)	Family
+Microporina	Levinsen, 1909	Genus
+Microporina borealis	(Wyville Thomson, 1858)	Species
+Microporina articulata	(Fabricius, 1821)	Species
+Cellularia articulata	Fabricius, 1821	Species
+Discoporella	(Wyville Thomson, 1858)	Genus
+Discoporella umbellata	(Wyville Thomson, 1858)	Species
+Steginoporellidae	Hincks, 1884	Family
+Steginoporella	Smitt, 1873	Genus
+Steginoporella magnilabris	(Busk, 1854)	Species
+Labiporella	(Wyville Thomson, 1858)	Genus
+Labiporella granulosa	(Wyville Thomson, 1858)	Species
+Thalamoporellidae	Levinsen, 1909	Family
+Thalamoporella	Hincks, 1887	Genus
+Thalamoporella falcifer	(Wyville Thomson, 1858)	Species
+Thalamoporella california	Levinsen, 1909	Species
+Aspidostomatidae	(Wyville Thomson, 1858)	Family
+Euritina	(Wyville Thomson, 1858)	Genus
+Euritina arctica	(Wyville Thomson, 1858)	Species
+Setosellidae	(Wyville Thomson, 1858)	Family
+Cothurnicellidae	(Wyville Thomson, 1858)	Family
+Alysidiidae	(Wyville Thomson, 1858)	Family
+Cellariidae	Lamouroux, 1821	Family
+Cellaria	Ellis and Solander, 1786	Genus
+Cellaria nodosa	(Wyville Thomson, 1858)	Species
+Cellaria fistulosa	(Wyville Thomson, 1858)	Species
+Cellaria sinuosa	(Hassall, 1840)	Species
+Cellaria diffusa	Robertson, 1905	Species
+Euginoma	(Wyville Thomson, 1858)	Genus
+Euginoma cavalieri	(Wyville Thomson, 1858)	Species
+Euginoma duplex	(Wyville Thomson, 1858)	Species
+Formosocellaria	(Wyville Thomson, 1858)	Genus
+Formosocellaria abyssicola	(Wyville Thomson, 1858)	Species
+Formosocellaria magnifica	(Wyville Thomson, 1858)	Species
+Pseudocellaria	(Wyville Thomson, 1858)	Genus
+Membranicellariidae	(Wyville Thomson, 1858)	Family
+Farciminariidae	(Wyville Thomson, 1858)	Family
+Nellia	(Wyville Thomson, 1858)	Genus
+Nellia tenella	(Wyville Thomson, 1858)	Species
+Nellia oculata	(Wyville Thomson, 1858)	Species
+Bugulidae	Gray, 1848	Family
+Bugula	Oken, 1815	Genus
+Bugula turrita	Desor	Species
+Bugula flabellata	(Wyville Thomson, 1858)	Species
+Bugula flabellata acuminata	(Wyville Thomson, 1858)	Subspecies
+Bugula flabellata flabellata	(Wyville Thomson, 1858)	Subspecies
+Bugula pacifica	(Wyville Thomson, 1858)	Species
+Bugula avicularia	(Linnaeus, 1758)	Species
+Bugula neritina	(Linnaeus, 1758)	Species
+Sertularia neritina	Linnaeus, 1758	Species
+Bugula rylandi	(Wyville Thomson, 1858)	Species
+Bugula fulva	(Wyville Thomson, 1858)	Species
+Bugula grayi	(Wyville Thomson, 1858)	Species
+Bugula marcusi	(Wyville Thomson, 1858)	Species
+Bugula microoecia	(Wyville Thomson, 1858)	Species
+Bugula plumosa	(Wyville Thomson, 1858)	Species
+Bugula stolonifera	Ryland	Species
+Bugula turbinata	(Wyville Thomson, 1858)	Species
+Bugula johnstonae	(Gray)	Species
+Bugula longirostrata	(Wyville Thomson, 1858)	Species
+Bugula harmsworthi	Waters, 1900	Species
+Bugula tricuspis	Kluge, 1915	Species
+Bugula fastigata	Dalyell, 1847	Species
+Bugula tschukotkensis	Kluge, 1952	Species
+Bugula elongata	Norggaard, 1906	Species
+Bugula calathus	Norman, 1868	Species
+Dendrobeania	Levinsen, 1909	Genus
+Dendrobeania murrayana	(Johnston, 1847)	Species
+Bugula murrayana	(Wyville Thomson, 1858)	Species
+Flustra murrayana	Johnston, 1847	Species
+Dendrobeania multiseriata	(Wyville Thomson, 1858)	Species
+Dendrobeania lichenoides	(Wyville Thomson, 1858)	Species
+Dendrobeania curvirostrata	(Wyville Thomson, 1858)	Species
+Dendrobeania pseudolevinseni	Kluge, 1952	Species
+Dendrobeania levinseni	(Kluge, 1929)	Species
+Dendrobeania laxa	(Robertson, 1905)	Species
+Dendrobeania pseudomurrayana	Kluge, 1955	Species
+Dendrobeania pseudomurrayana pseudomurrayana	Kluge, 1955	Subspecies
+Dendrobeania pseudomurrayana tenuis	Kluge, 1955	Subspecies
+Dendrobeania pseudomurrayana fessa	Kluge, 1955	Subspecies
+Dendrobeania fruticosa	(Packard, 1863)	Species
+Dendrobeania fruticosa fruticosa	(Packard, 1863)	Subspecies
+Dendrobeania fruticosa quadridentata	(Loven, 1834)	Subspecies
+Dendrobeania fruticosa frigida	(Waters, 1900)	Subspecies
+Dendrobeania flustroides	(Levinsen, 1887)	Species
+Dendrobeania murmanica	(Kluge, 1915)	Species
+Caulibugula	(Wyville Thomson, 1858)	Genus
+Caulibugula dendrograpta	(Wyville Thomson, 1858)	Species
+Caulibugula pearsei	(Wyville Thomson, 1858)	Species
+Caulibugula californica	(Robertson, 1905)	Species
+Kinetoskias	Danielssen, 1868	Genus
+Kinetoskias arborescens	Danielssen, 1868	Species
+Kinetoskias smitti	Danielssen, 1868	Species
+Kinetoskias mitsukurii	Yanagi and Okada, 1918	Species
+Kinetoskias beringi	Kluge, 1953	Species
+Bicellariellidae	(Wyville Thomson, 1858)	Family
+Corynoporella	Hincks, 1888	Genus
+Corynoporella spinosa	Robertson, 1905	Species
+Corynoporella tenuis	Hincks, 1888	Species
+Bicellariella	Levinsen, 1909	Genus
+Bicellariella ciliata	(Linnaeus, 1758)	Species
+Sertularia ciliata	Linnaeus, 1758	Species
+Bicellarina	Levinsen, 1909	Genus
+Bicellarina alderi	(Busk, 1859)	Species
+Semibugula	Kluge, 1929	Genus
+Semibugula birulai	Kluge, 1929	Species
+Beaniidae	Canu and Bassler, 1927	Family
+Beania	Johnston, 1840	Genus
+Beania alaskensis	(Wyville Thomson, 1858)	Species
+Scrupocellariidae	Levinsen, 1909	Family
+Scrupocellaria	Van Beneden, 1845	Genus
+Scrupocellaria scabra	(Van Beneden, 1848)	Species
+Scrupocellaria scabra paenulata	Norman, 1903	Subspecies
+Scrupocellaria scabra scabra	(Van Beneden, 1848)	Subspecies
+Scrupocellaria bertholetti	(Wyville Thomson, 1858)	Species
+Scrupocellaria regularis	(Wyville Thomson, 1858)	Species
+Scrupocellaria scruposa	(Linnaeus, 1758)	Species
+Sertularia scruposa	Linnaeus, 1758	Species
+Scrupocellaria scrupea	(Wyville Thomson, 1858)	Species
+Scrupocellaria diegensis	(Wyville Thomson, 1858)	Species
+Scrupocellaria californica	Trask, 1857	Species
+Scrupocellaria intermedia	Norman, 1893	Species
+Scrupocellaria minor	Kluge, 1915	Species
+Scrupocellaria arctica	(Busk, 1855)	Species
+Caberea	Lamouroux, 1816	Genus
+Caberea ellisii	(Fleming, 1818)	Species
+Caberea boryi	Audouin, 1826	Species
+Tricellaria	Fleming, 1828	Genus
+Tricellaria ternata	(Ellis and Solander, 1786)	Species
+Cellularia ternata	Ellis and Solander, 1786	Species
+Tricellaria gracilis	(Van Beneden, 1848)	Species
+Tricellaria gracilis gracilis	(Van Beneden, 1848)	Subspecies
+Tricellaria gracilis inermis	Kluge, 1962	Subspecies
+Tricellaria pribilofi	(Wyville Thomson, 1858)	Species
+Tricellaria erecta	(Wyville Thomson, 1858)	Species
+Tricellaria occidentalis	(Wyville Thomson, 1858)	Species
+Tricellaria peachii	(Busk, 1851)	Species
+Tricellaria praescuta	(Wyville Thomson, 1858)	Species
+Notoplites	Harmer, 1923	Genus
+Notoplites rostrata	Harmer, 1923	Species
+Notoplites jeffreysii	(Norman, 1868)	Species
+Notoplites sibirica	(Kluge, 1929)	Species
+Notoplites smitti	(Norman, 1868)	Species
+Notoplites normani	(Nordgaard, 1900)	Species
+Bugulopsis	Verrill, 1879	Genus
+Bugulopsis peachi	(Busk, 1851)	Species
+Cellularia peachi	Busk, 1851	Species
+Bugulopsis peachi peachi	(Busk, 1851)	Subspecies
+Bugulopsis peachi beringia	Kluge, 1952	Subspecies
+Epistomiidae	Gregory, 1893	Family
+Synnotum	Pieper, 1881	Genus
+Synnotum aegyptiacum	(Audouin, 1826)	Species
+Cribrilinidae	Hincks, 1880	Family
+Cribrilina	Gray, 1848	Genus
+Cribrilina annulata	(Fabricius, 1780)	Species
+Cribrilina punctata	(Hassall, 1841)	Species
+Cribrilina radiata	(Wyville Thomson, 1858)	Species
+Cribrilina spitzbergensis	Norman, 1903	Species
+Cribrilina cryptooecium	Norman, 1903	Species
+Cribrilina watersi	Andersson, 1902	Species
+Cribrilina spiculifera	Kluge, 1955	Species
+Membraniporella	Smitt, 1873	Genus
+Membraniporella crassicosta	(Wyville Thomson, 1858)	Species
+Membraniporella aragoi	(Wyville Thomson, 1858)	Species
+Membraniporella nitida	(Johnston, 1838)	Species
+Reginella	Jullien, 1886	Genus
+Reginella spitsbergensis	(Wyville Thomson, 1858)	Species
+Jullienula	(Wyville Thomson, 1858)	Genus
+Jullienula hippocrepis	(Wyville Thomson, 1858)	Species
+Cribrilaria	Canu and Bassler, 1929	Genus
+Cribrilaria radiata	(Moll, 1803)	Species
+Bellulopora	(Wyville Thomson, 1858)	Genus
+Bellulopora bellula	(Wyville Thomson, 1858)	Species
+Colletosia	(Wyville Thomson, 1858)	Genus
+Colletosia radiata	(Wyville Thomson, 1858)	Species
+Lyrula	(Wyville Thomson, 1858)	Genus
+Lyrula hippocrepis	(Wyville Thomson, 1858)	Species
+Gephyrotes	Norman, 1903	Genus
+Gephyrotes nitidopunctata	(Smitt, 1868)	Species
+Pelmatoporidae	(Wyville Thomson, 1858)	Family
+Cupuladriidae	(Wyville Thomson, 1858)	Family
+Sadkoidae	Kluge, 1962	Family
+Uschakovia	Kluge, 1946	Genus
+Uschakovia gorbunovi	Kluge, 1946	Species
+Ascophora	Levinsen, 1909	Suborder
+Ascophora	Levinsen, 1909	Suborder
+Cyclicoporidae	(Wyville Thomson, 1858)	Family
+Hippothoidae	Fischer, 1866	Family
+Hippothoa	Lamouroux, 1821	Genus
+Hippothoa hyalina	(Linnaeus, 1767)	Species
+Hippothoa hyalina abstersa	(Linnaeus, 1767)	Subspecies
+Hippothoa hyalina marcusi	(Wyville Thomson, 1858)	Subspecies
+Hippothoa hyalina hyalina	(Linnaeus, 1767)	Subspecies
+Hippothoa divaricata	Smitt, 1868	Species
+Hippothoa divaricata divaricata	Smitt, 1868	Subspecies
+Hippothoa divaricata arctica	Kluge, 1906	Subspecies
+Hippothoa expansa	Dawson, 1859	Species
+Hippothoa cornuta	(Wyville Thomson, 1858)	Species
+Hippothoa flagellum	Manzoni, 1870	Species
+Hippothoa santacruzana	(Wyville Thomson, 1858)	Species
+Hippothoa planula	(Wyville Thomson, 1858)	Species
+Hippothoa rugulosa	(Wyville Thomson, 1858)	Species
+Hippothoa discreta	(Wyville Thomson, 1858)	Species
+Hippothoa annularis	(Wyville Thomson, 1858)	Species
+Hippothoa patagonica	(Wyville Thomson, 1858)	Species
+Hippothoa muricata	(Wyville Thomson, 1858)	Species
+Hippothoa delta	Ryland and Gordon, 1977	Species
+Hippothoa delta parsimilis	(Wyville Thomson, 1858)	Subspecies
+Hippothoa delta delta	(Wyville Thomson, 1858)	Subspecies
+Hippothoa holostoma	(Wyville Thomson, 1858)	Species
+Hippothoa tuberculata	(Wyville Thomson, 1858)	Species
+Hippothoa meridionalis	(Wyville Thomson, 1858)	Species
+Hippothoa aruensis	(Wyville Thomson, 1858)	Species
+Hippothoa distans	Macgillivray, 1869	Species
+Hippothoa minitumulosa	(Wyville Thomson, 1858)	Species
+Hippothoa brasiliensis	(Wyville Thomson, 1858)	Species
+Hippothoa trigemma	(Wyville Thomson, 1858)	Species
+Hippothoa watersi	Morris, 1980	Species
+Harmeria	Norman, 1903	Genus
+Harmeria scutulata	(Busk, 1855)	Species
+Lepralia scutulata	Busk, 1855	Species
+Hincksipora	(Wyville Thomson, 1858)	Genus
+Hincksipora spinulifera	(Wyville Thomson, 1858)	Species
+Trypostega	(Wyville Thomson, 1858)	Genus
+Trypostega venusta	(Wyville Thomson, 1858)	Species
+Haplopoma	(Wyville Thomson, 1858)	Genus
+Haplopoma impressum	(Wyville Thomson, 1858)	Species
+Chorizopora	Hincks, 1879	Genus
+Chorizopora brongniartii	(Audouin, 1826)	Species
+Dacryoporella	(Wyville Thomson, 1858)	Genus
+Dacryoporella gutta	(Wyville Thomson, 1858)	Species
+Diplotresis	(Wyville Thomson, 1858)	Genus
+Diplotresis sparsiporsa	(Wyville Thomson, 1858)	Species
+Atacama	(Wyville Thomson, 1858)	Genus
+Atacama foramina	(Wyville Thomson, 1858)	Species
+Boreas	(Wyville Thomson, 1858)	Genus
+Boreas voigti	(Wyville Thomson, 1858)	Species
+Kronothoa	(Wyville Thomson, 1858)	Genus
+Kronothoa dissoluta	(Wyville Thomson, 1858)	Species
+Tecatia	(Wyville Thomson, 1858)	Genus
+Tecatia minuta	(Wyville Thomson, 1858)	Species
+Tecatia sinaloenis	(Wyville Thomson, 1858)	Species
+Euthyroididae	(Wyville Thomson, 1858)	Family
+Umbonulidae	(Wyville Thomson, 1858)	Family
+Umbonula	Hincks, 1880	Genus
+Umbonula patens	(Smitt, 1868)	Species
+Umbonula arctica	(M. Sars, 1851)	Species
+Umbonula littoralis	Hastings, 1944	Species
+Umbonula verrucosa	(Esper, 1790)	Species
+Lepralia verrucosa	Esper, 1790	Species
+Umbonula inarmata	Kluge, 1962	Species
+Petraliidae	(Wyville Thomson, 1858)	Family
+Petraliella	(Wyville Thomson, 1858)	Genus
+Petraliella bisinuata	(Wyville Thomson, 1858)	Species
+Hippopetraliella bisinuata	(Wyville Thomson, 1858)	Species
+Hippopetraliella marginata	(Wyville Thomson, 1858)	Species
+Petraliella marginata	(Wyville Thomson, 1858)	Species
+Gigantoporidae	Bassler, 1935	Family
+Cylindroporella	Hincks, 1877	Genus
+Cylindroporella tubulosa	(Norman, 1868)	Species
+Porina tubulosa	(Norman, 1868)	Species
+Lepralia tubulosa	Norman, 1868	Species
+Tessaradoma	Norman, 1869	Genus
+Tessaradoma gracile	(M. Sars, 1851)	Species
+Stomachetosellidae	Canu and Bassler, 1917	Family
+Stomachetosella	Canu and Bassler, 1917	Genus
+Stomachetosella sinuosa	(Busk, 1860)	Species
+Lepralia sinuosa	Busk, 1860	Species
+Stomachetosella cruenta	(Busk, 1854)	Species
+Stomachetosella distincta	(Wyville Thomson, 1858)	Species
+Stomachetosella hincksi	(Wyville Thomson, 1858)	Species
+Stomachetosella producta	(Packard, 1863)	Species
+Stomachetosella collaris	(Kluge, 1946)	Species
+Posterula	(Wyville Thomson, 1858)	Genus
+Posterula sarsi	(Wyville Thomson, 1858)	Species
+Ragionula	(Wyville Thomson, 1858)	Genus
+Ragionula rosacea	(Wyville Thomson, 1858)	Species
+Pachyegis	(Wyville Thomson, 1858)	Genus
+Pachyegis princeps	(Wyville Thomson, 1858)	Species
+Pachyegis brunnea	(Wyville Thomson, 1858)	Species
+Cigclisula	(Wyville Thomson, 1858)	Genus
+Cigclisula serrulata	(Wyville Thomson, 1858)	Species
+Cigclisula turrita	(Wyville Thomson, 1858)	Species
+Cigclisula pertusa	(Wyville Thomson, 1858)	Species
+Schizoporellidae	Jullien, 1883	Family
+Schizoporella	Hincks, 1877	Genus
+Schizoporella unicornis	(Johnston, 1874)	Species
+Lepralia unicornis	Johnston, 1874	Species
+Schizoporella linearis	(Wyville Thomson, 1858)	Species
+Schizoporella linearis inarmata	(Wyville Thomson, 1858)	Subspecies
+Schizoporella linearis linearis	(Wyville Thomson, 1858)	Subspecies
+Schizoporella cornuta	(Wyville Thomson, 1858)	Species
+Schizoporella biaperta	(Michelin, 1841)	Species
+Schizoporella errata	Waters	Species
+Schizoporella floridana	(Wyville Thomson, 1858)	Species
+Schizoporella crustacea	(Smitt, 1868)	Species
+Schizoporella costata	Kluge, 1962	Species
+Schizoporella bispinosus	Nordgaard, 1906	Species
+Schizoporella elmwoodiae	Waters, 1900	Species
+Schizoporella elmwoodiae elmwoodiae	Waters, 1900	Subspecies
+Schizoporella elmwoodiae mamillata	Kluge, 1962	Subspecies
+Schizoporella alderi	(Busk, 1856)	Species
+Schizoporella auriculata	(Hassall, 1842)	Species
+Schizoporella auriculata auriculata	(Hassall, 1842)	Subspecies
+Schizoporella auriculata lineata	(Nordgaard, 1896)	Subspecies
+Schizoporella porifera	(Smitt, 1868)	Species
+Schizoporella ortmanni	Kluge, 1955	Species
+Schizoporella magniporata	Nordgaard, 1906	Species
+Schizoporella pachystega	Kluge, 1929	Species
+Schizoporella incerta	Kluge, 1929	Species
+Schizoporella limbata	Lorenz, 1886	Species
+Schizoporella stylifera	(Levinsen, 1887)	Species
+Schizoporella stylifera stylifera	(Levinsen, 1887)	Subspecies
+Schizoporella stylifera perforata	Kluge, 1952	Subspecies
+Schizoporella hexagona	Nordgaard, 1905	Species
+Schizoporella smitti	Kluge, 1962	Species
+Schizoporella thompsoni	Kluge, 1962	Species
+Emballotheca	Levinsen, 1909	Genus
+Emballotheca stylifera	(Wyville Thomson, 1858)	Species
+Dakaria	(Wyville Thomson, 1858)	Genus
+Dakaria dawsoni	(Wyville Thomson, 1858)	Species
+Schizomavella	Canu and Bassler, 1917	Genus
+Schizomavella auriculata	(Hassall, 1842)	Species
+Schizomavella auriculata ochracea	(Hincks, 1880)	Subspecies
+Schizomavella auriculata auriculata	(Hassall, 1842)	Subspecies
+Schizomavella porifera	(Wyville Thomson, 1858)	Species
+Schizomavella linearis	(Wyville Thomson, 1858)	Species
+Hippodiplosia	Canu, 1916	Genus
+Hippodiplosia reticulatopunctata	(Hincks, 1877)	Species
+Hippodiplosia insculpta	(Wyville Thomson, 1858)	Species
+Hippodiplosia cancellata	(Wyville Thomson, 1858)	Species
+Hippodiplosia pertusa	(Esper, 1797)	Species
+Cellepora pertusa	Esper, 1797	Species
+Hippodiplosia propinqua	(Smitt, 1868)	Species
+Hippodiplosia murdochi	Kluge, 1963	Species
+Hippodiplosia obesa	(Waters, 1900)	Species
+Hippodiplosia tchukotkensis	Kluge, 1952	Species
+Hippodiplosia borealis	(Waters, 1900)	Species
+Hippodiplosia harmsworthi	(Waters, 1900)	Species
+Hippodiplosia ussowi	(Kluge, 1908)	Species
+Arthropoma	Levinsen, 1909	Genus
+Arthropoma cecilii	(Audouin, 1826)	Species
+Cleidochasma	Harmer, 1957	Genus
+Cleidochasma porcellanum	(Busk, 1860)	Species
+Cleidochasma contractum	(Wyville Thomson, 1858)	Species
+Cycloporiella	(Wyville Thomson, 1858)	Genus
+Cycloporiella rubra	(Wyville Thomson, 1858)	Species
+Stylopoma	(Wyville Thomson, 1858)	Genus
+Stylopoma informata	(Wyville Thomson, 1858)	Species
+Stylopoma spongites	(Wyville Thomson, 1858)	Species
+Escharina	Milne-Edwards, 1836	Genus
+Escharina porosa	(Wyville Thomson, 1858)	Species
+Escharina vulgaris	(Moll, 1803)	Species
+Escharina pesanseris	(Smitt, 1873)	Species
+Hippoporinidae	(Wyville Thomson, 1858)	Family
+Hippoporella	(Wyville Thomson, 1858)	Genus
+Hippoporella hippopus	(Wyville Thomson, 1858)	Species
+Hippoporella ulvlifera	(Wyville Thomson, 1858)	Species
+Stephanosella	(Wyville Thomson, 1858)	Genus
+Stephanosella biaperta	(Wyville Thomson, 1858)	Species
+Lepralia	(Wyville Thomson, 1858)	Genus
+Lepralia americana	(Wyville Thomson, 1858)	Species
+Lepralia serrata	(Wyville Thomson, 1858)	Species
+Lepralia pallisiana	(Wyville Thomson, 1858)	Species
+Hippopleurifera	(Wyville Thomson, 1858)	Genus
+Hippopleurifera mucronata	(Wyville Thomson, 1858)	Species
+Hippoporina	Neviani, 1895	Genus
+Hippoporina contracta	(Wyville Thomson, 1858)	Species
+Hippoporina verrilli	Maturo and Schopf	Species
+Hippoporina americana	Verrill	Species
+Hippoporidra	(Wyville Thomson, 1858)	Genus
+Hippoporidra calcarea	(Wyville Thomson, 1858)	Species
+Hippoporidra edax	(Wyville Thomson, 1858)	Species
+Hippoporidra janthina	(Wyville Thomson, 1858)	Species
+Hipporina	(Wyville Thomson, 1858)	Genus
+Pentapora	(Wyville Thomson, 1858)	Genus
+Pentapora foliacea	(Wyville Thomson, 1858)	Species
+Exochellidae	Bassler, 1935	Family
+Escharoides	Milne-Edwards, 1836	Genus
+Escharoides jacksoni	(Waters, 1900)	Species
+Escharoides jacksoni jacksoni	(Waters, 1900)	Subspecies
+Escharoides jacksoni rostrata	(Kluge, 1946)	Subspecies
+Escharoides coccinea	(Abildgaard, 1806)	Species
+Cellepora coccinea	Abildgaard, 1806	Species
+Escharoides bidenkapi	(Kluge, 1946)	Species
+Escharoides monstruosa	(Kluge, 1946)	Species
+Exochella	Jullien, 1888	Genus
+Exochella longirostris	Jullien, 1888	Species
+Microporellidae	Hincks, 1879	Family
+Microporella	Hincks, 1877	Genus
+Microporella ciliata	(Pallas, 1766)	Species
+Eschara ciliata	Pallas, 1766	Species
+Microporella ciliata stellata	(Wyville Thomson, 1858)	Subspecies
+Microporella ciliata ciliata	(Pallas, 1766)	Subspecies
+Microporella arctica	Norman, 1903	Species
+Microporella vibraculifera	(Wyville Thomson, 1858)	Species
+Microporella cribosa	(Wyville Thomson, 1858)	Species
+Microporella californica	(Wyville Thomson, 1858)	Species
+Microporella marsupiata	(Wyville Thomson, 1858)	Species
+Microporella umbraeula	(Wyville Thomson, 1858)	Species
+Microporella impressa	(Audouin, 1826)	Species
+Microporella malusii	(Audouin, 1826)	Species
+Fenestrulina	Jullien, 1888	Genus
+Fenestrulina malusii	(Audouin, 1826)	Species
+Fenestrulina malusii umbonata	(Wyville Thomson, 1858)	Subspecies
+Fenestrulina malusii malusii	(Wyville Thomson, 1858)	Subspecies
+Eurystomellidae	Levinsen, 1909	Family
+Eurystomella	Levinsen, 1909	Genus
+Eurystomella bilabiata	(Hincks)	Species
+Mucronellidae	(Wyville Thomson, 1858)	Family
+Porella	Gray, 1848	Genus
+Porella	Gray, 1848	Genus
+Porella reduplicata	(Wyville Thomson, 1858)	Species
+Porella compressa	(Sowerby, 1806)	Species
+Millepora compressa	Sowerby, 1806	Species
+Porella acutirostris	Smitt, 1868	Species
+Porella porifera	(Wyville Thomson, 1858)	Species
+Porella concinna	Lorenz, 1886	Species
+Porella patens	(Wyville Thomson, 1858)	Species
+Porella sacata	(Busk, 1856)	Species
+Porella sacata sacata	(Busk, 1856)	Subspecies
+Porella sacata beringia	Kluge, 1929	Subspecies
+Porella minuta	(Norman, 1868)	Species
+Porella smitti	Kluge, 1907	Species
+Porella struma	(Norman, 1868)	Species
+Porella aperta	(Boeck, 1862)	Species
+Porella tumida	Kluge, 1955	Species
+Porella groenlandica	Norman, 1894	Species
+Porella princeps	Norman, 1903	Species
+Porella proboscidea	Hincks, 1888	Species
+Porella plana	Hincks, 1888	Species
+Porella laevis	(Fleming, 1828)	Species
+Smittina	Norman, 1903	Genus
+Smittina landsborovii	(Johnston, 1847)	Species
+Smittina arctica	(Wyville Thomson, 1858)	Species
+Smittina retifrons	(Wyville Thomson, 1858)	Species
+Smittina bella	(Wyville Thomson, 1858)	Species
+Smittina altirostris	(Wyville Thomson, 1858)	Species
+Smittina smittiella	(Wyville Thomson, 1858)	Species
+Smittina majuscula	(Smitt, 1868)	Species
+Smittina rigida	(Lorenz, 1886)	Species
+Smittina reticulata	(Macgillivray, 1842)	Species
+Lepralia reticulata	Macgillivray, 1842	Species
+Smittina minuscula	(Smitt, 1868)	Species
+Smittina peristomata	(Nordgaard, 1905)	Species
+Smittina glaciata	(Waters, 1900)	Species
+Smittina mucronata	(Smitt, 1868)	Species
+Smittina concinna	(Busk, 1854)	Species
+Smittina concinna concinna	(Busk, 1854)	Subspecies
+Smittina concinna belli	(Dawson, 1859)	Subspecies
+Smittina pseudoacutirostris	Gostilovskaya, 1957	Species
+Smittina muliebris	Kluge, 1962	Species
+Smittina smitti	(Kirchenpauer, 1874)	Species
+Smittina tuberosa	Kluge, 1952	Species
+Smittina beringia	Kluge, 1952	Species
+Smittina trispinosa	(Johnston, 1838)	Species
+Smittina jeddreysi	Norman, 1903	Species
+Smittina thompsoni	Kluge, 1955	Species
+Parasmittina	Osburn, 1952	Genus
+Parasmittina trispinosa	(Wyville Thomson, 1858)	Species
+Parasmittina jeffreysi	(Norman, 1876)	Species
+Parasmittina alaskensis	(Wyville Thomson, 1858)	Species
+Parasmittina nitida	(Wyville Thomson, 1858)	Species
+Parasmittina spathulata	(Wyville Thomson, 1858)	Species
+Parasmittina crosslandi	(Wyville Thomson, 1858)	Species
+Rhamphostomella	Lorenz, 1886	Genus
+Rhamphostomella costata	Lorenz, 1886	Species
+Rhamphostomella costata costata	Lorenz, 1886	Subspecies
+Rhamphostomella costata cristata	Hincks, 1889	Subspecies
+Rhamphostomella fortissima	(Wyville Thomson, 1858)	Species
+Rhamphostomella bilaminata	(Hincks, 1877)	Species
+Rhamphostomella bilaminata bilaminata	(Hincks, 1877)	Subspecies
+Rhamphostomella bilaminata sibirica	Kluge, 1929	Subspecies
+Rhamphostomella hincksi	Nordgaard, 1906	Species
+Rhamphostomella spinigera	Lorenz, 1886	Species
+Rhamphostomella ovata	(Smitt, 1868)	Species
+Rhamphostomella gigantea	(Wyville Thomson, 1858)	Species
+Rhamphostomella radiatula	(Hincks, 1977)	Species
+Rhamphostomella scabra	(Fabricius, 1780)	Species
+Eschara scabra	Fabricius, 1780	Species
+Rhamphostomella plicata	(Smitt, 1868)	Species
+Cystisella	(Wyville Thomson, 1858)	Genus
+Cystisella saccata	(Wyville Thomson, 1858)	Species
+Cystisella bicornis	(Wyville Thomson, 1858)	Species
+Hemicyclopora	Norman, 1894	Genus
+Hemicyclopora polita	(Norman, 1864)	Species
+Lepralia polita	Norman, 1864	Species
+Hemicyclopora emucronata	(Smitt, 1872)	Species
+Escharopsis	Verrill, 1880	Genus
+Escharopsis sarsi	(Smitt, 1868)	Species
+Escharopsis rosacea	(Busk, 1856)	Species
+Tubucellariidae	(Wyville Thomson, 1858)	Family
+Reteporidae	Smitt, 1868	Family
+Sertellidae	Jullien, 1903	Family
+Lepraliella	Levinsen, 1917	Genus
+Lepraliella contigua	(Smitt, 1868)	Species
+Cellepora ramulosa contigua	Smitt, 1868	Subspecies
+Rhynchozoon	Hincks, 1895	Genus
+Rhynchozoon bispinosum	(Johnston, 1847)	Species
+Rhynchozoon rostratum	Busk	Species
+Rhynchozoon tuberculatum	(Wyville Thomson, 1858)	Species
+Rhynchozoon spicatum	(Wyville Thomson, 1858)	Species
+Phidolopora	Gabb and Horn, 1862	Genus
+Phidolopora pacifica	(Wyville Thomson, 1858)	Species
+Schizotheca	(Wyville Thomson, 1858)	Genus
+Schizotheca fissa	(Wyville Thomson, 1858)	Species
+Sertella	Jullien, 1903	Genus
+Sertella beaniana	(King, 1846)	Species
+Sertella marsupiata	(Wyville Thomson, 1858)	Species
+Reteporellina	(Wyville Thomson, 1858)	Genus
+Reteporellina evelinae	(Wyville Thomson, 1858)	Species
+Retepora	Lamarck, 1801	Genus
+Retepora cellulosa	(Linnaeus, 1758)	Species
+Retepora reticulata	Lamarck, 1801	Species
+Retepora elongata	Smitt, 1868	Species
+Retepora beaniana	King, 1846	Species
+Retepora beaniana beaniana	King, 1846	Subspecies
+Retepora beaniana watersi	Nordgaard, 1907	Subspecies
+Adeonidae	Busk, 1884	Family
+Bracebridgia	(Wyville Thomson, 1858)	Genus
+Bracebridgia subsulcata	(Wyville Thomson, 1858)	Species
+Reptadeonella	(Wyville Thomson, 1858)	Genus
+Reptadeonella violacea	(Julien, 1903)	Species
+Adeonellopsis	Macgillivray, 1886	Genus
+Adeonellopsis tuberculata	(Busk, 1854)	Species
+Adeonellopsis lichenoides	Busk, 1854	Species
+Cheiloporinidae	(Wyville Thomson, 1858)	Family
+Cryptosula	(Wyville Thomson, 1858)	Genus
+Cryptosula pallasiana	(Wyville Thomson, 1858)	Species
+Hippaliosina	(Wyville Thomson, 1858)	Genus
+Hippaliosina rostrigera	(Wyville Thomson, 1858)	Species
+Tetraplaria	(Wyville Thomson, 1858)	Genus
+Tetraplaria dichotoma	(Wyville Thomson, 1858)	Species
+Parmulariidae	(Wyville Thomson, 1858)	Family
+Phylactelliporidae	(Wyville Thomson, 1858)	Family
+Phylactellidae	Canu and Bassler, 1930	Family
+Lagenipora	Hincks, 1877	Genus
+Lagenipora spinulosa	(Wyville Thomson, 1858)	Species
+Lagenipora socialis	(Wyville Thomson, 1858)	Species
+Crepidacanthidae	Levinsen, 1909	Family
+Crepidacantha	Levinsen, 1909	Genus
+Crepidacantha setigera	(Wyville Thomson, 1858)	Species
+Crepidacantha poissoni	(Wyville Thomson, 1858)	Species
+Crepidacantha poissoni teres	(Wyville Thomson, 1858)	Subspecies
+Crepidacantha poissoni poissoni	(Wyville Thomson, 1858)	Subspecies
+Celleporidae	Lamouroux, 1821	Family
+Celleporinidae	(Wyville Thomson, 1858)	Family
+Costazia	(Wyville Thomson, 1858)	Genus
+Costazia nordenskjoldi	(Wyville Thomson, 1858)	Species
+Costazia surcularis	(Wyville Thomson, 1858)	Species
+Costazia ventricosa	(Wyville Thomson, 1858)	Species
+Costazia robertsoniae	(Wyville Thomson, 1858)	Species
+Costazia procumbens	(Wyville Thomson, 1858)	Species
+Costazia ignota	(Wyville Thomson, 1858)	Species
+Omalosecosa	Canu and Bassler, 1925	Genus
+Omalosecosa ramulosa	(Linnaeus, 1767)	Species
+Turbicellepora	(Wyville Thomson, 1858)	Genus
+Turbicellepora dichotoma	(Wyville Thomson, 1858)	Species
+Turbicellepora canaliculata	(Wyville Thomson, 1858)	Species
+Celleporina	Gray, 1848	Genus
+Celleporina hassallii	(Johnston, 1847)	Species
+Trematoecia	(Wyville Thomson, 1858)	Genus
+Trematoecia turrita	(Wyville Thomson, 1858)	Species
+Buskea	Heller, 1867	Genus
+Buskea dichotoma	(Hincks, 1862)	Species
+Cellepora	Linnaeus, 1767	Genus
+Cellepora nordenskjoldi	Kluge, 1929	Species
+Cellepora surcularis	(Packard, 1863)	Species
+Cellepora ventricosa	Lorenz, 1886	Species
+Cellepora smitti	Kluge, 1962	Species
+Cellepora nodulosa	Lorenz, 1886	Species
+Cellepora pumicosa	Linnaeus, 1767	Species
+Cellepora canaliculata	Busk, 1886	Species
+Cellepora avicularis	Hincks, 1880	Species
+Cellepora ramulosa	Linnaeus, 1767	Species
+Pasytheidae	Vigneaux, 1949	Family
+Catenicellidae	Busk, 1852	Family
+Savignyellidae	(Wyville Thomson, 1858)	Family
+Savignyella	(Wyville Thomson, 1858)	Genus
+Savignyella lafonti	(Wyville Thomson, 1858)	Species
+Sclerodomidae	(Wyville Thomson, 1858)	Family
+Onchoporidae	(Wyville Thomson, 1858)	Family
+Euthyridellidae	(Wyville Thomson, 1858)	Family
+Bifaxariidae	(Wyville Thomson, 1858)	Family
+Mamilloporidae	(Wyville Thomson, 1858)	Family
+Mamillopora	(Wyville Thomson, 1858)	Genus
+Mamillopora cupula	(Wyville Thomson, 1858)	Species
+Orbituliporidae	(Wyville Thomson, 1858)	Family
+Sphaerulobryozoan	(Wyville Thomson, 1858)	Genus
+Sphaerulobryozoan pendunculatum	(Wyville Thomson, 1858)	Species
+Conescharellinidae	(Wyville Thomson, 1858)	Family
+Myriozoidae	Smitt, 1868	Family
+Myriozoum	Donati, 1750	Genus
+Myriozoum coarctatum	(Wyville Thomson, 1858)	Species
+Myriozoum subgracile	d'Orbigny, 1852	Species
+Myriozoella	(Wyville Thomson, 1858)	Genus
+Myriozoella plana	(Wyville Thomson, 1858)	Species
+Leieschara	M. Sars, 1863	Genus
+Leieschara coarctata	M. Sars, 1863	Species
+Leieschara orientalis	(Kluge, 1929)	Species
+Leieschara subgracilis	(D'orbigny, 1852)	Species
+Lekythoporidae	(Wyville Thomson, 1858)	Family
+Celleporariidae	(Wyville Thomson, 1858)	Family
+Celleporaria	Lamouroux, 1821	Genus
+Celleporaria albirostris	(Wyville Thomson, 1858)	Species
+Celleporaria brunnea	(Hincks, 1884)	Species
+Vittaticellidae	(Wyville Thomson, 1858)	Family
+Vittaticella	(Wyville Thomson, 1858)	Genus
+Vittaticella uberrima	(Wyville Thomson, 1858)	Species
+Vittaticella elegans	(Wyville Thomson, 1858)	Species
+Exechonellidae	Harmer, 1957	Family
+Triporula	(Wyville Thomson, 1858)	Genus
+Triporula stellata	(Wyville Thomson, 1858)	Species
+Porinidae	D'orbigny, 1852	Family
+Escharellidae	Levinsen, 1909	Family
+Gemellipora	(Wyville Thomson, 1858)	Genus
+Gemellipora glabra	(Wyville Thomson, 1858)	Species
+Escharella	Gray, 1848	Genus
+Escharella immersa	(Fleming, 1828)	Species
+Mucronella peachii	(Wyville Thomson, 1858)	Species
+Berenicea immersa	(Fleming, 1828)	Species
+Escharella immersa immersa	(Wyville Thomson, 1858)	Subspecies
+Escharella immersa labiosa	(Wyville Thomson, 1858)	Subspecies
+Escharella microstoma	(Norman, 1864)	Species
+Mucronella microstoma	(Wyville Thomson, 1858)	Species
+Mucronella labiata	(Wyville Thomson, 1858)	Species
+Escharella connectens	(Wyville Thomson, 1858)	Species
+Mucronella connectens	(Wyville Thomson, 1858)	Species
+Escharella ventricosa	(Wyville Thomson, 1858)	Species
+Mucronella ventricosa	(Hassall, 1842)	Species
+Escharella ventricosa ventricosa	(Hassall, 1842)	Subspecies
+Escharella ventricosa peristomata	(Hassall, 1842)	Subspecies
+Escharella variolosa	Johnston, 1838)	Species
+Escharella dijmphnae	(Kluge, 1929)	Species
+Escharella indivisa	Levinsen, 1916	Species
+Escharella laqueata	(Norman, 1864)	Species
+Escharella abyssicola	(Norman, 1869)	Species
+Escharella octodentata	(Hincks, 1880)	Species
+Escharella latodonta	Kluge, 1962	Species
+Escharella macrodonta	Levinsen, 1916	Species
+Hippopodina	(Wyville Thomson, 1858)	Genus
+Escharelloides	Kluge, 1962	Genus
+Escharelloides spinulifera	(Hincks, 1889)	Species
+Monoporella spinulifera	Hincks, 1889	Species
+Escharelloides cancellatum	(Smitt, 1868)	Species
+Escharelloides stenostoma	(Smitt, 1872)	Species
+Escharelloides simplex	(Kluge, 1955)	Species
+Lapralioides	Kluge, 1962	Genus
+Lapralioides nordlandica	(Nordgaard, 1905)	Species
+Phylactella	Hincks, 1879	Genus
+Phylactella labrosa	(Busk, 1854)	Species
+Lepralia labrosa	Busk, 1854	Species
+Phylactella labiata	(Boeck, 1868)	Species
+Phylactella pacifica	O, Donoghue, 1923	Species
+Smittinidae	Levinsen, 1909	Family
+Palmicellaria	Alder, 1864	Genus
+Palmicellaria skenei	(Ellis and Solander, 1755)	Species
+Millepora skenei	Ellis and Solander, 1755	Species
+Palmicellaria skenei skenei	(Ellis and Solander, 1755)	Subspecies
+Palmicellaria skenei tridens	(Busk, 1856)	Subspecies
+Palmicellaria skenei bicornis	(Busk, 1859)	Subspecies
+Pseudoflustra	Bidenkap, 1897	Genus
+Pseudoflustra solida	(Stimpson, 1854)	Species
+Flustra solida	Stimpson, 1854	Species
+Pseudoflustra anderssoni	Kluge, 1946	Species
+Pseudoflustra sinuosa	(Andersson, 1902)	Species
+Pseudoflustra birulai	Kluge, 1929	Species
+Waterisporidae	(Wyville Thomson, 1858)	Family
+Waterispora	Neviani, 1895	Genus
+Hippoponellidae	Kluge, 1962	Family
+Hippoponella	Canu and Bassler, 1920	Genus
+Hippoponella hippopus	(Smitt, 1868)	Species
+Lepralia hippopus	Smitt, 1868	Species
+Hippoponella fastigatoavicularis	(Kluge, 1955)	Species
+Hippopodinidae	Levinsen, 1909	Family
+Cheilopora	Levinsen, 1909	Genus
+Cheilopora sincera	(Smitt, 1868)	Species
+Cheilopora sincera sincera	(Smitt, 1868)	Subspecies
+Cheilopora sincera praelucida	(Hincks, 1888)	Subspecies
+Cheilopora inermis	(Busk, 1880)	Species
+Phylactolaemata	(Wyville Thomson, 1858)	Class
+Plumatellida	(Wyville Thomson, 1858)	Order
+Plumatellidae	(Wyville Thomson, 1858)	Family
+Plumatella	(Wyville Thomson, 1858)	Genus
+Plumatella repens	Linnaeus, 1785	Species
+Plumatella casmiana	Oka, 1907	Species
+Plumatella fruticosa	Allman, 1844	Species
+Plumatella emarginata	Allman, 1844	Species
+Plumatella fungosa	(Pallas)	Species
+Plumatella reticulata	Wood, 1988	Species
+Plumatella tanganyikae	(Annandale, 1911)	Species
+Stolella	(Wyville Thomson, 1858)	Genus
+Stolella indica	Annandale, 1909	Species
+Stolella evelinae	Marcus, 1941	Species
+Hyalinella	(Wyville Thomson, 1858)	Genus
+Hyalinella orbisperma	(Kellicott, 1882)	Species
+Plumatella orbisperma	Kellicott, 1882	Species
+Hyalinella punctata	(Hancock, 1850)	Species
+Plumatella punctata	Hancock, 1850	Species
+Hyalinella vaihiriae	Hastings, 1929	Species
+Cristatellidae	(Wyville Thomson, 1858)	Family
+Cristatella	(Wyville Thomson, 1858)	Genus
+Cristatella mucedo	Cuvier, 1798	Species
+Cristatella mucedo mucedo	Cuvier, 1798	Subspecies
+Cristatella mucedo idae	(Leidy, 1858)	Subspecies
+Cristatella idae	(Leidy, 1858)	Species
+Lophopodidae	(Wyville Thomson, 1858)	Family
+Lophopodella	(Wyville Thomson, 1858)	Genus
+Lophopodella carteri	(Hyatt, 1865)	Species
+Lophopodella carteri carteri	(Hyatt, 1865)	Subspecies
+Lophopodella carteri typica	Rogick	Subspecies
+Lophopus	(Wyville Thomson, 1858)	Genus
+Lophopus crystallinus	Pallas	Species
+Fredericellidae	(Wyville Thomson, 1858)	Family
+Fredericella	Allman, 1844	Genus
+Fredericella sultana	(Blumenbach, 1779)	Species
+Tubularia sultana	Blumenbach, 1779	Species
+Fredericella sultana sultana	(Blumenbach, 1779)	Subspecies
+Fredericella sultana crenulata	Marcus, 1946	Subspecies
+Fredericella sultana transcaucasica	(Abricossoff, 1927)	Subspecies
+Fredericella australiensis	Goddard	Species
+Pectinatellidae	(Wyville Thomson, 1858)	Family
+Pectinatella	(Wyville Thomson, 1858)	Genus
+Pectinatella magnifica	(Wyville Thomson, 1858)	Species
+Bugula californica	Robertson, 1905	Species
+Alysidota alderi	Busk, 1856	Species
+Lepralia auriculata	Hassall, 1842	Species
+Smittia lineata	Nordgaard, 1896	Species
+Escharella stylifera	Levinsen, 1887	Species
+Porella propingua	(Smitt, 1868)	Species
+Eschara verrucosa propingua	Smitt, 1868	Subspecies
+Porella obesa	Waters, 1900	Species
+Lepralia borealis	Waters, 1900	Species
+Schizoporella harmsworthi	Waters, 1900	Species
+Schizoporella ussowi	Kluge, 1908	Species
+Smittina reduplicata	(Wyville Thomson, 1858)	Species
+Alcyonidium diaphanum	Lamouroux, 1813	Species
+Alcyonidium kermadecense	Gordon, 1984	Species
+Elzerina	Lamouroux, 1816	Genus
+Elzerina blainvillii	Lamouroux, 1816	Species
+Elzerina badia	Gordon, 1984	Species
+Bantariella	Jebram, 1973	Genus
+Bantariella cookae	(Banta, 1968)	Species
+Mimosella cookae	Banta, 1968	Species
+Penetrantia	Silen, 1946	Genus
+Penetrantia densa	Silen, 1946	Species
+Penetrantia parva	Silen, 1946	Species
+Sertularia anguina	Linnaeus, 1758	Species
+Aetea australis	Jullien, 1888	Species
+Aetea lingulata	Busk, 1852	Species
+Flustra tuberculata	Bosc, 1802	Species
+Gregarinidra	Barroso, 1949	Genus
+Gregarinidra gregaria	(Heller, 1867)	Species
+Membranipora gregaria	Heller, 1867	Species
+Gregarinidra serrata	(Macgillivray, 1869)	Species
+Membranipora serrata	Macgillivray, 1869	Species
+Callopora precocialis	Gordon, 1984	Species
+Amphiblestrum alcimum	Gordon, 1984	Species
+Membranipora imbellis	Hincks, 1860	Species
+Alderina tuberosa	(Canu and Bassler, 1929)	Species
+Membraniporida tuberosa	Canu and Bassler, 1929	Species
+Aplousina nodulosa	Uttley, 1949	Species
+Crassimarginatella crassimarginata	(Hincks, 1880)	Species
+Crassimarginatella electra	Gordon, 1984	Species
+Crassimarginatella spathulata	Gordon, 1984	Species
+Crassimarginatella vincularia	Gordon, 1984	Species
+Crassimarginatella corbula	(Hincks, 1880)	Species
+Membranipora corbula	Hincks, 1880	Species
+Crassimarginatella spinosissima	Gordon, 1984	Species
+Crassimarginatella translucens	Gordon, 1984	Species
+Retevirgula aggregata	Gordon, 1984	Species
+Marssonopora	Lang, 1914	Genus
+Marssonopora dispersa	(Von Hagenow, 1839)	Species
+Cellepora dispersa	Von Hagenow, 1839	Species
+Marssonopora kermadecensis	Gordon, 1984	Species
+Ellisina	Norman, 1903	Genus
+Ellisina levata	(Hincks, 1882)	Species
+Membranipora levata	Hincks, 1882	Species
+Ellisina sericea	(Macgillivray, 1890)	Species
+Biflustra sericea	Macgillivray, 1890	Species
+Onychoblestrum	Gordon, 1984	Genus
+Onychoblestrum hastingsae	(Brown, 1952)	Species
+Amphiblestrum hastingsae	Brown, 1952	Species
+Flustra acanthina	Lamouroux, 1825	Species
+Chaperia multispinosa	Gordon, 1984	Species
+Pyrichaperia	Gordon, 1982	Genus
+Pyrichaperia pyriformis	(Canu and Bassler, 1929)	Species
+Chaperia pyriformis	Canu and Bassler, 1929	Species
+Chaperiopsis	Uttley, 1949	Genus
+Chaperiopsis galeata	(Busk, 1854)	Species
+Membranipora galeata	Busk, 1854	Species
+Chaperiopsis bispinosa	Gordon, 1984	Species
+Chaperiopsis boninensis	(Silen, 1941)	Species
+Chaperiopsis transversalis boninensis	Silen, 1941	Subspecies
+Chaperiopsis intermediata	Gordon, 1984	Species
+Chaperiopsis multifida	(Busk, 1884)	Species
+Membranipora galeata multifida	Busk, 1884	Subspecies
+Chaperiopsis rubida	(Hincks, 1881)	Species
+Membranipora rubida	Hincks, 1881	Species
+Chaperiopsis spiculata	Uttley, 1949	Species
+Chaperiopsis funda	(Uttley and Bullivant, 1972)	Species
+Clipeochaperia funda	Uttley and Bullivant, 1972	Species
+Hiantopora	Macgillivray, 1887	Genus
+Hiantopora ferox	(Macgillivray, 1868)	Species
+Lepralia ferox	Macgillivray, 1868	Species
+Hiantopora jucunda	Gordon, 1984	Species
+Arachnopusia	Jullien, 1888	Genus
+Arachnopusia monoceros	(Busk, 1854)	Species
+Lepralia monoceros	Busk, 1854	Species
+Arachnopusia perforata	(Maplestone, 1909)	Species
+Hiantopora perforata	Maplestone, 1909	Species
+Arachnopusia unicornis	(Hutton, 1873)	Species
+Eschara unicornis	Hutton, 1873	Species
+Briarachnia	Gordon, 1984	Genus
+Briarachnia robusta	Gordon, 1984	Species
+Flustra coriacea	Johnston, 1847	Species
+Micropora coriacea coriacea	(Johnston)	Subspecies
+Micropora coriacea inarmata	Soule, 1959	Subspecies
+Micropora elegans	Maplestone, 1901	Species
+Micropora rimulata	(Canu and Bassler, 1929)	Species
+Micropora mortenseni	Livingston, 1929	Species
+Eschara patellaria	Moll, 1803	Species
+Mollia multijuncta	(Waters, 1879)	Species
+Diachoris patellaria multijuncta	Waters, 1879	Subspecies
+Monoporella	Hincks, 1881	Genus
+Monoporella nodulifera	(Hincks, 1881)	Species
+Haploporella nodulifera	Hincks, 1881	Species
+Monoporella fimbriata carinifera	Canu and Bassler, 1929	Subspecies
+Manzonella	Jullien, 1888	Genus
+Manzonella exilis	(Manzoni, 1869)	Species
+Membranipora exilis	Manzoni, 1869	Species
+Manzonella monopia	(Brown, 1952)	Species
+Opaeophora lepida monopia	Brown, 1952	Subspecies
+Caleschara	Macgillivray, 1880	Genus
+Caleschara denticulata	(Macgillivray, 1868)	Species
+Eschara denticulata	Macgillivray, 1868	Species
+Caleschara levinseni	Harmer, 1926	Species
+Caleschara laxa	Canu and Bassler, 1929	Species
+Steganoporellidae	Hincks, 1884	Family
+Menbranipora magnilabris	Busk, 1854	Species
+Steginoporella magnifica	Harmer, 1900	Species
+Steginoporella neozelanica magnifica	Harmer, 1900	Subspecies
+Steginoporella neozelanica	(Busk, 1861)	Species
+Vincularia neozelanica	Busk, 1861	Species
+Thalamoporella rozieri	(Audouin, 1826)	Species
+Flustra rozieri	Audouin, 1826	Species
+Thalamoporella quadrata	Gordon, 1984	Species
+Thalamoporella stapifera	Levinsen, 1909	Species
+Farcimia sinuosa	Hassall, 1840	Species
+Cellaria humilis	Moyano, 1983	Species
+Cellaria tenuirostris	(Busk, 1852)	Species
+Salicornaria tenuirostris	Busk, 1852	Species
+Stomhypselosaria	Canu and Bassler, 1927	Genus
+Stomhypselosaria condylata	Canu and Bassler, 1927	Species
+Stomhypselosaria dupliforma	Canu and Bassler, 1929	Species
+Mesostomaria	Canu and Bassler, 1927	Genus
+Mesostomaria strictoramae	Canu and Bassler, 1927	Species
+Dendrobeania sessilis	Gordon, 1984	Species
+Cornucopina	Levinsen, 1909	Genus
+Cornucopina grandis	(Busk, 1852)	Species
+Bicellaria grandis	Busk, 1852	Species
+Cornucopina geniculata	Harmer, 1926	Species
+Brettiella	Gordon, 1984	Genus
+Brettiella ovicellata	Gordon, 1984	Species
+Beania mirabilis	Johnston, 1840	Species
+Beania bilaminata	(Hincks, 1881)	Species
+Diachoris bilaminata	Hincks, 1881	Species
+Beania cribrimorpha	Gordon, 1984	Species
+Beania discodermiae	(Ortmann, 1890)	Species
+Diachoseris discodermiae	Ortmann, 1890	Species
+Beania elongata	(Hincks, 1885)	Species
+Diachoris elongata	Hincks, 1885	Species
+Beania gigantavicularis	Gordon, 1984	Species
+Beania magellanica	(Busk, 1852)	Species
+Diachoris magellanica	Busk, 1852	Species
+Beania plurispinosa	Uttley and Bullivant, 1972	Species
+Cabereidae	Busk, 1852	Family
+Scrupocellaria maderensis	Busk, 1860	Species
+Caberea dichotoma	Lamouroux, 1816	Species
+Caberea darwinii	Busk, 1884	Species
+Caberea enzoi	Gordon, 1984	Species
+Caberea glabra	Macgillivray, 1886	Species
+Caberea helicina	Hastings, 1943	Species
+Caberea rostrata	Busk, 1884	Species
+Notoplites longispinosus	Gordon, 1984	Species
+Notoplites aviculariae	(Yanagi and Okada, 1918)	Species
+Notoplites marsupiatus	(Jullien, 1883)	Species
+Amastiga	Busk, 1852	Genus
+Amastiga nuda	Busk, 1852	Species
+Amastiga antarctica	(Kluge, 1914)	Species
+Amastiga antarctica antarctica	(Kluge, 1914)	Subspecies
+Amastiga antarctica subtropicalis	Gordon, 1984	Subspecies
+Emma	Gray, 1843	Genus
+Emma crystallina	Gray, 1843	Species
+Emma watersi	Hastings, 1939	Species
+Emma cervicornis watersi	Hastings, 1939	Subspecies
+Canda	Lamouroux, 1816	Genus
+Canda arachnoides	Lamouroux, 1816	Species
+Canda pecten	(Wyville Thomson, 1858)	Species
+Canda pecten pecten	(Wyville Thomson, 1858)	Subspecies
+Canda pecten scutata	Harmer, 1926	Subspecies
+Laricaria aegyptiacum	Audouin, 1826	Species
+Synnotum aviculare	Hincks, 1886	Species
+Lepralia nitida	Johnston, 1838	Species
+Membraniporella bifurcata	Powell, 1967	Species
+Membraniporella figularioides	Gordon, 1984	Species
+Reginella furcata	(Hincks, 1882)	Species
+Cribrilina furcata	Hincks, 1882	Species
+Reginella stolonifera	Gordon, 1984	Species
+Reginella vas	(Brown, 1954)	Species
+Figularia	Jullien, 1886	Genus
+Figularia figularis	(Johnston, 1847)	Species
+Lepralia figularis	Johnston, 1847	Species
+Figularia carinata	(Waters, 1923)	Species
+Figularia spinea	Brown, 1952	Species
+Figularia huttoni	Uttley and Bullivant, 1972	Species
+Puellina	Jullien, 1886	Genus
+Puellina gattyae	(Landsborough, 1852)	Species
+Lepralia gattyae	Landsborough, 1852	Species
+Puellina radiata	(Moll, 1803)	Species
+Puellina biavicularia	(Kataoka, 1961)	Species
+Puellina cribrilaria biavicularia	Kataoka, 1961	Subspecies
+Cribrilaria biavicularia	(Kataoka, 1961)	Species
+Puellina innominata	(Couch, 1844)	Species
+Puellina cribrilaria innominata	(Couch, 1844)	Subspecies
+Lepralia innominata	Couch, 1844	Species
+Cribrilaria innominata	(Couch, 1844)	Species
+Quadricellariidae	Gordon, 1984	Family
+Quadricellaria	D'Orbigny, 1851	Genus
+Quadricellaria elegans	D'Orbigny, 1851	Species
+Quadricellaria bocki	(Silen, 1941)	Species
+Nelliella bocki	Silen, 1941	Species
+Petalostegidae	Gordon, 1984	Family
+Petalostegus	Levinsen, 1909	Genus
+Petalostegus bicornis	(Busk, 1884)	Species
+Catenaria bicornis	Busk, 1884	Species
+Macroporidae	Uttley, 1949	Family
+Macropora	Macgillivray, 1895	Genus
+Macropora centralis	Macgillivray, 1895	Species
+Macropora grandis	(Hutton, 1873)	Species
+Lepralis grandis	Hutton, 1873	Species
+Macropora waimatukuensis trisinuata	Uttley, 1949	Subspecies
+Hippothoa divaricata pacifica	Gordon, 1984	Subspecies
+Hippothoa calciophilia	Gordon, 1984	Species
+Hippothoa peristomata	Gordon, 1984	Species
+Flustra brongniartii	Audouin, 1826	Species
+Chorizopora ferocissima	Gordon, 1984	Species
+Chorizopora spicata	Gordon, 1984	Species
+Celleporella	Gray, 1848	Genus
+Celleporella hyalina	(Linnaeus, 1767)	Species
+Celleporella delta	(Ryland and Gordon, 1977)	Species
+Gigantopora	Ridley, 1881	Genus
+Gigantopora lyncoides	Ridley, 1881	Species
+Gigantopora polymorpha	(Busk, 1884)	Species
+Gephyrophora polymorpha	Busk, 1884	Species
+Gigantopora proximalis	Gordon, 1984	Species
+Gigantopora pupa	(Jullien, 1929)	Species
+Gigantopora brevicapitata	Canu and Bassler, 1929	Species
+Emballotheca quadrata	(Macgillivray, 1880)	Species
+Eschara quadrata	Macgillivray, 1880	Species
+Emballotheca monomorpha	Gordon, 1984	Species
+Lepralia auriculata	Hassall, 1842	Species
+Schizomavella neptuni	(Jullien, 1883)	Species
+Schizoporella neptuni	Jullien, 1883	Species
+Schizomavella punctigera	(Macgillivray, 1883)	Species
+Schizoporella punctigera	Macgillivray, 1883	Species
+Lacerna minuta	Uttley and Bullivant, 1972	Species
+Schizomavella schizoporelloides	Gordon, 1984	Species
+Flustra cecilii	Audouin, 1826	Species
+Lepralia porcellana	Busk, 1860	Species
+Cleidochasma protrusa	(Thornely, 1905)	Species
+Gemellipora protrusa	Thornely, 1905	Species
+Eschara vulgaris	Moll, 1803	Species
+Hippothoa pes-anseris	Smitt, 1873	Species
+Escharina waiparaensis	Brown, 1952	Species
+Metroperiella	Canu and Bassler, 1917	Genus
+Metroperiella lapralioides	(Calvet, 1903)	Species
+Schizoporella lapralioides	Calvet, 1903	Species
+Metroperiella triangula	(Hincks, 1881)	Species
+Schizoporella triangula	Hincks, 1881	Species
+Chiastosella	Canu and Bassler, 1934	Genus
+Chiastosella daedala	(Macgillivray, 1882)	Species
+Schizoporella daedala	Macgillivray, 1882	Species
+Chiastosella longaevitas	Powell, 1967	Species
+Nimba	Jullien, 1903	Genus
+Nimba praetexta	Jullien, 1903	Species
+Nimba terraenovae	(Powell, 1967)	Species
+Schizoporella terraenovae	Powell, 1967	Species
+Rogicka	Uttley and Bullivant, 1972	Genus
+Rogicka biserialis	(Hincks, 1885)	Species
+Schizoporella biserialis	Hincks, 1885	Species
+Rogicka oceanica	Gordon, 1984	Species
+Phonicosia	Jullien, 1888	Genus
+Phonicosia jousseaumei	Jullien, 1888	Species
+Phonicosia circinata	(Macgillivray, 1869)	Species
+Lepralia circinata	Macgillivray, 1869	Species
+Cribellopora	Gautier, 1957	Genus
+Cribellopora trichotoma	(Waters, 1918)	Species
+Schizoporella trichotoma	Waters, 1918	Species
+Cribellopora simplex	Gautier, 1957	Species
+Lacerna	Jullien, 1888	Genus
+Lacerna hosteensis	Jullien, 1888	Species
+Lacerna problematica	Gordon, 1984	Species
+Buffonellodes	Strand, 1928	Genus
+Buffonellodes rimosa	(Jullien, 1888)	Species
+Buffonellodes marsupifera	(Busk, 1884)	Species
+Schizoporella marsupifera	Busk, 1884	Species
+Buffonellodes ridleyi	(Macgillivray, 1883)	Species
+Schizoporella ridleyi	Macgillivray, 1883	Species
+Schizoporella rhomboidalis	Powell, 1967	Species
+Schizosmittina	Vigneaux, 1949	Genus
+Schizosmittina planovicellata	Vigneaux, 1949	Species
+Schizosmittina maplestonei	(Macgillivray, 1897)	Species
+Lepralia maplestonei	Macgillivray, 1897	Species
+Schizoporella cinctipora	Hincks, 1883	Species
+Schizoporella speciosa	Macgillivray, 1890	Species
+Hippomonavella	Canu and Bassler, 1934	Genus
+Hippomonavella praeclara	(Macgillivray, 1895)	Species
+Lepralia praeclara	Macgillivray, 1895	Species
+Hippomonavella gymnae	Gordon, 1984	Species
+Smittoidea	Osburn, 1952	Genus
+Smittoidea prolifica	Osburn, 1952	Species
+Smittoidea curtisensis	Gordon, 1984	Species
+Smittoidea hyalina	Gordon, 1984	Species
+Smittoidea magna	Gordon, 1984	Species
+Smittoidea zelandiae	(Brown, 1952)	Species
+Smittinella zealandiae	Brown, 1952	Species
+Hemismittoidea	Soule and Soule, 1973	Genus
+Hemismittoidea corallinea	Soule and Soule, 1973	Species
+Hemismittoidea hexaspinosa	(Uttley and Bullivant, 1972)	Species
+Parasmittina hexaspinosa	Uttley and Bullivant, 1972	Species
+Porelloides	Hayward, 1979	Genus
+Porelloides laevis	(Fleming, 1828)	Species
+Cellepora laevis	Fleming, 1828	Species
+Porelloides glabra	Gordon, 1984	Species
+Hippoporina pertusa	(Esper, 1796)	Species
+Cellepora pertusa	Esper, 1796	Species
+Hippoporina cincta	(Hincks, 1885)	Species
+Lepralia cincta	Hincks, 1885	Species
+Hippoporina epaxia	Gordon, 1984	Species
+Hippoporina burlingtoniensis	(Waters, 1882)	Species
+Hippoporina rostrata	(Macgillivray, 1887)	Species
+Schizoporella rostrata	Macgillivray, 1887	Species
+Lepralia lancifera	Hincks, 1891	Species
+Codonellina	Bassler, 1934	Genus
+Codonellina galeata	(Busk, 1854)	Species
+Lepralia galeata	Busk, 1854	Species
+Codonellina montferrandii	(Audouin, 1826)	Species
+Flustra montferrandii	Audouin, 1826	Species
+Hippomenella	Canu and Bassler, 1917	Genus
+Hippomenella mucronelliformis	(Waters, 1899)	Species
+Lepralia mucronelliformis	Waters, 1899	Species
+Hippomenella vellicata	(Hutton, 1873)	Species
+Lepralia vellicata	Hutton, 1873	Species
+Hippothyris	Osburn, 1952	Genus
+Hippothyris emplastra	Osburn, 1952	Species
+Hippothyris aganactete	Gordon, 1984	Species
+Escharoides angela	(Hutton, 1873)	Species
+Lepralia angela	Hutton, 1873	Species
+Escharoides excavata	(Macgillivray, 1860)	Species
+Lepralia excavata	Macgillivray, 1860	Species
+Escharoides sauroglossa	Levinsen, 1909	Species
+Smittina foliaceana	Okada and Mawatari, 1938	Species
+Exochella tricuspis	(Hincks, 1881)	Species
+Mucronella tricuspis	Hincks, 1881	Species
+Elleschara	Gordon, 1984	Genus
+Elleschara bensoni	(Brown, 1954)	Species
+Lepralia bensoni	Brown, 1954	Species
+Lepralia marsupiata	Busk, 1860	Species
+Microporella agonistes	Gordon, 1984	Species
+Microporella normani	Canu and Bassler, 1928	Species
+Microporella discors	Uttley and Bullivant, 1972	Species
+Microporella intermedia	Livingstone, 1929	Species
+Microporella flabellaris intermedia	Livingstone, 1929	Subspecies
+Microporella ciliata intermedia	Livingstone, 1929	Subspecies
+Microporella lineata	Canu and Bassler, 1929	Species
+Microporella orientalis	Harmer, 1957	Species
+Cellepora malusii	Audouin, 1826	Species
+Fenestrulina malusii incompta	Gordon, 1984	Subspecies
+Fenestrulina malusii pulchra	Gordon, 1984	Subspecies
+Fenestrulina catastictos	Gordon, 1984	Species
+Fenestrulina reticulata	Powell, 1967	Species
+Fenestrulina infundibulipora	Canu and Bassler, 1929	Species
+Fenestrulina disjuncta	(Hincks, 1885)	Species
+Microporella malusii disjuncta	Hincks, 1885	Subspecies
+Microporella malusii thyreophora	(Busk, 1857)	Subspecies
+Lepralia thyreophora	Busk, 1857	Species
+Calloporina	Neviani, 1895	Genus
+Calloporina decorata	(Reuss, 1848)	Species
+Cellepora decorata	Reuss, 1848	Species
+Calloporina angustipora	(Hincks, 1885)	Species
+Microporella diadema angustipora	Hincks, 1885	Subspecies
+Calloporina triporosa	Powell, 1967	Species
+Calloporina biavicularia	Kataoka, 1961	Species
+Tenthrenulina	Gordon, 1984	Genus
+Tenthrenulina dispar	Gordon, 1984	Species
+Eurystomella foraminigera	(Hincks, 1883)	Species
+Lepralia foraminigera	Hincks, 1883	Species
+Eurystomella crystallina	Gordon, 1984	Species
+Porella marsupium	(Macgillivray, 1869)	Species
+Lepralia marsupium	Macgillivray, 1869	Species
+Lepralia landsborovii	Johnston, 1847	Species
+Smittina punctata	Powell, 1967	Species
+Smittina rosacea	Powell, 1967	Species
+Smittina spiraminifera	Gordon, 1984	Species
+Smittina torques	Powell, 1967	Species
+Lepralia jeffreysi	Norman, 1876	Species
+Parasmittina delicatula	(Busk, 1884)	Species
+Mucronella delicatula	Busk, 1884	Species
+Smittina unispinosa	Waters, 1889	Species
+Smittina aviculata	Mawatari, 1952	Species
+Parasmittina serrula	Soule and Soule, 1973	Species
+Parasmittina tropica	(Waters, 1909)	Species
+Smittia tropica	Waters, 1909	Species
+Parasmittina tubula	(Kirkpatrick, 1888)	Species
+Smittia tubula	Kirkpatrick, 1888	Species
+Rhamphostomella rogickae	(Brown, 1958)	Species
+Smittina rogickae	Brown, 1958	Species
+Lepraliella mooraboolensis	(Macgillivray, 1895)	Species
+Mucronella mooraboolensis	Macgillivray, 1895	Species
+Lepraliella multidentata	(Thornely, 1905)	Species
+Lepralia multidentata	Thornely, 1905	Species
+Lepralia bispinosa	Johnston, 1847	Species
+Rhynchozoon angulatum	Levinsen, 1909	Species
+Rhynchozoon crenulatum	(Waters, 1887)	Species
+Rhynchopora crenulatum	Waters, 1887	Species
+Rhynchozoon paa	Uttley and Bullivant, 1972	Species
+Rhynchozoon tubulosum	(Hincks, 1880)	Species
+Mucronella tubulosum	Hincks, 1880	Species
+Sertella concinna	Gordon, 1984	Species
+Sertella malleatia	Gordon, 1984	Species
+Brodiella	Uttley and Bullivant, 1972	Genus
+Brodiella longispinata	(Busk, 1884)	Species
+Schizoporella longispinata	Busk, 1884	Species
+Schizoporella scintillans	Kincks, 1885	Species
+Schizoporella scissa	Brown, 1952	Species
+Schizoporella butleri	Brown, 1952	Species
+Adeonellopsis foliacea	Macgillivray, 1886	Species
+Adeonellopsis yarraensis	(Waters, 1881)	Species
+Microporella yarraensis	Waters, 1881	Species
+Adeonellopsis pentapora	Canu and Bassler, 1929	Species
+Crepidacantha crinispina	Levinsen, 1909	Species
+Crepidacantha poissoni crinispina	Levinsen, 1909	Subspecies
+Crepidacantha bracebridgei	Brown, 1954	Species
+Lepralia hassallii	Johnston, 1847	Species
+Celleporina costazii	(Audouin, 1826)	Species
+Cellepora costazii	Audouin, 1826	Species
+Celleporina spatula	(Macgillivray, 1885)	Species
+Cellepora costazii spatula	Macgillivray, 1885	Subspecies
+Galeopsis	Jullien, 1903	Genus
+Galeopsis	Jullien, 1903	Genus
+Galeopsis rabidus	Jullien, 1903	Species
+Galeopsis pentagonus	(D'orbigny, 1847)	Species
+Vincularia pentagona	D'orbigny, 1847	Species
+Pustulipora porcellanica	Hutton, 1873	Species
+Haswellia auriculata	Busk, 1884	Species
+Galeopsis polyporus	(Brown, 1952)	Species
+Spiroporina polyporus	Brown, 1952	Species
+Buffonellaria	Canu and Basler, 1917	Genus
+Buffonellaria divergens	(Smitt, 1873)	Species
+Hippothoa divergens	Smitt, 1873	Species
+Buffonellaria biavicularis	(Powell, 1967)	Species
+Christinella biavicularis	Powell, 1967	Species
+Buffonellaria christinelloides	Gordon, 1984	Species
+Buffonellaria depressa	(Phillips, 1900)	Species
+Schizoporella depressa	Phillips, 1900	Species
+Buffonellaria loculifera	Canu and Bassler, 1929	Species
+Buffonellaria regenerata	(Powell, 1967)	Species
+Stephanosella regenerata	Powell, 1967	Species
+Lagenipora lepralioides	(Norman, 1868)	Species
+Celleporella lepralioides	Norman, 1868	Species
+Lagenipora crenulata	Gordon, 1984	Species
+Lagenipora ferocissima	Gordon, 1984	Species
+Lagenipora hemiperistomata	Gordon, 1984	Species
+Lagenipora laevissima	Gordon, 1984	Species
+Osthimosia	Jullien, 1888	Genus
+Osthimosia eatonensis	(Busk, 1881)	Species
+Cellepora eatonensis	Busk, 1881	Species
+Osthimosia evexa	Jullien, 1888	Species
+Osthimosia bicornis	(Busk, 1881)	Species
+Cellepora bicornis	Busk, 1881	Species
+Osthimosia otopeta	Jullien, 1888	Species
+Osthimosia imperforata	Gordon, 1984	Species
+Osthimosia incomposita	Gordon, 1984	Species
+Osthimosia virgula	Gordon, 1984	Species
+Catenicella	de Blainville, 1830	Genus
+Catenicella contei	(Audouin, 1826)	Species
+Eucratea contei	Audouin, 1826	Species
+Catenicella elegans	Busk, 1852	Species
+Catenicella venusta	Macgillivray, 1887	Species
+Pterocella	Levinsen, 1909	Genus
+Pterocella alata	(Wyville Thomson, 1858)	Species
+Cantenicella alata	Wyville Thomson, 1858	Species
+Orthoscuticella	Wass and Yoo, 1976	Genus
+Orthoscuticella lorica	(Busk, 1852)	Species
+Catenicella lorica	Busk, 1852	Species
+Celleporaria cristata	(Lamarck, 1816)	Species
+Cellepora cristata	Lamarck, 1816	Species
+Celleporaria tridenticulata	(Busk, 1881)	Species
+Cellepora tridenticulata	Busk, 1881	Species
+Exochella dubia	Livinstone, 1929	Species
+Exechonella grandis	(Duvergier, 1921)	Species
+Cyclicopora grandis	Duvergier, 1921	Species
+Exechonella tuberculata	(Macgillivray, 1883)	Species
+Lagenipora tuberculata	Macgillivray, 1883	Species
+Coleopora erinacea	Canu and Bassler, 1929	Species
+Haswellina	Livingstone, 1928	Genus
+Haswellina australiensis	(Haswell, 1881)	Species
+Myriozoum australiensis	Haswell, 1881	Species
+Haswellina multiaviculata	Gordon, 1984	Species
+Escharella incudifera	Gordon, 1984	Species
+Petraliellidae	Harmer, 1957	Family
+Discopora	Lamarck, 1816	Genus
+Discopora verrucosa	Lamarck, 1816	Species
+Discopora intermediata	Gordon, 1984	Species
+Teuchoporidae	Neviani, 1895	Family
+Lagenicella	Cheetham and Sandberg, 1964	Genus
+Lagenicella marginata	(Canu and Bassler, 1930)	Species
+Lagenipora marginata	Canu and Bassler, 1930	Species
+Lagenicella exallos	Gordon, 1984	Species
+Lagenicella lacunosa	(Bassler, 1934)	Species
+Laginipora lacunosa	Bassler, 1934	Species
+Inversiulidae	Vigneaux, 1949	Family
+Inversiula	Jullien, 1888	Genus
+Inversiula nutrix	Jullien, 1888	Species
+Inversiula fertilis	Powell, 1967	Species
+Calwelliidae	Macgillivray, 1887	Family
+Calwellia	Wyville Thomson, 1858	Genus
+Calwellia bicornis	Wyville Thomson, 1858	Species
+Calwellia sinclairii	(Busk, 1857)	Species
+Animalia	(Wyville Thomson, 1858)	Kingdom
+Alcyonella	Lamarck, 1816	Genus
+Alecto	Lamouroux, 1821	Genus
+Alysidota	Busk, 1856	Genus
+Alcyonidium cellaroides	Calvet, 1900	Species
+Arachnidium fibrosum	Hincks, 1880	Species
+Bulbella	Braem, 1951	Genus
+Bulbella abscondita	Braem, 1951	Species
+Nolella pusilla	(Hincks, 1880)	Species
+Monobryozoontidae	(Wyville Thomson, 1858)	Family
+Monobryozoon	Remane, 1936	Genus
+Monobryozoon ambulans	Remane, 1936	Species
+Amathia pruvoti	Calvet, 1911	Species
+Amathia guernseii	Chimonides, 1987	Species
+Amathia intermedis	Chimonides, 1987	Species
+Bowerbankia citrina	(Hincks, 1877)	Species
+Bowerbankia gracillima	(Hincks, 1877)	Species
+Vesicularia spinosa	(Linnaeus, 1767)	Species
+Spathiporidae	(Wyville Thomson, 1858)	Family
+Spathipora	Fischer, 1866	Genus
+Spathipora sertum	Fischer, 1866	Species
+Walkeria	Fleming, 1823	Genus
+Walkeria uva	(Linnaeus, 1758)	Species
+Mimosella	Hincks, 1851	Genus
+Mimosella gracilis	Hincks, 1851	Species
+Mimosella verticillata	(Heller, 1867)	Species
+Hypophorellidae	(Wyville Thomson, 1858)	Family
+Hypophorella	Ehlers, 1876	Genus
+Hypophorella expansa	Ehlers, 1876	Species
+Penetrantia concharum	Silen, 1946	Species
+Immergentia	Silen, 1946	Genus
+Immergentia suecica	Silen, 1947	Species
+Crisia ramosa	Harmer, 1891	Species
+Crisia calyptostoma	Hayward and Ryland, 1978	Species
+Crisia klugei	Ryland, 1967	Species
+Tubulipora lobifera	Hastings, 1963	Species
+Tubulipora phalangea	Couch, 1844	Species
+Tubulipora plumosa	Thompson In Harmer, 1898	Species
+Oncousoecia dilatans	(Johnson, 1847)	Species
+Entalophoroecia	(Wyville Thomson, 1858)	Genus
+Entalophoroecia deflexa	(Couch, 1842)	Species
+Plagioecia sarniensis	(Norman, 1864)	Species
+Coronopora	J. E. Gray, 1848	Genus
+Coronopora truncata	(Fleming, 1828)	Species
+Electra monostachys	(Busk, 1854)	Species
+Chartella	J. E. Gray, 1848	Genus
+Chartella barleei	(Busk, 1860)	Species
+Chartella papyracea	(Ellis and Solander, 1786)	Species
+Hincksina flustroides	(Hincks, 1877)	Species
+Callopora discreta	(Hincks, 1862)	Species
+Callopora rylandi	Bobin and Prenant, 1965	Species
+Amphiblestrum solidum	(Packard, 1860)	Species
+Copidozoum exiguum	(Barroso, 1920)	Species
+Copidozoum planum	(Hincks, 1880)	Species
+Crassimarginatella solidula	(Hincks, 1860)	Species
+Micropora normani	Levinsen, 1909	Species
+Mollia rosselii	(Audouin, 1826)	Species
+Calpensia	Jullien, 1888	Genus
+Calpensia nobilis	(Esper, 1796)	Species
+Setosella	Hincks, 1877	Genus
+Setosella vulnerata	(Busk, 1860)	Species
+Lagarozoum	(Wyville Thomson, 1858)	Genus
+Cellaria salicornioides	Lamouroux, 1816	Species
+Bugula purpurotincta	Norman, 1868	Species
+Bugula simplex	Hincks, 1886	Species
+Beania intermedia	(Hinks, 1881)	Species
+Scrupocellaria inermis	Norman, 1867	Species
+Scrupocellaria reptans	(Linnaeus, 1767)	Species
+Notoplites damicornis	Hayward and Ryland, 1978	Species
+Notoplites evocata	(Jullien, 1882)	Species
+Notoplites harmeri	Ryland, 1963	Species
+Epistomia	Fleming, 1828	Genus
+Epistomia bursaria	(Linnaeus, 1758)	Species
+Puellina setosa	(Waters, 1899)	Species
+Puellina venusta	Canu and Bassler, 1925	Species
+Puellina bifida	(D'hondt, 1970)	Species
+Puellina modica	Bishop and Househam, 1987	Species
+Puellina praecox	Bishop and Househam, 1987	Species
+Puellina directa	Bishop and Househam, 1987	Species
+Puellina arrecta	Bishop and Househam, 1987	Species
+Puellina corbula	Bishop and Househam, 1987	Species
+Haplopoma bimucronatum	(Moll, 1879)	Species
+Haplopoma graniferum	(Johnston, 1847)	Species
+Haplopoma planum	Ryland, 1963	Species
+Haplopoma sciaphilum	Silen and Harmelin, 1976	Species
+Plesiothoa	Gordon and Hastings, 1979	Genus
+Plesiothoa gigerium	(Ryland and Gordon, 1977)	Species
+Umbonula ovicellata	Hastings, 1944	Species
+Schizoporella dunkeri	(Reuss, 1848)	Species
+Schizoporella longirostris	Hincks, 1886	Species
+Schizoporella magnifica	Hincks, 1886	Species
+Schizomavella auriculata cuspida	(Hincks, 1880)	Subspecies
+Schizomavella linearis linearis	(Wyville Thomson, 1858)	Subspecies
+Schizomavella linearis hastata	(Hincks, 1862)	Subspecies
+Schizomavella cristata	(Hincks, 1879)	Species
+Schizomavella discoidea	(Busk, 1859)	Species
+Schizomavella hastiformis	Hayward and Ryland, 1978	Species
+Schizomavella umbonata	(Busk, 1860)	Species
+Escharina alderi	(Busk, 1856)	Species
+Escharina dutertrei	(Audouin, 1826)	Species
+Escharina hyndmanni	(Johnston, 1847)	Species
+Escharina johnstoni	(Quelch, 1884)	Species
+Smittoidea amplissima	Hayward, 1979	Species
+Smittoidea marmorea	(Hincks, 1877)	Species
+Smittoidea reticulata	(Macgillivray, 1842)	Species
+Porelloides struma	(Norman, 1868)	Species
+Phaeostachys	Hayward, 1979	Genus
+Phaeostachys spinifera	(Johnston, 1847)	Species
+Hippoporidra lusitania	Taylor and Cook, 1981	Species
+Escharoides mamillata	(Wood, 1844)	Species
+Diporula	Hincks, 1879	Genus
+Diporula verrucosa	(Peach, 1868)	Species
+Porella alba	Nordgaard, 1906	Species
+Porella patula	(M. Sars, 1851)	Species
+Smittina affinis	(Hincks, 1862)	Species
+Smittina crystallina	(Norman, 1867)	Species
+Hemicyclopora microstoma	(Norman, 1864)	Species
+Prenantia	Gautier, 1962	Genus
+Prenantia bella	(Busk, 1860)	Species
+Prenantia cheilostoma	(Manzoni, 1969)	Species
+Schizotheca divisa	(Norman, 1864)	Species
+Brodiella armata	(Hincks, 1862)	Species
+Reteporella	(Wyville Thomson, 1858)	Genus
+Reteporella couchii	(Hincks, 1878)	Species
+Reteporella septentrionalis	(Harmer, 1933)	Species
+Turbicellepora avicularis	(Hincks, 1860)	Species
+Turbicellepora magnicostata	(Barroso, 1919)	Species
+Turbicellepora smitti	(Kluge, 1962)	Species
+Celleporina decipiens	Hayward, 1976	Species
+Celleporina tubulosa	(Hincks, 1880)	Species
+Buskea quincuncialis	(Norman, 1867)	Species
+Lagenipora pygmaea	(Norman, 1868)	Species
+Anarthropora	Smitt, 1868	Genus
+Anarthropora monodon	(Busk, 1860)	Species
+Escharella klugei	Hayward, 1979	Species
+Escharella labiosa	(Busk, 1856)	Species
+Phylactellipora	Bassler, 1953	Genus
+Phylactellipora collaris	(Norman, 1867)	Species
+Phylactellipora eximia	(Hincks, 1860)	Species
+Palmicellaria elegans	Alder, 1864	Species
+Watersiporidae	(Wyville Thomson, 1858)	Family
+Watersipora	Neviani, 1895	Genus
+Watersipora complanata	(Norman, 1864)	Species
+Cryptosulidae	(Wyville Thomson, 1858)	Family
+Cleidochasmatidae	(Wyville Thomson, 1858)	Family
+Hippopodinella	(Wyville Thomson, 1858)	Genus
+Tessaradomidae	(Wyville Thomson, 1858)	Family
+Tessaradoma boreale	(Busk, 1860)	Species
+Beania hirtissima	(Heller, 1867)	Species
+Phidolopora labiata	Gabb and Horn, 1862	Species
