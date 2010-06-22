@@ -198,7 +198,7 @@ function getParentById($cid, $crank, $ranks, $taxonarray) {
  * the array $bryan_valid.
  */
 $bryan_valid = array();
-readBryanFile('../../bryan/sheets/valid.txt', &$bryan_valid);
+readBryanFile('../../bryan/sheets/valid.tab', &$bryan_valid);
 
 /*
  * Print the number of entries in each rank.
