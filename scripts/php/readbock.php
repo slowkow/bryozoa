@@ -63,8 +63,8 @@ function readBockFile($filename, $taxonarray, $header=TRUE) {
 }
 
 /**
- * Print the first word of each name and the number of times it occurs in the
- * array.
+ * Print the first word of each name (the genus) and the number of times it
+ * occurs in the array.
  * 
  * @param taxonarray
  *   An array that holds Bock-type data
@@ -75,7 +75,7 @@ function printGenusCount($taxonarray) {
     $genus = strtok($record['name'], " \t");
     $genus_count[$genus] += 1;
   }
-  ksort($genus_count);
+  arsort($genus_count);
   foreach ($genus_count as $genus => $count) {
     print("$genus\t$count\n");
   }
@@ -102,4 +102,5 @@ function printWeirdNames($taxonarray) {
 
 $bock_array = array();
 readBockFile('../../bock/Jun2010/Bryozoans.tab', &$bock_array);
-printWeirdNames($bock_array);
+//printWeirdNames($bock_array);
+printGenusCount($bock_array);
