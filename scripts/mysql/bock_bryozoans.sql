@@ -22,15 +22,9 @@ SET max_error_count=1000;
 /*
 load the tab-delimited file into the database, ignore the header line
 */
-/* LOAD DATA LOCAL INFILE '../../bock/Jun2010/Bryozoans_mysql.tab' INTO TABLE `bryozoans` IGNORE 1 LINES; */
-LOAD DATA LOCAL INFILE '../../bock/Jun2010/Bryozoans_mistakes.tab' INTO TABLE `bryozoans` IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '../../bock/Jun2010/Bryozoans_mysql.tab' INTO TABLE `bryozoans` IGNORE 1 LINES;
 
 /*
 let's see those warnings
 */
 SHOW WARNINGS;
-
-/*
-let's do the same for CURRENTSPECIES_mysql.tab
-*/
-/* CREATE TABLE `bryozoans` (`id` INT,`name` VARCHAR(512),`pid` INT,`author` VARCHAR(512),`details` VARCHAR(6000),`comments` VARCHAR(512),`age` VARCHAR(255),`original` INT,`valid` INT,`delete` INT,`date_created` DATE,`date_modified` DATE,`newcode` VARCHAR(512),`status` VARCHAR(512),`othername` VARCHAR(512) ); */
