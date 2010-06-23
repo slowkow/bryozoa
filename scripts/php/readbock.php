@@ -9,7 +9,7 @@
  */
 
 // Bock's file is large, we need room
-ini_set("memory_limit","80M");
+ini_set("memory_limit","800M");
 
 /**
  * Read a Bock-type file into an array. Set $header to TRUE if the file
@@ -49,14 +49,28 @@ function readBockFile($filename, $taxonarray, $header=TRUE) {
       $valid, $delete, $date_created, $date_modified, $newcode, $status,
       $othername) = explode("\t", $row);
     
-    if (!$name) {
-      continue;
-    }
+    //if (!$id || !$name || !$pid || !$author || !$details || !$comments || !$age
+    //  || !$original || !$valid || !$delete || !$date_created || !$date_modified
+    //  || !$newcode || !$status || !$othername) {
+    //  continue;
+    //}
     
     $taxonarray[] = array(
+      'id' => $id,
       'name' => $name,
-      'id'   => $id,
-      'pid'  => $pid,
+      'pid' => $pid,
+      'author' => $author,
+      'details' => $details,
+      'comments' => $comments,
+      'age' => $age,
+      'original' => $original,
+      'valid' => $valid,
+      'delete' => $delete,
+      'date_created' => $date_created,
+      'date_modified' => $date_modified,
+      'newcode' => $newcode,
+      'status' => $status,
+      'othername' => $othername,
     );
   }
   fclose($file1);
@@ -88,12 +102,38 @@ function printGenusCount($taxonarray) {
  *   An array that holds Bock-type data
  */
 function printWeirdNames($taxonarray) {
+  $names = array();
+  //print("name\tvalid\tid\tpid\tdetails\tauthor\tdelete");
   foreach ($taxonarray as $key => $record) {
     $name = $record['name'];
     if (preg_match("/[^A-Za-z ]/", $name)) {
       print($name . "\n");
+/*
+      $names[] = $name . "\t" . $record['valid']
+        . "\t" . $record['id'] . "\t" . $record['pid'] . "\t" . $record['details']
+        . "\t" . $record['author'] . "\t" . $record['delete'];
+*/
     }
   }
+  foreach ($names as $key => $name) {
+    print($name . "\n");
+  }
+}
+
+/**
+ * Print maximum length of a specified column.
+ * 
+ * @param taxonarray
+ *   An array that holds Bock-type data
+ * @param fieldname
+ *   A valid fieldname whose length will be checked
+ */
+function printMaxLength($taxonarray, $fieldname) {
+  $maxlength = 0;
+  foreach ($taxonarray as $key => $record) {
+    $maxlength = max($maxlength, strlen($record[$fieldname]));
+  }
+  print($maxlength . "\n");
 }
 
 /*
@@ -102,5 +142,6 @@ function printWeirdNames($taxonarray) {
 
 $bock_array = array();
 readBockFile('../../bock/Jun2010/Bryozoans.tab', &$bock_array);
+//printMaxLength($bock_array, 'comments');
 //printWeirdNames($bock_array);
-printGenusCount($bock_array);
+//printGenusCount($bock_array);
