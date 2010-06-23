@@ -102,7 +102,7 @@ function printGenusCount($taxonarray) {
  *   An array that holds Bock-type data
  */
 function printWeirdNames($taxonarray) {
-  $names = array();
+  //$names = array();
   //print("name\tvalid\tid\tpid\tdetails\tauthor\tdelete");
   foreach ($taxonarray as $key => $record) {
     $name = $record['name'];
