@@ -12176,7 +12176,7 @@ SpeciesID	Current_Name	Author	FAMCODE	Recent	Remarks	Date_created	Date_modified	
 19617	Metrarabdotos pauciarmatum	Rosso, 2005	222	0	\N	\N	2010-05-23	Metrarabdotos	\N	1	\N	METRARABDOTOSIDAE
 16884	Metrarabdotos pouyeti	Marcopoulou-Diacantoni & Wuest, 1999	222	0	ZR1999/2000	\N	2010-05-23	Metrarabdotos	\N	1	\N	METRARABDOTOSIDAE
 20187	Metrarabdotos saundersi	Cheetham, Sanner & Jackson, 2007	222	0	\N	\N	2010-05-23	Metrarabdotos	\N	1	\N	METRARABDOTOSIDAE
-20186	Metrarabdotos tainorum	Cheetham, Sanner & Jackson, 2007	222`	0	\N	\N	2010-05-23	Metrarabdotos	\N	1	\N	METRARABDOTOSIDAE
+20186	Metrarabdotos tainorum	Cheetham, Sanner & Jackson, 2007	222	0	\N	\N	2010-05-23	Metrarabdotos	\N	1	\N	METRARABDOTOSIDAE
 10126	Metrarabdotos tarraconensis	(Reguant, 1960)	222	0	ZR1960 as Trigonopora	\N	2010-05-23	Metrarabdotos	\N	1	\N	METRARABDOTOSIDAE
 4716	Metrarabdotos teixeirai	Buge & Galopim de Carvalho, 1963	222	0	ZR1963	\N	2010-05-23	Metrarabdotos	\N	1	\N	METRARABDOTOSIDAE
 18164	Metrarabdotos thomasi	(Cheetham, 1968)	222	0	\N	\N	2010-05-23	Metrarabdotos	\N	1	\N	METRARABDOTOSIDAE
@@ -20392,7 +20392,6 @@ SpeciesID	Current_Name	Author	FAMCODE	Recent	Remarks	Date_created	Date_modified	
 20388	Turbicellepora canui	Guha & Gopikrishna, 2007	290	0	\N	2008-03-6	2010-05-23	Turbicellepora	\N	1	\N	CELLEPORIDAE
 20389	Turbicellepora naniberensis	Guha & Gopikrishna, 2007	290	\N	\N	2008-03-6	2010-05-23	Turbicellepora	\N	1	\N	CELLEPORIDAE
 20390	Turbicellepora rostrata	Guha & Gopikrishna, 2007	290	\N	\N	2008-03-6	2010-05-23	Turbicellepora	\N	1	\N	CELLEPORIDAE
-20391	\N	\N	\N	\N	\N	2008-03-6	2010-05-27	\N	\N	0	\N	
 20392	Macropora nodulosa	Gordon & Taylor, 2008	170	\N	\N	2008-03-6	2010-05-23	Macropora	\N	1	\N	MACROPORIDAE
 20393	Macropora ﬁlifera	Gordon & Taylor, 2008	170	\N	\N	2008-03-6	2010-05-23	Macropora	\N	1	\N	MACROPORIDAE
 20394	Macropora carlosi	Gordon & Taylor, 2008	170	\N	\N	2008-03-6	2010-05-23	Macropora	\N	1	\N	MACROPORIDAE
@@ -20539,7 +20538,7 @@ SpeciesID	Current_Name	Author	FAMCODE	Recent	Remarks	Date_created	Date_modified	
 20535	Glyptopora michelinia	(Prout, 1860)	605	\N	\N	2008-08-12	2010-05-23	Glyptopora	\N	1	\N	HEXAGONELLIDAE
 20536	Glyptopora plumosa	(Prout, 1860)	605	\N	\N	2008-08-12	2010-05-23	Glyptopora	\N	1	\N	HEXAGONELLIDAE
 20537	Glyptopora stonewallensis	Coryell in Morgan, 1924	605	\N	\N	2008-08-12	2010-05-23	Glyptopora	\N	1	\N	HEXAGONELLIDAE
-20538	Hexagonella perillustris	Gorjunova, 1975	605	o	not in ZR?	2008-08-12	2010-05-23	Hexagonella	\N	1	\N	HEXAGONELLIDAE
+20538	Hexagonella perillustris	Gorjunova, 1975	605	0	not in ZR?	2008-08-12	2010-05-23	Hexagonella	\N	1	\N	HEXAGONELLIDAE
 20539	Meekopora bassleri	Foerste, 1906	605	\N	\N	2008-08-12	2010-05-23	Meekopora	\N	1	\N	HEXAGONELLIDAE
 20540	Meekopora stellifera	(Rominger, 1866)	605	0	\N	2008-08-14	2010-05-23	Meekopora	\N	1	\N	HEXAGONELLIDAE
 20541	Meekoporella dendroidea	(Hudleston, 1883)	605	\N	orig Evactinopora	2008-08-14	2010-05-23	Meekoporella	\N	1	\N	HEXAGONELLIDAE
@@ -21038,6 +21037,4 @@ SpeciesID	Current_Name	Author	FAMCODE	Recent	Remarks	Date_created	Date_modified	
 21036	Filisparsa labati	(d'Archiac, 1848)	\N	\N	\N	2010-05-28	2010-05-29	Filisparsa	\N	1	\N	
 21037	Columnotheca circulata	(Quenstedt, 1885)	\N	\N	\N	2010-05-28	2010-05-29	Columnotheca	\N	1	\N	
 21038	Columnotheca echinata	(von Hagenow, 1840)	\N	\N	\N	2010-05-28	2010-05-29	Columnotheca	\N	1	\N	
-21039	Reptocavea tuberosa	(Roemer, 1839)	\N	\N	\N	2010-05-28	2010-06-2	Reptocavea	\N	1	\N	
-21040	\N	\N	\N	\N	\N	2010-05-28	2010-05-28	\N	\N	1	\N	
-21041	\N	\N	\N	\N	\N	2010-05-28	2010-05-28	\N	\N	1	\N	
+21039	Reptocavea tuberosa	(Roemer, 1839)	\N	\N	\N	2010-05-28	2010-06-2	Reptocavea	\N	1	\N	\N	
