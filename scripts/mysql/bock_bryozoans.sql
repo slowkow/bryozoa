@@ -15,7 +15,7 @@ create a table with the proper data types for each field
 CREATE TABLE `bryozoans` (
   `id` INT,
   `name` VARCHAR(512),
-  `pid` INT,
+  `currentname` INT,
   `author` VARCHAR(512),
   `details` VARCHAR(6000),
   `comments` VARCHAR(512),
