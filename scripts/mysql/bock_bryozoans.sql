@@ -12,7 +12,25 @@ DROP TABLE IF EXISTS `bryozoans`;
 /*
 create a table with the proper data types for each field
 */
-CREATE TABLE `bryozoans` (`id` INT,`name` VARCHAR(512),`pid` INT,`author` VARCHAR(512),`details` VARCHAR(6000),`comments` VARCHAR(512),`age` VARCHAR(255),`original` INT,`valid` INT,`delete` INT,`date_created` DATE,`date_modified` DATE,`newcode` VARCHAR(512),`status` VARCHAR(512),`othername` VARCHAR(512) );
+CREATE TABLE `bryozoans` (
+  `id` INT,
+  `name` VARCHAR(512),
+  `pid` INT,
+  `author` VARCHAR(512),
+  `details` VARCHAR(6000),
+  `comments` VARCHAR(512),
+  `age` VARCHAR(255),
+  `original` INT,
+  `valid` INT,
+  `delete` INT,
+  `date_created` DATE,
+  `date_modified` DATE,
+  `newcode` VARCHAR(512),
+  `status` VARCHAR(512),
+  `othername` VARCHAR(512),
+  PRIMARY KEY (`name`),
+  KEY (`id`)
+);
 
 /*
 we want to see a lot of errors if they exist
