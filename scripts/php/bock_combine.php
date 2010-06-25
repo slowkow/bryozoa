@@ -101,9 +101,11 @@ $result = mysql_query(
 
 // loop through results
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  $invalidname = NULL;
   $validname = NULL;
-  preg_match('/^.*was.+=[^0-9]*([0-9]+)$/', $row['name'], $matches);
-  $validid = $matches[1];
+  preg_match('/^.*was(.+)=[^0-9]*([0-9]+)$/', $row['name'], $matches);
+  $invalidname = trim($matches[1]);
+  $validid = $matches[2];
   // if the record points to another one, grab the other name
   if ($validid && $validid != $row['speciesid']) {
     // find this valid name
@@ -117,12 +119,13 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   else {
     continue;
   }
-  // we got a name
-  if ($validname) {
+  // we got names
+  if ($invalidname && $validname) {
     $querystring = "UPDATE `currentspecies`"
-      . " SET `currentnamestring`='%s'"
+      . " SET `name`='%s', `currentnamestring`='%s', `Valid`=0"
       . " WHERE `name`='%s'";
     $query = sprintf($querystring,
+      mysql_real_escape_string($invalidname),
       mysql_real_escape_string($validname),
       mysql_real_escape_string($row['name'])
     );
