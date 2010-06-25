@@ -23,22 +23,17 @@ if (!$db_selected) {
  *   Bryozoans
  */
 // add the currentnamestring column
-/*
 mysql_query("ALTER TABLE `bryozoans`"
   . " ADD COLUMN `currentnamestring` VARCHAR(512)"
 );
-*/
 
 // select id, name, and currentname for each row, if currentname is set
-/*
 $result = mysql_query(
   "SELECT `id`, `name`, `currentname`"
   . " FROM `bryozoans`"
   . " WHERE (`currentname` IS NOT NULL AND `currentname` < 99990)");
-*/
 
 // loop through results
-/*
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   $currentnamestring = NULL;
   // if the record points to another one, grab the other name
@@ -68,29 +63,19 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   }
 }
 mysql_free_result($result);
-*/
-
-// drop unused and unshared columns
-/*
-mysql_query("ALTER TABLE `bryozoans`"
-  . " DROP COLUMN `id`,"
-  . " DROP COLUMN `currentname`,"
-  . " DROP COLUMN `age`,"
-  . " DROP COLUMN `original`,"
-  . " DROP COLUMN `newcode`,"
-  . " DROP COLUMN `othername`,"
-  . " DROP COLUMN `delete`"
-);
-*/
 
 /**
  * Step 1: Replace reference to name with actual name, delete ID column
  *   CURRENTSPECIES
  */
+
+// troublesome records found with the below regexp
+// SELECT speciesid, name, first_name FROM currentspecies WHERE name REGEXP '^.*was.+=.+$' AND name NOT REGEXP '^.*was.+=([^0-9]*[0-9]+)$' AND name NOT REGEXP '^.*was.+=[^0-9]+$';
+
 // add the currentnamestring column
 mysql_query("ALTER TABLE `currentspecies`"
   . " ADD COLUMN `currentnamestring` VARCHAR(512),"
-  . " ADD COLUMN `Valid` INT"
+  . " ADD COLUMN `valid` INT"
 );
 
 // select synonym records with the id number of the valid name after the =
@@ -117,12 +102,12 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     $validname = $row2['name'];
   }
   else {
-    continue;
+    $validname = $invalidname;
   }
   // we got names
   if ($invalidname && $validname) {
     $querystring = "UPDATE `currentspecies`"
-      . " SET `name`='%s', `currentnamestring`='%s', `Valid`=0"
+      . " SET `name`='%s', `currentnamestring`='%s', `valid`=0"
       . " WHERE `name`='%s'";
     $query = sprintf($querystring,
       mysql_real_escape_string($invalidname),
@@ -135,6 +120,100 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 mysql_free_result($result);
 
 // select synonym records with the valid name after the =
-// SELECT speciesid, name, first_name FROM currentspecies WHERE name REGEXP '^.*was.+=[^0-9]*$';
+$result = mysql_query(
+  "SELECT `speciesid`, `name`, `first_name`"
+  . " FROM `currentspecies`"
+  . " WHERE `name` REGEXP '^.*was.+=[^0-9]+$'");
+
+// loop through results
+while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  $invalidname = NULL;
+  $validname = NULL;
+  preg_match('/^.*was(.+)=([^0-9]+)$/', $row['name'], $matches);
+  $invalidname = trim($matches[1]);
+  $validname = trim($matches[2]);
+  // we got names
+  if ($invalidname && $validname) {
+    $querystring = "UPDATE `currentspecies`"
+      . " SET `name`='%s', `currentnamestring`='%s', `valid`=0"
+      . " WHERE `name`='%s'";
+    $query = sprintf($querystring,
+      mysql_real_escape_string($invalidname),
+      mysql_real_escape_string($validname),
+      mysql_real_escape_string($row['name'])
+    );
+    mysql_query($query);
+  }
+}
+mysql_free_result($result);
+
+/**
+ * Step 2: Delete unshared and unused columns
+ *   Bryozoans
+ */
+mysql_query("ALTER TABLE `bryozoans`"
+  . " DROP COLUMN `id`"
+  . ", DROP COLUMN `currentname`"
+  . ", DROP COLUMN `age`"
+  . ", DROP COLUMN `original`"
+  . ", DROP COLUMN `newcode`"
+  . ", DROP COLUMN `othername`"
+  . ", DROP COLUMN `delete`"
+);
+
+/**
+ * Step 2: Delete unshared and unused columns
+ *   CURRENTSPECIES
+ */
+mysql_query("ALTER TABLE `currentspecies`"
+  . " DROP COLUMN `speciesid`"
+  . ", DROP COLUMN `recent`"
+  . ", DROP COLUMN `first_name`"
+  . ", DROP COLUMN `html_page`"
+  . ", DROP COLUMN `OK`"
+  . ", DROP COLUMN `famcode`"
+);
+
+/**
+ * Step 3: Fix remaining columns
+ *   Bryozoans
+ */
+mysql_query("ALTER TABLE `bryozoans`"
+  . " ADD COLUMN `familyname` VARCHAR(512)"
+);
+
+/**
+ * Step 3: Fix remaining columns
+ *   CURRENTSPECIES
+ */
+mysql_query("ALTER TABLE `currentspecies`"
+  . " CHANGE `remarks` `comments` VARCHAR(512)"
+  . ", ADD COLUMN `details` VARCHAR(6000)"
+);
+
+/**
+ * Step 4: Insert and Replace CURRENTSPECIES into Bryozoans
+ */
+mysql_query("INSERT"
+  . " INTO `bryozoans` ("
+  . "`name`, `currentnamestring`, `author`, `details`, `comments`, `valid`"
+  . ", `date_created`, `date_modified`, `status`, `familyname`"
+  . ")"
+  . " SELECT "
+  . "`name`, `currentnamestring`, `author`, `details`, `comments`, `valid`"
+  . ", `date_created`, `date_modified`, `status`, `familyname`"
+  . " FROM `currentspecies`"
+  . " ON DUPLICATE KEY UPDATE "
+  . "`bryozoans`.`name` = `currentspecies`.`name`"
+  . ", `bryozoans`.`currentnamestring` = `currentspecies`.`currentnamestring`"
+  . ", `bryozoans`.`author` = `currentspecies`.`author`"
+  . ", `bryozoans`.`details` = `currentspecies`.`details`"
+  . ", `bryozoans`.`comments` = `currentspecies`.`comments`"
+  . ", `bryozoans`.`valid` = `currentspecies`.`valid`"
+  . ", `bryozoans`.`date_created` = `currentspecies`.`date_created`"
+  . ", `bryozoans`.`date_modified` = `currentspecies`.`date_modified`"
+  . ", `bryozoans`.`status` = `currentspecies`.`status`"
+  . ", `bryozoans`.`familyname` = `currentspecies`.`familyname`"
+);
 
 mysql_close($link);
