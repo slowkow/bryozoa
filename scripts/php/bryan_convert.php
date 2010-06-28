@@ -60,6 +60,8 @@ $file1 = fopen($_FILES['file1']['tmp_name'], "r") or die("Cannot open $filename"
 function readBryanFile($filename, $taxonarray, $header=TRUE) {
   $file1 = fopen($filename, 'r') or die("Cannot open $filename");
   
+  // count number of bad rows
+  $badrows = 0;
   // count number of rows
   $count = 0;
   while (!feof($file1)) {
@@ -85,6 +87,7 @@ function readBryanFile($filename, $taxonarray, $header=TRUE) {
     list($oldid, $oldpid, $name, $rank, $date, $id, $pid) = explode("\t", $row);
     
     if (!$name || !$rank || !$id || !$pid) {
+      $badrows++;
       continue;
     }
     
@@ -95,6 +98,7 @@ function readBryanFile($filename, $taxonarray, $header=TRUE) {
       'pid'  => $pid,
     );
   }
+  print("$badrows rows missing name or rank or id or pid.\n");
   fclose($file1);
 }
 
@@ -193,6 +197,21 @@ function getParentById($cid, $crank, $ranks, $taxonarray) {
   return $prank ? $taxonarray[$prank][$pid] : NULL;
 }
 
+function getParentAndParentRankById($cid, $crank, $ranks, $taxonarray) {
+  if ($cid == NULL) {
+    return NULL;
+  }
+  $prank = getNextRank($crank, $ranks);
+  if ($prank == NULL) {
+    return NULL;
+  }
+  $pid = $taxonarray[$crank][$cid]['pid'];
+  while ($prank != NULL && !$taxonarray[$prank][$pid]) {
+    $prank = getNextRank($prank, $ranks);
+  }
+  return $prank ? array($taxonarray[$prank][$pid], $prank) : NULL;
+}
+
 /*
  * Read the contents of the 'valid' sheet from Bryan Quach's file into
  * the array $bryan_valid.
@@ -204,12 +223,45 @@ readBryanFile('../../bryan/sheets/valid.tab', &$bryan_valid);
  * Print the number of entries in each rank.
  */
 
+/*
 foreach ($ranks as $rank => $rankname) {
   $count = count($bryan_valid[$rank]);
   if ($count) {
     print("$count $rankname\n");
   }
 }
+*/
+
+/*
+ * The code below will print an ITIS style output.
+ * 
+ * php bryan2full.php > output/bryan_itis.tab
+ */
+$header = array('unit_name1', 'rank_name', 'parent_name', 'usage');
+print(implode("\t", $header) . "\n");
+
+foreach ($ranks as $rank => $rankname) {
+  if (count($bryan_valid[$rank])) {
+    foreach ($bryan_valid[$rank] as $id => $taxon) {
+      if ($taxon['name'] == 'NULL') {
+        continue;
+      }
+      $unit_name1 = $taxon['name'];
+      $rank_name = $ranks[$taxon['rank']];
+      $parent_name = NULL;
+      $usage = 'valid';
+      while (($ptaxon = getParentById($taxon['id'], $taxon['rank'], $ranks, $bryan_valid)) != NULL) {
+        if ($ptaxon['name'] != 'NULL') {
+          $parent_name = $ptaxon['name'];
+          break;
+        }
+        $taxon = $ptaxon;
+      }
+      print("$unit_name1\t$rank_name\t$parent_name\t$usage\n");
+    }
+  }
+}
+
 
 exit();
 
