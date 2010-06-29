@@ -27,7 +27,8 @@ CREATE TABLE `currentspecies` (
   `status` VARCHAR(512),
   `familyname` VARCHAR(512),
   PRIMARY KEY (`name`),
-  KEY (`speciesid`)
+  KEY (`speciesid`),
+  KEY (`famcode`)
 );
 
 /*
