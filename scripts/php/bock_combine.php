@@ -19,7 +19,7 @@ if (!$db_selected) {
 }
 
 /**
- * Step 1: Replace reference to name with actual name, delete ID column
+ * Step 1: Replace reference to name with actual name
  *   Bryozoans
  */
 // add the currentnamestring column
@@ -65,7 +65,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 mysql_free_result($result);
 
 /**
- * Step 1: Replace reference to name with actual name, delete ID column
+ * Step 1: Replace reference to name with actual name
  *   CURRENTSPECIES
  */
 
