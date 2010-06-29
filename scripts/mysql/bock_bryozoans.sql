@@ -29,7 +29,8 @@ CREATE TABLE `bryozoans` (
   `status` VARCHAR(512),
   `othername` VARCHAR(512),
   PRIMARY KEY (`name`),
-  KEY (`id`)
+  KEY (`id`),
+  KEY (`currentname`)
 );
 
 /*
