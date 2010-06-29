@@ -1,87 +1,86 @@
 <?php
 /*
- * The rank codes and names used in several different files.
- */
-$ranks = array(
-  0 => 'Invalid',
-  1 => 'Nomen Oblitum',
-  2 => 'Nomen Nudum',
-  3 => 'Uncertain Classification',
-  10 => 'Phylum',
-  20 => 'Class',
-  30 => 'Order',
-  36 => 'Subjective Junior Synonym',
-  40 => 'Suborder',
-  50 => 'Infraorder',
-  60 => 'Grade',
-  70 => 'Superfamily',
-  80 => 'Family',
-  85 => 'Family Synonym',
-  90 => 'Genus',
-  95 => 'Genus Synonym',
-  96 => 'Subjective Junior Synonym',
-  97 => 'Objective Junior Synonym',
-  98 => 'Homonym',
-  100 => 'Subgenus',
-  110 => 'Species',
-  113 => 'Uncertain Species',
-  115 => 'Species Synonym',
-  116 => 'Subjective Junior Synonym',
-  117 => 'Objective Junior Synonym',
-  118 => 'Homonym',
-  99999 => 'Error',
-);
-
-/**
- * Read a Bryozone-type file into an array. Set $header to TRUE if the file
- * has a header line with the fieldnames.
+ * Bryozone
  * 
- * @param filename
- *   The full path to the file
- * @param taxonarray
- *   The array into which the file will be read
- * @param header
- *   Set to true if the file has a header line with fieldnames
+CREATE TABLE `bryozone_taxa` (
+  `taxonid` INT,
+  `parentid` INT,
+  `taxonname` VARCHAR(512),
+  `rankcode` INT,
+  `seniorid` INT,
+  `year` INT,
+  `expert` VARCHAR(512),
+  `revised` DATE,
+  `comments` VARCHAR(6000),
+  PRIMARY KEY (`taxonid`),
+  KEY (`parentid`),
+  KEY (`taxonname`),
+  KEY (`rankcode`),
+  KEY (`seniorid`)
+);
+ * 
+ * ITIS
+ * 
+unit_name1	rank_name	parent_name	usage
+bryozoa	Phylum	animalia	valid
  */
-function readBryanFile($filename, $taxonarray, $header=TRUE) {
-  $file1 = fopen($filename, 'r') or die("Cannot open $filename");
+
+// connect to localhost
+$link = mysql_connect('localhost', 'kamil');
+if (!$link) { die('Could not connect: ' . mysql_error()); }
+// make bock the current db
+$db_selected = mysql_select_db('bock', $link);
+if (!$db_selected) { die ('Could not use database: ' . mysql_error()); }
+
+// select id, name, and currentname for each row, if currentname is set
+$result = mysql_query(
+  "SELECT `taxonid`, `taxonname`, `parentid`, `rankcode`, `seniorid`"
+  . " FROM `bryozone_taxa`"
+  . " WHERE (`taxonid` IS NOT NULL"
+  . " AND `taxonname` IS NOT NULL"
+  . " AND `parentid` IS NOT NULL"
+  . " AND `rankcode` IS NOT NULL"
+  . " AND `rankcode` < 99990)");
+
+/*
+ * Print the header
+ */
+print("unit_name1\tunit_name2\trank_name\tparent_name\tusage\n");
+
+// loop through results
+while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  // find the parent's name
+  $query = sprintf("SELECT `taxonname` FROM `bryozone_taxa` WHERE `taxonid`='%s'",
+    mysql_real_escape_string($row['parentid'])
+  );
+  $row2 = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  $parent_name = $row2['taxonname'];
   
-  // count number of rows
-  $count = 0;
-  while (!feof($file1)) {
-    // read one line and trim extra whitespace
-    $row = trim(fgets($file1));
-    
-    // skip comments and empty lines
-    if ($row[0] == '#' || strlen($row) == 0) {
-      continue;
-    }
-    
-    // count each non-comment line
-    $count++;
-    
-    // skip header
-    if ($count == 1 && $header) {
-      continue;
-    }
-    
-    // TODO
-    // experiment with one more field $extra to capture the last column in the
-    // species rows
-    list($oldid, $oldpid, $name, $rank, $date, $id, $pid) = explode("\t", $row);
-    
-    if (!$name || !$rank || !$id || !$pid) {
-      $badrows++;
-      continue;
-    }
-    
-    $taxonarray[$rank][$id] = array(
-      'name' => $name,
-      'rank' => $rank,
-      'id'   => $id,
-      'pid'  => $pid,
-    );
+  $query = sprintf("SELECT `rankname` FROM `bryozone_rank` WHERE `rankid`='%s'",
+    mysql_real_escape_string($row['rankcode'])
+  );
+  $row3 = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  $rank_name = $row3['rankname'];
+  
+  $unit_name1 = $row['taxonname'];
+  $usage = 'invalid';
+  
+  if ($row['seniorid'] && $row['seniorid'] == $row['taxonid']) {
+    $usage = 'valid';
   }
-  print("$badrows rows missing name or rank or id or pid.\n");
-  fclose($file1);
+  
+  $rank_code = $row['rankcode'];
+  
+  // we got a name
+  if ($unit_name1 && $rank_name && $parent_name && $usage) {
+    if ($rank_code == 110) {
+      //print("$parent_name\t$unit_name1\t$rank_name\t$parent_name\t$usage\n");
+    }
+    else if (3 < $rank_code && $rank_code < 110 && $rank_code != 60
+    && $rank_code != 36 && $rank_code != 85 && $rank_code != 95
+    && $rank_code != 96 && $rank_code != 97 && $rank_code != 98) {
+     print("$unit_name1\t\t$rank_name\t$parent_name\t$usage\n");
+    }
+  }
 }
+mysql_free_result($result);
