@@ -1,4089 +1,4088 @@
 ID	NAME
-1001	Robertson			
-1002	Morris			
-1003	Kluge			
-1004	Smitt			
-1005	Lindenberg			
-1006	Vigneaux			
-1007	Kraepelin			
-1008	Hasenbank			
-1009	Johnston			
-1010	de Blainville			
-1011	Taylor & Cuffey			
-1012	Pieper			
-1013	Pergens			
-1014	Harmelin & d'Hondt			
-1015	Stolickza			
-1016	Dzik			
-1017	Linnaeus			
-1018	Carter			
-1019	Canu			
-1020	Tenison-Woods			
-1021	Gordon & Arnold			
-1022	Edwards			
-1023	Lagaaij			
-1024	von Lorenz			
-1025	Uttley & Bullivant			
-1026	Jullien in Jullien & Calvet			
-1027	Kvachko			
-1028	Grischenko, Mawatari & Taylor			
-1029	Nordman			
-1030	Tilbrook, Hayward & Gordon			
-1031	Sars			
-1032	Dalyell			
-1033	O'Donoghue			
-1034	Maplestone			
-1035	Oken			
-1036	Liu			
-1037	Bassler			
-1038	Gosse			
-1039	Fischer			
-1040	Hayward			
-1041	Walter			
-1042	Taylor & McKinney			
-1043	Bobin & Prenant			
-1044	van Beneden			
-1045	Reuss			
-1046	Marcus			
-1047	Gervais			
-1048	Poignant & Ubaldo			
-1049	Pitt & Taylor			
-1050	Alder			
-1051	Bronn			
-1052	Borg			
-1053	Thomas			
-1054	Szczechura			
-1055	Hall			
-1056	Boekschoten			
-1057	Prud'homme			
-1058	Marsson			
-1059	Gorjunova			
-1060	Cook			
-1061	Taylor & Wilson			
-1062	Hayward & Thorpe			
-1063	Norman			
-1064	Liu & Hu			
-1065	Daniellsen			
-1066	Ulrich & Bassler			
-1067	de Loriol			
-1068	Remane			
-1069	Jin, Wan & Chen			
-1070	Poignant			
-1071	Stach			
-1072	Ulrich			
-1073	Bock & Cook			
-1074	Kubanin			
-1075	Liu & Liu			
-1076	Milne-Edwards			
-1077	d'Orbigny			
-1078	Gautier			
-1079	Vine			
-1080	Koenig			
-1081	Wass & Yoo			
-1082	Spandel			
-1083	Morozova			
-1084	Michelin			
-1085	Flor			
-1086	Soule et al.			
-1087	Taylor & Grischenko			
-1088	Jullien			
-1089	Grischenko & Gordon			
-1090	Roemer			
-1091	Brood			
-1092	Ehrenberg			
-1093	Ducasse & Vigneaux			
-1094	Kühn			
-1095	Jürgensen			
-1096	Buge & Balavoine			
-1097	Saville Kent			
-1098	Winston			
-1099	Liu & Yang			
-1100	Livingstone			
-1101	Fleming			
-1102	Allman			
-1103	d'Hondt			
-1104	Hayward & Taylor			
-1105	Brydone			
-1106	Hayward & Cook			
-1107	Cadée, Chimonides & Cook			
-1108	Voigt & Viaud			
-1109	Astrova			
-1110	Harmer			
-1111	d'Hondt & Gordon			
-1112	Levinsen			
-1113	Meissner			
-1114	Ponomareva			
-1115	Thomson			
-1116	Voigt & Ernst			
-1117	Thoelen			
-1118	Soule			
-1119	von Hagenow			
-1120	Voigt & Gordon			
-1121	Ünsal & d'Hondt			
-1122	Buge			
-1123	Medd			
-1124	Alvarez			
-1125	Fewkes			
-1126	Favorskaya			
-1127	Wilson			
-1128	Canu & Bassler			
-1129	Unknown			
-1130	Farre			
-1131	Korotnev			
-1132	Gordon & Parker			
-1133	Wood & Marsh			
-1134	Balavoine			
-1135	Voigt & Hillmer			
-1136	Braem			
-1137	Ridley			
-1138	Héjjas			
-1139	Gabb & Horn			
-1140	Barroso			
-1141	Weitschat & Voigt			
-1142	Labracherie			
-1144	Taylor			
-1145	Taylor & Voigt			
-1146	Taylor & Badve			
-1147	Todd, Taylor & Favorskaya			
-1148	Milne Edwards			
-1149	Goldstein			
-1150	Gontar			
-1151	Gregory			
-1152	Guha & Nathan			
-1153	Taylor & Monks			
-1154	Wass			
-1155	Voigt 			
-1156	Koschinsky			
-1158	Nekhorosheva			
-1159	Winston & Håkansson			
-1160	Hillmer, Voigt & Scholz			
-1161	Keij			
-1162	Canu & Lecointre			
-1163	Nicholson & Etheridge			
-1164	Bizzarini & Braga			
-1165	Brown			
-1166	Pohowsky			
-1167	Quenstedt			
-1168	Duvergier			
-1169	de Gregorio			
-1170	Berthelsen			
-1171	Busk			
-1172	Wiesemann			
-1173	Kirkpatrick			
-1174	Silén			
-1175	Gordon & Grischenko			
-1176	Abildgaard in Muller			
-1177	Grischenko & Mawatari			
-1178	Ziko			
-1179	Toots			
-1180	Moyano			
-1181	Gordon & Hastings			
-1182	Ryland			
-1183	Gordon & d'Hondt			
-1184	Weiss			
-1185	Lang			
-1186	Prenant & Bobin			
-1187	Baluk & Radwanski			
-1188	Rogick			
-1189	Annandale			
-1190	Elias & Condra			
-1191	Haswell			
-1192	Gordon & Taylor			
-1193	Rosso			
-1194	Mayoral			
-1195	Audouin			
-1196	Morningstar			
-1197	Lamouroux			
-1198	Defrance			
-1199	Cook & Voigt			
-1200	López Gappa			
-1201	Terquem & Piette			
-1202	Hara			
-1203	Shaw			
-1204	Cheetham & Sandberg			
-1205	Whitelegge			
-1206	Viskova			
-1207	Kuhn			
-1208	Plaziat & Balavoine			
-1209	Gordon, Mawatari & Kajihara			
-1210	Astrova & Morozova			
-1211	Dendy			
-1212	Pheophanova			
-1213	d'Hondt & Schopf			
-1214	Buge & Tillier			
-1215	Osburn			
-1216	Moore			
-1217	Banta			
-1218	Zágoršek			
-1219	Grischenko, Taylor & Mawatari			
-1220	Schmidt & Bone			
-1221	Dyster			
-1222	Lamarck			
-1223	Obut			
-1224	Voigt & Soule			
-1225	Tilbrook			
-1226	Voigt & Eiserhardt			
-1227	Guha			
-1228	David, Mongereau & Pouyet			
-1229	Taylor  & Wilson			
-1230	Mongereau & Braga			
-1231	Verrill			
-1232	Gordon & Braga			
-1233	Grischenko, Gordon & Taylor			
-1234	Thompson			
-1235	Canu & Duvergier			
-1236	Gray			
-1238	Strand			
-1239	Cheetham			
-1240	Taylor & Gordon			
-1241	Cook & Bock			
-1242	Bidenkap			
-1243	Ellis & Solander			
-1244	Lidgard			
-1245	Jebram			
-1246	Römer			
-1247	Bock			
-1248	Parker & Gordon			
-1249	Vavra			
-1250	d'Archiac			
-1251	Calvet			
-1252	Hamm			
-1253	Waters			
-1254	Harmelin			
-1255	Bobies			
-1256	Bishop & Househam			
-1257	Hincks			
-1258	Taylor & Rozhnov			
-1259	Soule & Soule			
-1261	Link			
-1262	Pouyet			
-1263	Blainville			
-1264	Heller			
-1265	Goldfuss			
-1266	Annoscia, Braga & Finotti			
-1267	Tenison Woods			
-1268	Davis			
-1269	Mongereau			
-1270	Voigt & Williams			
-1271	Lonsdale			
-1272	Gordon			
-1273	Pfender			
-1274	Illies			
-1275	Hastings			
-1276	Taylor & Sequeiros			
-1277	Soule, Chaney & Morris			
-1278	Malecki			
-1279	Hillmer & Schallreuter			
-1280	Mawatari			
-1281	Okada			
-1282	Voigt & Flor			
-1283	Hayward & Ryland			
-1284	MacGillivray			
-1285	Soule, Soule & Chaney			
-1286	Kiepura			
-1287	Hutton			
-1288	Neviani			
-1289	Cossman			
-1290	Bishop & Hayward			
-1291	Androsova			
-1292	Boardman, Taylor & McKinney			
-1293	Uttley			
-1294	Ostrovsky & Taylor			
-1295	Ehlers			
-1296	Bretnall			
-1297	Cook & Chimonides			
-1298	Willems			
-1299	Voigt			
-1300	Ortmann			
-1301	el Hajjaji			
-1302	Filliozat			
-1303	David & Pouyet			
-1304	Miller			
-1305	Delage & Herouard			
-1306	Buge & Voigt			
-1307	Osburn & Soule			
-1308	Ross			
-1309	Annoscia			
-1310	Gordon & Winston			
-1311	Powell			
-1312	Zabala			
-1313	Abildgaard			
-1314	Nickles & Bassler			
-1315	Sandberg			
-1316	Pergens & Meunier			
-1317	Sars			
-1318	Gordon, Tilbrook & Winston			
-1319	Hayward & Winston			
-1320	Boeck			
-1321	Willey			
-1322	von Martens			
-1323	Munster			
-1324	Gregorio			
-1325	King			
-1326	Martens			
-1327	d'Hondt & Redier			
-1328	Jelly			
-1329	Templeton			
-1330	Donati			
-1331	Schweigger			
-1332	Coppin			
-1333	Stoliczka			
-1334	Hakansson & Jürgensen			
-1335	Wiegmann & Ruthe			
-1336	Canu & Bassler in Bassler			
-1337	Searles Wood			
-1338	Jullien & Calvet			
-1339	Winston & Beaulieu			
+1001	Robertson
+1002	Morris
+1003	Kluge
+1004	Smitt
+1005	Lindenberg
+1006	Vigneaux
+1007	Kraepelin
+1008	Hasenbank
+1009	Johnston
+1010	de Blainville
+1011	Taylor & Cuffey
+1012	Pieper
+1013	Pergens
+1014	Harmelin & d'Hondt
+1015	Stolickza
+1016	Dzik
+1017	Linnaeus
+1018	Carter
+1019	Canu
+1020	Tenison-Woods
+1021	Gordon & Arnold
+1022	Edwards
+1023	Lagaaij
+1024	von Lorenz
+1025	Uttley & Bullivant
+1026	Jullien in Jullien & Calvet
+1027	Kvachko
+1028	Grischenko, Mawatari & Taylor
+1029	Nordman
+1030	Tilbrook, Hayward & Gordon
+1031	Sars
+1032	Dalyell
+1033	O'Donoghue
+1034	Maplestone
+1035	Oken
+1036	Liu
+1037	Bassler
+1038	Gosse
+1039	Fischer
+1040	Hayward
+1041	Walter
+1042	Taylor & McKinney
+1043	Bobin & Prenant
+1044	van Beneden
+1045	Reuss
+1046	Marcus
+1047	Gervais
+1048	Poignant & Ubaldo
+1049	Pitt & Taylor
+1050	Alder
+1051	Bronn
+1052	Borg
+1053	Thomas
+1054	Szczechura
+1055	Hall
+1056	Boekschoten
+1057	Prud'homme
+1058	Marsson
+1059	Gorjunova
+1060	Cook
+1061	Taylor & Wilson
+1062	Hayward & Thorpe
+1063	Norman
+1064	Liu & Hu
+1065	Daniellsen
+1066	Ulrich & Bassler
+1067	de Loriol
+1068	Remane
+1069	Jin, Wan & Chen
+1070	Poignant
+1071	Stach
+1072	Ulrich
+1073	Bock & Cook
+1074	Kubanin
+1075	Liu & Liu
+1076	Milne-Edwards
+1077	d'Orbigny
+1078	Gautier
+1079	Vine
+1080	Koenig
+1081	Wass & Yoo
+1082	Spandel
+1083	Morozova
+1084	Michelin
+1085	Flor
+1086	Soule et al.
+1087	Taylor & Grischenko
+1088	Jullien
+1089	Grischenko & Gordon
+1090	Roemer
+1091	Brood
+1092	Ehrenberg
+1093	Ducasse & Vigneaux
+1094	Kühn
+1095	Jürgensen
+1096	Buge & Balavoine
+1097	Saville Kent
+1098	Winston
+1099	Liu & Yang
+1100	Livingstone
+1101	Fleming
+1102	Allman
+1103	d'Hondt
+1104	Hayward & Taylor
+1105	Brydone
+1106	Hayward & Cook
+1107	Cadée, Chimonides & Cook
+1108	Voigt & Viaud
+1109	Astrova
+1110	Harmer
+1111	d'Hondt & Gordon
+1112	Levinsen
+1113	Meissner
+1114	Ponomareva
+1115	Thomson
+1116	Voigt & Ernst
+1117	Thoelen
+1118	Soule
+1119	von Hagenow
+1120	Voigt & Gordon
+1121	Ünsal & d'Hondt
+1122	Buge
+1123	Medd
+1124	Alvarez
+1125	Fewkes
+1126	Favorskaya
+1127	Wilson
+1128	Canu & Bassler
+1129	Unknown
+1130	Farre
+1131	Korotnev
+1132	Gordon & Parker
+1133	Wood & Marsh
+1134	Balavoine
+1135	Voigt & Hillmer
+1136	Braem
+1137	Ridley
+1138	Héjjas
+1139	Gabb & Horn
+1140	Barroso
+1141	Weitschat & Voigt
+1142	Labracherie
+1144	Taylor
+1145	Taylor & Voigt
+1146	Taylor & Badve
+1147	Todd, Taylor & Favorskaya
+1148	Milne Edwards
+1149	Goldstein
+1150	Gontar
+1151	Gregory
+1152	Guha & Nathan
+1153	Taylor & Monks
+1154	Wass
+1155	Voigt 
+1156	Koschinsky
+1158	Nekhorosheva
+1159	Winston & Håkansson
+1160	Hillmer, Voigt & Scholz
+1161	Keij
+1162	Canu & Lecointre
+1163	Nicholson & Etheridge
+1164	Bizzarini & Braga
+1165	Brown
+1166	Pohowsky
+1167	Quenstedt
+1168	Duvergier
+1169	de Gregorio
+1170	Berthelsen
+1171	Busk
+1172	Wiesemann
+1173	Kirkpatrick
+1174	Silén
+1175	Gordon & Grischenko
+1176	Abildgaard in Muller
+1177	Grischenko & Mawatari
+1178	Ziko
+1179	Toots
+1180	Moyano
+1181	Gordon & Hastings
+1182	Ryland
+1183	Gordon & d'Hondt
+1184	Weiss
+1185	Lang
+1186	Prenant & Bobin
+1187	Baluk & Radwanski
+1188	Rogick
+1189	Annandale
+1190	Elias & Condra
+1191	Haswell
+1192	Gordon & Taylor
+1193	Rosso
+1194	Mayoral
+1195	Audouin
+1196	Morningstar
+1197	Lamouroux
+1198	Defrance
+1199	Cook & Voigt
+1200	López Gappa
+1201	Terquem & Piette
+1202	Hara
+1203	Shaw
+1204	Cheetham & Sandberg
+1205	Whitelegge
+1206	Viskova
+1207	Kuhn
+1208	Plaziat & Balavoine
+1209	Gordon, Mawatari & Kajihara
+1210	Astrova & Morozova
+1211	Dendy
+1212	Pheophanova
+1213	d'Hondt & Schopf
+1214	Buge & Tillier
+1215	Osburn
+1216	Moore
+1217	Banta
+1218	Zágoršek
+1219	Grischenko, Taylor & Mawatari
+1220	Schmidt & Bone
+1221	Dyster
+1222	Lamarck
+1223	Obut
+1224	Voigt & Soule
+1225	Tilbrook
+1226	Voigt & Eiserhardt
+1227	Guha
+1228	David, Mongereau & Pouyet
+1229	Taylor  & Wilson
+1230	Mongereau & Braga
+1231	Verrill
+1232	Gordon & Braga
+1233	Grischenko, Gordon & Taylor
+1234	Thompson
+1235	Canu & Duvergier
+1236	Gray
+1238	Strand
+1239	Cheetham
+1240	Taylor & Gordon
+1241	Cook & Bock
+1242	Bidenkap
+1243	Ellis & Solander
+1244	Lidgard
+1245	Jebram
+1246	Römer
+1247	Bock
+1248	Parker & Gordon
+1249	Vavra
+1250	d'Archiac
+1251	Calvet
+1252	Hamm
+1253	Waters
+1254	Harmelin
+1255	Bobies
+1256	Bishop & Househam
+1257	Hincks
+1258	Taylor & Rozhnov
+1259	Soule & Soule
+1261	Link
+1262	Pouyet
+1263	Blainville
+1264	Heller
+1265	Goldfuss
+1266	Annoscia, Braga & Finotti
+1267	Tenison Woods
+1268	Davis
+1269	Mongereau
+1270	Voigt & Williams
+1271	Lonsdale
+1272	Gordon
+1273	Pfender
+1274	Illies
+1275	Hastings
+1276	Taylor & Sequeiros
+1277	Soule, Chaney & Morris
+1278	Malecki
+1279	Hillmer & Schallreuter
+1280	Mawatari
+1281	Okada
+1282	Voigt & Flor
+1283	Hayward & Ryland
+1284	MacGillivray
+1285	Soule, Soule & Chaney
+1286	Kiepura
+1287	Hutton
+1288	Neviani
+1289	Cossman
+1290	Bishop & Hayward
+1291	Androsova
+1292	Boardman, Taylor & McKinney
+1293	Uttley
+1294	Ostrovsky & Taylor
+1295	Ehlers
+1296	Bretnall
+1297	Cook & Chimonides
+1298	Willems
+1299	Voigt
+1300	Ortmann
+1301	el Hajjaji
+1302	Filliozat
+1303	David & Pouyet
+1304	Miller
+1305	Delage & Herouard
+1306	Buge & Voigt
+1307	Osburn & Soule
+1308	Ross
+1309	Annoscia
+1310	Gordon & Winston
+1311	Powell
+1312	Zabala
+1313	Abildgaard
+1314	Nickles & Bassler
+1315	Sandberg
+1316	Pergens & Meunier
+1317	Sars
+1318	Gordon, Tilbrook & Winston
+1319	Hayward & Winston
+1320	Boeck
+1321	Willey
+1322	von Martens
+1323	Munster
+1324	Gregorio
+1325	King
+1326	Martens
+1327	d'Hondt & Redier
+1328	Jelly
+1329	Templeton
+1330	Donati
+1331	Schweigger
+1332	Coppin
+1333	Stoliczka
+1334	Hakansson & Jürgensen
+1335	Wiegmann & Ruthe
+1336	Canu & Bassler in Bassler
+1337	Searles Wood
+1338	Jullien & Calvet
+1339	Winston & Beaulieu
 1340	Cipolla			actual taxa authors stop here
-1341	Prantl			
-1342	De Blauwe			
-1343	Occhipinti Ambrogi			
-1344	Spjeldnaes			
-1345	Bigey			
-1346	Monod			
-1347	Lu			
-1348	Rao			
-1349	Mikoliã			
-1350	Abricosoff			
-1351	Wolfer			
-1352	Vinogradov			
-1353	Barbosa			
-1354	Nekhoroshev			
-1355	Männil			
-1356	Sokurov			
-1357	Lavrentjeva			
-1358	Kopaevich			
-1359	Balakin			
-1360	Krazhan			
-1361	Romanchuk			
-1362	Mordukhai-Boltovskoi			
-1363	Hassall			
-1364	Levinton			
-1365	Barbaro			
-1366	Allan			
-1367	Bartolomaeus			
-1368	Cuffey			
-1369	Ishii			
-1370	Iseto			
-1371	Kaselowsky			
-1372	Schulga-Nesterenko			
-1373	Ganapati			
-1374	Brunel			
-1375	Bullivant			
-1376	Wall			
-1377	Modzalevskaya			
-1378	Faura y Sans			
-1379	Dollfus			
-1380	Procházka			
-1381	Kirchenpauer			
-1382	Pushkin			
-1383	Allen			
-1384	Chapman			
-1385	Sauvage			
-1386	Orieux			
-1387	Cotillon			
-1388	Credner			
-1389	Desmarest			
-1390	Yang			
-1391	Zimmer			
-1392	Trizna			
-1393	Waagen			
-1394	Manzoni			
-1395	Fernandez Pulpeiro			
-1396	Vinassa de Regny			
-1397	Allmann			
-1398	Moskalenko			
-1399	Dreyer			
-1400	Amerom			
-1401	Wang			
-1402	Paalzow			
-1403	Thornely			
-1404	Yaroshinskaya			
-1405	Abrikosov			
-1406	Coryell			
-1407	Waschurova			
-1408	Smith			
-1409	Jackson			
-1410	Dick			
-1411	Wuchter			
-1412	Anstey			
-1413	Walford			
-1414	Hayami			
-1415	Bolkhovitinova			
-1416	Troizkaya			
-1417	Breton			
-1418	Sarycheva			
-1419	McKinney			
-1420	Machiyama			
-1421	Czeczuga			
-1422	Conti			
-1423	Conradi			
-1424	Kopaevitch			
-1425	Whittlesea			
-1426	Di Geronimo			
-1427	Abbas			
-1428	Vasisht			
-1429	Kuc			
-1430	Meunier			
-1431	Fritz			
-1432	Bronstein			
-1433	Nikulina			
-1434	Dunaeva			
-1435	Cornelius			
-1436	Stebbing			
-1437	Young			
-1438	Balasubrahmanyan			
-1439	Maki			
-1440	Brébion			
-1441	Munoz			
-1442	Satyanarayana Rao			
-1443	Bogoyavlenskaya			
-1444	Li			
-1445	Hennig			
-1446	Eichwald			
-1447	Azzouz			
-1448	Anonymous			
-1449	Biologisches Forschungsinstitut fur			
-1450	Veys			
-1451	Ully			
-1452	Troitskaya			
-1453	Schastlivtseva			
-1454	Schopf			
-1455	Nakrem			
-1456	Karvaliar			
-1457	Stephens			
-1458	Decrouez			
-1459	Arístegui			
-1460	Xixing			
-1461	Lobo			
-1462	Welch			
-1463	Stewart			
-1464	Pratt			
-1465	Passamaneck			
-1466	Henderson			
-1467	Abgrall			
-1468	Potts			
-1469	Murray			
-1470	Cleary			
-1471	Zimmerman			
-1472	MacDonald			
-1473	Hewitt			
-1474	Von Dassow			
-1475	Robinson			
-1476	Mulet			
-1477	Wyse Jackson			
-1478	Kopajevich			
-1479	Okamura			
-1480	Scholz			
-1481	Taticchi			
-1482	Steinbacher			
-1483	Shah			
-1484	Kayser			
-1485	Watson			
-1486	Hamond			
-1487	Geraci			
-1488	Bovbjerg			
-1489	Franzén			
-1490	Seguenza			
-1491	Schäfer			
-1492	Lore			
-1493	Dana			
-1494	Volkova			
-1495	Parona			
-1496	de Koninck			
-1497	Stuckenberg			
-1498	Zvyagintsev			
-1499	Zunini Sertorio			
-1500	Zobell			
-1501	Zitt			
-1502	Zirpolo			
-1503	Zibrowius			
-1504	Zhu			
-1505	Zhongguo Kexueyuan Nanjing Dizhi Gushengwu			
-1506	Zheng			
-1507	Zhao-xun			
-1508	Zhao			
-1509	Zhang			
-1510	Zezina			
-1511	Zevina			
-1512	Zavodnik			
-1513	Zatsepin			
-1514	Zaouali			
-1515	Zankl			
-1516	Zampi			
-1517	Zachs			
-1518	Zabin			
-1519	Yunming			
-1520	Yund			
-1521	Yue			
-1522	Yu			
-1523	Yoshioka			
-1524	Yoshida			
-1525	Yonge			
-1526	Yin			
-1527	Yentsch			
-1528	Yanez Arancibia			
-1529	Yanagi			
-1530	Yan			
-1531	Yamazi			
-1532	Yamamura			
-1533	Yamaguchi			
-1534	Yamada			
-1535	Yagunova			
-1536	Xing			
-1537	Xi'an Institute of Geology			
-1538	Xia			
-1539	Wulff			
-1540	Wu			
-1541	Wright			
-1542	Wöss			
-1543	Woss			
-1544	Woollacott			
-1545	Wood?			
-1546	Wonderley			
-1547	Wolleman			
-1548	Wolff			
-1549	Wolfart			
-1550	Wolcke			
-1551	Woess			
-1552	Witzke			
-1553	Wisely			
-1554	Winther			
-1555	Wing			
-1556	Williams			
-1557	Willan			
-1558	Wildermuth			
-1559	Wilde			
-1560	Wiktor			
-1561	Wiesner			
-1562	Wiese			
-1563	Wieczorek			
-1564	Wiebach			
-1565	Wicksten			
-1566	Whitten			
-1567	Whitfield			
-1568	Whiteaves			
-1569	White			
-1570	Wharfe			
-1571	Weyer			
-1572	West			
-1573	Wesenbeng-Lund			
-1574	Wendt			
-1575	Wender			
-1576	Wen			
-1577	Wells			
-1578	Weissmair			
-1579	Weis			
-1580	Wefer			
-1581	Weedon			
-1582	Webb			
-1583	Wawrik			
-1584	Watts			
-1585	Watkins			
-1586	Waterston			
-1587	Watermolen			
-1588	Wasson			
-1589	Warren			
-1590	Warner			
-1591	Ward			
-1592	Wank			
-1593	Walters			
-1594	Walls			
-1595	Wallace			
-1596	Walker			
-1597	Waldmann			
-1598	Wahl			
-1599	Wagh			
-1600	Waddington			
-1601	Wa			
-1602	Vysotskii			
-1603	Vyalov			
-1604	Vuorinen			
-1605	Vorstman			
-1606	Voore			
-1607	Voight			
-1608	Vogel			
-1609	Viviani			
-1610	Visscher			
-1611	Villela			
-1612	Vigeland			
-1613	Viganò			
-1614	Vietti			
-1615	Vernon			
-1616	Vernborg			
-1617	Vermeij			
-1618	Vennin			
-1619	Velikonja			
-1620	Vegglani			
-1621	Vávra			
-1622	Vasseur			
-1623	Vargo			
-1624	Vanhöffen			
-1625	Vandermeulen			
-1626	van Slageren			
-1627	Van Mieghem			
-1628	van Gasin			
-1629	van Diggelen			
-1630	van der Spoel			
-1631	Van Der Linden			
-1632	van der Land			
-1633	Van Beneden			
-1634	Valkanov			
-1635	Valentine			
-1636	Valentin			
-1637	Vail			
-1638	Utgaard			
-1639	Ushakova			
-1640	Uschakov			
-1641	Urbanek			
-1642	Upshaw			
-1643	Uotila			
-1644	Unsal			
-1645	Unrug			
-1646	Universiteit van Amsterdam Instituut voor Taxonomische			
-1647	Ungaro			
-1648	Uly			
-1649	Ueno			
-1650	Udin			
-1651	Udhayakumar			
-1652	Tzioumis			
-1653	Tursi			
-1654	Turpaeva			
-1655	Turner			
-1656	Turkünal			
-1657	Turek			
-1658	Tulp			
-1659	Tulkki			
-1660	Tuckey			
-1661	Tsurnamal			
-1662	Troyer-Mildner			
-1663	Troyer Mildner			
-1664	Townley			
-1665	Towe			
-1666	Toula			
-1667	Toriumi			
-1668	Tonapi			
-1669	Tommasi			
-1670	Tomey			
-1671	Tischler			
-1672	Tillier			
-1673	Tilak			
-1674	Tiedtke			
-1675	Thorson			
-1676	Thorpe			
-1677	Thorbjørn			
-1678	Thomsen			
-1679	Thijsen			
-1680	Thiel			
-1681	Thayer			
-1682	Tewari			
-1683	Ters			
-1684	Termier			
-1685	Terakado			
-1686	Temkin			
-1687	Teichert			
-1688	Tazima			
-1689	Tazawa			
-1690	Taviani			
-1691	Tavener-Smith			
-1692	Tarp			
-1693	Taraz			
-1694	Taramelli Rivosecchi			
-1695	Tang			
-1696	Tanaka			
-1697	Tamozhnyaya			
-1698	Tajima			
-1699	Tacoli Lucchi			
-1700	Tablado			
-1701	Tabb			
-1702	Harada			
-1703	Szabo			
-1704	Swedmark			
-1705	Swayze			
-1706	Swartz			
-1707	Swami			
-1708	Suwa			
-1709	Sutherland			
-1710	Surlyk			
-1711	Sun			
-1712	Sugimura			
-1713	Suchy			
-1714	Subklew			
-1715	Suarez Andres			
-1716	Suáres Andrés			
-1717	Stubbings			
-1718	Strusz			
-1719	Striven			
-1720	Stricker			
-1721	Strenhell			
-1722	Strenger			
-1723	Streftaris			
-1724	Straughan			
-1725	Stratton			
-1726	Strathmann			
-1727	Storrs			
-1728	Stone			
-1729	Stoddart			
-1730	Stoaks			
-1731	Stimpson			
-1732	Sterflinger			
-1733	Stemmerik			
-1734	Steingrimsson			
-1735	Steiner			
-1736	Stefano			
-1737	Steele			
-1738	Staughan			
-1739	Starostin			
-1740	Starcher			
-1741	Stanwell Smith			
-1742	Stanoiu			
-1743	Stade			
-1744	Stachowicz			
-1745	Sriramachandra Murty			
-1746	Springer			
-1747	Sprigg			
-1748	Spiegler			
-1749	Spencer			
-1750	Sparling			
-1751	Sparks			
-1752	Spamer			
-1753	Southwood			
-1754	Soukup			
-1755	Souaya			
-1756	Sorensen			
-1757	Sonmez-Gokcen			
-1758	Solovjev			
-1759	Soloveva			
-1760	Solle			
-1761	Sokolov			
-1762	Söderqvist			
-1763	Snyder			
-1764	Smyth			
-1765	Sloka			
-1766	Slobdkin			
-1767	Sloan			
-1768	Slane			
-1769	Slager			
-1770	Sladecek			
-1771	Skolka			
-1772	Skerman			
-1773	Skalskaya			
-1774	Sjöblom			
-1775	Sivertsen			
-1776	Sivareddy			
-1777	Siva Reddy			
-1778	Singh			
-1779	Simpson			
-1780	Simonsen			
-1781	Simone			
-1782	Simonarson			
-1783	Simmons			
-1784	Simma-Krieg			
-1785	Simkina			
-1786	Simberloff			
-1787	Silbermann			
-1788	Sigurdsson			
-1789	Siesser			
-1790	Siegfried			
-1791	Sieburth			
-1792	Siddiqui			
-1793	Shutz			
-1794	Shunatova			
-1795	Shrubsole			
-1796	Shrivastava			
-1797	Shreeve			
-1798	Shishova			
-1799	Shindo			
-1800	Shimizu			
-1801	Shimidzu			
-1802	Shimanskii			
-1803	Shimada			
-1804	Shilin			
-1805	Shih			
-1806	Shier			
-1807	Sherwood			
-1808	Sherborn			
-1809	Shepherd			
-1810	Shen			
-1811	Shellenberger			
-1812	Sheldon			
-1813	Shaulis			
-1814	Sharp			
-1815	Shapiro			
-1816	Shanks			
-1817	Shamah			
-1818	Seven			
-1819	Setha Rao			
-1820	Serruya			
-1821	Serra-Kiel			
-1822	Sepkoski			
-1823	Sepkoski Jr.			
-1824	Seo			
-1825	Sensenbaugh			
-1826	Senowbari Daryan			
-1827	Semina			
-1828	Semernoj			
-1829	Semenov			
-1830	Seilacher			
-1831	Sefian			
-1832	Seed			
-1833	Scrocco			
-1834	Scott			
-1835	Sconfietti			
-1836	Scolaro			
-1837	Sciuto			
-1838	Schwarz			
-1839	Schwaninger			
-1840	Schulz			
-1841	Schultz			
-1842	Schultheiss			
-1843	Schuchter			
-1844	Schuchert			
-1845	Schubert			
-1846	Schraut			
-1847	Schönmann			
-1848	Schoener			
-1849	Schodduyn			
-1850	Schneider			
-1851	Schmitt			
-1852	Schmid			
-1853	Schlattleitner			
-1854	Scherren			
-1855	Scheltema			
-1856	Scheer			
-1857	Schaumberg			
-1858	Schaufelberger			
-1859	Schatzinger			
-1860	Schallreuter			
-1861	Schager			
-1862	Schafer			
-1863	Schaefer			
-1864	Schaaf			
-1865	Scannell			
-1866	Sawaya			
-1867	Savarese			
-1868	Saulea			
-1869	Saul			
-1870	Sauer			
-1871	Saudray			
-1872	Sato			
-1873	Sarr			
-1874	Sardeson			
-1875	Sara			
-1876	Santagata			
-1877	Sando			
-1878	Sanchez			
-1879	Samson			
-1880	Salmon			
-1881	Salih			
-1882	Sala			
-1883	Sakakura			
-1884	Sakagami			
-1885	Saito			
-1886	Saint Martin			
-1887	Saijo			
-1888	Saier			
-1889	Sacchi			
-1890	Sabattini			
-1891	Russ			
-1892	Rushforth			
-1893	Ruppert			
-1894	Ruppel			
-1895	Ruiz			
-1896	Ruggieri			
-1897	Rucker			
-1898	Rubin			
-1899	Rozman			
-1900	Rowley			
-1901	Rowland			
-1902	Rousselet			
-1903	Rossi			
-1904	Rominger			
-1905	Rollet			
-1906	Rolfe			
-1907	Roginskaya			
-1908	Roethel			
-1909	Roen			
-1910	Roehrich			
-1911	Rodriguez			
-1912	Roche			
-1913	Robilliard			
-1914	Roberts			
-1915	Robba			
-1916	Robaszynski			
-1917	Roaf			
-1918	Rivosecchi			
-1919	Rittshof			
-1920	Ristkok			
-1921	Ristedt			
-1922	Risk			
-1923	Rinehart Jr.			
-1924	Riley			
-1925	Riisgård			
-1926	Riisgard			
-1927	Riggio			
-1928	Ries			
-1929	Rieradevall			
-1930	Rider			
-1931	Richmond			
-1932	Richelle			
-1933	Richards			
-1934	Ricciardi			
-1935	Ricci Lucchi			
-1936	Rho			
-1937	Reyss			
-1938	Reynolds			
-1939	Rey			
-1940	Reverter-Gil			
-1941	Reverter			
-1942	Reverter Gil			
-1943	Renieri			
-1944	Relini			
-1945	Reish			
-1946	Reid			
-1947	Reguant			
-1948	Reger			
-1949	Rees			
-1950	Reed			
-1951	Redier			
-1952	Redfern			
-1953	Redden			
-1954	Read			
-1955	Raveendran			
-1956	Raup			
-1957	Rasmussen			
-1958	Ranzoli			
-1959	Rangheard			
-1960	Ramsdell			
-1961	Ramirez			
-1962	Raja			
-1963	Rahim			
-1964	Rahbaek			
-1965	Rahback			
-1966	Ragan			
-1967	Radoicic			
-1968	Raddum			
-1969	Racki			
-1970	Quilty			
-1971	Quelch			
-1972	Qian			
-1973	Pyefinch			
-1974	Putintsev			
-1975	Pulpeiro			
-1976	Pukall			
-1977	Pszczolkowski			
-1978	Prud'homme van Reine			
-1979	Prud'Homme			
-1980	Proz			
-1981	Prout			
-1982	Prouho			
-1983	Protasov			
-1984	Prosasov			
-1985	Proksch			
-1986	Probert			
-1987	Prinsep			
-1988	Prigge			
-1989	Prezbindowski			
-1990	Pray			
-1991	Prasada Rao			
-1992	Pozaryska			
-1993	Pourtales			
-1994	Pourtalès			
-1995	Pourcher			
-1996	Pouba			
-1997	Posey			
-1998	Porter			
-1999	Portell			
-2000	Por			
-2001	Popov			
-2002	Popeko			
-2003	Poore			
-2004	Poncet			
-2005	Pomerat			
-2006	Poluzzi			
-2007	Poll			
-2008	Poisson			
-2009	Poirrier			
-2010	Podell			
-2011	Pocock			
-2012	Pockrandt			
-2013	Plamenskaya			
-2014	Pizzaferri			
-2015	Pitrat			
-2016	Pisano			
-2017	Pirkle			
-2018	Pires			
-2019	Piraino			
-2020	Pinto			
-2021	Pinter			
-2022	Pine			
-2023	Pinder			
-2024	Pillai			
-2025	Picton			
-2026	Piccoli			
-2027	Picard			
-2028	Philippe			
-2029	Peyssonnel			
-2030	Peybernes			
-2031	Petukhova			
-2032	Petty			
-2033	Pettit			
-2034	Petkovic			
-2035	Peterson			
-2036	Peters			
-2037	Perry			
-2038	Perreau			
-2039	Peron			
-2040	Perkins			
-2041	Perez			
-2042	Penn			
-2043	Pemberton			
-2044	Pedley			
-2045	Pederson			
-2046	Pedder			
-2047	Pecsi			
-2048	Peckol			
-2049	Peck			
-2050	Pechenik			
-2051	Pearse			
-2052	Peach			
-2053	Pavlova			
-2054	Pauw			
-2055	Paulay			
-2056	Paul			
-2057	Pätzold			
-2058	Patzkowsky			
-2059	Pattison			
-2060	Patella			
-2061	Partaly			
-2062	Partalij			
-2063	Parsons			
-2064	Parks			
-2065	Pareyn			
-2066	Parenzan			
-2067	Pardue			
-2068	Papageorgakis			
-2069	Pandolfi			
-2070	Pande			
-2071	Palumbi			
-2072	Palmer			
-2073	Palinska			
-2074	Palacios			
-2075	Pain			
-2076	Paghida-Trelea			
-2077	Padilla			
-2078	Packard			
-2079	Pachut			
-2080	Pachut Jr.			
-2081	Pace			
-2082	Ozhgibesov			
-2083	Owrid			
-2084	Owens			
-2085	Owen			
-2086	Otten			
-2087	Ott			
-2088	Oswald			
-2089	O'Sullivan			
-2090	Ostroumoff			
-2091	Osorlo			
-2092	Osman			
-2093	Oshurkov			
-2094	Osborne			
-2095	Orton			
-2096	Ortega			
-2097	Orellana			
-2098	Orel			
-2099	Opravilova			
-2100	Omaly			
-2101	Olaloye			
-2102	Økland			
-2103	Okland			
-2104	Okano			
-2105	Okamoto			
-2106	Ohtaka			
-2107	O'Hara			
-2108	Ogbogu			
-2109	Ogawa			
-2110	Odum			
-2111	Odell			
-2112	O'Dea			
-2113	Oda			
-2114	O'Connor			
-2115	Nye			
-2116	Nybakken			
-2117	Nursall			
-2118	Nunomura			
-2119	Numakunai			
-2120	Nudds			
-2121	Novosel			
-2122	Novak			
-2123	Norton			
-2124	Nordmann			
-2125	Nordgaard			
-2126	Norden Anderson			
-2127	Nomenclature			
-2128	Noble			
-2129	Nitsche			
-2130	Nitecki			
-2131	Nishizawa			
-2132	Nimeskern Jr.			
-2133	Nikolic			
-2134	Nikoliã			
-2135	Nikiforova			
-2136	Niermann			
-2137	Nielsen			
-2138	Nield			
-2139	Nicoletti			
-2140	Newton			
-2141	Newell			
-2142	Neuffer			
-2143	Nesis			
-2144	Nelson			
-2145	Negreiros Fransozo			
-2146	Neck			
-2147	Nazarova			
-2148	Naylor			
-2149	Nauman			
-2150	Narkowicz			
-2151	Nandakumar			
-2152	Namikawa			
-2153	Nakazawa			
-2154	Nakahara			
-2155	Nair			
-2156	Naimark			
-2157	Nagle			
-2158	Nageshwara Rao			
-2159	Nagabhushanam			
-2160	Myers			
-2161	Muus			
-2162	Mutter			
-2163	Mushusubramanian			
-2164	Muravchik			
-2165	Murano			
-2166	Muñoz			
-2167	Mundy			
-2168	Mullineaux			
-2169	Mullin			
-2170	Muller			
-2171	Müller			
-2172	Mulder			
-2173	Mukai			
-2174	Morton			
-2175	Mortelmans			
-2176	Morrison			
-2177	Morrill			
-2178	Mori			
-2179	Morgan			
-2180	Morgado			
-2181	Moreau			
-2182	Moran			
-2183	Morales-Rios			
-2184	Mook			
-2185	Montenat			
-2186	Monteiro Marques			
-2187	Monteiro			
-2188	Monteillet			
-2189	Montanaro			
-2190	Montanari			
-2191	Monokov			
-2192	Molina			
-2193	Moissette			
-2194	Moisette			
-2195	Mohammad			
-2196	Miyazaki			
-2197	Mitchell			
-2198	Mistiaen			
-2199	Mistakidis			
-2200	Minoura			
-2201	Milne			
-2202	Miller III			
-2203	Miller Jr.			
-2204	Millarce			
-2205	Miles			
-2206	Mileikovsky			
-2207	Mildner			
-2208	Miki			
-2209	Mikhaevich			
-2210	Mihm			
-2211	Meyer			
-2212	Merilaita			
-2213	Merida			
-2214	Mergner			
-2215	Mergl			
-2216	Mercado			
-2217	Menzies			
-2218	Menon			
-2219	Mendola			
-2220	Mendez-Bedia			
-2221	Mendez			
-2222	Melone			
-2223	Mehrtens			
-2224	Meek			
-2225	Médioni			
-2226	McShea			
-2227	M'Coy			
-2228	McNamara			
-2229	McNair			
-2230	McLeod			
-2231	McLean			
-2232	McLaren			
-2233	McKamey			
-2234	McGuirt			
-2235	McGovern			
-2236	McGhee			
-2237	McEdward			
-2238	McDougall			
-2239	McDermott			
-2240	McConnaughey			
-2241	McColloch			
-2242	McCartney			
-2243	McCain			
-2244	McBeth			
-2245	Mayr			
-2246	Maxwell			
-2247	Maw			
-2248	Maurer			
-2249	Maughan			
-2250	Mauch			
-2251	Matzdorff			
-2252	Maturo			
-2253	Mattox			
-2254	Matsunaga			
-2255	Matricon			
-2256	Matricardi			
-2257	Mathur			
-2258	Masuda			
-2259	Mastenbroek			
-2260	Masse			
-2261	Massard			
-2262	Maryanska			
-2263	Martinsson			
-2264	Martinell			
-2265	Martindale			
-2266	Martin			
-2267	Marshall			
-2268	Markowski			
-2269	Markov			
-2270	Markham			
-2271	Mariscal			
-2272	Marion			
-2273	Marintsch			
-2274	Mariani			
-2275	Marcopoulou Diacantoni			
-2276	Marcopolou-Diacantoni			
-2277	Marano			
-2278	Marabini			
-2279	Manriquez			
-2280	Manning			
-2281	Manganelli			
-2282	Mañé-Garzón			
-2283	Maluquer			
-2284	Maloney			
-2285	Malone			
-2286	Maliva			
-2287	Malchow			
-2288	Makrushin			
-2289	Maiello			
-2290	Magalhaes			
-2291	Madsen			
-2292	Madhaven Pillai			
-2293	Madhavan Pillai			
-2294	MacMunn			
-2295	MacLeod			
-2296	Mackey			
-2297	Macken			
-2298	Maciorowski			
-2299	MacGinitie			
-2300	MacFarlan			
-2301	Marwick			
-2302	Lysek			
-2303	Lynch			
-2304	Lyke			
-2305	Lutov			
-2306	Luther			
-2307	Luterbacher			
-2308	Lutaud			
-2309	Lukasik			
-2310	Ludford			
-2311	Lowenstam			
-2312	Lovern			
-2313	Loveland			
-2314	Lorenzo Villar			
-2315	Lorenz			
-2316	Loppens			
-2317	Lopez Gappa			
-2318	López de la Cuadra			
-2319	Lopez de la Cuadra			
-2320	Lopanik			
-2321	Lönnberg			
-2322	Longshaw			
-2323	Long			
-2324	Lomas			
-2325	Lohmann			
-2326	Logan			
-2327	Loeblich			
-2328	Loeb			
-2329	Lobdell			
-2330	Loba da Cunha			
-2331	Livanov			
-2332	Liszka			
-2333	Lister			
-2334	Lisitsyn			
-2335	Lisbjerg			
-2336	Lisandro			
-2337	Lippi Boncambi			
-2338	Lipkin			
-2339	Lipina			
-2340	Lindstedt			
-2341	Lindberg			
-2342	Lin			
-2343	Lim			
-2344	Lienau			
-2345	Liebus			
-2346	Liddell			
-2347	Lichtschein de Bastida			
-2348	Lichtenberg			
-2349	Liang			
-2350	Lewis			
-2351	Lev			
-2352	Leuterman			
-2353	Leung Tack Kit			
-2354	Lescinsky			
-2355	Lepersonne			
-2356	Lenzi			
-2357	Lemche			
-2358	Leloux			
-2359	Leidy			
-2360	Leichter			
-2361	Lefevre			
-2362	Lefevere			
-2363	Lees			
-2364	Lee			
-2365	Lecompte			
-2366	Leca			
-2367	LeBlanc			
-2368	Lebedev			
-2369	Leathem			
-2370	Leary			
-2371	Leal			
-2372	le Maitre			
-2373	Layerspetz			
-2374	Lavrent'yeva			
-2375	Lavrenteva			
-2376	Lavoie			
-2377	Laverack			
-2378	Lauritzen			
-2379	Lauer			
-2380	Laubier			
-2381	Lasher			
-2382	Laseron			
-2383	Lasemi			
-2384	Larwood			
-2385	Larsen			
-2386	Lanza Suarez			
-2387	Lankester			
-2388	Langer			
-2389	Langenstrassen			
-2390	Lange			
-2391	Lane			
-2392	Landman			
-2393	Lambert			
-2394	Lamarti-Sefian			
-2395	Lamarti Sefian			
-2396	Lakatos			
-2397	Lagardere			
-2398	Ladewig			
-2399	Lacourt			
-2400	Lacaze-Duthiers			
-2401	La Rocque			
-2402	Kyser			
-2403	Kvitek			
-2404	Kuznetsov			
-2405	Kuusela			
-2406	Kusakin			
-2407	Kuriyan			
-2408	Kundal			
-2409	Kulka			
-2410	Kulich			
-2411	Kuklinski			
-2412	Kujawa			
-2413	Kühl			
-2414	Kues			
-2415	Kubota			
-2416	Ktari-Chakroun			
-2417	Kruytzer			
-2418	Krukenberg			
-2419	Krivenko			
-2420	Kristensen			
-2421	Krausel			
-2422	Kramp			
-2423	Kowalski			
-2424	Kovganko			
-2425	Kouchi			
-2426	Kotua Dickson			
-2427	Kostetskii			
-2428	Korringa			
-2429	Kornicker			
-2430	Korn			
-2431	Kora			
-2432	Konopacka			
-2433	Konno			
-2434	Konnecker			
-2435	König			
-2436	Kon ya			
-2437	Kolosváry			
-2438	Kohring			
-2439	Kohler			
-2440	Kohl			
-2441	Kochansky Devide			
-2442	Kocak			
-2443	Kobluk			
-2444	Kobayashi			
-2445	Knudsen			
-2446	Knop			
-2447	Knipowitsch			
-2448	Knight-Jones			
-2449	Knight			
-2450	Knaissling			
-2451	Klevenhusen			
-2452	Klemke			
-2453	Klein			
-2454	Kleemann			
-2455	Kitching			
-2456	Kitamura			
-2457	Kiseleva			
-2458	Kinne			
-2459	Kim			
-2460	Kilfoyle			
-2461	Kier			
-2462	Kiel			
-2463	Kidwell			
-2464	Khmeleva			
-2465	Kharin			
-2466	Key			
-2467	Key Jr.			
-2468	Kesling			
-2469	Keskin			
-2470	Kerr			
-2471	Kerneïs			
-2472	Kerckhof			
-2473	Keough			
-2474	Kent			
-2475	Kensley			
-2476	Kennedy			
-2477	Kelmo			
-2478	Kelly			
-2479	Kelley			
-2480	Keller			
-2481	Keith			
-2482	Kecskemeti Kormendy			
-2483	Kazmierczak			
-2484	Kay			
-2485	Kawakatsu			
-2486	Kawahara			
-2487	Kaufmann			
-2488	Katoaka			
-2489	Karlson			
-2490	Karklins			
-2491	Karim			
-2492	Karande			
-2493	Kapitzke			
-2494	Kaneko			
-2495	Kaminski			
-2496	Kamano			
-2497	Kalyani			
-2498	Kaisin			
-2499	Kahle			
-2500	Kafanov			
-2501	Kaelin			
-2502	Kachalova			
-2503	Kacha			
-2504	Jurgensen			
-2505	Joseph			
-2506	Joo			
-2507	Jonet			
-2508	Jones			
-2509	Joliet			
-2510	Jokiel			
-2511	Johnson			
-2512	Johannes			
-2513	Jofts			
-2514	Jocqué			
-2515	Jobe			
-2516	Job			
-2517	Jillett			
-2518	Jikai			
-2519	Jeuniaux			
-2520	Jeong			
-2521	Jensen			
-2522	Jell			
-2523	Jeffries			
-2524	Jeekel			
-2525	Jeanmougin			
-2526	Javed			
-2527	Jasin			
-2528	Jarvis			
-2529	Jarms			
-2530	Janssen			
-2531	Jannasch			
-2532	Jangoux			
-2533	Jamet			
-2534	James			
-2535	Jaiswal			
-2536	Jain			
-2537	Jaguin			
-2538	Jägerskiöld			
-2539	Jaeckle			
-2540	Jaeckel			
-2541	Jacquotte			
-2542	Jackson Jr.			
-2543	Jablonski			
-2544	Iyengar			
-2545	Ivanovskii			
-2546	Ivanova-Kazas			
-2547	Ivanova Kazas			
-2548	Ivaniya			
-2549	Ivanenko			
-2550	Issaq			
-2551	Ishizaki			
-2552	Ishikawa			
-2553	Isensee			
-2554	International Commission on Zoological Nomenclature			
-2555	International Bryozoology			
-2556	Ingold			
-2557	India			
-2558	Ilina			
-2559	Ikezawa			
-2560	Ignatiades			
-2561	Igic			
-2562	Igiæ			
-2563	Idris			
-2564	Ida			
-2565	Hyman			
-2566	Hyden			
-2567	Hyatt			
-2568	Huxley			
-2569	Hutchins			
-2570	Hurlbut			
-2571	Hurd			
-2572	Hunter			
-2573	Hunt			
-2574	Humphries			
-2575	Hulings			
-2576	Hughes			
-2577	Huffman			
-2578	Huddleston			
-2579	Hucke			
-2580	Hubschman			
-2581	Huang			
-2582	Hu			
-2583	Hradecka			
-2584	Howes			
-2585	Howard			
-2586	Houzelot			
-2587	Hosomi			
-2588	Horowitz			
-2589	Horne			
-2590	Honma			
-2591	Hong			
-2592	Holst			
-2593	Holmquist			
-2594	Holmes			
-2595	Hollstrom			
-2596	Hollingworth			
-2597	Holdener			
-2598	Holcova			
-2599	Hofmann			
-2600	Hoare			
-2601	Hoar			
-2602	Hiscock			
-2603	Hirosaki			
-2604	Hiroi			
-2605	Hirata			
-2606	Hinz Schallreuter			
-2607	Hino			
-2608	Hinds			
-2609	Hinde			
-2610	Hinchcliffe			
-2611	Hilton			
-2612	Hiltermann			
-2613	Hiller			
-2614	Higazi			
-2615	Hidu			
-2616	Hicks			
-2617	Hickey			
-2618	Hess			
-2619	Hertlein			
-2620	Herrmann			
-2621	Herrera-Cubilla			
-2622	Herrera			
-2623	Hermansen			
-2624	Hentschel			
-2625	Henry			
-2626	Henrich			
-2627	Henneguy			
-2628	Henke			
-2629	Hempel			
-2630	Helm			
-2631	Heimler			
-2632	Hedrick			
-2633	Healey			
-2634	He			
-2635	Hayton			
-2636	Haygood			
-2637	Haya			
-2638	Hatton-Ellis			
-2639	Hatcher			
-2640	Hass			
-2641	Hasper			
-2642	Haslu			
-2643	Hashima			
-2644	Hary			
-2645	Harwood			
-2646	Harvey			
-2647	Harvell			
-2648	Hart			
-2649	Harrison			
-2650	Harper			
-2651	Harms			
-2652	Harlton			
-2653	Hardy-Halos			
-2654	Hardy			
-2655	Harder			
-2656	Harbridge			
-2657	Hao			
-2658	Hanström			
-2659	Hansen			
-2660	Hanken			
-2661	Hampton III			
-2662	Hammen			
-2663	Hamilton			
-2664	Hamer			
-2665	Hamel			
-2666	Halme			
-2667	Hallam			
-2668	Halanych			
-2669	Håkansson			
-2670	Haime			
-2671	Hageman			
-2672	Hadjieva			
-2673	Hadfii			
-2674	Haderlie			
-2675	Haddadi Hamdane			
-2676	Guzman			
-2677	Gutmann			
-2678	Gustus			
-2679	Gustavson			
-2680	Gusso			
-2681	Gurney			
-2682	Gurjanowa			
-2683	Gurjanova			
-2684	Gurgel			
-2685	Gupta			
-2686	Gunter			
-2687	Gundrum			
-2688	Gulliksen			
-2689	Guille			
-2690	Gugel			
-2691	Guérin-Ganivet			
-2692	Guerin			
-2693	Gryncharova			
-2694	Grunbaum			
-2695	Gruet			
-2696	Grubbs			
-2697	Groupe			
-2698	Gristina			
-2699	Grigg			
-2700	Grenon			
-2701	Grellet			
-2702	Greenland			
-2703	Green			
-2704	Greely			
-2705	Greeley			
-2706	Grave			
-2707	Graupner			
-2708	Grasshoff			
-2709	Grant			
-2710	Graham			
-2711	Grace			
-2712	Grabow			
-2713	Gould			
-2714	Gottardi			
-2715	Gothel			
-2716	Gostilovskaya			
-2717	Gostilovskaia			
-2718	Gosteva			
-2719	Gosselin			
-2720	Goromosova			
-2721	Gorodiski			
-2722	Gorin			
-2723	Gorbunov			
-2724	Gopalakrishnan			
-2725	Gooday			
-2726	Gooch			
-2727	Gomoiu			
-2728	Goldwasser			
-2729	Goldson			
-2730	Goethals			
-2731	Goddard			
-2732	Glémarec			
-2733	Glaub			
-2734	Glasby			
-2735	Gischler			
-2736	Girty			
-2737	Girling			
-2738	Gioli			
-2739	Ginsburg			
-2740	Gilmour			
-2741	Gillespie			
-2742	Gillard			
-2743	Gili			
-2744	Giese			
-2745	Gibson			
-2746	Ghosh			
-2747	Ghobashy			
-2748	Ghiurca			
-2749	Ghiselin			
-2750	Gheorghian			
-2751	Geys			
-2752	Germain			
-2753	Gerhart			
-2754	Gerdes			
-2755	George			
-2756	Genovese			
-2757	Geimer			
-2758	Geiger			
-2759	Gazdzicki			
-2760	Gay			
-2761	Gaspparik			
-2762	Garrad			
-2763	Garrabou			
-2764	Gardiner			
-2765	Gantès			
-2766	Gansen			
-2767	Ganesan			
-2768	Gamulin-Brida			
-2769	Gamberi			
-2770	Galtsoff			
-2771	Galopim de Carvalho			
-2772	Galluzzo			
-2773	Gallardo			
-2774	Gallagher			
-2775	Gainey			
-2776	Gaibar-Puertas			
-2777	Fuse			
-2778	Fürstner			
-2779	Fursich			
-2780	Funch			
-2781	Fulton			
-2782	Fuller			
-2783	Fuchtbauer			
-2784	Fry			
-2785	Friedl			
-2786	Friebe			
-2787	Frey			
-2788	Fresi			
-2789	Freitas			
-2790	Freeland			
-2791	Fredskild			
-2792	Fredj			
-2793	Frederiks			
-2794	Frazier			
-2795	Fraser			
-2796	Franzen			
-2797	Franz			
-2798	Fransen			
-2799	Franke			
-2800	Frank			
-2801	Francis			
-2802	Fox			
-2803	Fortunatova			
-2804	Fortuin			
-2805	Forster			
-2806	Forsmann			
-2807	Forbes			
-2808	Flugel			
-2809	Florey			
-2810	Flores			
-2811	Fletcher			
-2812	Fitzhardinge			
-2813	Fisher			
-2814	Fishelson			
-2815	Fish			
-2816	Finotti			
-2817	Finger			
-2818	Fine			
-2819	Filice			
-2820	Filatova			
-2821	Fields Jr.			
-2822	Field			
-2823	Fiala-Medioni			
-2824	Ferrand			
-2825	Fernando			
-2826	Fernandez Lopez			
-2827	Fernandez Araoz			
-2828	Ferguson			
-2829	Ferdeghini			
-2830	Felber			
-2831	Feist			
-2832	Fedorowicz			
-2833	Faura Sans			
-2834	Faulkner			
-2835	Farmer			
-2836	Farmer Jr.			
-2837	Fan			
-2838	Fagerstrom			
-2839	Fager			
-2840	Faasse			
-2841	Everitt			
-2842	Evans			
-2843	Euzet			
-2844	Eugene			
-2845	Ettensohn			
-2846	Etheridge			
-2847	Etallon			
-2848	Esa			
-2849	Ertlova			
-2850	Ernst			
-2851	Erickson			
-2852	Entcheva			
-2853	Ensom			
-2854	Engeser			
-2855	Engemann			
-2856	Engelhardt			
-2857	Engel			
-2858	Enaceanu			
-2859	Emschermann			
-2860	Emig			
-2861	Emerson			
-2862	Elmhirst			
-2863	El-Matbouli			
-2864	Elloy			
-2865	Ellison			
-2866	El-Komi			
-2867	Elkaïm			
-2868	Elia			
-2869	El Sorogy			
-2870	El Sanussi			
-2871	El Hajjaji			
-2872	Eitan			
-2873	Eiserhardt			
-2874	Eisenbarth			
-2875	Eiben			
-2876	Ehleiter			
-2877	Eggleston			
-2878	Edmunds			
-2879	Edmondson			
-2880	Edelstein			
-2881	Eckman			
-2882	Echalier			
-2883	Easton			
-2884	Earll			
-2885	Eakin			
-2886	Dyrynda			
-2887	Dyer			
-2888	Dybern			
-2889	Dussart			
-2890	Durante			
-2891	Dunstan			
-2892	Duncan			
-2893	Dumont			
-2894	Dumitrescu			
-2895	Dulai			
-2896	Duggins			
-2897	Dudley			
-2898	Dudich			
-2899	d'Udekem d'Acoz			
-2900	Dubos			
-2901	Dublin			
-2902	Duarte			
-2903	Dromgoole			
-2904	Driscoll			
-2905	Dreyfuss			
-2906	Drexler			
-2907	Dorsey			
-2908	Dörjes			
-2909	Doochin			
-2910	Dony			
-2911	Dons			
-2912	Dommasnes			
-2913	Dodson			
-2914	Dockery III			
-2915	Dobson			
-2916	Dixon			
-2917	Dix			
-2918	Ding			
-2919	Dilly			
-2920	Dil			
-2921	Dighton Thomas			
-2922	Dietl			
-2923	di Geronimo			
-2924	Dexter			
-2925	Destombes			
-2926	Desser			
-2927	Desrochers			
-2928	Desor			
-2929	Desilly			
-2930	Desgouilles			
-2931	Descatoire			
-2932	Derjugin			
-2933	Derebach			
-2934	Dennis			
-2935	Denisenko			
-2936	Demel			
-2937	Demarcq			
-2938	Delvolve			
-2939	Delmet			
-2940	Dell'Angelo			
-2941	Delamette			
-2942	Dekker			
-2943	Dejoux			
-2944	Dehdashti			
-2945	Dechart			
-2946	Debrand-Passard			
-2947	Deboutteville			
-2948	Debourle			
-2949	Dean			
-2950	de Porta			
-2951	De Palma			
-2952	De Meester			
-2953	De Kinkelin			
-2954	de Ferry			
-2955	de Burgh			
-2956	de Blauwe			
-2957	Dayton			
-2958	Day			
-2959	Dawydoff			
-2960	Dawson			
-2961	Davoult			
-2962	Davies			
-2963	Davidson			
-2964	Davidheiser			
-2965	Davenport			
-2966	Daugherty			
-2967	Das			
-2968	Dartevelle			
-2969	Darrell			
-2970	Daro			
-2971	Danielssen			
-2972	Daniel			
-2973	Dales			
-2974	Dainka			
-2975	Daguzan			
-2976	Dagorne			
-2977	Dade			
-2978	Czarniecki			
-2979	Curry			
-2980	Cummings			
-2981	Cumings			
-2982	Crozier			
-2983	Crowley			
-2984	Crowell			
-2985	Crosby			
-2986	Crockford			
-2987	Crisp			
-2988	Crisman			
-2989	Creary			
-2990	Cranfield			
-2991	Crane			
-2992	Craig			
-2993	Cowles			
-2994	Cowen			
-2995	Couch			
-2996	Costlow			
-2997	Costa			
-2998	Corybell			
-2999	Cory			
-3000	Corriero			
-3001	Correa			
-3002	Corp			
-3003	Corner			
-3004	Corneliussen			
-3005	Corlett			
-3006	Cordiviola de Yuan			
-3007	Cope			
-3008	Cooper			
-3009	Coogan			
-3010	Conway Morris			
-3011	Conroy			
-3012	Conrad			
-3013	Connolly			
-3014	Conkin			
-3015	Condra			
-3016	Colon-Urban			
-3017	Colon Urban			
-3018	Colmenero			
-3019	Colman			
-3020	Collins			
-3021	Collie			
-3022	Colledge			
-3023	Coleman			
-3024	Cole			
-3025	Cohen			
-3026	Cognetti			
-3027	Coe			
-3028	Cockbain			
-3029	Cocito			
-3030	Coash			
-3031	Closs			
-3032	Clément			
-3033	Cleevely			
-3034	Clausade			
-3035	Clarke			
-3036	Clarke Bradbury			
-3037	Clark			
-3038	Claparède 			
-3039	Clamp			
-3040	Cisterna			
-3041	Cincurova			
-3042	Chuarry			
-3043	Christophersen			
-3044	Christopher			
-3045	Christoffersen			
-3046	Chrétien			
-3047	Choi			
-3048	Chirica			
-3049	Chiplonkar			
-3050	Chiocci			
-3051	Chimonides			
-3052	Chimenz Gusso			
-3053	Chimenz			
-3054	Chevolot			
-3055	Chevalier			
-3056	Cherif			
-3057	Cherepnina			
-3058	Chave			
-3059	Chaudonneret			
-3060	Chaubey			
-3061	Chau			
-3062	Chaturvedi			
-3063	Chatterjee			
-3064	Charlton			
-3065	Chardez			
-3066	Charalambidou			
-3067	Chapgar			
-3068	Chaney			
-3069	Chalmer			
-3070	Chaix			
-3071	César-Aldariz			
-3072	Cesar-Aldariz			
-3073	Cesar Aldariz			
-3074	Ceretti			
-3075	Ceretti 			
-3076	Cekalovic			
-3077	Ceccagnoli			
-3078	Cea			
-3079	Cazzaniga			
-3080	Cazaux			
-3081	Cave			
-3082	Cavaliere			
-3083	Cavalier Smith			
-3084	Caulet			
-3085	Castro Guimarães			
-3086	Castritsi-Catharios			
-3087	Castritsi Catharios			
-3088	Castric-Fey			
-3089	Casto			
-3090	Castagna			
-3091	Caspers			
-3092	Casola			
-3093	Casnedi			
-3094	Casadio			
-3095	Carté			
-3096	Carson			
-3097	Carriol			
-3098	Carrera			
-3099	Carrada			
-3100	Carpine			
-3101	Carlé			
-3102	Carefoot			
-3103	Carbonnel			
-3104	Carbone			
-3105	Car			
-3106	Cantone			
-3107	Canning			
-3108	Canerot			
-3109	Cancino			
-3110	Campbell			
-3111	Calzada			
-3112	Calvin Calvo			
-3113	Caltagirone			
-3114	Calow			
-3115	Callaghan			
-3116	Calder			
-3117	Cairns			
-3118	Cahuzac			
-3119	Cafieri			
-3120	Caffara			
-3121	Cadman			
-3122	Cadee			
-3123	Caceres			
-3124	Caceres Chamizo			
-3125	Cabioch			
-3126	Byra			
-3127	Bykova			
-3128	Buttler			
-3129	Butler			
-3130	Buss			
-3131	Bushnell			
-3132	Burn			
-3133	Burke			
-3134	Burdon-Jones			
-3135	Burckle			
-3136	Bullimore			
-3137	Buck			
-3138	Buchner			
-3139	Buchanan			
-3140	Bryan			
-3141	Bruce			
-3142	Brozec			
-3143	Brooks			
-3144	Brookfield			
-3145	Brons			
-3146	Bromley			
-3147	Broglio Loriga			
-3148	Brock			
-3149	Brien			
-3150	Brice			
-3151	Brezinski			
-3152	Brey			
-3153	Brettfeld			
-3154	Brett			
-3155	Bretsky Jr.			
-3156	Bretsky			
-3157	Brenchley			
-3158	Breitburg			
-3159	Brebion			
-3160	Braverman			
-3161	Brauns			
-3162	Brattström			
-3163	Brassel			
-3164	Brandt			
-3165	Brande			
-3166	Branch			
-3167	Brancato			
-3168	Brajko			
-3169	Braiko			
-3170	Braga			
-3171	Bradstock			
-3172	Bradley			
-3173	Boyko			
-3174	Boyer			
-3175	Bousfield			
-3176	Boury-Esnault			
-3177	Bourgeat			
-3178	Boulanger			
-3179	Bouffandeau			
-3180	Bouchet			
-3181	Bottjer			
-3182	Borsetti			
-3183	Borset			
-3184	Bork			
-3185	Borisenko			
-3186	Bordeaux			
-3187	Boone			
-3188	Bonnevie			
-3189	Bonfiglio			
-3190	Boney			
-3191	Bonetto			
-3192	Bonem			
-3193	Bone			
-3194	Bolton			
-3195	Bolshakova			
-3196	Bolli			
-3197	Boillot			
-3198	Boiko			
-3199	Bogush			
-3200	Bogolepow			
-3201	Bogolepov			
-3202	Boero			
-3203	Blondel			
-3204	Blind			
-3205	Bliefnick			
-3206	Blick			
-3207	Blanner			
-3208	Blane			
-3209	Blake			
-3210	Blackman			
-3211	Black			
-3212	Bissoenette			
-3213	Birstein			
-3214	Birkelund			
-3215	Billing			
-3216	Billard			
-3217	Bijma			
-3218	Bignot			
-3219	Bielokrys			
-3220	Biao			
-3221	Bianchi			
-3222	Bhatt			
-3223	Bhakuni			
-3224	Beutler			
-3225	Best			
-3226	Bertrand			
-3227	Bertling			
-3228	Berset			
-3229	Berry			
-3230	Berrill			
-3231	Bernheimer			
-3232	Berman			
-3233	Bergmann			
-3234	Bergman			
-3235	Berglund			
-3236	Berger			
-3237	Berge			
-3238	Berdyshev			
-3239	Berdar			
-3240	Benthem Jutting			
-3241	Benson			
-3242	Bennike			
-3243	Benier			
-3244	Ben Moussa			
-3245	Belloc			
-3246	Bellan-Santini			
-3247	Bell			
-3248	Belamaric			
-3249	Bekker			
-3250	Beissel			
-3251	Begg			
-3252	Began			
-3253	Bechon			
-3254	Becerro			
-3255	Beaven			
-3256	Beauchamp			
-3257	Bayer			
-3258	Baum			
-3259	Battistini			
-3260	Battaglini			
-3261	Bassompierre			
-3262	Bassindale			
-3263	Baschong			
-3264	Bartley			
-3265	Bartholomaus			
-3266	Barskov			
-3267	Barrois			
-3268	Barrier			
-3269	Barrett			
-3270	Baroni			
-3271	Barnet			
-3272	Barnes			
-3273	Barkai			
-3274	Barel			
-3275	Baranova			
-3276	Banks			
-3277	Bandel			
-3278	Bancroft			
-3279	Bameul			
-3280	Bamber			
-3281	Bambach			
-3282	Balson			
-3283	Ballesteros			
-3284	Ballantine			
-3285	Bale			
-3286	Balduzzi			
-3287	Baker			
-3288	Baird			
-3289	Bain			
-3290	Bailey-Brock			
-3291	Bailey Brock			
-3292	Bahr			
-3293	Baghdiguian			
-3294	Bagge			
-3295	Bagdasaryan			
-3296	Bagaveeva			
-3297	Badve			
-3298	Bader			
-3299	Bacon			
-3300	Backus			
-3301	Bacescu			
-3302	Azmi			
-3303	Azcuy			
-3304	Aymes			
-3305	Ayer			
-3306	Aye Ko			
-3307	Avrov			
-3308	Atkins			
-3309	Astafieva Urbajtis			
-3310	Askren			
-3311	Ashdown			
-3312	Arsenev			
-3313	Arroyo			
-3314	Arnold			
-3315	Arndt			
-3316	Arnaud-Vanneau			
-3317	Armstrong			
-3318	Ariunchimeg			
-3319	Aristegui			
-3320	Arias			
-3321	Arens			
-3322	Arcifa			
-3323	Arakawa			
-3324	Aprosi			
-3325	Applewhite			
-3326	Apollini			
-3327	Antony Raja			
-3328	Antonia Biblioni			
-3329	Antolini			
-3330	Antipenko			
-3331	Anthoni			
-3332	Ankar			
-3333	Anichini			
-3334	Andrusov			
-3335	Andrieff			
-3336	Andrews			
-3337	André			
-3338	Andre			
-3339	Andersson			
-3340	Anderson			
-3341	Andersen			
-3342	Anastas			
-3343	Anadon			
-3344	Amor			
-3345	Amler			
-3346	Amini			
-3347	Ames			
-3348	Ambronn			
-3349	Alvarez-Leon			
-3350	Al-Ogily			
-3351	Allam			
-3352	Alexandrowicz			
-3353	Alexander			
-3354	Aleem			
-3355	Alberti			
-3356	Alagarswami			
-3357	Aguirre Urreta			
-3358	Aguirre			
-3359	Agrawal			
-3360	Agius			
-3361	Agassiz			
-3362	Agarwal			
-3363	Afanasjeva			
-3364	Adema			
-3365	Adams			
-3366	Adami			
-3367	Ackefors			
-3368	Aceñolaza			
-3369	Accordi			
-3370	Abushik			
-3371	Abricosov			
-3372	Abelson			
-3373	Abeloos			
-3374	Abello			
-3375	Abdel-Aal			
-3376	Abbott			
-3377	Abass			
-3378	Acharyya			
-3379	Adabi			
-3380	Adachi			
-3381	Afanas'yev			
-3382	Agnoletto			
-3383	Aguinaldo			
-3384	Ahlfors			
-3385	Ahmed			
-3386	Aithie			
-3387	Al Habbib			
-3388	Alcaype			
-3389	Al-Katib			
-3390	Allegri			
-3391	Allison			
-3392	Almatchy			
-3393	Almeras			
-3394	Alméras			
-3395	Alva			
-3396	Alvarado			
-3397	Alvardo			
-3398	Alvaro			
-3399	Alvis			
-3400	Amaral			
-3401	Amblàs			
-3402	Amedro			
-3403	Amig			
-3404	Ananich			
-3405	Andersin			
-3406	Andreev			
-3407	Andres			
-3408	Angelis d'Ossat			
-3409	Angelucci			
-3410	Aoyagi			
-3411	Aprill			
-3412	Aracena			
-3413	Araujo de Almeida			
-3414	Arcas			
-3415	Archbold			
-3416	Ardizzone			
-3417	Argenti			
-3418	Arnaud			
-3419	Artigas			
-3420	Asami			
-3421	Asaro			
-3422	Aston			
-3423	Asyagi			
-3424	Attrill			
-3425	Ausich			
-3426	Avsar			
-3427	Azevedo			
-3428	Azouz			
-3429	Babach			
-3430	Babio			
-3431	Babu Rao			
-3432	Bach			
-3433	Bacheller			
-3434	Backeljau			
-3435	Baczynskyj			
-3436	Badalamenti			
-3437	Badalini			
-3438	Badillet			
-3439	Baeten			
-3440	Baier			
-3441	Ballard			
-3442	Ballesio			
-3443	Barange			
-3444	Barber			
-3445	Barbieri			
-3446	Barbin			
-3447	Barcia			
-3448	Barkham			
-3449	Barta			
-3450	Bartolini			
-3451	Bassett			
-3452	Bassiouni			
-3453	Bastian Fernando			
-3454	Bastida			
-3455	Bate			
-3456	Batham			
-3457	Batson			
-3458	Battershill			
-3459	Bauer			
-3460	Baxa			
-3461	Beardmore			
-3462	Beaulieu			
-3463	Becacos-Kontos			
-3464	Becker Platen			
-3465	Becker-Platen			
-3466	Bednarczyk			
-3467	Belloni			
-3468	Bender			
-3469	Benedetto			
-3470	Benito			
-3471	Benocci			
-3472	Bentley			
-3473	Bernal			
-3474	Besteiro			
-3475	Betney			
-3476	Betzler			
-3477	Beu			
-3478	Beznosov			
-3479	Biggs			
-3480	Billiald			
-3481	Bilotte			
-3482	Bils			
-3483	Binford			
-3484	Bing			
-3485	Bird			
-3486	Blackler			
-3487	Bless			
-3488	Blinn			
-3489	Blumberg			
-3490	Blunt			
-3491	Boaden			
-3492	Boccia			
-3493	Bocher			
-3494	Boettner			
-3495	Böggemann			
-3496	Bogoslovskaya			
-3497	Bohlin			
-3498	Bohlken			
-3499	Bol'shakova			
-3500	Bonarelli			
-3501	Bonet			
-3502	Bookout			
-3503	Borch			
-3504	Borero			
-3505	Boronat			
-3506	Bortolami			
-3507	Bosse			
-3508	Boto			
-3509	Bouchard			
-3510	Bouillon			
-3511	Bouquegneau			
-3512	Bourget			
-3513	Bourque			
-3514	Bouyx			
-3515	Bowden			
-3516	Bowen			
-3517	Boyd			
-3518	Brackin			
-3519	Bradshaw			
-3520	Brannan			
-3521	Brehmer			
-3522	Bremec			
-3523	Brezeanu			
-3524	Broadhead			
-3525	Brockington			
-3526	Bronevskii			
-3527	Brosch			
-3528	Budevska			
-3529	Bulguer			
-3530	Bull			
-3531	Buller			
-3532	Bullock			
-3533	Bultynck			
-3534	Burdick			
-3535	Burrett			
-3536	Burris			
-3537	Burrows			
-3538	Busnardo			
-3539	Busquets			
-3540	Bussers			
-3541	Buttrick			
-3542	Byrnes			
-3543	Cachao			
-3544	Cai			
-3545	Caiping			
-3546	Callaway			
-3547	Cameron			
-3548	Cancela da Fonseca			
-3549	Cañete			
-3550	Canevello			
-3551	Cann			
-3552	Cantrell			
-3553	Capozzi			
-3554	Carannante			
-3555	Cardellina II			
-3556	Cariolou			
-3557	Carle			
-3558	Carlton			
-3559	Carmona			
-3560	Caroca			
-3561	Carr			
-3562	Carrasco			
-3563	Carvalho			
-3564	Carver			
-3565	Casale			
-3566	Casolaro			
-3567	Castaneda			
-3568	Castañeda			
-3569	Castro			
-3570	Caswell			
-3571	Cattaneo			
-3572	Cattaneo Vietti			
-3573	Cavallaro			
-3574	Cavallo			
-3575	Cecere			
-3576	Celletti			
-3577	Cervera			
-3578	Çetin			
-3579	Chandra			
-3580	Chaouch			
-3581	Chaplygina			
-3582	Chapuis			
-3583	Chase			
-3584	Chellam			
-3585	Chemello			
-3586	Chen			
-3587	Chenou			
-3588	Chernoff			
-3589	Chia			
-3590	Chieppa			
-3591	Chmurny			
-3592	Chojenski			
-3593	Christensen			
-3594	Chronic			
-3595	Chu			
-3596	Chuanyan			
-3597	Chuecas			
-3598	Chung			
-3599	Chutter			
-3600	Ciccarelli			
-3601	Cinelli			
-3602	Ciochon			
-3603	Civis			
-3604	Clapp			
-3605	Clardy			
-3606	Clauss			
-3607	Clavel			
-3608	Clayton			
-3609	Clendenning			
-3610	Cloney			
-3611	Coates			
-3612	Colbeaux			
-3613	Coll			
-3614	Collen			
-3615	Collier			
-3616	Columbo			
-3617	Conato			
-3618	Cond‚			
-3619	Coniglio			
-3620	Connor			
-3621	Conolly			
-3622	Conover			
-3623	Coppa			
-3624	Copper			
-3625	Corbera			
-3626	Corbet			
-3627	Cordiviola			
-3628	Cormaci			
-3629	Cormack			
-3630	Cornet			
-3631	Cortés			
-3632	Cossey			
-3633	Costantino			
-3634	Cottrell			
-3635	Coull			
-3636	Coutin			
-3637	Covelli			
-3638	Cowey			
-3639	Crame			
-3640	Creisler			
-3641	Cremonini			
-3642	Criado			
-3643	Croasdale			
-3644	Cruz			
-3645	Curray			
-3646	Currie			
-3647	Cuscani			
-3648	Cusi			
-3649	Cutler			
-3650	Czel			
-3651	Dad			
-3652	Dahlke			
-3653	Daikou			
-3654	Daly			
-3655	d'Amato			
-3656	Damotte			
-3657	Danaher			
-3658	D'Angelo			
-3659	Darchino			
-3660	d'Atri			
-3661	Dauphin			
-3662	Davant			
-3663	d'Civatte			
-3664	de Alba			
-3665	De Grave			
-3666	de Kinkelin			
-3667	de Lapparent			
-3668	De Lourdes			
-3669	de Putron			
-3670	De Silva			
-3671	de Souza			
-3672	de Villalta			
-3673	de Villoutreys			
-3674	De Wachter			
-3675	de Watteville			
-3676	De Witt			
-3677	De Yuan			
-3678	Deandreis			
-3679	Defaye			
-3680	Degnan			
-3681	deGrace			
-3682	Deloffre			
-3683	Delrieu			
-3684	Dessaix			
-3685	D'Estevou			
-3686	Devlin			
-3687	Dew			
-3688	Dewarumez			
-3689	DeWreede			
-3690	DI			
-3691	di Costanzo			
-3692	di Stefano			
-3693	Diaz			
-3694	Dickson			
-3695	Dietrich			
-3696	Digerfldt			
-3697	Dimentman			
-3698	Dipper			
-3699	Diviacco			
-3700	Diwan			
-3701	Docsanescu			
-3702	Dodd			
-3703	Dolakova			
-3704	Domenech			
-3705	Dommanget			
-3706	Donakova			
-3707	Donaldson			
-3708	Dong			
-3709	Doolan			
-3710	Doubek			
-3711	Downes			
-3712	Doyle			
-3713	Drager			
-3714	Dragu			
-3715	Drouet			
-3716	Duan			
-3717	Dubatolova			
-3718	Duedall			
-3719	Duff			
-3720	Dufresne			
-3721	Dunne			
-3722	Dutta			
-3723	Dutton			
-3724	Dyulgerov			
-3725	Easterson			
-3726	Ebel			
-3727	Eberl			
-3728	Ebling			
-3729	Ebrahimzadeh-Assadian			
-3730	Eckert			
-3731	Edrada			
-3732	Egami			
-3733	Ehrhardt			
-3734	Eiseman			
-3735	Eisenman			
-3736	El Gamal			
-3737	El Kadiri			
-3738	Eldershaw			
-3739	Elliott			
-3740	Elmgren			
-3741	El-Senoussi			
-3742	Elsner			
-3743	Endelman			
-3744	Engesser			
-3745	Erdelics			
-3746	Erséus			
-3747	Escanero			
-3748	Escoubet			
-3749	Estevez Ojea			
-3750	Faasch			
-3751	Fabianek			
-3752	Fankboner			
-3753	Faraglia			
-3754	Farrell			
-3755	Fassari			
-3756	Fattorusso			
-3757	Faucette Jr.			
-3758	Feary			
-3759	Feldmann			
-3760	Fenical			
-3761	Ferguson Wood			
-3762	Fernandez			
-3763	Fernández			
-3764	Fernández-Pulpeiro			
-3765	Ferrall			
-3766	Ferrigno			
-3767	Ferry			
-3768	Fey			
-3769	Fichez			
-3770	Figueira			
-3771	Figuerola			
-3772	Finton			
-3773	Fioravanti			
-3774	Fisherkeller			
-3775	Flanagan			
-3776	Focardi			
-3777	Foerster			
-3778	Fois			
-3779	Fois-Erickson			
-3780	Fonda			
-3781	Foord			
-3782	Fordy			
-3783	Forman			
-3784	Forti			
-3785	Fortunata			
-3786	Foster			
-3787	Fott			
-3788	Foucher			
-3789	Fournier			
-3790	Francesco			
-3791	Francescon			
-3792	Francour			
-3793	Fransozo			
-3794	Frazer			
-3795	Freiwald			
-3796	Fried			
-3797	Frihy			
-3798	Froehlich			
-3799	Frydenborg			
-3800	Fu			
-3801	Fuchs			
-3802	Fuji			
-3803	Fukushima			
-3804	Fullington			
-3805	Furnari			
-3806	Furness			
-3807	Fürsich			
-3808	Fusetani			
-3809	Fuson			
-3810	Gajhede			
-3811	Gale			
-3812	Galloway			
-3813	Games			
-3814	Ganian			
-3815	Ganias			
-3816	Gao			
-3817	Garcia Gomez			
-3818	García-Gomez			
-3819	García-Gómez			
-3820	Garey			
-3821	Garland			
-3822	Gataulina			
-3823	Gault			
-3824	Gavagnin			
-3825	Gawthrop			
-3826	Gayet			
-3827	Gebelein			
-3828	Gehling			
-3829	Gekker			
-3830	Gennesseaux			
-3831	Gergan			
-3832	Gervasi			
-3833	Getmanova			
-3834	Geyer			
-3835	Ghanima			
-3836	Ghare			
-3837	Ghose			
-3838	Giaccone			
-3839	Gianesella Galvao			
-3840	Giannasi			
-3841	Gil			
-3842	Gill			
-3843	Giordani			
-3844	Giovannini			
-3845	Girard-Descatoire			
-3846	Girone			
-3847	Glaçon			
-3848	Glenie			
-3849	Gliddon			
-3850	Gluchowski			
-3851	Glynn			
-3852	Gobetto			
-3853	Goffinet			
-3854	Golubic			
-3855	Gomes			
-3856	Gómez			
-3857	Gomon			
-3858	Gontier			
-3859	Gooden Seay			
-3860	Goodman			
-3861	Goodyear			
-3862	Gopal Dutt			
-3863	Gopikrishna			
-3864	Gordillo			
-3865	Goreau			
-3866	Goryunova			
-3867	Gostev			
-3868	Gostin			
-3869	Goto			
-3870	Gourvennec			
-3871	Goyffon			
-3872	Grainger			
-3873	Grange			
-3874	Grant-Mackie			
-3875	Grapes			
-3876	Gravili			
-3877	Gravina			
-3878	Greb			
-3879	Griffin			
-3880	Griggs			
-3881	Grignani			
-3882	Grinzov			
-3883	Grobe			
-3884	Grosberg			
-3885	Guensburg			
-3886	Gusev			
-3887	Gush			
-3888	Gust			
-3889	Gustinelli			
-3890	Gutierrez Marco			
-3891	Gutt			
-3892	Guttman			
-3893	Guy			
-3894	Guyader			
-3895	Gyllenhaal			
-3896	Habib			
-3897	Hadfield			
-3898	Hain			
-3899	Hallock			
-3900	Haman			
-3901	Hambley			
-3902	Hamedani			
-3903	Hancock			
-3904	Hannoudi			
-3905	Hardege			
-3906	Harley			
-3907	Harries			
-3908	Harriott			
-3909	Harris			
-3910	Harry			
-3911	Hartman			
-3912	Hartmann			
-3913	Hartwell			
-3914	Hasegawa			
-3915	Hashimoto			
-3916	Hasko			
-3917	Hata			
-3918	Hattin			
-3919	Haugsness			
-3920	Havenand			
-3921	Havenhand			
-3922	Hay			
-3923	Hayashi			
-3924	Hayek			
-3925	Hazel			
-3926	Heally			
-3927	Heckel			
-3928	Hedgpeth			
-3929	Heiland			
-3930	Heimberg			
-3931	Heinberg			
-3932	Helal			
-3933	Hellberg			
-3934	Helling			
-3935	Hellström			
-3936	Helmuth			
-3937	Herald			
-3938	Herouard			
-3939	Herrera Cubilla			
-3940	Herrera-Anduaga			
-3941	Higgins			
-3942	Higuchi			
-3943	Hillis			
-3944	Hilly			
-3945	Hine			
-3946	Hinkle			
-3947	Hinman			
-3948	Hirayama			
-3949	Hirschfield			
-3950	Hoffmann			
-3951	Hofman			
-3952	Hoke			
-3953	Holbourn			
-3954	Holcová			
-3955	Holden			
-3956	Holenweg			
-3957	Holland			
-3958	Holm			
-3959	Honkalehto			
-3960	Hood			
-3961	Hooper			
-3962	Hop			
-3963	Hope			
-3964	Høpner Petersen			
-3965	Horikoshi			
-3966	Horn			
-3967	Hosaka			
-3968	Hoshi			
-3969	Hoshikawa			
-3970	Hoskin			
-3971	Houghton			
-3972	Househam			
-3973	Howson			
-3974	Hoyle			
-3975	Hudackova			
-3976	Hugues			
-3977	Hui			
-3978	Hutchings			
-3979	Hutner			
-3980	Huz			
-3981	Ichihara			
-3982	Igarashi			
-3983	Iizima			
-3984	Imbalzano			
-3985	Improta			
-3986	Inaba			
-3987	Ingham			
-3988	Ingram			
-3989	Inoue			
-3990	Iryu			
-3991	Ishimaru			
-3992	Itabashi			
-3993	Ito			
-3994	Itokawa			
-3995	Itzhak			
-3996	Ivanova			
-3997	Ivanovskij			
-3998	Ivantsov			
-3999	Iwata			
-4000	Jaccarini			
-4001	Jaklin			
-4002	Jand			
-4003	Jand Barnes			
-4004	Jand Lemone			
-4005	Jand Lighthart			
-4006	Jand Thorpe			
-4007	Jand Woollacott			
-4008	Jansson			
-4009	Janvier			
-4010	Jara			
-4011	Jardine			
-4012	Jarett			
-4013	Je			
-4014	Jenny			
-4015	Jimenez			
-4016	Jinbo			
-4017	Johnsen			
-4018	Jokela			
-4019	Joseph-Nathan			
-4020	Jouannic			
-4021	Jourdy			
-4022	Jowett			
-4023	Judd			
-4024	Julka			
-4025	Juriens-Cottet			
-4026	Juyal			
-4027	Kadagies			
-4028	Kaissling			
-4029	Kajihara			
-4030	Kamenskaya			
-4031	Kamyab			
-4032	Karajeva			
-4033	Karasawa			
-4034	Kasanuki			
-4035	Kase			
-4036	Kastendick			
-4037	Katakura			
-4038	Katti			
-4039	Kauffman			
-4040	Kaufman			
-4041	Kawabe			
-4042	Kawamura			
-4043	Kázmér			
-4044	Keane			
-4045	Keegan			
-4046	Keenan			
-4047	Kelkar			
-4048	Kershaw			
-4049	KFPHW			
-4050	Khattra			
-4051	Khozatskij			
-4052	Kimoto			
-4053	Kinner			
-4054	Kiortsis			
-4055	Kirkland			
-4056	Kitami			
-4057	Kiwala			
-4058	Kiyoushi			
-4059	Kizu			
-4060	Klautsan			
-4061	Klekowski			
-4062	Klemm			
-4063	Kloos			
-4064	Koehler			
-4065	Koleck			
-4066	Komiyama			
-4067	Konig			
-4068	Konishi			
-4069	Konradi			
-4070	Kon-ya			
-4071	Kosich			
-4072	Kosmenko			
-4073	Kosmynin			
-4074	Kotake			
-4075	Kowalczewski			
-4076	Kowalczyk			
-4077	Kraft			
-4078	Krajewski			
-4079	Kramer			
-4080	Kramers			
-4081	Krasilova			
-4082	Krasnyj			
-4083	Krause			
-4084	Kreider			
-4085	Krejcarek			
-4086	Krishna			
-4087	Krishnamurthy			
-4088	Kriz			
-4089	Kroh			
-4090	Kroppenstedt			
-4091	Kruchinina			
-4092	Krumbein			
-4093	Kubicek			
-4094	Kubo			
-4095	Kuijpers			
-4096	Kuligowski			
-4097	Kulshreshtha			
-4098	Kulshrestha			
-4099	Kummel			
-4100	Kusuma			
-4101	Kuwahara			
-4102	Kuwano			
-4103	Kuznetsova			
-4104	Kysela			
-4105	la Perna			
-4106	La Perna			
-4107	Laborel Deguen			
-4108	Labourg			
-4109	Lacey			
-4110	Lafargue			
-4111	Lafutse			
-4112	Laghi			
-4113	Laihonen			
-4114	Laine			
-4115	Lake			
-4116	Lamarche			
-4117	Lami			
-4118	Lamoureux			
-4119	Lamy			
-4120	Landis			
-4121	Landry			
-4122	Laroche			
-4123	Latypov			
-4124	Laulis			
-4125	Lauriat			
-4126	Lauriat Rage			
-4127	Lauriat-Rage			
-4128	Lavin			
-4129	Lavrentyeva			
-4130	Lawrence			
-4131	Lawry			
-4132	le Calvez			
-4133	Le Calvez			
-4134	Le Deuff			
-4135	le Gall			
-4136	Leamon			
-4137	Leask			
-4138	Lebedeva			
-4139	Lecointre			
-4140	Leet			
-4141	Legaix			
-4142	Lehtonen			
-4143	Leinaas			
-4144	Leinfelder			
-4145	Leitner			
-4146	Leloup			
-4147	Leman			
-4148	Lemarchand-Venencie			
-4149	Lembcke			
-4150	Lennmark			
-4151	Lesemann			
-4152	Lessertisseur			
-4153	Lethiers			
-4154	Levenstein			
-4155	Levin			
-4156	Levit			
-4157	Lewin			
-4158	Lewontin			
-4159	Leys			
-4160	Liao			
-4161	Lichstein			
-4162	Lichtschein			
-4163	Lidgren			
-4164	Liebezeit			
-4165	Lietzen			
-4166	Ligi			
-4167	Lindel			
-4168	Lindquist			
-4169	Linhuang			
-4170	Linsley			
-4171	Listokin			
-4172	Liva			
-4173	Lizaso			
-4174	Lo Tenero			
-4175	Lockett			
-4176	Lodge			
-4177	Loffler			
-4178	Longinelli			
-4179	Lopez			
-4180	Lopez Gonzalez			
-4181	Loya			
-4182	Lozada			
-4183	Luczak			
-4184	Ludovisi			
-4185	Lutz			
-4186	Lys			
-4187	Lysenko			
-4188	MacIntyre			
-4189	Mackensen			
-4190	Mackinnon			
-4191	Macko			
-4192	Macnae			
-4193	Macphail			
-4194	Madgett			
-4195	Madill			
-4196	Magniez			
-4197	Maine			
-4198	Mak			
-4199	Makioka			
-4200	Malec			
-4201	Mallinson			
-4202	Mamet			
-4203	Manankov			
-4204	Manconi			
-4205	Manfredi			
-4206	Manheim			
-4207	Manighetti			
-4208	Manivit			
-4209	Mankowski			
-4210	Mann			
-4211	Marankov			
-4212	Marchetto			
-4213	Marchini			
-4214	Marchio			
-4215	Marcopoulou-Diacantoni			
-4216	Marenssi			
-4217	Margerel			
-4218	Marheinecke			
-4219	Marin			
-4220	Marini			
-4221	Marks			
-4222	Marolt			
-4223	Marone			
-4224	Marple			
-4225	Marquardt			
-4226	Marquet			
-4227	Marsden			
-4228	Marsh			
-4229	Maryuyama			
-4230	Masaki			
-4231	Masini			
-4232	Mastroiani			
-4233	Matarrese			
-4234	Mathieu			
-4235	Matin			
-4236	Matlok			
-4237	Matricardo			
-4238	Matsuda			
-4239	Matsuki			
-4240	Matsumoto			
-4241	Matsuzaki			
-4242	Matteucci			
-4243	Matthews			
-4244	May			
-4245	Mays			
-4246	Mazzella			
-4247	McArthur			
-4248	McBride			
-4249	McClintock			
-4250	McClung			
-4251	McDonald			
-4252	McGee			
-4253	McGhee Jr.			
-4254	McGowran			
-4255	McKelvey			
-4256	McKnight			
-4257	McMahan			
-4258	McMillan			
-4259	McQuaid			
-4260	McWhorter			
-4261	Meel			
-4262	Meier			
-4263	Mein			
-4264	Melgarejo			
-4265	Méndez			
-4266	Menzie			
-4267	Méon-Vilan			
-4268	Mercier			
-4269	Mercurio			
-4270	Meriç			
-4271	Metzelaar			
-4272	Metzger			
-4273	Mezentseva			
-4274	Micarelli			
-4275	Michael			
-4276	Michalik			
-4277	Michel			
-4278	Mier			
-4279	Mietto			
-4280	Migne			
-4281	Migotto			
-4282	Mihraje			
-4283	Millemachi			
-4284	Minelli			
-4285	Mineral			
-4286	Minichev			
-4287	Miron			
-4288	Mishra			
-4289	Miura			
-4290	Miyama			
-4291	Miyamoto			
-4292	Mizobuchi			
-4293	Mizuno			
-4294	Mogelberg			
-4295	Mølgard			
-4296	Moncrieff			
-4297	Monesi			
-4298	Monks			
-4299	Montagna			
-4300	Montecino			
-4301	Morales			
-4302	Mordant			
-4303	Morgillo			
-4304	Mork			
-4305	Morley			
-4306	Moroni			
-4307	Morowitz			
-4308	Morri			
-4309	Mostad			
-4310	Moureau			
-4311	Moyano G			
-4312	Mukhin			
-4313	Mulay			
-4314	Mulino			
-4315	Munari			
-4316	Mundahl			
-4317	Muniz			
-4318	Munro			
-4319	Muromtseva			
-4320	Muschik			
-4321	Mutterlose			
-4322	Nagai			
-4323	Naiussat			
-4324	Nakagawa			
-4325	Nakajima			
-4326	Nakamura			
-4327	Nakaoka			
-4328	Nakornsri			
-4329	Nardon			
-4330	Nascimento			
-4331	Nathan			
-4332	Naumenko			
-4333	Naumov			
-4334	Neelakantan			
-4335	Nekvasilova			
-4336	Nemcsok			
-4337	Nemoto			
-4338	Neuman			
-4339	Nevenzel			
-4340	Neveux			
-4341	Neville			
-4342	Newberry			
-4343	Newman			
-4344	Nguyen			
-4345	Niaussat			
-4346	Nichy			
-4347	Nicol			
-4348	Nicoll			
-4349	Nicora			
-4350	Nicotra			
-4351	Nie			
-4352	Niell			
-4353	Nieman			
-4354	Nigrelli			
-4355	Nilsson			
-4356	Ninos			
-4357	Nishikawa			
-4358	Niwa			
-4359	Nojo			
-4360	Norby			
-4361	North			
-4362	Numata			
-4363	Nuovo			
-4364	Oates			
-4365	Obst			
-4366	Occhipinti			
-4367	Ochliener			
-4368	O'Connors			
-4369	Odawara			
-4370	Odding			
-4371	Oguri			
-4372	Okimura			
-4373	Olesen			
-4374	Olivari			
-4375	Oliveri			
-4376	Olivero			
-4377	Olsen			
-4378	Ono			
-4379	Oosterbaan			
-4380	Oppenheim			
-4381	Orejas			
-4382	Orr			
-4383	Ortea			
-4384	Oschmann			
-4385	Ossenkoppele			
-4386	Ostinelli			
-4387	Ota			
-4388	Oxov			
-4389	Ozanne			
-4390	Padovani			
-4391	Paffenhöefer			
-4392	Pajaud			
-4393	Pallares			
-4394	Palmes			
-4395	Pan			
-4396	Panagopoulos			
-4397	Pancholi			
-4398	Pandya			
-4399	Pansini			
-4400	Papathanassiou			
-4401	Papyn			
-4402	Park			
-4403	Parke			
-4404	Parsins			
-4405	Partridge			
-4406	Pasaric			
-4407	Pashin			
-4408	Patterson			
-4409	Pavone			
-4410	Paya			
-4411	Payette			
-4412	Pearsall			
-4413	Pedersen			
-4414	Peel			
-4415	Penney			
-4416	Penrith			
-4417	Pereira			
-4418	Pérez			
-4419	Permitin			
-4420	Pessani			
-4421	Pestrea			
-4422	Petersen			
-4423	Peypouquet			
-4424	Pharisat			
-4425	Phifer			
-4426	Phillips Ross			
-4427	Phvong			
-4428	Piasecki			
-4429	Pichl			
-4430	Picker			
-4431	Pickerill			
-4432	Pierantoni			
-4433	Pieroni			
-4434	Piette			
-4435	Pilkey			
-4436	Pillevuit			
-4437	Pisana			
-4438	Pohlable			
-4439	Polo			
-4440	Pomerol			
-4441	Porfirio			
-4442	Poujol			
-4443	Poulicek			
-4444	Powis			
-4445	Pozar-Domac			
-4446	Prakash			
-4447	Prather			
-4448	Prazakova			
-4449	Prearo			
-4450	Privitera			
-4451	Pronzato			
-4452	Proud			
-4453	Pugaczewska			
-4454	Pujol			
-4455	Pujos Lamy			
-4456	Qi			
-4457	Qinghai Dizhi Kexue			
-4458	Queinnec			
-4459	Rabbio			
-4460	Rachor			
-4461	Radwanski			
-4462	Raimondi			
-4463	Rallo			
-4464	Ralph			
-4465	Ramalho			
-4466	Ramil			
-4467	Ramil Blanco			
-4468	Ramos			
-4469	Randazzo			
-4470	Rangel			
-4471	Rapean			
-4472	Rashid			
-4473	Reddy			
-4474	Refardt			
-4475	Reichstein			
-4476	Reiner			
-4477	Reiswig			
-4478	Reiter			
-4479	Reitner			
-4480	Remy			
-4481	Rendall			
-4482	Rexroad			
-4483	Reyes			
-4484	Riber			
-4485	Rickard			
-4486	Riedel			
-4487	Rigillo			
-4488	Rimmer			
-4489	Ringuette			
-4490	Ritter			
-4491	Rittikh			
-4492	Rittschof			
-4493	Ritz			
-4494	Ritzkowski			
-4495	Riva			
-4496	Roa			
-4497	Robb			
-4498	Robb III			
-4499	Robert			
-4500	Robins			
-4501	Robotti			
-4502	Robson			
-4503	Rodriguez Fernandez			
-4504	Rodriguez-Fernandez			
-4505	Rodríguez-Fernández			
-4506	Rogers			
-4507	Rohart			
-4508	Rohde			
-4509	Roman			
-4510	Romualdi			
-4511	Rosa			
-4512	Röseler			
-4513	Rosene			
-4514	Rothausen			
-4515	Rothery			
-4516	Rotovskaya			
-4517	Rowinsky			
-4518	Roy			
-4519	Rozhnov			
-4520	Ruckdeschel			
-4521	Rudloe			
-4522	Ruedemann			
-4523	Rui			
-4524	Rummert			
-4525	Ruse			
-4526	Ruthe			
-4527	Rydzewski			
-4528	Ryther			
-4529	Rytova			
-4530	Sabelli			
-4531	Sachs			
-4532	Sadler			
-4533	Safriel			
-4534	Saiz			
-4535	Sakai			
-4536	Sala Manservigi			
-4537	Salaj			
-4538	Salamanca			
-4539	Saleem			
-4540	Salfity			
-4541	Salller			
-4542	Salva			
-4543	Samuel			
-4544	Samuel Raju			
-4545	San			
-4546	Sanderson			
-4547	Sandíy			
-4548	Sane			
-4549	Sanfilippo			
-4550	Sanner			
-4551	Santacroce			
-4552	Santamaria			
-4553	Santarelli			
-4554	Santhakumaran			
-4555	Santillana			
-4556	Saranchova			
-4557	Saric			
-4558	Sarojini			
-4559	Sartoretto			
-4560	Sartori			
-4561	Satimi			
-4562	Sattler			
-4563	Saunders			
-4564	Savini			
-4565	Sawant			
-4566	Sayce			
-4567	Scala Liaci			
-4568	Scalera Liaci			
-4569	Scaletta			
-4570	Scardi			
-4571	Scharbrodt			
-4572	Scharpf			
-4573	Schaudinn			
-4574	Schembri			
-4575	Schindler			
-4576	Schinske			
-4577	Schmitz			
-4578	Schneemilch			
-4579	Scholzel			
-4580	Schorno			
-4581	Schrandt			
-4582	Schroeter			
-4583	Schuhmacher			
-4584	Schumann			
-4585	Schuurhuis			
-4586	Schwaighofer			
-4587	Schwenk			
-4588	SDS			
-4589	Searles			
-4590	Sears			
-4591	Seburn			
-4592	Segny			
-4593	Semenova			
-4594	Sengupta			
-4595	Senowri-Daryan			
-4596	Senthil Nathan			
-4597	Sequeiros			
-4598	Sergeyuk			
-4599	Serpagli			
-4600	Serra Kiel			
-4601	Sewell			
-4602	Seyve			
-4603	Sgorbini			
-4604	Shanklin			
-4605	Shareef			
-4606	Sharkis			
-4607	Sharpe			
-4608	Shata			
-4609	Shelton			
-4610	Sheng			
-4611	Shimansky			
-4612	Shoemaker			
-4613	SHPC			
-4614	Sick			
-4615	Siebert			
-4616	Sieglen			
-4617	Simionescu			
-4618	Simo			
-4619	Sinatra			
-4620	Sinclair			
-4621	Siuda			
-4622	Skelton			
-4623	Skibinskil			
-4624	Skorina			
-4625	Smale			
-4626	Smith III			
-4627	Smurov			
-4628	Snader			
-4629	Sofet			
-4630	Solander			
-4631	Solovjeva			
-4632	Somerville			
-4633	Sonar			
-4634	Sonne			
-4635	Sorauf			
-4636	Sorbilli			
-4637	Soroka			
-4638	Sorokin			
-4639	Southward			
-4640	Soyer			
-4641	Spacie			
-4642	Specchi			
-4643	Spencer Jones			
-4644	Spencer-Jones			
-4645	Splechtna			
-4646	Sreedhar			
-4647	Stackebrandt			
-4648	Stampfli			
-4649	Stanton			
-4650	Stanton Jr.			
-4651	Stark			
-4652	Starkweather			
-4653	Starmans			
-4654	Starodav			
-4655	Steel			
-4656	Steele Petrovich			
-4657	Steffan			
-4658	Steinmetz			
-4659	Stemmerick			
-4660	Stenni			
-4661	Sterrer			
-4662	Stoicescu			
-4663	Stojaspal			
-4664	Stoli			
-4665	Storey			
-4666	Story			
-4667	Strank			
-4668	Strickland			
-4669	Stuart			
-4670	Sturgeon			
-4671	Suarez-Castillo			
-4672	Suárez-Castillo			
-4673	Suetenko			
-4674	Sueur			
-4675	Sugiyama			
-4676	Sukhanov			
-4677	Susperregui			
-4678	Sutcliffe			
-4679	Suthard			
-4680	Suzuki			
-4681	Svane			
-4682	Svetashev			
-4683	SVS			
-4684	Swanson			
-4685	Swearingen			
-4686	Sweet			
-4687	Szymalkowska			
-4688	Takashi			
-4689	Takesue			
-4690	Tambs-Lyche			
-4691	Tamozhnaya			
-4692	Tao			
-4693	Tardy			
-4694	Targett			
-4695	Tarkovski			
-4696	Tashjian Jr.			
-4697	Teissier			
-4698	Tenney			
-4699	Teolis			
-4700	Terlau			
-4701	Thain			
-4702	Theijsmeijer			
-4703	Thiede			
-4704	Thirasasana			
-4705	Thome			
-4706	Thrane			
-4707	Thresher			
-4708	Thurmann			
-4709	Thybo			
-4710	Tilsley			
-4711	Tintant			
-4712	Tirmizi			
-4713	Tomassetti			
-4714	Tomono			
-4715	Tong			
-4716	Tops			
-4717	Tozawa			
-4718	Trauner			
-4719	Travis			
-4720	Treagus			
-4721	Treasure			
-4722	Treworgy			
-4723	Trott			
-4724	Truc			
-4725	Trujillo-Serrato			
-4726	Tsagaris			
-4727	Tsuchiya			
-4728	Tucker			
-4729	Tufts			
-4730	Tung			
-4731	Turon			
-4732	Ubaldo			
-4733	Ujiiye			
-4734	Ulber			
-4735	Ulitina			
-4736	Underwood			
-4737	Urban			
-4738	Urdininea			
-4739	Uriz			
-4740	Urquiola			
-4741	Uschakow			
-4742	Vaccarella			
-4743	Vacelet			
-4744	Vachard			
-4745	Valor			
-4746	van Altena			
-4747	Van Camp			
-4748	van Damme			
-4749	Van de Vyver			
-4750	van der Hem			
-4751	van der Schalie			
-4752	van der Wal			
-4753	van Oostveen			
-4754	Van Oye			
-4755	Varghese			
-4756	Varterasian			
-4757	Vasquez			
-4758	Vass			
-4759	Vazquez			
-4760	Vénec-Peyré			
-4761	Venerus			
-4762	Venit			
-4763	Ventocilla			
-4764	Venturini			
-4765	Verazay			
-4766	Vergon			
-4767	Viallard			
-4768	Viaud			
-4769	Vicchiarelli			
-4770	Vicente			
-4771	Vidrine			
-4772	Villanueva			
-4773	Villas			
-4774	Vining			
-4775	Violanti			
-4776	Viswanadham			
-4777	Viswanadhan			
-4778	Volpe			
-4779	von Bitter			
-4780	von der Borch			
-4781	Voris			
-4782	Voronkov			
-4783	Voss			
-4784	Voss Foucart			
-4785	Vossbrinck			
-4786	Voss-Foucart			
-4787	Vrba			
-4788	Walther			
-4789	Wan			
-4790	Wan Fuad Wan			
-4791	Wardlaw			
-4792	Warme			
-4793	Watanabe			
-4794	Watling			
-4795	Wear			
-4796	Webb Jr.			
-4797	Weber			
-4798	Webster			
-4799	Weidmann			
-4800	Weigt			
-4801	Weinreb			
-4802	Wentzel			
-4803	Werle			
-4804	Wethey			
-4805	Whaling			
-4806	Whedon			
-4807	Whitaker			
-4808	Whitlatch			
-4809	Whittaker			
-4810	Whittington			
-4811	Wieking			
-4812	Wikman			
-4813	Wilgus			
-4814	Willerslev			
-4815	Wills			
-4816	Willumsen			
-4817	Winkler Prins			
-4818	Winnepenninckx			
-4819	Witman			
-4820	Wollnik			
-4821	Woodhead			
-4822	Woods			
-4823	Woolcott			
-4824	Worthen			
-4825	Wuest			
-4826	Wunsam			
-4827	Xu			
-4828	Yadrenkina			
-4829	Yanagida			
-4830	Yao			
-4831	Yibao			
-4832	Yoo			
-4833	Yuferev			
-4834	Zaborski			
-4835	Zafarana			
-4836	Zajac			
-4837	Zakharov			
-4838	Zaki			
-4839	Zalat			
-4840	Zamarreno			
-4841	Zanini			
-4842	Zelenka			
-4843	Zenetos			
-4844	Zhamoida			
-4845	Zharnikova			
-4846	Zhong			
-4847	Zhou			
-4848	Zhuravieva			
-4849	Ziegler			
-4850	Zubia			
-4851	Zubrod			
-4852	Zullo			
+1341	Prantl
+1342	De Blauwe
+1343	Occhipinti Ambrogi
+1344	Spjeldnaes
+1345	Bigey
+1346	Monod
+1347	Lu
+1348	Rao
+1349	Mikoliã
+1350	Abricosoff
+1351	Wolfer
+1352	Vinogradov
+1353	Barbosa
+1354	Nekhoroshev
+1355	Männil
+1356	Sokurov
+1357	Lavrentjeva
+1358	Kopaevich
+1359	Balakin
+1360	Krazhan
+1361	Romanchuk
+1362	Mordukhai-Boltovskoi
+1363	Hassall
+1364	Levinton
+1365	Barbaro
+1366	Allan
+1367	Bartolomaeus
+1368	Cuffey
+1369	Ishii
+1370	Iseto
+1371	Kaselowsky
+1372	Schulga-Nesterenko
+1373	Ganapati
+1374	Brunel
+1375	Bullivant
+1376	Wall
+1377	Modzalevskaya
+1378	Faura y Sans
+1379	Dollfus
+1380	Procházka
+1381	Kirchenpauer
+1382	Pushkin
+1383	Allen
+1384	Chapman
+1385	Sauvage
+1386	Orieux
+1387	Cotillon
+1388	Credner
+1389	Desmarest
+1390	Yang
+1391	Zimmer
+1392	Trizna
+1393	Waagen
+1394	Manzoni
+1395	Fernandez Pulpeiro
+1396	Vinassa de Regny
+1397	Allmann
+1398	Moskalenko
+1399	Dreyer
+1400	Amerom
+1401	Wang
+1402	Paalzow
+1403	Thornely
+1404	Yaroshinskaya
+1405	Abrikosov
+1406	Coryell
+1407	Waschurova
+1408	Smith
+1409	Jackson
+1410	Dick
+1411	Wuchter
+1412	Anstey
+1413	Walford
+1414	Hayami
+1415	Bolkhovitinova
+1416	Troizkaya
+1417	Breton
+1418	Sarycheva
+1419	McKinney
+1420	Machiyama
+1421	Czeczuga
+1422	Conti
+1423	Conradi
+1424	Kopaevitch
+1425	Whittlesea
+1426	Di Geronimo
+1427	Abbas
+1428	Vasisht
+1429	Kuc
+1430	Meunier
+1431	Fritz
+1432	Bronstein
+1433	Nikulina
+1434	Dunaeva
+1435	Cornelius
+1436	Stebbing
+1437	Young
+1438	Balasubrahmanyan
+1439	Maki
+1440	Brébion
+1441	Munoz
+1442	Satyanarayana Rao
+1443	Bogoyavlenskaya
+1444	Li
+1445	Hennig
+1446	Eichwald
+1447	Azzouz
+1448	Anonymous
+1449	Biologisches Forschungsinstitut fur
+1450	Veys
+1451	Ully
+1452	Troitskaya
+1453	Schastlivtseva
+1454	Schopf
+1455	Nakrem
+1456	Karvaliar
+1457	Stephens
+1458	Decrouez
+1459	Arístegui
+1460	Xixing
+1461	Lobo
+1462	Welch
+1463	Stewart
+1464	Pratt
+1465	Passamaneck
+1466	Henderson
+1467	Abgrall
+1468	Potts
+1469	Murray
+1470	Cleary
+1471	Zimmerman
+1472	MacDonald
+1473	Hewitt
+1474	Von Dassow
+1475	Robinson
+1476	Mulet
+1477	Wyse Jackson
+1478	Kopajevich
+1479	Okamura
+1480	Scholz
+1481	Taticchi
+1482	Steinbacher
+1483	Shah
+1484	Kayser
+1485	Watson
+1486	Hamond
+1487	Geraci
+1488	Bovbjerg
+1489	Franzén
+1490	Seguenza
+1491	Schäfer
+1492	Lore
+1493	Dana
+1494	Volkova
+1495	Parona
+1496	de Koninck
+1497	Stuckenberg
+1498	Zvyagintsev
+1499	Zunini Sertorio
+1500	Zobell
+1501	Zitt
+1502	Zirpolo
+1503	Zibrowius
+1504	Zhu
+1505	Zhongguo Kexueyuan Nanjing Dizhi Gushengwu
+1506	Zheng
+1507	Zhao-xun
+1508	Zhao
+1509	Zhang
+1510	Zezina
+1511	Zevina
+1512	Zavodnik
+1513	Zatsepin
+1514	Zaouali
+1515	Zankl
+1516	Zampi
+1517	Zachs
+1518	Zabin
+1519	Yunming
+1520	Yund
+1521	Yue
+1522	Yu
+1523	Yoshioka
+1524	Yoshida
+1525	Yonge
+1526	Yin
+1527	Yentsch
+1528	Yanez Arancibia
+1529	Yanagi
+1530	Yan
+1531	Yamazi
+1532	Yamamura
+1533	Yamaguchi
+1534	Yamada
+1535	Yagunova
+1536	Xing
+1537	Xi'an Institute of Geology
+1538	Xia
+1539	Wulff
+1540	Wu
+1541	Wright
+1542	Wöss
+1543	Woss
+1544	Woollacott
+1545	Wood?
+1546	Wonderley
+1547	Wolleman
+1548	Wolff
+1549	Wolfart
+1550	Wolcke
+1551	Woess
+1552	Witzke
+1553	Wisely
+1554	Winther
+1555	Wing
+1556	Williams
+1557	Willan
+1558	Wildermuth
+1559	Wilde
+1560	Wiktor
+1561	Wiesner
+1562	Wiese
+1563	Wieczorek
+1564	Wiebach
+1565	Wicksten
+1566	Whitten
+1567	Whitfield
+1568	Whiteaves
+1569	White
+1570	Wharfe
+1571	Weyer
+1572	West
+1573	Wesenbeng-Lund
+1574	Wendt
+1575	Wender
+1576	Wen
+1577	Wells
+1578	Weissmair
+1579	Weis
+1580	Wefer
+1581	Weedon
+1582	Webb
+1583	Wawrik
+1584	Watts
+1585	Watkins
+1586	Waterston
+1587	Watermolen
+1588	Wasson
+1589	Warren
+1590	Warner
+1591	Ward
+1592	Wank
+1593	Walters
+1594	Walls
+1595	Wallace
+1596	Walker
+1597	Waldmann
+1598	Wahl
+1599	Wagh
+1600	Waddington
+1601	Wa
+1602	Vysotskii
+1603	Vyalov
+1604	Vuorinen
+1605	Vorstman
+1606	Voore
+1607	Voight
+1608	Vogel
+1609	Viviani
+1610	Visscher
+1611	Villela
+1612	Vigeland
+1613	Viganò
+1614	Vietti
+1615	Vernon
+1616	Vernborg
+1617	Vermeij
+1618	Vennin
+1619	Velikonja
+1620	Vegglani
+1621	Vávra
+1622	Vasseur
+1623	Vargo
+1624	Vanhöffen
+1625	Vandermeulen
+1626	van Slageren
+1627	Van Mieghem
+1628	van Gasin
+1629	van Diggelen
+1630	van der Spoel
+1631	Van Der Linden
+1632	van der Land
+1633	Van Beneden
+1634	Valkanov
+1635	Valentine
+1636	Valentin
+1637	Vail
+1638	Utgaard
+1639	Ushakova
+1640	Uschakov
+1641	Urbanek
+1642	Upshaw
+1643	Uotila
+1644	Unsal
+1645	Unrug
+1646	Universiteit van Amsterdam Instituut voor Taxonomische
+1647	Ungaro
+1648	Uly
+1649	Ueno
+1650	Udin
+1651	Udhayakumar
+1652	Tzioumis
+1653	Tursi
+1654	Turpaeva
+1655	Turner
+1656	Turkünal
+1657	Turek
+1658	Tulp
+1659	Tulkki
+1660	Tuckey
+1661	Tsurnamal
+1662	Troyer-Mildner
+1663	Troyer Mildner
+1664	Townley
+1665	Towe
+1666	Toula
+1667	Toriumi
+1668	Tonapi
+1669	Tommasi
+1670	Tomey
+1671	Tischler
+1672	Tillier
+1673	Tilak
+1674	Tiedtke
+1675	Thorson
+1676	Thorpe
+1677	Thorbjørn
+1678	Thomsen
+1679	Thijsen
+1680	Thiel
+1681	Thayer
+1682	Tewari
+1683	Ters
+1684	Termier
+1685	Terakado
+1686	Temkin
+1687	Teichert
+1688	Tazima
+1689	Tazawa
+1690	Taviani
+1691	Tavener-Smith
+1692	Tarp
+1693	Taraz
+1694	Taramelli Rivosecchi
+1695	Tang
+1696	Tanaka
+1697	Tamozhnyaya
+1698	Tajima
+1699	Tacoli Lucchi
+1700	Tablado
+1701	Tabb
+1702	Harada
+1703	Szabo
+1704	Swedmark
+1705	Swayze
+1706	Swartz
+1707	Swami
+1708	Suwa
+1709	Sutherland
+1710	Surlyk
+1711	Sun
+1712	Sugimura
+1713	Suchy
+1714	Subklew
+1715	Suarez Andres
+1716	Suáres Andrés
+1717	Stubbings
+1718	Strusz
+1719	Striven
+1720	Stricker
+1721	Strenhell
+1722	Strenger
+1723	Streftaris
+1724	Straughan
+1725	Stratton
+1726	Strathmann
+1727	Storrs
+1728	Stone
+1729	Stoddart
+1730	Stoaks
+1731	Stimpson
+1732	Sterflinger
+1733	Stemmerik
+1734	Steingrimsson
+1735	Steiner
+1736	Stefano
+1737	Steele
+1738	Staughan
+1739	Starostin
+1740	Starcher
+1741	Stanwell Smith
+1742	Stanoiu
+1743	Stade
+1744	Stachowicz
+1745	Sriramachandra Murty
+1746	Springer
+1747	Sprigg
+1748	Spiegler
+1749	Spencer
+1750	Sparling
+1751	Sparks
+1752	Spamer
+1753	Southwood
+1754	Soukup
+1755	Souaya
+1756	Sorensen
+1757	Sonmez-Gokcen
+1758	Solovjev
+1759	Soloveva
+1760	Solle
+1761	Sokolov
+1762	Söderqvist
+1763	Snyder
+1764	Smyth
+1765	Sloka
+1766	Slobdkin
+1767	Sloan
+1768	Slane
+1769	Slager
+1770	Sladecek
+1771	Skolka
+1772	Skerman
+1773	Skalskaya
+1774	Sjöblom
+1775	Sivertsen
+1776	Sivareddy
+1777	Siva Reddy
+1778	Singh
+1779	Simpson
+1780	Simonsen
+1781	Simone
+1782	Simonarson
+1783	Simmons
+1784	Simma-Krieg
+1785	Simkina
+1786	Simberloff
+1787	Silbermann
+1788	Sigurdsson
+1789	Siesser
+1790	Siegfried
+1791	Sieburth
+1792	Siddiqui
+1793	Shutz
+1794	Shunatova
+1795	Shrubsole
+1796	Shrivastava
+1797	Shreeve
+1798	Shishova
+1799	Shindo
+1800	Shimizu
+1801	Shimidzu
+1802	Shimanskii
+1803	Shimada
+1804	Shilin
+1805	Shih
+1806	Shier
+1807	Sherwood
+1808	Sherborn
+1809	Shepherd
+1810	Shen
+1811	Shellenberger
+1812	Sheldon
+1813	Shaulis
+1814	Sharp
+1815	Shapiro
+1816	Shanks
+1817	Shamah
+1818	Seven
+1819	Setha Rao
+1820	Serruya
+1821	Serra-Kiel
+1822	Sepkoski
+1823	Sepkoski Jr.
+1824	Seo
+1825	Sensenbaugh
+1826	Senowbari Daryan
+1827	Semina
+1828	Semernoj
+1829	Semenov
+1830	Seilacher
+1831	Sefian
+1832	Seed
+1833	Scrocco
+1834	Scott
+1835	Sconfietti
+1836	Scolaro
+1837	Sciuto
+1838	Schwarz
+1839	Schwaninger
+1840	Schulz
+1841	Schultz
+1842	Schultheiss
+1843	Schuchter
+1844	Schuchert
+1845	Schubert
+1846	Schraut
+1847	Schönmann
+1848	Schoener
+1849	Schodduyn
+1850	Schneider
+1851	Schmitt
+1852	Schmid
+1853	Schlattleitner
+1854	Scherren
+1855	Scheltema
+1856	Scheer
+1857	Schaumberg
+1858	Schaufelberger
+1859	Schatzinger
+1860	Schallreuter
+1861	Schager
+1862	Schafer
+1863	Schaefer
+1864	Schaaf
+1865	Scannell
+1866	Sawaya
+1867	Savarese
+1868	Saulea
+1869	Saul
+1870	Sauer
+1871	Saudray
+1872	Sato
+1873	Sarr
+1874	Sardeson
+1875	Sara
+1876	Santagata
+1877	Sando
+1878	Sanchez
+1879	Samson
+1880	Salmon
+1881	Salih
+1882	Sala
+1883	Sakakura
+1884	Sakagami
+1885	Saito
+1886	Saint Martin
+1887	Saijo
+1888	Saier
+1889	Sacchi
+1890	Sabattini
+1891	Russ
+1892	Rushforth
+1893	Ruppert
+1894	Ruppel
+1895	Ruiz
+1896	Ruggieri
+1897	Rucker
+1898	Rubin
+1899	Rozman
+1900	Rowley
+1901	Rowland
+1902	Rousselet
+1903	Rossi
+1904	Rominger
+1905	Rollet
+1906	Rolfe
+1907	Roginskaya
+1908	Roethel
+1909	Roen
+1910	Roehrich
+1911	Rodriguez
+1912	Roche
+1913	Robilliard
+1914	Roberts
+1915	Robba
+1916	Robaszynski
+1917	Roaf
+1918	Rivosecchi
+1919	Rittshof
+1920	Ristkok
+1921	Ristedt
+1922	Risk
+1923	Rinehart Jr.
+1924	Riley
+1925	Riisgård
+1926	Riisgard
+1927	Riggio
+1928	Ries
+1929	Rieradevall
+1930	Rider
+1931	Richmond
+1932	Richelle
+1933	Richards
+1934	Ricciardi
+1935	Ricci Lucchi
+1936	Rho
+1937	Reyss
+1938	Reynolds
+1939	Rey
+1940	Reverter-Gil
+1941	Reverter
+1942	Reverter Gil
+1943	Renieri
+1944	Relini
+1945	Reish
+1946	Reid
+1947	Reguant
+1948	Reger
+1949	Rees
+1950	Reed
+1951	Redier
+1952	Redfern
+1953	Redden
+1954	Read
+1955	Raveendran
+1956	Raup
+1957	Rasmussen
+1958	Ranzoli
+1959	Rangheard
+1960	Ramsdell
+1961	Ramirez
+1962	Raja
+1963	Rahim
+1964	Rahbaek
+1965	Rahback
+1966	Ragan
+1967	Radoicic
+1968	Raddum
+1969	Racki
+1970	Quilty
+1971	Quelch
+1972	Qian
+1973	Pyefinch
+1974	Putintsev
+1975	Pulpeiro
+1976	Pukall
+1977	Pszczolkowski
+1978	Prud'homme van Reine
+1979	Prud'Homme
+1980	Proz
+1981	Prout
+1982	Prouho
+1983	Protasov
+1984	Prosasov
+1985	Proksch
+1986	Probert
+1987	Prinsep
+1988	Prigge
+1989	Prezbindowski
+1990	Pray
+1991	Prasada Rao
+1992	Pozaryska
+1993	Pourtales
+1994	Pourtalès
+1995	Pourcher
+1996	Pouba
+1997	Posey
+1998	Porter
+1999	Portell
+2000	Por
+2001	Popov
+2002	Popeko
+2003	Poore
+2004	Poncet
+2005	Pomerat
+2006	Poluzzi
+2007	Poll
+2008	Poisson
+2009	Poirrier
+2010	Podell
+2011	Pocock
+2012	Pockrandt
+2013	Plamenskaya
+2014	Pizzaferri
+2015	Pitrat
+2016	Pisano
+2017	Pirkle
+2018	Pires
+2019	Piraino
+2020	Pinto
+2021	Pinter
+2022	Pine
+2023	Pinder
+2024	Pillai
+2025	Picton
+2026	Piccoli
+2027	Picard
+2028	Philippe
+2029	Peyssonnel
+2030	Peybernes
+2031	Petukhova
+2032	Petty
+2033	Pettit
+2034	Petkovic
+2035	Peterson
+2036	Peters
+2037	Perry
+2038	Perreau
+2039	Peron
+2040	Perkins
+2041	Perez
+2042	Penn
+2043	Pemberton
+2044	Pedley
+2045	Pederson
+2046	Pedder
+2047	Pecsi
+2048	Peckol
+2049	Peck
+2050	Pechenik
+2051	Pearse
+2052	Peach
+2053	Pavlova
+2054	Pauw
+2055	Paulay
+2056	Paul
+2057	Pätzold
+2058	Patzkowsky
+2059	Pattison
+2060	Patella
+2061	Partaly
+2062	Partalij
+2063	Parsons
+2064	Parks
+2065	Pareyn
+2066	Parenzan
+2067	Pardue
+2068	Papageorgakis
+2069	Pandolfi
+2070	Pande
+2071	Palumbi
+2072	Palmer
+2073	Palinska
+2074	Palacios
+2075	Pain
+2076	Paghida-Trelea
+2077	Padilla
+2078	Packard
+2079	Pachut
+2080	Pachut Jr.
+2081	Pace
+2082	Ozhgibesov
+2083	Owrid
+2084	Owens
+2085	Owen
+2086	Otten
+2087	Ott
+2088	Oswald
+2089	O'Sullivan
+2090	Ostroumoff
+2091	Osorlo
+2092	Osman
+2093	Oshurkov
+2094	Osborne
+2095	Orton
+2096	Ortega
+2097	Orellana
+2098	Orel
+2099	Opravilova
+2100	Omaly
+2101	Olaloye
+2102	Økland
+2103	Okland
+2104	Okano
+2105	Okamoto
+2106	Ohtaka
+2107	O'Hara
+2108	Ogbogu
+2109	Ogawa
+2110	Odum
+2111	Odell
+2112	O'Dea
+2113	Oda
+2114	O'Connor
+2115	Nye
+2116	Nybakken
+2117	Nursall
+2118	Nunomura
+2119	Numakunai
+2120	Nudds
+2121	Novosel
+2122	Novak
+2123	Norton
+2124	Nordmann
+2125	Nordgaard
+2126	Norden Anderson
+2127	Nomenclature
+2128	Noble
+2129	Nitsche
+2130	Nitecki
+2131	Nishizawa
+2132	Nimeskern Jr.
+2133	Nikolic
+2134	Nikoliã
+2135	Nikiforova
+2136	Niermann
+2137	Nielsen
+2138	Nield
+2139	Nicoletti
+2140	Newton
+2141	Newell
+2142	Neuffer
+2143	Nesis
+2144	Nelson
+2145	Negreiros Fransozo
+2146	Neck
+2147	Nazarova
+2148	Naylor
+2149	Nauman
+2150	Narkowicz
+2151	Nandakumar
+2152	Namikawa
+2153	Nakazawa
+2154	Nakahara
+2155	Nair
+2156	Naimark
+2157	Nagle
+2158	Nageshwara Rao
+2159	Nagabhushanam
+2160	Myers
+2161	Muus
+2162	Mutter
+2163	Mushusubramanian
+2164	Muravchik
+2165	Murano
+2166	Muñoz
+2167	Mundy
+2168	Mullineaux
+2169	Mullin
+2170	Muller
+2171	Müller
+2172	Mulder
+2173	Mukai
+2174	Morton
+2175	Mortelmans
+2176	Morrison
+2177	Morrill
+2178	Mori
+2179	Morgan
+2180	Morgado
+2181	Moreau
+2182	Moran
+2183	Morales-Rios
+2184	Mook
+2185	Montenat
+2186	Monteiro Marques
+2187	Monteiro
+2188	Monteillet
+2189	Montanaro
+2190	Montanari
+2191	Monokov
+2192	Molina
+2193	Moissette
+2194	Moisette
+2195	Mohammad
+2196	Miyazaki
+2197	Mitchell
+2198	Mistiaen
+2199	Mistakidis
+2200	Minoura
+2201	Milne
+2202	Miller III
+2203	Miller Jr.
+2204	Millarce
+2205	Miles
+2206	Mileikovsky
+2207	Mildner
+2208	Miki
+2209	Mikhaevich
+2210	Mihm
+2211	Meyer
+2212	Merilaita
+2213	Merida
+2214	Mergner
+2215	Mergl
+2216	Mercado
+2217	Menzies
+2218	Menon
+2219	Mendola
+2220	Mendez-Bedia
+2221	Mendez
+2222	Melone
+2223	Mehrtens
+2224	Meek
+2225	Médioni
+2226	McShea
+2227	M'Coy
+2228	McNamara
+2229	McNair
+2230	McLeod
+2231	McLean
+2232	McLaren
+2233	McKamey
+2234	McGuirt
+2235	McGovern
+2236	McGhee
+2237	McEdward
+2238	McDougall
+2239	McDermott
+2240	McConnaughey
+2241	McColloch
+2242	McCartney
+2243	McCain
+2244	McBeth
+2245	Mayr
+2246	Maxwell
+2247	Maw
+2248	Maurer
+2249	Maughan
+2250	Mauch
+2251	Matzdorff
+2252	Maturo
+2253	Mattox
+2254	Matsunaga
+2255	Matricon
+2256	Matricardi
+2257	Mathur
+2258	Masuda
+2259	Mastenbroek
+2260	Masse
+2261	Massard
+2262	Maryanska
+2263	Martinsson
+2264	Martinell
+2265	Martindale
+2266	Martin
+2267	Marshall
+2268	Markowski
+2269	Markov
+2270	Markham
+2271	Mariscal
+2272	Marion
+2273	Marintsch
+2274	Mariani
+2275	Marcopoulou Diacantoni
+2276	Marcopolou-Diacantoni
+2277	Marano
+2278	Marabini
+2279	Manriquez
+2280	Manning
+2281	Manganelli
+2282	Mañé-Garzón
+2283	Maluquer
+2284	Maloney
+2285	Malone
+2286	Maliva
+2287	Malchow
+2288	Makrushin
+2289	Maiello
+2290	Magalhaes
+2291	Madsen
+2292	Madhaven Pillai
+2293	Madhavan Pillai
+2294	MacMunn
+2295	MacLeod
+2296	Mackey
+2297	Macken
+2298	Maciorowski
+2299	MacGinitie
+2300	MacFarlan
+2301	Marwick
+2302	Lysek
+2303	Lynch
+2304	Lyke
+2305	Lutov
+2306	Luther
+2307	Luterbacher
+2308	Lutaud
+2309	Lukasik
+2310	Ludford
+2311	Lowenstam
+2312	Lovern
+2313	Loveland
+2314	Lorenzo Villar
+2315	Lorenz
+2316	Loppens
+2317	Lopez Gappa
+2318	López de la Cuadra
+2319	Lopez de la Cuadra
+2320	Lopanik
+2321	Lönnberg
+2322	Longshaw
+2323	Long
+2324	Lomas
+2325	Lohmann
+2326	Logan
+2327	Loeblich
+2328	Loeb
+2329	Lobdell
+2330	Loba da Cunha
+2331	Livanov
+2332	Liszka
+2333	Lister
+2334	Lisitsyn
+2335	Lisbjerg
+2336	Lisandro
+2337	Lippi Boncambi
+2338	Lipkin
+2339	Lipina
+2340	Lindstedt
+2341	Lindberg
+2342	Lin
+2343	Lim
+2344	Lienau
+2345	Liebus
+2346	Liddell
+2347	Lichtschein de Bastida
+2348	Lichtenberg
+2349	Liang
+2350	Lewis
+2351	Lev
+2352	Leuterman
+2353	Leung Tack Kit
+2354	Lescinsky
+2355	Lepersonne
+2356	Lenzi
+2357	Lemche
+2358	Leloux
+2359	Leidy
+2360	Leichter
+2361	Lefevre
+2362	Lefevere
+2363	Lees
+2364	Lee
+2365	Lecompte
+2366	Leca
+2367	LeBlanc
+2368	Lebedev
+2369	Leathem
+2370	Leary
+2371	Leal
+2372	le Maitre
+2373	Layerspetz
+2374	Lavrent'yeva
+2375	Lavrenteva
+2376	Lavoie
+2377	Laverack
+2378	Lauritzen
+2379	Lauer
+2380	Laubier
+2381	Lasher
+2382	Laseron
+2383	Lasemi
+2384	Larwood
+2385	Larsen
+2386	Lanza Suarez
+2387	Lankester
+2388	Langer
+2389	Langenstrassen
+2390	Lange
+2391	Lane
+2392	Landman
+2393	Lambert
+2394	Lamarti-Sefian
+2395	Lamarti Sefian
+2396	Lakatos
+2397	Lagardere
+2398	Ladewig
+2399	Lacourt
+2400	Lacaze-Duthiers
+2401	La Rocque
+2402	Kyser
+2403	Kvitek
+2404	Kuznetsov
+2405	Kuusela
+2406	Kusakin
+2407	Kuriyan
+2408	Kundal
+2409	Kulka
+2410	Kulich
+2411	Kuklinski
+2412	Kujawa
+2413	Kühl
+2414	Kues
+2415	Kubota
+2416	Ktari-Chakroun
+2417	Kruytzer
+2418	Krukenberg
+2419	Krivenko
+2420	Kristensen
+2421	Krausel
+2422	Kramp
+2423	Kowalski
+2424	Kovganko
+2425	Kouchi
+2426	Kotua Dickson
+2427	Kostetskii
+2428	Korringa
+2429	Kornicker
+2430	Korn
+2431	Kora
+2432	Konopacka
+2433	Konno
+2434	Konnecker
+2435	König
+2436	Kon ya
+2437	Kolosváry
+2438	Kohring
+2439	Kohler
+2440	Kohl
+2441	Kochansky Devide
+2442	Kocak
+2443	Kobluk
+2444	Kobayashi
+2445	Knudsen
+2446	Knop
+2447	Knipowitsch
+2448	Knight-Jones
+2449	Knight
+2450	Knaissling
+2451	Klevenhusen
+2452	Klemke
+2453	Klein
+2454	Kleemann
+2455	Kitching
+2456	Kitamura
+2457	Kiseleva
+2458	Kinne
+2459	Kim
+2460	Kilfoyle
+2461	Kier
+2462	Kiel
+2463	Kidwell
+2464	Khmeleva
+2465	Kharin
+2466	Key
+2467	Key Jr.
+2468	Kesling
+2469	Keskin
+2470	Kerr
+2471	Kerneïs
+2472	Kerckhof
+2473	Keough
+2474	Kent
+2475	Kensley
+2476	Kennedy
+2477	Kelmo
+2478	Kelly
+2479	Kelley
+2480	Keller
+2481	Keith
+2482	Kecskemeti Kormendy
+2483	Kazmierczak
+2484	Kay
+2485	Kawakatsu
+2486	Kawahara
+2487	Kaufmann
+2488	Katoaka
+2489	Karlson
+2490	Karklins
+2491	Karim
+2492	Karande
+2493	Kapitzke
+2494	Kaneko
+2495	Kaminski
+2496	Kamano
+2497	Kalyani
+2498	Kaisin
+2499	Kahle
+2500	Kafanov
+2501	Kaelin
+2502	Kachalova
+2503	Kacha
+2504	Jurgensen
+2505	Joseph
+2506	Joo
+2507	Jonet
+2508	Jones
+2509	Joliet
+2510	Jokiel
+2511	Johnson
+2512	Johannes
+2513	Jofts
+2514	Jocqué
+2515	Jobe
+2516	Job
+2517	Jillett
+2518	Jikai
+2519	Jeuniaux
+2520	Jeong
+2521	Jensen
+2522	Jell
+2523	Jeffries
+2524	Jeekel
+2525	Jeanmougin
+2526	Javed
+2527	Jasin
+2528	Jarvis
+2529	Jarms
+2530	Janssen
+2531	Jannasch
+2532	Jangoux
+2533	Jamet
+2534	James
+2535	Jaiswal
+2536	Jain
+2537	Jaguin
+2538	Jägerskiöld
+2539	Jaeckle
+2540	Jaeckel
+2541	Jacquotte
+2542	Jackson Jr.
+2543	Jablonski
+2544	Iyengar
+2545	Ivanovskii
+2546	Ivanova-Kazas
+2547	Ivanova Kazas
+2548	Ivaniya
+2549	Ivanenko
+2550	Issaq
+2551	Ishizaki
+2552	Ishikawa
+2553	Isensee
+2554	International Commission on Zoological Nomenclature
+2555	International Bryozoology
+2556	Ingold
+2557	India
+2558	Ilina
+2559	Ikezawa
+2560	Ignatiades
+2561	Igic
+2562	Igiæ
+2563	Idris
+2564	Ida
+2565	Hyman
+2566	Hyden
+2567	Hyatt
+2568	Huxley
+2569	Hutchins
+2570	Hurlbut
+2571	Hurd
+2572	Hunter
+2573	Hunt
+2574	Humphries
+2575	Hulings
+2576	Hughes
+2577	Huffman
+2578	Huddleston
+2579	Hucke
+2580	Hubschman
+2581	Huang
+2582	Hu
+2583	Hradecka
+2584	Howes
+2585	Howard
+2586	Houzelot
+2587	Hosomi
+2588	Horowitz
+2589	Horne
+2590	Honma
+2591	Hong
+2592	Holst
+2593	Holmquist
+2594	Holmes
+2595	Hollstrom
+2596	Hollingworth
+2597	Holdener
+2598	Holcova
+2599	Hofmann
+2600	Hoare
+2601	Hoar
+2602	Hiscock
+2603	Hirosaki
+2604	Hiroi
+2605	Hirata
+2606	Hinz Schallreuter
+2607	Hino
+2608	Hinds
+2609	Hinde
+2610	Hinchcliffe
+2611	Hilton
+2612	Hiltermann
+2613	Hiller
+2614	Higazi
+2615	Hidu
+2616	Hicks
+2617	Hickey
+2618	Hess
+2619	Hertlein
+2620	Herrmann
+2621	Herrera-Cubilla
+2622	Herrera
+2623	Hermansen
+2624	Hentschel
+2625	Henry
+2626	Henrich
+2627	Henneguy
+2628	Henke
+2629	Hempel
+2630	Helm
+2631	Heimler
+2632	Hedrick
+2633	Healey
+2634	He
+2635	Hayton
+2636	Haygood
+2637	Haya
+2638	Hatton-Ellis
+2639	Hatcher
+2640	Hass
+2641	Hasper
+2642	Haslu
+2643	Hashima
+2644	Hary
+2645	Harwood
+2646	Harvey
+2647	Harvell
+2648	Hart
+2649	Harrison
+2650	Harper
+2651	Harms
+2652	Harlton
+2653	Hardy-Halos
+2654	Hardy
+2655	Harder
+2656	Harbridge
+2657	Hao
+2658	Hanström
+2659	Hansen
+2660	Hanken
+2661	Hampton III
+2662	Hammen
+2663	Hamilton
+2664	Hamer
+2665	Hamel
+2666	Halme
+2667	Hallam
+2668	Halanych
+2669	Håkansson
+2670	Haime
+2671	Hageman
+2672	Hadjieva
+2673	Hadfii
+2674	Haderlie
+2675	Haddadi Hamdane
+2676	Guzman
+2677	Gutmann
+2678	Gustus
+2679	Gustavson
+2680	Gusso
+2681	Gurney
+2682	Gurjanowa
+2683	Gurjanova
+2684	Gurgel
+2685	Gupta
+2686	Gunter
+2687	Gundrum
+2688	Gulliksen
+2689	Guille
+2690	Gugel
+2691	Guérin-Ganivet
+2692	Guerin
+2693	Gryncharova
+2694	Grunbaum
+2695	Gruet
+2696	Grubbs
+2697	Groupe
+2698	Gristina
+2699	Grigg
+2700	Grenon
+2701	Grellet
+2702	Greenland
+2703	Green
+2704	Greely
+2705	Greeley
+2706	Grave
+2707	Graupner
+2708	Grasshoff
+2709	Grant
+2710	Graham
+2711	Grace
+2712	Grabow
+2713	Gould
+2714	Gottardi
+2715	Gothel
+2716	Gostilovskaya
+2717	Gostilovskaia
+2718	Gosteva
+2719	Gosselin
+2720	Goromosova
+2721	Gorodiski
+2722	Gorin
+2723	Gorbunov
+2724	Gopalakrishnan
+2725	Gooday
+2726	Gooch
+2727	Gomoiu
+2728	Goldwasser
+2729	Goldson
+2730	Goethals
+2731	Goddard
+2732	Glémarec
+2733	Glaub
+2734	Glasby
+2735	Gischler
+2736	Girty
+2737	Girling
+2738	Gioli
+2739	Ginsburg
+2740	Gilmour
+2741	Gillespie
+2742	Gillard
+2743	Gili
+2744	Giese
+2745	Gibson
+2746	Ghosh
+2747	Ghobashy
+2748	Ghiurca
+2749	Ghiselin
+2750	Gheorghian
+2751	Geys
+2752	Germain
+2753	Gerhart
+2754	Gerdes
+2755	George
+2756	Genovese
+2757	Geimer
+2758	Geiger
+2759	Gazdzicki
+2760	Gay
+2761	Gaspparik
+2762	Garrad
+2763	Garrabou
+2764	Gardiner
+2765	Gantès
+2766	Gansen
+2767	Ganesan
+2768	Gamulin-Brida
+2769	Gamberi
+2770	Galtsoff
+2771	Galopim de Carvalho
+2772	Galluzzo
+2773	Gallardo
+2774	Gallagher
+2775	Gainey
+2776	Gaibar-Puertas
+2777	Fuse
+2778	Fürstner
+2779	Fursich
+2780	Funch
+2781	Fulton
+2782	Fuller
+2783	Fuchtbauer
+2784	Fry
+2785	Friedl
+2786	Friebe
+2787	Frey
+2788	Fresi
+2789	Freitas
+2790	Freeland
+2791	Fredskild
+2792	Fredj
+2793	Frederiks
+2794	Frazier
+2795	Fraser
+2796	Franzen
+2797	Franz
+2798	Fransen
+2799	Franke
+2800	Frank
+2801	Francis
+2802	Fox
+2803	Fortunatova
+2804	Fortuin
+2805	Forster
+2806	Forsmann
+2807	Forbes
+2808	Flugel
+2809	Florey
+2810	Flores
+2811	Fletcher
+2812	Fitzhardinge
+2813	Fisher
+2814	Fishelson
+2815	Fish
+2816	Finotti
+2817	Finger
+2818	Fine
+2819	Filice
+2820	Filatova
+2821	Fields Jr.
+2822	Field
+2823	Fiala-Medioni
+2824	Ferrand
+2825	Fernando
+2826	Fernandez Lopez
+2827	Fernandez Araoz
+2828	Ferguson
+2829	Ferdeghini
+2830	Felber
+2831	Feist
+2832	Fedorowicz
+2833	Faura Sans
+2834	Faulkner
+2835	Farmer
+2836	Farmer Jr.
+2837	Fan
+2838	Fagerstrom
+2839	Fager
+2840	Faasse
+2841	Everitt
+2842	Evans
+2843	Euzet
+2844	Eugene
+2845	Ettensohn
+2846	Etheridge
+2847	Etallon
+2848	Esa
+2849	Ertlova
+2850	Ernst
+2851	Erickson
+2852	Entcheva
+2853	Ensom
+2854	Engeser
+2855	Engemann
+2856	Engelhardt
+2857	Engel
+2858	Enaceanu
+2859	Emschermann
+2860	Emig
+2861	Emerson
+2862	Elmhirst
+2863	El-Matbouli
+2864	Elloy
+2865	Ellison
+2866	El-Komi
+2867	Elkaïm
+2868	Elia
+2869	El Sorogy
+2870	El Sanussi
+2871	El Hajjaji
+2872	Eitan
+2873	Eiserhardt
+2874	Eisenbarth
+2875	Eiben
+2876	Ehleiter
+2877	Eggleston
+2878	Edmunds
+2879	Edmondson
+2880	Edelstein
+2881	Eckman
+2882	Echalier
+2883	Easton
+2884	Earll
+2885	Eakin
+2886	Dyrynda
+2887	Dyer
+2888	Dybern
+2889	Dussart
+2890	Durante
+2891	Dunstan
+2892	Duncan
+2893	Dumont
+2894	Dumitrescu
+2895	Dulai
+2896	Duggins
+2897	Dudley
+2898	Dudich
+2899	d'Udekem d'Acoz
+2900	Dubos
+2901	Dublin
+2902	Duarte
+2903	Dromgoole
+2904	Driscoll
+2905	Dreyfuss
+2906	Drexler
+2907	Dorsey
+2908	Dörjes
+2909	Doochin
+2910	Dony
+2911	Dons
+2912	Dommasnes
+2913	Dodson
+2914	Dockery III
+2915	Dobson
+2916	Dixon
+2917	Dix
+2918	Ding
+2919	Dilly
+2920	Dil
+2921	Dighton Thomas
+2922	Dietl
+2923	di Geronimo
+2924	Dexter
+2925	Destombes
+2926	Desser
+2927	Desrochers
+2928	Desor
+2929	Desilly
+2930	Desgouilles
+2931	Descatoire
+2932	Derjugin
+2933	Derebach
+2934	Dennis
+2935	Denisenko
+2936	Demel
+2937	Demarcq
+2938	Delvolve
+2939	Delmet
+2940	Dell'Angelo
+2941	Delamette
+2942	Dekker
+2943	Dejoux
+2944	Dehdashti
+2945	Dechart
+2946	Debrand-Passard
+2947	Deboutteville
+2948	Debourle
+2949	Dean
+2950	de Porta
+2951	De Palma
+2952	De Meester
+2953	De Kinkelin
+2954	de Ferry
+2955	de Burgh
+2956	de Blauwe
+2957	Dayton
+2958	Day
+2959	Dawydoff
+2960	Dawson
+2961	Davoult
+2962	Davies
+2963	Davidson
+2964	Davidheiser
+2965	Davenport
+2966	Daugherty
+2967	Das
+2968	Dartevelle
+2969	Darrell
+2970	Daro
+2971	Danielssen
+2972	Daniel
+2973	Dales
+2974	Dainka
+2975	Daguzan
+2976	Dagorne
+2977	Dade
+2978	Czarniecki
+2979	Curry
+2980	Cummings
+2981	Cumings
+2982	Crozier
+2983	Crowley
+2984	Crowell
+2985	Crosby
+2986	Crockford
+2987	Crisp
+2988	Crisman
+2989	Creary
+2990	Cranfield
+2991	Crane
+2992	Craig
+2993	Cowles
+2994	Cowen
+2995	Couch
+2996	Costlow
+2997	Costa
+2998	Corybell
+2999	Cory
+3000	Corriero
+3001	Correa
+3002	Corp
+3003	Corner
+3004	Corneliussen
+3005	Corlett
+3006	Cordiviola de Yuan
+3007	Cope
+3008	Cooper
+3009	Coogan
+3010	Conway Morris
+3011	Conroy
+3012	Conrad
+3013	Connolly
+3014	Conkin
+3015	Condra
+3016	Colon-Urban
+3017	Colon Urban
+3018	Colmenero
+3019	Colman
+3020	Collins
+3021	Collie
+3022	Colledge
+3023	Coleman
+3024	Cole
+3025	Cohen
+3026	Cognetti
+3027	Coe
+3028	Cockbain
+3029	Cocito
+3030	Coash
+3031	Closs
+3032	Clément
+3033	Cleevely
+3034	Clausade
+3035	Clarke
+3036	Clarke Bradbury
+3037	Clark
+3038	Claparède 
+3039	Clamp
+3040	Cisterna
+3041	Cincurova
+3042	Chuarry
+3043	Christophersen
+3044	Christopher
+3045	Christoffersen
+3046	Chrétien
+3047	Choi
+3048	Chirica
+3049	Chiplonkar
+3050	Chiocci
+3051	Chimonides
+3052	Chimenz Gusso
+3053	Chimenz
+3054	Chevolot
+3055	Chevalier
+3056	Cherif
+3057	Cherepnina
+3058	Chave
+3059	Chaudonneret
+3060	Chaubey
+3061	Chau
+3062	Chaturvedi
+3063	Chatterjee
+3064	Charlton
+3065	Chardez
+3066	Charalambidou
+3067	Chapgar
+3068	Chaney
+3069	Chalmer
+3070	Chaix
+3071	César-Aldariz
+3072	Cesar-Aldariz
+3073	Cesar Aldariz
+3074	Ceretti
+3075	Ceretti 
+3076	Cekalovic
+3077	Ceccagnoli
+3078	Cea
+3079	Cazzaniga
+3080	Cazaux
+3081	Cave
+3082	Cavaliere
+3083	Cavalier Smith
+3084	Caulet
+3085	Castro Guimarães
+3086	Castritsi-Catharios
+3087	Castritsi Catharios
+3088	Castric-Fey
+3089	Casto
+3090	Castagna
+3091	Caspers
+3092	Casola
+3093	Casnedi
+3094	Casadio
+3095	Carté
+3096	Carson
+3097	Carriol
+3098	Carrera
+3099	Carrada
+3100	Carpine
+3101	Carlé
+3102	Carefoot
+3103	Carbonnel
+3104	Carbone
+3105	Car
+3106	Cantone
+3107	Canning
+3108	Canerot
+3109	Cancino
+3110	Campbell
+3111	Calzada
+3112	Calvin Calvo
+3113	Caltagirone
+3114	Calow
+3115	Callaghan
+3116	Calder
+3117	Cairns
+3118	Cahuzac
+3119	Cafieri
+3120	Caffara
+3121	Cadman
+3122	Cadee
+3123	Caceres
+3124	Caceres Chamizo
+3125	Cabioch
+3126	Byra
+3127	Bykova
+3128	Buttler
+3129	Butler
+3130	Buss
+3131	Bushnell
+3132	Burn
+3133	Burke
+3134	Burdon-Jones
+3135	Burckle
+3136	Bullimore
+3137	Buck
+3138	Buchner
+3139	Buchanan
+3140	Bryan
+3141	Bruce
+3142	Brozec
+3143	Brooks
+3144	Brookfield
+3145	Brons
+3146	Bromley
+3147	Broglio Loriga
+3148	Brock
+3149	Brien
+3150	Brice
+3151	Brezinski
+3152	Brey
+3153	Brettfeld
+3154	Brett
+3155	Bretsky Jr.
+3156	Bretsky
+3157	Brenchley
+3158	Breitburg
+3159	Brebion
+3160	Braverman
+3161	Brauns
+3162	Brattström
+3163	Brassel
+3164	Brandt
+3165	Brande
+3166	Branch
+3167	Brancato
+3168	Brajko
+3169	Braiko
+3170	Braga
+3171	Bradstock
+3172	Bradley
+3173	Boyko
+3174	Boyer
+3175	Bousfield
+3176	Boury-Esnault
+3177	Bourgeat
+3178	Boulanger
+3179	Bouffandeau
+3180	Bouchet
+3181	Bottjer
+3182	Borsetti
+3183	Borset
+3184	Bork
+3185	Borisenko
+3186	Bordeaux
+3187	Boone
+3188	Bonnevie
+3189	Bonfiglio
+3190	Boney
+3191	Bonetto
+3192	Bonem
+3193	Bone
+3194	Bolton
+3195	Bolshakova
+3196	Bolli
+3197	Boillot
+3198	Boiko
+3199	Bogush
+3200	Bogolepow
+3201	Bogolepov
+3202	Boero
+3203	Blondel
+3204	Blind
+3205	Bliefnick
+3206	Blick
+3207	Blanner
+3208	Blane
+3209	Blake
+3210	Blackman
+3211	Black
+3212	Bissoenette
+3213	Birstein
+3214	Birkelund
+3215	Billing
+3216	Billard
+3217	Bijma
+3218	Bignot
+3219	Bielokrys
+3220	Biao
+3221	Bianchi
+3222	Bhatt
+3223	Bhakuni
+3224	Beutler
+3225	Best
+3226	Bertrand
+3227	Bertling
+3228	Berset
+3229	Berry
+3230	Berrill
+3231	Bernheimer
+3232	Berman
+3233	Bergmann
+3234	Bergman
+3235	Berglund
+3236	Berger
+3237	Berge
+3238	Berdyshev
+3239	Berdar
+3240	Benthem Jutting
+3241	Benson
+3242	Bennike
+3243	Benier
+3244	Ben Moussa
+3245	Belloc
+3246	Bellan-Santini
+3247	Bell
+3248	Belamaric
+3249	Bekker
+3250	Beissel
+3251	Begg
+3252	Began
+3253	Bechon
+3254	Becerro
+3255	Beaven
+3256	Beauchamp
+3257	Bayer
+3258	Baum
+3259	Battistini
+3260	Battaglini
+3261	Bassompierre
+3262	Bassindale
+3263	Baschong
+3264	Bartley
+3265	Bartholomaus
+3266	Barskov
+3267	Barrois
+3268	Barrier
+3269	Barrett
+3270	Baroni
+3271	Barnet
+3272	Barnes
+3273	Barkai
+3274	Barel
+3275	Baranova
+3276	Banks
+3277	Bandel
+3278	Bancroft
+3279	Bameul
+3280	Bamber
+3281	Bambach
+3282	Balson
+3283	Ballesteros
+3284	Ballantine
+3285	Bale
+3286	Balduzzi
+3287	Baker
+3288	Baird
+3289	Bain
+3290	Bailey-Brock
+3291	Bailey Brock
+3292	Bahr
+3293	Baghdiguian
+3294	Bagge
+3295	Bagdasaryan
+3296	Bagaveeva
+3297	Badve
+3298	Bader
+3299	Bacon
+3300	Backus
+3301	Bacescu
+3302	Azmi
+3303	Azcuy
+3304	Aymes
+3305	Ayer
+3306	Aye Ko
+3307	Avrov
+3308	Atkins
+3309	Astafieva Urbajtis
+3310	Askren
+3311	Ashdown
+3312	Arsenev
+3313	Arroyo
+3314	Arnold
+3315	Arndt
+3316	Arnaud-Vanneau
+3317	Armstrong
+3318	Ariunchimeg
+3319	Aristegui
+3320	Arias
+3321	Arens
+3322	Arcifa
+3323	Arakawa
+3324	Aprosi
+3325	Applewhite
+3326	Apollini
+3327	Antony Raja
+3328	Antonia Biblioni
+3329	Antolini
+3330	Antipenko
+3331	Anthoni
+3332	Ankar
+3333	Anichini
+3334	Andrusov
+3335	Andrieff
+3336	Andrews
+3337	André
+3338	Andre
+3339	Andersson
+3340	Anderson
+3341	Andersen
+3342	Anastas
+3343	Anadon
+3344	Amor
+3345	Amler
+3346	Amini
+3347	Ames
+3348	Ambronn
+3349	Alvarez-Leon
+3350	Al-Ogily
+3351	Allam
+3352	Alexandrowicz
+3353	Alexander
+3354	Aleem
+3355	Alberti
+3356	Alagarswami
+3357	Aguirre Urreta
+3358	Aguirre
+3359	Agrawal
+3360	Agius
+3361	Agassiz
+3362	Agarwal
+3363	Afanasjeva
+3364	Adema
+3365	Adams
+3366	Adami
+3367	Ackefors
+3368	Aceñolaza
+3369	Accordi
+3370	Abushik
+3371	Abricosov
+3372	Abelson
+3373	Abeloos
+3374	Abello
+3375	Abdel-Aal
+3376	Abbott
+3377	Abass
+3378	Acharyya
+3379	Adabi
+3380	Adachi
+3381	Afanas'yev
+3382	Agnoletto
+3383	Aguinaldo
+3384	Ahlfors
+3385	Ahmed
+3386	Aithie
+3387	Al Habbib
+3388	Alcaype
+3389	Al-Katib
+3390	Allegri
+3391	Allison
+3392	Almatchy
+3393	Almeras
+3394	Alméras
+3395	Alva
+3396	Alvarado
+3397	Alvardo
+3398	Alvaro
+3399	Alvis
+3400	Amaral
+3401	Amblàs
+3402	Amedro
+3403	Amig
+3404	Ananich
+3405	Andersin
+3406	Andreev
+3407	Andres
+3408	Angelis d'Ossat
+3409	Angelucci
+3410	Aoyagi
+3411	Aprill
+3412	Aracena
+3413	Araujo de Almeida
+3414	Arcas
+3415	Archbold
+3416	Ardizzone
+3417	Argenti
+3418	Arnaud
+3419	Artigas
+3420	Asami
+3421	Asaro
+3422	Aston
+3423	Asyagi
+3424	Attrill
+3425	Ausich
+3426	Avsar
+3427	Azevedo
+3428	Azouz
+3429	Babach
+3430	Babio
+3431	Babu Rao
+3432	Bach
+3433	Bacheller
+3434	Backeljau
+3435	Baczynskyj
+3436	Badalamenti
+3437	Badalini
+3438	Badillet
+3439	Baeten
+3440	Baier
+3441	Ballard
+3442	Ballesio
+3443	Barange
+3444	Barber
+3445	Barbieri
+3446	Barbin
+3447	Barcia
+3448	Barkham
+3449	Barta
+3450	Bartolini
+3451	Bassett
+3452	Bassiouni
+3453	Bastian Fernando
+3454	Bastida
+3455	Bate
+3456	Batham
+3457	Batson
+3458	Battershill
+3459	Bauer
+3460	Baxa
+3461	Beardmore
+3462	Beaulieu
+3463	Becacos-Kontos
+3464	Becker Platen
+3465	Becker-Platen
+3466	Bednarczyk
+3467	Belloni
+3468	Bender
+3469	Benedetto
+3470	Benito
+3471	Benocci
+3472	Bentley
+3473	Bernal
+3474	Besteiro
+3475	Betney
+3476	Betzler
+3477	Beu
+3478	Beznosov
+3479	Biggs
+3480	Billiald
+3481	Bilotte
+3482	Bils
+3483	Binford
+3484	Bing
+3485	Bird
+3486	Blackler
+3487	Bless
+3488	Blinn
+3489	Blumberg
+3490	Blunt
+3491	Boaden
+3492	Boccia
+3493	Bocher
+3494	Boettner
+3495	Böggemann
+3496	Bogoslovskaya
+3497	Bohlin
+3498	Bohlken
+3499	Bol'shakova
+3500	Bonarelli
+3501	Bonet
+3502	Bookout
+3503	Borch
+3504	Borero
+3505	Boronat
+3506	Bortolami
+3507	Bosse
+3508	Boto
+3509	Bouchard
+3510	Bouillon
+3511	Bouquegneau
+3512	Bourget
+3513	Bourque
+3514	Bouyx
+3515	Bowden
+3516	Bowen
+3517	Boyd
+3518	Brackin
+3519	Bradshaw
+3520	Brannan
+3521	Brehmer
+3522	Bremec
+3523	Brezeanu
+3524	Broadhead
+3525	Brockington
+3526	Bronevskii
+3527	Brosch
+3528	Budevska
+3529	Bulguer
+3530	Bull
+3531	Buller
+3532	Bullock
+3533	Bultynck
+3534	Burdick
+3535	Burrett
+3536	Burris
+3537	Burrows
+3538	Busnardo
+3539	Busquets
+3540	Bussers
+3541	Buttrick
+3542	Byrnes
+3543	Cachao
+3544	Cai
+3545	Caiping
+3546	Callaway
+3547	Cameron
+3548	Cancela da Fonseca
+3549	Cañete
+3550	Canevello
+3551	Cann
+3552	Cantrell
+3553	Capozzi
+3554	Carannante
+3555	Cardellina II
+3556	Cariolou
+3557	Carle
+3558	Carlton
+3559	Carmona
+3560	Caroca
+3561	Carr
+3562	Carrasco
+3563	Carvalho
+3564	Carver
+3565	Casale
+3566	Casolaro
+3567	Castaneda
+3568	Castañeda
+3569	Castro
+3570	Caswell
+3571	Cattaneo
+3572	Cattaneo Vietti
+3573	Cavallaro
+3574	Cavallo
+3575	Cecere
+3576	Celletti
+3577	Cervera
+3578	Çetin
+3579	Chandra
+3580	Chaouch
+3581	Chaplygina
+3582	Chapuis
+3583	Chase
+3584	Chellam
+3585	Chemello
+3586	Chen
+3587	Chenou
+3588	Chernoff
+3589	Chia
+3590	Chieppa
+3591	Chmurny
+3592	Chojenski
+3593	Christensen
+3594	Chronic
+3595	Chu
+3596	Chuanyan
+3597	Chuecas
+3598	Chung
+3599	Chutter
+3600	Ciccarelli
+3601	Cinelli
+3602	Ciochon
+3603	Civis
+3604	Clapp
+3605	Clardy
+3606	Clauss
+3607	Clavel
+3608	Clayton
+3609	Clendenning
+3610	Cloney
+3611	Coates
+3612	Colbeaux
+3613	Coll
+3614	Collen
+3615	Collier
+3616	Columbo
+3617	Conato
+3618	Cond‚
+3619	Coniglio
+3620	Connor
+3621	Conolly
+3622	Conover
+3623	Coppa
+3624	Copper
+3625	Corbera
+3626	Corbet
+3627	Cordiviola
+3628	Cormaci
+3629	Cormack
+3630	Cornet
+3631	Cortés
+3632	Cossey
+3633	Costantino
+3634	Cottrell
+3635	Coull
+3636	Coutin
+3637	Covelli
+3638	Cowey
+3639	Crame
+3640	Creisler
+3641	Cremonini
+3642	Criado
+3643	Croasdale
+3644	Cruz
+3645	Curray
+3646	Currie
+3647	Cuscani
+3648	Cusi
+3649	Cutler
+3650	Czel
+3651	Dad
+3652	Dahlke
+3653	Daikou
+3654	Daly
+3655	d'Amato
+3656	Damotte
+3657	Danaher
+3658	D'Angelo
+3659	Darchino
+3660	d'Atri
+3661	Dauphin
+3662	Davant
+3663	d'Civatte
+3664	de Alba
+3665	De Grave
+3666	de Kinkelin
+3667	de Lapparent
+3668	De Lourdes
+3669	de Putron
+3670	De Silva
+3671	de Souza
+3672	de Villalta
+3673	de Villoutreys
+3674	De Wachter
+3675	de Watteville
+3676	De Witt
+3677	De Yuan
+3678	Deandreis
+3679	Defaye
+3680	Degnan
+3681	deGrace
+3682	Deloffre
+3683	Delrieu
+3684	Dessaix
+3685	D'Estevou
+3686	Devlin
+3687	Dew
+3688	Dewarumez
+3689	DeWreede
+3690	DI
+3691	di Costanzo
+3692	di Stefano
+3693	Diaz
+3694	Dickson
+3695	Dietrich
+3696	Digerfldt
+3697	Dimentman
+3698	Dipper
+3699	Diviacco
+3700	Diwan
+3701	Docsanescu
+3702	Dodd
+3703	Dolakova
+3704	Domenech
+3705	Dommanget
+3706	Donakova
+3707	Donaldson
+3708	Dong
+3709	Doolan
+3710	Doubek
+3711	Downes
+3712	Doyle
+3713	Drager
+3714	Dragu
+3715	Drouet
+3716	Duan
+3717	Dubatolova
+3718	Duedall
+3719	Duff
+3720	Dufresne
+3721	Dunne
+3722	Dutta
+3723	Dutton
+3724	Dyulgerov
+3725	Easterson
+3726	Ebel
+3727	Eberl
+3728	Ebling
+3729	Ebrahimzadeh-Assadian
+3730	Eckert
+3731	Edrada
+3732	Egami
+3733	Ehrhardt
+3734	Eiseman
+3735	Eisenman
+3736	El Gamal
+3737	El Kadiri
+3738	Eldershaw
+3739	Elliott
+3740	Elmgren
+3741	El-Senoussi
+3742	Elsner
+3743	Endelman
+3744	Engesser
+3745	Erdelics
+3746	Erséus
+3747	Escanero
+3748	Escoubet
+3749	Estevez Ojea
+3750	Faasch
+3751	Fabianek
+3752	Fankboner
+3753	Faraglia
+3754	Farrell
+3755	Fassari
+3756	Fattorusso
+3757	Faucette Jr.
+3758	Feary
+3759	Feldmann
+3760	Fenical
+3761	Ferguson Wood
+3762	Fernandez
+3763	Fernández
+3764	Fernández-Pulpeiro
+3765	Ferrall
+3766	Ferrigno
+3767	Ferry
+3768	Fey
+3769	Fichez
+3770	Figueira
+3771	Figuerola
+3772	Finton
+3773	Fioravanti
+3774	Fisherkeller
+3775	Flanagan
+3776	Focardi
+3777	Foerster
+3778	Fois
+3779	Fois-Erickson
+3780	Fonda
+3781	Foord
+3782	Fordy
+3783	Forman
+3784	Forti
+3785	Fortunata
+3786	Foster
+3787	Fott
+3788	Foucher
+3789	Fournier
+3790	Francesco
+3791	Francescon
+3792	Francour
+3793	Fransozo
+3794	Frazer
+3795	Freiwald
+3796	Fried
+3797	Frihy
+3798	Froehlich
+3799	Frydenborg
+3800	Fu
+3801	Fuchs
+3802	Fuji
+3803	Fukushima
+3804	Fullington
+3805	Furnari
+3806	Furness
+3807	Fürsich
+3808	Fusetani
+3809	Fuson
+3810	Gajhede
+3811	Gale
+3812	Galloway
+3813	Games
+3814	Ganian
+3815	Ganias
+3816	Gao
+3817	Garcia Gomez
+3818	García-Gomez
+3819	García-Gómez
+3820	Garey
+3821	Garland
+3822	Gataulina
+3823	Gault
+3824	Gavagnin
+3825	Gawthrop
+3826	Gayet
+3827	Gebelein
+3828	Gehling
+3829	Gekker
+3830	Gennesseaux
+3831	Gergan
+3832	Gervasi
+3833	Getmanova
+3834	Geyer
+3835	Ghanima
+3836	Ghare
+3837	Ghose
+3838	Giaccone
+3839	Gianesella Galvao
+3840	Giannasi
+3841	Gil
+3842	Gill
+3843	Giordani
+3844	Giovannini
+3845	Girard-Descatoire
+3846	Girone
+3847	Glaçon
+3848	Glenie
+3849	Gliddon
+3850	Gluchowski
+3851	Glynn
+3852	Gobetto
+3853	Goffinet
+3854	Golubic
+3855	Gomes
+3856	Gómez
+3857	Gomon
+3858	Gontier
+3859	Gooden Seay
+3860	Goodman
+3861	Goodyear
+3862	Gopal Dutt
+3863	Gopikrishna
+3864	Gordillo
+3865	Goreau
+3866	Goryunova
+3867	Gostev
+3868	Gostin
+3869	Goto
+3870	Gourvennec
+3871	Goyffon
+3872	Grainger
+3873	Grange
+3874	Grant-Mackie
+3875	Grapes
+3876	Gravili
+3877	Gravina
+3878	Greb
+3879	Griffin
+3880	Griggs
+3881	Grignani
+3882	Grinzov
+3883	Grobe
+3884	Grosberg
+3885	Guensburg
+3886	Gusev
+3887	Gush
+3888	Gust
+3889	Gustinelli
+3890	Gutierrez Marco
+3891	Gutt
+3892	Guttman
+3893	Guy
+3894	Guyader
+3895	Gyllenhaal
+3896	Habib
+3897	Hadfield
+3898	Hain
+3899	Hallock
+3900	Haman
+3901	Hambley
+3902	Hamedani
+3903	Hancock
+3904	Hannoudi
+3905	Hardege
+3906	Harley
+3907	Harries
+3908	Harriott
+3909	Harris
+3910	Harry
+3911	Hartman
+3912	Hartmann
+3913	Hartwell
+3914	Hasegawa
+3915	Hashimoto
+3916	Hasko
+3917	Hata
+3918	Hattin
+3919	Haugsness
+3920	Havenand
+3921	Havenhand
+3922	Hay
+3923	Hayashi
+3924	Hayek
+3925	Hazel
+3926	Heally
+3927	Heckel
+3928	Hedgpeth
+3929	Heiland
+3930	Heimberg
+3931	Heinberg
+3932	Helal
+3933	Hellberg
+3934	Helling
+3935	Hellström
+3936	Helmuth
+3937	Herald
+3938	Herouard
+3939	Herrera Cubilla
+3940	Herrera-Anduaga
+3941	Higgins
+3942	Higuchi
+3943	Hillis
+3944	Hilly
+3945	Hine
+3946	Hinkle
+3947	Hinman
+3948	Hirayama
+3949	Hirschfield
+3950	Hoffmann
+3951	Hofman
+3952	Hoke
+3953	Holbourn
+3954	Holcová
+3955	Holden
+3956	Holenweg
+3957	Holland
+3958	Holm
+3959	Honkalehto
+3960	Hood
+3961	Hooper
+3962	Hop
+3963	Hope
+3964	Høpner Petersen
+3965	Horikoshi
+3966	Horn
+3967	Hosaka
+3968	Hoshi
+3969	Hoshikawa
+3970	Hoskin
+3971	Houghton
+3972	Househam
+3973	Howson
+3974	Hoyle
+3975	Hudackova
+3976	Hugues
+3977	Hui
+3978	Hutchings
+3979	Hutner
+3980	Huz
+3981	Ichihara
+3982	Igarashi
+3983	Iizima
+3984	Imbalzano
+3985	Improta
+3986	Inaba
+3987	Ingham
+3988	Ingram
+3989	Inoue
+3990	Iryu
+3991	Ishimaru
+3992	Itabashi
+3993	Ito
+3994	Itokawa
+3995	Itzhak
+3996	Ivanova
+3997	Ivanovskij
+3998	Ivantsov
+3999	Iwata
+4000	Jaccarini
+4001	Jaklin
+4002	Jand
+4003	Jand Barnes
+4004	Jand Lemone
+4005	Jand Lighthart
+4006	Jand Thorpe
+4007	Jand Woollacott
+4008	Jansson
+4009	Janvier
+4010	Jara
+4011	Jardine
+4012	Jarett
+4013	Je
+4014	Jenny
+4015	Jimenez
+4016	Jinbo
+4017	Johnsen
+4018	Jokela
+4019	Joseph-Nathan
+4020	Jouannic
+4021	Jourdy
+4022	Jowett
+4023	Judd
+4024	Julka
+4025	Juriens-Cottet
+4026	Juyal
+4027	Kadagies
+4028	Kaissling
+4029	Kajihara
+4030	Kamenskaya
+4031	Kamyab
+4032	Karajeva
+4033	Karasawa
+4034	Kasanuki
+4035	Kase
+4036	Kastendick
+4037	Katakura
+4038	Katti
+4039	Kauffman
+4040	Kaufman
+4041	Kawabe
+4042	Kawamura
+4043	Kázmér
+4044	Keane
+4045	Keegan
+4046	Keenan
+4047	Kelkar
+4048	Kershaw
+4049	KFPHW
+4050	Khattra
+4051	Khozatskij
+4052	Kimoto
+4053	Kinner
+4054	Kiortsis
+4055	Kirkland
+4056	Kitami
+4057	Kiwala
+4058	Kiyoushi
+4059	Kizu
+4060	Klautsan
+4061	Klekowski
+4062	Klemm
+4063	Kloos
+4064	Koehler
+4065	Koleck
+4066	Komiyama
+4067	Konig
+4068	Konishi
+4069	Konradi
+4070	Kon-ya
+4071	Kosich
+4072	Kosmenko
+4073	Kosmynin
+4074	Kotake
+4075	Kowalczewski
+4076	Kowalczyk
+4077	Kraft
+4078	Krajewski
+4079	Kramer
+4080	Kramers
+4081	Krasilova
+4082	Krasnyj
+4083	Krause
+4084	Kreider
+4085	Krejcarek
+4086	Krishna
+4087	Krishnamurthy
+4088	Kriz
+4089	Kroh
+4090	Kroppenstedt
+4091	Kruchinina
+4092	Krumbein
+4093	Kubicek
+4094	Kubo
+4095	Kuijpers
+4096	Kuligowski
+4097	Kulshreshtha
+4098	Kulshrestha
+4099	Kummel
+4100	Kusuma
+4101	Kuwahara
+4102	Kuwano
+4103	Kuznetsova
+4104	Kysela
+4105	la Perna
+4106	La Perna
+4107	Laborel Deguen
+4108	Labourg
+4109	Lacey
+4110	Lafargue
+4111	Lafutse
+4112	Laghi
+4113	Laihonen
+4114	Laine
+4115	Lake
+4116	Lamarche
+4117	Lami
+4118	Lamoureux
+4119	Lamy
+4120	Landis
+4121	Landry
+4122	Laroche
+4123	Latypov
+4124	Laulis
+4125	Lauriat
+4126	Lauriat Rage
+4127	Lauriat-Rage
+4128	Lavin
+4129	Lavrentyeva
+4130	Lawrence
+4131	Lawry
+4132	le Calvez
+4133	Le Calvez
+4134	Le Deuff
+4135	le Gall
+4136	Leamon
+4137	Leask
+4138	Lebedeva
+4139	Lecointre
+4140	Leet
+4141	Legaix
+4142	Lehtonen
+4143	Leinaas
+4144	Leinfelder
+4145	Leitner
+4146	Leloup
+4147	Leman
+4148	Lemarchand-Venencie
+4149	Lembcke
+4150	Lennmark
+4151	Lesemann
+4152	Lessertisseur
+4153	Lethiers
+4154	Levenstein
+4155	Levin
+4156	Levit
+4157	Lewin
+4158	Lewontin
+4159	Leys
+4160	Liao
+4161	Lichstein
+4162	Lichtschein
+4163	Lidgren
+4164	Liebezeit
+4165	Lietzen
+4166	Ligi
+4167	Lindel
+4168	Lindquist
+4169	Linhuang
+4170	Linsley
+4171	Listokin
+4172	Liva
+4173	Lizaso
+4174	Lo Tenero
+4175	Lockett
+4176	Lodge
+4177	Loffler
+4178	Longinelli
+4179	Lopez
+4180	Lopez Gonzalez
+4181	Loya
+4182	Lozada
+4183	Luczak
+4184	Ludovisi
+4185	Lutz
+4186	Lys
+4187	Lysenko
+4188	MacIntyre
+4189	Mackensen
+4190	Mackinnon
+4191	Macko
+4192	Macnae
+4193	Macphail
+4194	Madgett
+4195	Madill
+4196	Magniez
+4197	Maine
+4198	Mak
+4199	Makioka
+4200	Malec
+4201	Mallinson
+4202	Mamet
+4203	Manankov
+4204	Manconi
+4205	Manfredi
+4206	Manheim
+4207	Manighetti
+4208	Manivit
+4209	Mankowski
+4210	Mann
+4211	Marankov
+4212	Marchetto
+4213	Marchini
+4214	Marchio
+4215	Marcopoulou-Diacantoni
+4216	Marenssi
+4217	Margerel
+4218	Marheinecke
+4219	Marin
+4220	Marini
+4221	Marks
+4222	Marolt
+4223	Marone
+4224	Marple
+4225	Marquardt
+4226	Marquet
+4227	Marsden
+4228	Marsh
+4229	Maryuyama
+4230	Masaki
+4231	Masini
+4232	Mastroiani
+4233	Matarrese
+4234	Mathieu
+4235	Matin
+4236	Matlok
+4237	Matricardo
+4238	Matsuda
+4239	Matsuki
+4240	Matsumoto
+4241	Matsuzaki
+4242	Matteucci
+4243	Matthews
+4244	May
+4245	Mays
+4246	Mazzella
+4247	McArthur
+4248	McBride
+4249	McClintock
+4250	McClung
+4251	McDonald
+4252	McGee
+4253	McGhee Jr.
+4254	McGowran
+4255	McKelvey
+4256	McKnight
+4257	McMahan
+4258	McMillan
+4259	McQuaid
+4260	McWhorter
+4261	Meel
+4262	Meier
+4263	Mein
+4264	Melgarejo
+4265	Méndez
+4266	Menzie
+4267	Méon-Vilan
+4268	Mercier
+4269	Mercurio
+4270	Meriç
+4271	Metzelaar
+4272	Metzger
+4273	Mezentseva
+4274	Micarelli
+4275	Michael
+4276	Michalik
+4277	Michel
+4278	Mier
+4279	Mietto
+4280	Migne
+4281	Migotto
+4282	Mihraje
+4283	Millemachi
+4284	Minelli
+4285	Mineral
+4286	Minichev
+4287	Miron
+4288	Mishra
+4289	Miura
+4290	Miyama
+4291	Miyamoto
+4292	Mizobuchi
+4293	Mizuno
+4294	Mogelberg
+4295	Mølgard
+4296	Moncrieff
+4297	Monesi
+4298	Monks
+4299	Montagna
+4300	Montecino
+4301	Morales
+4302	Mordant
+4303	Morgillo
+4304	Mork
+4305	Morley
+4306	Moroni
+4307	Morowitz
+4308	Morri
+4309	Mostad
+4310	Moureau
+4311	Moyano G
+4312	Mukhin
+4313	Mulay
+4314	Mulino
+4315	Munari
+4316	Mundahl
+4317	Muniz
+4318	Munro
+4319	Muromtseva
+4320	Muschik
+4321	Mutterlose
+4322	Nagai
+4323	Naiussat
+4324	Nakagawa
+4325	Nakajima
+4326	Nakamura
+4327	Nakaoka
+4328	Nakornsri
+4329	Nardon
+4330	Nascimento
+4331	Nathan
+4332	Naumenko
+4333	Naumov
+4334	Neelakantan
+4335	Nekvasilova
+4336	Nemcsok
+4337	Nemoto
+4338	Neuman
+4339	Nevenzel
+4340	Neveux
+4341	Neville
+4342	Newberry
+4343	Newman
+4344	Nguyen
+4345	Niaussat
+4346	Nichy
+4347	Nicol
+4348	Nicoll
+4349	Nicora
+4350	Nicotra
+4351	Nie
+4352	Niell
+4353	Nieman
+4354	Nigrelli
+4355	Nilsson
+4356	Ninos
+4357	Nishikawa
+4358	Niwa
+4359	Nojo
+4360	Norby
+4361	North
+4362	Numata
+4363	Nuovo
+4364	Oates
+4365	Obst
+4366	Occhipinti
+4367	Ochliener
+4368	O'Connors
+4369	Odawara
+4370	Odding
+4371	Oguri
+4372	Okimura
+4373	Olesen
+4374	Olivari
+4375	Oliveri
+4376	Olivero
+4377	Olsen
+4378	Ono
+4379	Oosterbaan
+4380	Oppenheim
+4381	Orejas
+4382	Orr
+4383	Ortea
+4384	Oschmann
+4385	Ossenkoppele
+4386	Ostinelli
+4387	Ota
+4388	Oxov
+4389	Ozanne
+4390	Padovani
+4391	Paffenhöefer
+4392	Pajaud
+4393	Pallares
+4394	Palmes
+4395	Pan
+4396	Panagopoulos
+4397	Pancholi
+4398	Pandya
+4399	Pansini
+4400	Papathanassiou
+4401	Papyn
+4402	Park
+4403	Parke
+4404	Parsins
+4405	Partridge
+4406	Pasaric
+4407	Pashin
+4408	Patterson
+4409	Pavone
+4410	Paya
+4411	Payette
+4412	Pearsall
+4413	Pedersen
+4414	Peel
+4415	Penney
+4416	Penrith
+4417	Pereira
+4418	Pérez
+4419	Permitin
+4420	Pessani
+4421	Pestrea
+4422	Petersen
+4423	Peypouquet
+4424	Pharisat
+4425	Phifer
+4426	Phillips Ross
+4427	Phvong
+4428	Piasecki
+4429	Pichl
+4430	Picker
+4431	Pickerill
+4432	Pierantoni
+4433	Pieroni
+4434	Piette
+4435	Pilkey
+4436	Pillevuit
+4437	Pisana
+4438	Pohlable
+4439	Polo
+4440	Pomerol
+4441	Porfirio
+4442	Poujol
+4443	Poulicek
+4444	Powis
+4445	Pozar-Domac
+4446	Prakash
+4447	Prather
+4448	Prazakova
+4449	Prearo
+4450	Privitera
+4451	Pronzato
+4452	Proud
+4453	Pugaczewska
+4454	Pujol
+4455	Pujos Lamy
+4456	Qi
+4457	Qinghai Dizhi Kexue
+4458	Queinnec
+4459	Rabbio
+4460	Rachor
+4461	Radwanski
+4462	Raimondi
+4463	Rallo
+4464	Ralph
+4465	Ramalho
+4466	Ramil
+4467	Ramil Blanco
+4468	Ramos
+4469	Randazzo
+4470	Rangel
+4471	Rapean
+4472	Rashid
+4473	Reddy
+4474	Refardt
+4475	Reichstein
+4476	Reiner
+4477	Reiswig
+4478	Reiter
+4479	Reitner
+4480	Remy
+4481	Rendall
+4482	Rexroad
+4483	Reyes
+4484	Riber
+4485	Rickard
+4486	Riedel
+4487	Rigillo
+4488	Rimmer
+4489	Ringuette
+4490	Ritter
+4491	Rittikh
+4492	Rittschof
+4493	Ritz
+4494	Ritzkowski
+4495	Riva
+4496	Roa
+4497	Robb
+4498	Robb III
+4499	Robert
+4500	Robins
+4501	Robotti
+4502	Robson
+4503	Rodriguez Fernandez
+4504	Rodriguez-Fernandez
+4505	Rodríguez-Fernández
+4506	Rogers
+4507	Rohart
+4508	Rohde
+4509	Roman
+4510	Romualdi
+4511	Rosa
+4512	Röseler
+4513	Rosene
+4514	Rothausen
+4515	Rothery
+4516	Rotovskaya
+4517	Rowinsky
+4518	Roy
+4519	Rozhnov
+4520	Ruckdeschel
+4521	Rudloe
+4522	Ruedemann
+4523	Rui
+4524	Rummert
+4525	Ruse
+4526	Ruthe
+4527	Rydzewski
+4528	Ryther
+4529	Rytova
+4530	Sabelli
+4531	Sachs
+4532	Sadler
+4533	Safriel
+4534	Saiz
+4535	Sakai
+4536	Sala Manservigi
+4537	Salaj
+4538	Salamanca
+4539	Saleem
+4540	Salfity
+4541	Salller
+4542	Salva
+4543	Samuel
+4544	Samuel Raju
+4545	San
+4546	Sanderson
+4547	Sandíy
+4548	Sane
+4549	Sanfilippo
+4550	Sanner
+4551	Santacroce
+4552	Santamaria
+4553	Santarelli
+4554	Santhakumaran
+4555	Santillana
+4556	Saranchova
+4557	Saric
+4558	Sarojini
+4559	Sartoretto
+4560	Sartori
+4561	Satimi
+4562	Sattler
+4563	Saunders
+4564	Savini
+4565	Sawant
+4566	Sayce
+4567	Scala Liaci
+4568	Scalera Liaci
+4569	Scaletta
+4570	Scardi
+4571	Scharbrodt
+4572	Scharpf
+4573	Schaudinn
+4574	Schembri
+4575	Schindler
+4576	Schinske
+4577	Schmitz
+4578	Schneemilch
+4579	Scholzel
+4580	Schorno
+4581	Schrandt
+4582	Schroeter
+4583	Schuhmacher
+4584	Schumann
+4585	Schuurhuis
+4586	Schwaighofer
+4587	Schwenk
+4588	SDS
+4589	Searles
+4590	Sears
+4591	Seburn
+4592	Segny
+4593	Semenova
+4594	Sengupta
+4595	Senowri-Daryan
+4596	Senthil Nathan
+4597	Sequeiros
+4598	Sergeyuk
+4599	Serpagli
+4600	Serra Kiel
+4601	Sewell
+4602	Seyve
+4603	Sgorbini
+4604	Shanklin
+4605	Shareef
+4606	Sharkis
+4607	Sharpe
+4608	Shata
+4609	Shelton
+4610	Sheng
+4611	Shimansky
+4612	Shoemaker
+4613	SHPC
+4614	Sick
+4615	Siebert
+4616	Sieglen
+4617	Simionescu
+4618	Simo
+4619	Sinatra
+4620	Sinclair
+4621	Siuda
+4622	Skelton
+4623	Skibinskil
+4624	Skorina
+4625	Smale
+4626	Smith III
+4627	Smurov
+4628	Snader
+4629	Sofet
+4630	Solander
+4631	Solovjeva
+4632	Somerville
+4633	Sonar
+4634	Sonne
+4635	Sorauf
+4636	Sorbilli
+4637	Soroka
+4638	Sorokin
+4639	Southward
+4640	Soyer
+4641	Spacie
+4642	Specchi
+4643	Spencer Jones
+4644	Spencer-Jones
+4645	Splechtna
+4646	Sreedhar
+4647	Stackebrandt
+4648	Stampfli
+4649	Stanton
+4650	Stanton Jr.
+4651	Stark
+4652	Starkweather
+4653	Starmans
+4654	Starodav
+4655	Steel
+4656	Steele Petrovich
+4657	Steffan
+4658	Steinmetz
+4659	Stemmerick
+4660	Stenni
+4661	Sterrer
+4662	Stoicescu
+4663	Stojaspal
+4664	Stoli
+4665	Storey
+4666	Story
+4667	Strank
+4668	Strickland
+4669	Stuart
+4670	Sturgeon
+4671	Suarez-Castillo
+4672	Suárez-Castillo
+4673	Suetenko
+4674	Sueur
+4675	Sugiyama
+4676	Sukhanov
+4677	Susperregui
+4678	Sutcliffe
+4679	Suthard
+4680	Suzuki
+4681	Svane
+4682	Svetashev
+4683	SVS
+4684	Swanson
+4685	Swearingen
+4686	Sweet
+4687	Szymalkowska
+4688	Takashi
+4689	Takesue
+4690	Tambs-Lyche
+4691	Tamozhnaya
+4692	Tao
+4693	Tardy
+4694	Targett
+4695	Tarkovski
+4696	Tashjian Jr.
+4697	Teissier
+4698	Tenney
+4699	Teolis
+4700	Terlau
+4701	Thain
+4702	Theijsmeijer
+4703	Thiede
+4704	Thirasasana
+4705	Thome
+4706	Thrane
+4707	Thresher
+4708	Thurmann
+4709	Thybo
+4710	Tilsley
+4711	Tintant
+4712	Tirmizi
+4713	Tomassetti
+4714	Tomono
+4715	Tong
+4716	Tops
+4717	Tozawa
+4718	Trauner
+4719	Travis
+4720	Treagus
+4721	Treasure
+4722	Treworgy
+4723	Trott
+4724	Truc
+4725	Trujillo-Serrato
+4726	Tsagaris
+4727	Tsuchiya
+4728	Tucker
+4729	Tufts
+4730	Tung
+4731	Turon
+4732	Ubaldo
+4733	Ujiiye
+4734	Ulber
+4735	Ulitina
+4736	Underwood
+4737	Urban
+4738	Urdininea
+4739	Uriz
+4740	Urquiola
+4741	Uschakow
+4742	Vaccarella
+4743	Vacelet
+4744	Vachard
+4745	Valor
+4746	van Altena
+4747	Van Camp
+4748	van Damme
+4749	Van de Vyver
+4750	van der Hem
+4751	van der Schalie
+4752	van der Wal
+4753	van Oostveen
+4754	Van Oye
+4755	Varghese
+4756	Varterasian
+4757	Vasquez
+4758	Vass
+4759	Vazquez
+4760	Vénec-Peyré
+4761	Venerus
+4762	Venit
+4763	Ventocilla
+4764	Venturini
+4765	Verazay
+4766	Vergon
+4767	Viallard
+4768	Viaud
+4769	Vicchiarelli
+4770	Vicente
+4771	Vidrine
+4772	Villanueva
+4773	Villas
+4774	Vining
+4775	Violanti
+4776	Viswanadham
+4777	Viswanadhan
+4778	Volpe
+4779	von Bitter
+4780	von der Borch
+4781	Voris
+4782	Voronkov
+4783	Voss
+4784	Voss Foucart
+4785	Vossbrinck
+4786	Voss-Foucart
+4787	Vrba
+4788	Walther
+4789	Wan
+4790	Wan Fuad Wan
+4791	Wardlaw
+4792	Warme
+4793	Watanabe
+4794	Watling
+4795	Wear
+4796	Webb Jr.
+4797	Weber
+4798	Webster
+4799	Weidmann
+4800	Weigt
+4801	Weinreb
+4802	Wentzel
+4803	Werle
+4804	Wethey
+4805	Whaling
+4806	Whedon
+4807	Whitaker
+4808	Whitlatch
+4809	Whittaker
+4810	Whittington
+4811	Wieking
+4812	Wikman
+4813	Wilgus
+4814	Willerslev
+4815	Wills
+4816	Willumsen
+4817	Winkler Prins
+4818	Winnepenninckx
+4819	Witman
+4820	Wollnik
+4821	Woodhead
+4822	Woods
+4823	Woolcott
+4824	Worthen
+4825	Wuest
+4826	Wunsam
+4827	Xu
+4828	Yadrenkina
+4829	Yanagida
+4830	Yao
+4831	Yibao
+4832	Yoo
+4833	Yuferev
+4834	Zaborski
+4835	Zafarana
+4836	Zajac
+4837	Zakharov
+4838	Zaki
+4839	Zalat
+4840	Zamarreno
+4841	Zanini
+4842	Zelenka
+4843	Zenetos
+4844	Zhamoida
+4845	Zharnikova
+4846	Zhong
+4847	Zhou
+4848	Zhuravieva
+4849	Ziegler
+4850	Zubia
+4851	Zubrod
+4852	Zullo
 5000	Lopez de la Cuadra & Garcia-Gomez		actual taxa authors start here again	
-5002	Scholz & Cusi			
-5004	Agassiz & Pourtales			
-5006	Morren			
-5008	Richiardi,			
-5010	Refinesque			
-5012	Phillips			
-5014	Quoy & Gaimard			
-5016	Landsborough			
-5018	Gordon & Wear			
-5020	Wyville Thomson			
-5022	Harmelin, Lopez de la Cuadra & Garcia-Gomez 			
-5024	Menon & Nair			
-5026	d'Hondt & Mawatari			
-5028	Jebram & Everitt			
-5030	Chaney, Soule & Soule			
-5032	Howse			
-5034	Desmarest & Lesueur in Pergens			
-5036	Turton			
-5038	Marcus & Marcus			
-5040	Esper			
-5042	Broeck			
-5044	Rao & Rao			
-5046	Audouin 			
-5048	Chimenz, Nicoletti & Lippi Boncambi			
-5050	Silen & Harmelin			
-5052	Schweiger			
-5054	Kluge 			
-5056	Demarest & Leseuer			
-5058	d'Hondt & Geraci			
-5060	Maturo & Schopf			
-5062	Kirchenpauer,			
-5064	Norman in Hincks			
-5066	Mantell			
-5068	Kataoka			
-5070	armata			
-5072	Tate in Hutton			
-5074	Busk in Waters			
-5076	Say,			
-5078	Jeffreys,			
-5080	Yanagi & Okada			
-5082	Hayward & McKinney			
-5084	Gmelin			
-5086	Aristegui Ruiz			
-5088	Silen			
-5090	Meuschen			
-5092	MacGillivray,			
-5094	Soule,Soule & Chaney			
-5096	Parfitt			
-5098	Ostrovsky			
-5100	Lindley			
-5102	Cuadra & Garcia-Gomez			
-5104	d'Hondt & Occhipinti Ambrogi			
-5106	Jameson			
-5108	auctores			
-5110	Harmelin & Aristegui			
-5112	Moyano & Melgarejo			
-5114	Redier & d'Hondt			
-5116	Hincks,			
-5118	Couch in Johnston			
-5120	d'Orbigny,			
-5122	Androsova & Gontar			
-5124	d'Orbigny 			
-5126	M. Sars			
-5128	Savigny			
-5130	Meneghini			
-5132	spiculata			
-5134	Winston & Key			
-5136	Lohman			
-5138	Bosc			
-5140	Busk in Landsborough			
-5142	Busk in Hastings			
-5144	Audouin in Savigny			
-5146	Reverter-Gil & Fernandez-Pulpeiro			
-5148	Cook & Hayward			
-5150	Lopez de la Cuadra &Gracia-Lopez			
-5152	Stechow			
-5154	Forbes 			
-5156	Porter & Hayward			
-5158	Nichols			
-5160	Pallas			
-5162	Giglioti			
-5164	Studer			
-5166	Joyeux-Laffuie			
-5168	Grischenko, Gordon, & Taylor			
-5170	Giebel			
-5172	Maratti			
-5174	Gostilovskaja			
-5176	Michelotti			
-5178	Fabricius			
-5180	Winston & Hayward			
-5182	Mawatari & Suwa			
-5184	Hogg			
-5186	Ikezawa & Mawatari			
-5188	Tate			
-5190	Risso			
-5192	Plancus			
-5194	Hayward & Parker			
-5196	Duchassaing			
-5198	Lohmann,			
-5200	Pillaei			
-5202	Loven			
-5204	Gantes & Balavoine			
-5206	Mawatari & Mawatari			
-5208	O'Donoghue & Watteville			
-5210	O'Donoghue & de Watteville			
-5212	Smitt,			
-5214	Borg,			
-5216	Conroy, Cook & Bock			
-5218	Tilesius			
-5220	Zhang & Liu			
-5222	Taylor, Schembri & Cook			
-5224	Pfeffer			
-5226	Suwa & Mawatari			
-5228	Zabala, Maluquer & Harmelin			
-5230	Winston, Hayward & Craig			
-5232	Rosso & Taylor			
-5234	Parker & Cook			
-5236	Sonder			
-5238	d'Hondt & Moyano			
-5240	fide			
-5242	Winston & Heimberg			
-5244	Taylor & Cook			
-5246	Pusch			
-5248	Westendorp			
-5250	Passy			
-5252	Kluge in Deryugin			
-5254	Lamouroux, in Quoy & Gaimard			
-5256	Sowerby			
-5258	Sars 			
-5260	Nardo			
-5262	Tilbrook & Grischenko			
-5264	Folin			
-5266	Waters,			
-5268	Dick & Ross			
-5270	MacGillivray in M'Coy			
-5272	Peron & Lesueur			
-5274	Withering			
-5276	multispinosa			
-5278	Chimenz, Gusso & Soule			
-5280	Richiardi			
-5282	multipora			
-5284	Ryland & Porter			
-5286	Pouyet & Herrera-Anduaga			
-5288	Trask			
-5290	Gruneris			
-5292	Lamouroux in Quoy & Gaimard			
-5294	Coldstream			
-5296	Rho & Seo			
-5298	Okada & Mawatari			
-5300	Waters,1903			
-5302	lyrulatum			
-5304	Kuklinski & Hayward			
-5306	Nobre			
-5308	d'Hont & Schopf			
-5310	Kirchenpauer in Studer			
-5312	Lu, Nie & Zhong			
-5314	Lesueur			
-5316	Banta & Crosby			
-5318	von Baster			
-5320	Scacchi			
-5322	Moll			
-5324	Hayward & Hansen			
-5326	Hu & Wang			
-5328	Ryland & Gordon			
-5330	Johnston,			
-5332	d'Orbigny in Webb & Berthelot			
-5334	Wang & Tong			
-5336	Stokes in Ross			
-5338	O'Donoghue & O'Donoghue			
-5340	Lu, Nie & Zhong 			
-5342	Dana in Wilkes			
-5344	Fleming in Busk			
-5346	Wang & Tung			
-5348	Bidkenkap			
-5350	Milne Edwards 			
-5352	Badve & Sonar			
-5354	Hogg 			
-5356	Banta, Perez & Santagata			
-5358	Hayward & Fordy			
-5360	Cesar-Aldariz et al.			
-5362	Amitt			
-5364	Rao & Ganapati			
-5366	delle Chiaje			
-5368	Liu in Liu et al., 2001			
-5370	Vigelius			
-5372	Krauss			
-5374	Sowerby II			
-5376	Michelin 			
-5378	Liu & Li			
-5380	Philipps			
-5382	Mane-Garzon			
-5384	Chimonides & Cook			
-5386	d'Hondt & Goyffon			
-5388	Korotneff			
-5390	Lamouroux 			
-5392	Cad¬ée			
-5394	Ryland & Hayward			
-5396	Reverter Gil & Fernandez Pulpeiro			
-5398	Liu & Wass			
-5400	Norman 			
-5402	Liu & Ristedt			
-5404	Madihavan Pillai			
-5406	Suwa, Dick & Mawatari			
-5408	Cuvier			
-5410	Hudson			
-5412	Johnston in Wood			
-5414	Kirkpatrick & Metzelaar			
-5416	Moyano & Ristedt			
-5418	Winston & Hakansson			
-5420	Gray in Dieffenbach			
-5422	Uttley 			
-5424	Zabala & Maluquer			
-5426	Leca & d'Hondt			
-5428	Wood 			
-5430	Moyano & Gordon			
-5432	Fernandez Pulpeiro & Reverter Gil			
-5434	Olivi			
-5436	Hall in MacGillivray			
-5438	Yang & Lu			
-5440	Cadee, Chimonides & Cook			
-5442	Kirchenpauer in Livingstone			
-5444	Say			
-5446	Arnold & Cook			
-5448	O. Fabricius			
-5450	Desmarest & Leseuer			
-5452	Houttuyn			
-5454	Spallanzani			
-5456	von Suhr			
-5458	d'Hondt & Hayward			
-5460	Busk in Cook			
-5462	Wood			
-5464	Unsal & d'Hondt			
-5466	Bertoloni			
-5468	Gros			
-5470	Guerin-Ganivet			
-5472	Van Cleve			
-5474	densa			
-5476	Woodward			
-
+5002	Scholz & Cusi
+5004	Agassiz & Pourtales
+5006	Morren
+5008	Richiardi,
+5010	Refinesque
+5012	Phillips
+5014	Quoy & Gaimard
+5016	Landsborough
+5018	Gordon & Wear
+5020	Wyville Thomson
+5022	Harmelin, Lopez de la Cuadra & Garcia-Gomez 
+5024	Menon & Nair
+5026	d'Hondt & Mawatari
+5028	Jebram & Everitt
+5030	Chaney, Soule & Soule
+5032	Howse
+5034	Desmarest & Lesueur in Pergens
+5036	Turton
+5038	Marcus & Marcus
+5040	Esper
+5042	Broeck
+5044	Rao & Rao
+5046	Audouin 
+5048	Chimenz, Nicoletti & Lippi Boncambi
+5050	Silen & Harmelin
+5052	Schweiger
+5054	Kluge 
+5056	Demarest & Leseuer
+5058	d'Hondt & Geraci
+5060	Maturo & Schopf
+5062	Kirchenpauer,
+5064	Norman in Hincks
+5066	Mantell
+5068	Kataoka
+5070	armata
+5072	Tate in Hutton
+5074	Busk in Waters
+5076	Say,
+5078	Jeffreys,
+5080	Yanagi & Okada
+5082	Hayward & McKinney
+5084	Gmelin
+5086	Aristegui Ruiz
+5088	Silen
+5090	Meuschen
+5092	MacGillivray,
+5094	Soule,Soule & Chaney
+5096	Parfitt
+5098	Ostrovsky
+5100	Lindley
+5102	Cuadra & Garcia-Gomez
+5104	d'Hondt & Occhipinti Ambrogi
+5106	Jameson
+5108	auctores
+5110	Harmelin & Aristegui
+5112	Moyano & Melgarejo
+5114	Redier & d'Hondt
+5116	Hincks,
+5118	Couch in Johnston
+5120	d'Orbigny,
+5122	Androsova & Gontar
+5124	d'Orbigny 
+5126	M. Sars
+5128	Savigny
+5130	Meneghini
+5132	spiculata
+5134	Winston & Key
+5136	Lohman
+5138	Bosc
+5140	Busk in Landsborough
+5142	Busk in Hastings
+5144	Audouin in Savigny
+5146	Reverter-Gil & Fernandez-Pulpeiro
+5148	Cook & Hayward
+5150	Lopez de la Cuadra &Gracia-Lopez
+5152	Stechow
+5154	Forbes 
+5156	Porter & Hayward
+5158	Nichols
+5160	Pallas
+5162	Giglioti
+5164	Studer
+5166	Joyeux-Laffuie
+5168	Grischenko, Gordon, & Taylor
+5170	Giebel
+5172	Maratti
+5174	Gostilovskaja
+5176	Michelotti
+5178	Fabricius
+5180	Winston & Hayward
+5182	Mawatari & Suwa
+5184	Hogg
+5186	Ikezawa & Mawatari
+5188	Tate
+5190	Risso
+5192	Plancus
+5194	Hayward & Parker
+5196	Duchassaing
+5198	Lohmann,
+5200	Pillaei
+5202	Loven
+5204	Gantes & Balavoine
+5206	Mawatari & Mawatari
+5208	O'Donoghue & Watteville
+5210	O'Donoghue & de Watteville
+5212	Smitt,
+5214	Borg,
+5216	Conroy, Cook & Bock
+5218	Tilesius
+5220	Zhang & Liu
+5222	Taylor, Schembri & Cook
+5224	Pfeffer
+5226	Suwa & Mawatari
+5228	Zabala, Maluquer & Harmelin
+5230	Winston, Hayward & Craig
+5232	Rosso & Taylor
+5234	Parker & Cook
+5236	Sonder
+5238	d'Hondt & Moyano
+5240	fide
+5242	Winston & Heimberg
+5244	Taylor & Cook
+5246	Pusch
+5248	Westendorp
+5250	Passy
+5252	Kluge in Deryugin
+5254	Lamouroux, in Quoy & Gaimard
+5256	Sowerby
+5258	Sars 
+5260	Nardo
+5262	Tilbrook & Grischenko
+5264	Folin
+5266	Waters,
+5268	Dick & Ross
+5270	MacGillivray in M'Coy
+5272	Peron & Lesueur
+5274	Withering
+5276	multispinosa
+5278	Chimenz, Gusso & Soule
+5280	Richiardi
+5282	multipora
+5284	Ryland & Porter
+5286	Pouyet & Herrera-Anduaga
+5288	Trask
+5290	Gruneris
+5292	Lamouroux in Quoy & Gaimard
+5294	Coldstream
+5296	Rho & Seo
+5298	Okada & Mawatari
+5300	Waters,1903
+5302	lyrulatum
+5304	Kuklinski & Hayward
+5306	Nobre
+5308	d'Hont & Schopf
+5310	Kirchenpauer in Studer
+5312	Lu, Nie & Zhong
+5314	Lesueur
+5316	Banta & Crosby
+5318	von Baster
+5320	Scacchi
+5322	Moll
+5324	Hayward & Hansen
+5326	Hu & Wang
+5328	Ryland & Gordon
+5330	Johnston,
+5332	d'Orbigny in Webb & Berthelot
+5334	Wang & Tong
+5336	Stokes in Ross
+5338	O'Donoghue & O'Donoghue
+5340	Lu, Nie & Zhong 
+5342	Dana in Wilkes
+5344	Fleming in Busk
+5346	Wang & Tung
+5348	Bidkenkap
+5350	Milne Edwards 
+5352	Badve & Sonar
+5354	Hogg 
+5356	Banta, Perez & Santagata
+5358	Hayward & Fordy
+5360	Cesar-Aldariz et al.
+5362	Amitt
+5364	Rao & Ganapati
+5366	delle Chiaje
+5368	Liu in Liu et al., 2001
+5370	Vigelius
+5372	Krauss
+5374	Sowerby II
+5376	Michelin 
+5378	Liu & Li
+5380	Philipps
+5382	Mane-Garzon
+5384	Chimonides & Cook
+5386	d'Hondt & Goyffon
+5388	Korotneff
+5390	Lamouroux 
+5392	Cad¬ée
+5394	Ryland & Hayward
+5396	Reverter Gil & Fernandez Pulpeiro
+5398	Liu & Wass
+5400	Norman 
+5402	Liu & Ristedt
+5404	Madihavan Pillai
+5406	Suwa, Dick & Mawatari
+5408	Cuvier
+5410	Hudson
+5412	Johnston in Wood
+5414	Kirkpatrick & Metzelaar
+5416	Moyano & Ristedt
+5418	Winston & Hakansson
+5420	Gray in Dieffenbach
+5422	Uttley 
+5424	Zabala & Maluquer
+5426	Leca & d'Hondt
+5428	Wood 
+5430	Moyano & Gordon
+5432	Fernandez Pulpeiro & Reverter Gil
+5434	Olivi
+5436	Hall in MacGillivray
+5438	Yang & Lu
+5440	Cadee, Chimonides & Cook
+5442	Kirchenpauer in Livingstone
+5444	Say
+5446	Arnold & Cook
+5448	O. Fabricius
+5450	Desmarest & Leseuer
+5452	Houttuyn
+5454	Spallanzani
+5456	von Suhr
+5458	d'Hondt & Hayward
+5460	Busk in Cook
+5462	Wood
+5464	Unsal & d'Hondt
+5466	Bertoloni
+5468	Gros
+5470	Guerin-Ganivet
+5472	Van Cleve
+5474	densa
+5476	Woodward
