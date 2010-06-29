@@ -1,0 +1,13 @@
+Taxon	From 	To 	Comment	
+Phylum	10	\N	2 digit ID	
+Class	100	#	3 digit id	
+Order	#	#	3 digit	
+Suborder	#	#	3 digit	
+Infraorder	#	999	3 digit	
+Grade	1000	#	4 digit id	
+Superfamily	#	#	4 digit	
+Family	#	9999	4 digit id	
+Genus	10000	##	5 digits	* to capture Scotts 5 digit Genera ID schema
+Subgenus	##	##	5 digits	
+Species	##	##	6 digits	
+Subspecies	##	50000	6 digits	
