@@ -194,6 +194,7 @@ mysql_query("ALTER TABLE `currentspecies`"
 /**
  * Step 4: Insert and Replace CURRENTSPECIES into Bryozoans
  */
+
 mysql_query("INSERT"
   . " INTO `bryozoans` ("
   . "`name`, `currentnamestring`, `author`, `details`, `comments`, `valid`"
@@ -215,5 +216,47 @@ mysql_query("INSERT"
   . ", `bryozoans`.`status` = `currentspecies`.`status`"
   . ", `bryozoans`.`familyname` = `currentspecies`.`familyname`"
 );
+
+/*
+// This is the PHP implementation, it allows for some more control
+
+$result = mysql_query("SELECT * FROM `bryozoans`");
+
+// loop through results
+while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  $query = sprintf("SELECT * FROM `currentspecies` WHERE `name`='%s'",
+      mysql_real_escape_string($row['name'])
+  );
+  $result2 = mysql_query($query);
+  if ($match = mysql_fetch_array($result2, MYSQL_ASSOC)) {
+    if (
+    $match['currentnamestring'] != $row['currentnamestring']
+    //|| $match['author'] != $row['author']
+    //|| $match['details'] != $row['details']
+    //|| $match['comments'] != $row['comments']
+    || $match['valid'] != $row['valid']
+    //|| $match['date_created'] != $row['date_created']
+    //|| $match['date_modified'] != $row['date_modified']
+    //|| $match['status'] != $row['status']
+    ) {
+      print("`currentspecies`"
+        . " " . $match['name']
+        . " " . $match['currentnamestring']
+        . " " . $match['author']
+        . " " . $match['valid']
+        . "\n");
+      print("`bryozoans`"
+        . " " . $row['name']
+        . " " . $row['name']
+        . " " . $row['currentnamestring']
+        . " " . $row['author']
+        . " " . $row['valid']
+        . "\n");
+    }
+  }
+}
+mysql_free_result($result);
+*/
+
 
 mysql_close($link);
