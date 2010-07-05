@@ -22,6 +22,7 @@ CREATE TABLE `bryan_valid` (
   `comments` VARCHAR(2000),
   KEY (`oldid`),
   KEY (`oldrefid`),
+  KEY (`rankcode`),
   KEY (`newid`),
   KEY (`newrefid`),
   KEY (`name`)
@@ -58,4 +59,20 @@ SELECT "Loading bryan_invalid" AS "Action";
 
 LOAD DATA LOCAL INFILE '../../bryan/sheets/mysql/invalid.tab'
 INTO TABLE `bryan_invalid` IGNORE 1 LINES;
+SHOW WARNINGS;
+
+/*
+Rank-ID	Rank-Name
+Skip 1 line
+*/
+CREATE TABLE `bryan_rank` (
+  `rankcode` INT,
+  `rankname` VARCHAR(512),
+  PRIMARY KEY (`rankcode`)
+);
+
+SELECT "Loading bryan_rank" AS "Action";
+
+LOAD DATA LOCAL INFILE '../../bryan/sheets/mysql/rank.tab'
+INTO TABLE `bryan_rank` IGNORE 1 LINES;
 SHOW WARNINGS;
