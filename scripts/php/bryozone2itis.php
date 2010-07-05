@@ -26,8 +26,12 @@ bryozoa	Phylum	animalia	valid
  */
 
 /**
- * input a taxonid
- * output the contents of the row with the taxonid
+ * Query the bryozone_taxa table with a taxonid and return the associated row.
+ * 
+ * @param taxonid
+ *   An id number of a taxon.
+ * @return
+ *   The MySQL row that matches the taxon id number.
  */
 function getRow($taxonid) {
   $query = sprintf("SELECT * FROM `bryozone_taxa` WHERE `taxonid`='%s'",
@@ -37,8 +41,12 @@ function getRow($taxonid) {
 }
 
 /**
- * input the rank code
- * output the rank name
+ * Query the bryozone_rank table with a rank code and return the rank name.
+ * 
+ * @param rankcode
+ *   A rank code number.
+ * @return
+ *   The name associated with the rank code number.
  */
 function getRankName($rankcode) {
   $query = sprintf("SELECT `rankname` FROM `bryozone_rank` WHERE `rankid`='%s'",
@@ -49,8 +57,12 @@ function getRankName($rankcode) {
 }
 
 /**
- * input the rank code
- * output true/false if we should print it
+ * Return true or false if the rank code number is not equal to some values.
+ * 
+ * @param rank_code
+ *   A rank code number.
+ * @return
+ *   Return true if the rank code is not equal to some values.
  */
 function isValidRankCode($rank_code) {
   return 3 < $rank_code && $rank_code < 110 && $rank_code != 60
@@ -59,8 +71,14 @@ function isValidRankCode($rank_code) {
 }
 
 /**
- * input a row
- * output true/false if the row links via parentid all the way back to Bryozoa
+ * Return true if the row links all the way to Bryozoa via parentid.
+ * 
+ * @param row
+ *   A row from bryozoa_taxa.
+ * @param print
+ *   If true, then print the path from row to Bryozoa.
+ * @return
+ *   Return true if the row links all the way to Bryozoa via parentid.
  */
 function linksToBryozoa($row, $print) {
   if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['taxonname']; }
@@ -80,6 +98,15 @@ function linksToBryozoa($row, $print) {
  * input a row
  * climb up to next parent until we find one that is not 'Uncertain'
  * ouput the parent row
+ * 
+ * Return the next parent that is not called 'Uncertain'.
+ * 
+ * @param row
+ *   A row from bryozoa_taxa.
+ * @param print
+ *   If true, then print the path from row to the parent.
+ * @return
+ *   Return the next parent that is not called 'Uncertain'.
  */
 function nextRealParent($row, $print) {
   if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['taxonname']; }
