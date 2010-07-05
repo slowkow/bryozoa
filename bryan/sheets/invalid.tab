@@ -1,4 +1,4 @@
-unknown-id1	unknown-id2	name	rank	unknown-id	authority-date	authority-name	date	comment
+taxonid	parentid	taxonname	rankcode	seniorid	year	author	date	comments
 21062	2164	Avicella	0	20124	1848	Gordon	12/31/2006	no type selected; 
 21141	2164	Bifrons	0	20295	1860	Gordon	12/31/2006	unnecessary replacement for Dimetopia; 
 21367	2164	Hemeschara	0		1850	Gordon	12/31/2006	No type species designated; 
