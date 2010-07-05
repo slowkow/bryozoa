@@ -1,5 +1,8 @@
 <?php
 /*
+ * This script queries the bryozone_* tables and can output a proper ITIS
+ * output for uploading to Scratchpads.
+ * 
  * Bryozone
  * 
 CREATE TABLE `bryozone_taxa` (
@@ -65,9 +68,20 @@ function getRankName($rankcode) {
  *   Return true if the rank code is not equal to some values.
  */
 function isValidRankCode($rank_code) {
-  return 3 < $rank_code && $rank_code < 110 && $rank_code != 60
-    && $rank_code != 36 && $rank_code != 85 && $rank_code != 95
-    && $rank_code != 96 && $rank_code != 97 && $rank_code != 98;
+  switch ($rank_code) {
+    case 10: // Phylum
+    case 20: // Class
+    case 30: // Order
+    case 40: // Suborder
+    case 50: // Infraorder
+    case 70: // Superfamily
+    case 80: // Family
+    case 90: // Genus
+    case 100: // Subgenus
+    case 110: // Species
+      return true;
+  }
+  return false;
 }
 
 /**
@@ -113,7 +127,7 @@ function nextRealParent($row, $print) {
   while ($row['parentid']) {
     $row = getRow($row['parentid']);
     if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['taxonname'] . " > " . $linkpath; }
-    if ($row['taxonname'] != 'Uncertain') {
+    if ($row['taxonname'] != 'Uncertain' && isValidRankCode($row['rankcode'])) {
       if ($print) { print($linkpath . "\n"); }
       return $row;
     }
@@ -173,13 +187,19 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
       continue;
     }
     
-    if ($rank_code >= 80) {
+    if (!isValidRankCode($rank_code)) {
+      continue;
+    }
+    
+/*
+    if ($rank_code >= 90) {
       continue;
       //print("$parent_name\t$unit_name1\t$rank_name\t$parent_name\t$usage\n");
     }
+*/
     
     // find a parent that is named
-    if ($parent_name == 'Uncertain') {
+    if ($parent_name == 'Uncertain' || !isValidRankCode($parent_rank_code)) {
       $parent_row = nextRealParent($row, FALSE);
       $parent_name = $parent_row['taxonname'];
       $parent_rank_code = $parent_row['rankcode'];
@@ -195,20 +215,21 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     }
 */
     
+    if ($parent_row == NULL) {
+      continue;
+    }
+    
     // if you don't print for "valid" codes, then you will have gaps
     // between the taxon and Bryozoa
-    // TODO make isValidRankCode return FALSE if it doesn't return a valid ITIS
-    // rank
     // TODO make nextRealParent and linksToBryozoa return FALSE
     // if they don't find a valid ITIS rank
-    if (TRUE/*isValidRankCode($rank_code) && isValidRankCode($parent_rank_code)*/) {
-      print("$rank_name\t$rank_name $unit_name1\t$unit_name2\t$parent_rank_name $parent_name\t$usage\n");
-      // graphviz output
+    
+    print("$rank_name\t$rank_name $unit_name1\t$unit_name2\t$parent_rank_name $parent_name\t$usage\n");
 /*
-      $name = trim(implode(" ", array($unit_name1, $unit_name2)));
-      print("\"$parent_rank_name $parent_name\" -> \"$rank_name $name\";\n");
+    // graphviz output
+    $name = trim(implode(" ", array($unit_name1, $unit_name2)));
+    print("\"$parent_rank_name $parent_name\" -> \"$rank_name $name\";\n");
 */
-    }
   }
 }
 mysql_free_result($result);
