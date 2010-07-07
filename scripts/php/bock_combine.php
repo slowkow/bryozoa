@@ -31,7 +31,8 @@ mysql_query("ALTER TABLE `bryozoans`"
 $result = mysql_query(
   "SELECT `id`, `name`, `currentname`"
   . " FROM `bryozoans`"
-  . " WHERE (`currentname` IS NOT NULL AND `currentname` < 99990)");
+  . " WHERE (`currentname` IS NOT NULL AND `currentname` < 99990)"
+);
 
 // loop through results
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
@@ -72,10 +73,10 @@ mysql_free_result($result);
 // troublesome records found with the below regexp
 // SELECT speciesid, name, first_name FROM currentspecies WHERE name REGEXP '^.*was.+=.+$' AND name NOT REGEXP '^.*was.+=([^0-9]*[0-9]+)$' AND name NOT REGEXP '^.*was.+=[^0-9]+$';
 
-// add the currentnamestring column
+// add the currentnamestring column, change OK to valid
 mysql_query("ALTER TABLE `currentspecies`"
   . " ADD COLUMN `currentnamestring` VARCHAR(512),"
-  . " ADD COLUMN `valid` INT"
+  . " CHANGE `OK` `valid` INT"
 );
 
 // select synonym records with the id number of the valid name after the =
@@ -170,7 +171,6 @@ mysql_query("ALTER TABLE `currentspecies`"
   . ", DROP COLUMN `recent`"
   . ", DROP COLUMN `first_name`"
   . ", DROP COLUMN `html_page`"
-  . ", DROP COLUMN `OK`"
   . ", DROP COLUMN `famcode`"
 );
 
