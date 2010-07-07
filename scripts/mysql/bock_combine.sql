@@ -31,7 +31,10 @@ Also, PHP gives more control over exactly what happens.
 */
 
 /* Add the currentnamestring column */
+/*
 ALTER TABLE bryozoans ADD currentnamestring VARCHAR(512);
+*/
+
 /*
 SELECT
   #bryozoans.name, bryozoans.id, bryozoans.currentname,
