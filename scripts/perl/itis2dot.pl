@@ -6,6 +6,8 @@
 #                to Scratchpads. Run the script on the ITIS file.
 # Description  : This script will construct a dot hierarchy from the ITIS file.
 #
+# Example      : ./itis2dot.pl ../php/output/bryozone_itis.tab > bryozone_itis.gv
+#                dot -O -Tpng bryozone_itis.gv
 
 use strict;
 use warnings;
