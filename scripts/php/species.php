@@ -27,16 +27,24 @@ $result = mysql_query(
   "SELECT `name`"
   . " FROM `bryozoans`"
   . " WHERE `name` IS NOT NULL"
+  . " AND `valid`=1"
 );
 
-$bryozone_ranks = array();
-$bryan_ranks    = array();
-$bryozone_count = 0;
-$bryan_count    = 0;
+$bryozone_ranks  = array();
+$bryan_ranks     = array();
+$bryan_unmatched = array();
+$bryozone_count  = 0;
+$bryan_count     = 0;
 // loop through results
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   list($genus, $species) = split(" ", $row['name']);
   $bryozoans_genus = trim($genus);
+  
+  $bryozoans_genus = preg_replace("/[^a-zA-Z]/", "", $bryozoans_genus);
+  
+  if (!$bryozoans_genus) {
+    continue;
+  }
   
   $query = sprintf(
     "SELECT `taxonname`, `rankcode` FROM `bryozone_taxa`"
@@ -54,7 +62,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     $bryozone_ranks[$bryozone_rank] += 1;
   }
   
- $query = sprintf(
+  $query = sprintf(
     "SELECT `name`, `rankcode` FROM `bryan_valid`"
     . " WHERE `name`='%s'",
     //. " AND (`rankcode`=90 OR `rankcode`=100)", //Genus or Subgenus
@@ -68,6 +76,12 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     //print("$bryozoans_genus $bryan_genus\n");
     $bryan_count++;
     $bryan_ranks[$bryan_rank] += 1;
+    if ($bryan_rank < 90 && $bryan_ranks[$bryan_rank] == 1) {
+      print(getRankName($bryan_rank) . " $bryan_genus\n");
+    }
+  }
+  else if (!$bryan_genus) {
+    $bryan_unmatched[] = $bryozoans_genus;
   }
 }
 print("$bryozone_count genus names from `bryozoans` matched a record in `bryozone_taxa`\n");
@@ -79,3 +93,7 @@ print("$bryan_count genus names from `bryozoans` matched a record in `bryan_vali
 foreach ($bryan_ranks as $rankcode => $count) {
   print("$count matches in `" . getRankName($rankcode) . "` in `bryan_valid`\n");
 }
+/*
+foreach ($bryan_unmatched as $key => $value) {
+  print($value . "\n");
+}*/
