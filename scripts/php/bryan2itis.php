@@ -90,44 +90,22 @@ function isValidRankCode($rank_code) {
 }
 
 /**
- * Return true if the row links all the way to Bryozoa via newrefid.
- * 
- * @param row
- *   A row from bryan_valid.
- * @param print
- *   If true, then print the path from row to Bryozoa.
- * @return
- *   Return true if the row links all the way to Bryozoa via newrefid.
- */
-function linksToBryozoa($row, $print) {
-  if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['name']; }
-  while ($row['newrefid']) {
-    if ($row['rankcode'] == 20) {
-      if ($print) { print("Phylum bryozoa > " . $linkpath . "\n"); }
-      return true;
-    }
-    $row = getRow(nextValidRank($row['rankcode']), $row['newrefid']);
-    if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['name'] . " > " . $linkpath;}
-  }
-  if ($print) { print("ERROR " . $linkpath . "\n"); }
-  return false;
-}
-
-/**
- * Return the next parent that is not called 'NULL'.
+ * Return the next parent that is a valid rank and is not called 'NULL' or
+ * 'uncertain'.
  * 
  * @param row
  *   A row from bryozoa_taxa.
+ * @param valid
+ *   If true, then parent must have a valid rank code.
  * @param print
  *   If true, then print the path from row to the parent.
  * @return
- *   Return the next parent row that is not called 'NULL'.
+ *   Parent row that is a valid rank and is not called 'NULL' or 'uncertain'.
  */
-function nextRealParent($row, $print) {
+function nextRealParent($row, $valid, $print) {
   if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['name']; }
-  // if class, just return bryozoa
   while ($row['newrefid']) {
-    // we linked up to a Class, so just return Bryozoa as the next real parent
+    // we linked up to a Class, so return Bryozoa as the next real parent
     if ($row['rankcode'] == 20) {
       break;
     }
@@ -135,7 +113,13 @@ function nextRealParent($row, $print) {
     $row = getRow(nextValidRank($row['rankcode']), $row['newrefid']);
     if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['name'] . " > " . $linkpath; }
     
-    if ($row['name'] != 'NULL' && $row['name'] != 'uncertain' && isValidRankCode($row['rankcode'])) {
+    // we want a valid parent, so keep looking
+    if ($valid && !isValidRankCode($row['rankcode'])) {
+      continue;
+    }
+    
+    // the name is not 'NULL' or 'uncertain'
+    if ($row['name'] != 'NULL' && $row['name'] != 'uncertain') {
       if ($print) { print($linkpath . "\n"); }
       return $row;
     }
@@ -176,21 +160,24 @@ $result = mysql_query(
   . " FROM `bryan_valid`"
   . " WHERE (`name` IS NOT NULL"
   . " AND `rankcode` IS NOT NULL"
-  . " AND `newid` IS NOT NULL"
-  //. " AND `newrefid` IS NOT NULL" // if it's NULL, we'll link them to Bryozoa
+  . " AND `newid` IS NOT NULL"      // if null, then it cannot be linked to
+  //. " AND `newrefid` IS NOT NULL" // if null, we'll link them to Bryozoa
   . " AND `rankcode` < 99990)");
 
 /*
  * Print the header
  */
 print("rank_name\tunit_name1\tunit_name2\tparent_name\tusage\n");
-print("Phylum\tPhylum Bryozoa\t\t\tvalid\n");
+//print("Phylum\tPhylum Bryozoa\t\t\tvalid\n");
+print("Phylum\tBryozoa\t\t\tvalid\n");
 
 // loop through results
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   // get row's unit names directly
   list($unit_name1, $unit_name2, $unit_name3, $unit_name4) =
     explode(" ", $row['name']);
+  $unit_name1 = trim(ucfirst(strtolower($unit_name1)));
+  $unit_name2 = trim(ucfirst(strtolower($unit_name2)));
   // get row's rank name by looking up row's rankcode
   $rank_name = getRankName($row['rankcode']);
   $rank_code = $row['rankcode'];
@@ -199,7 +186,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   
   // we got a name
   if ($rank_name && $unit_name1 && $usage) {
-    if ($unit_name1 == 'NULL' || $unit_name1 == 'uncertain') {
+    if ($unit_name1 == 'Null' || $unit_name1 == 'Uncertain') {
       continue;
     }
     
@@ -207,22 +194,13 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
       continue;
     }
     
-    // find a parent that is named
-    $parent_row = nextRealParent($row, FALSE);
-    $parent_name = $parent_row['name'];
-    $parent_rank_code = $parent_row['rankcode'];
-    $parent_rank_name = getRankName($parent_rank_code);
+    // find a parent that is named, has valid rank code, don't print
+    $parent_row = nextRealParent($row, TRUE, FALSE);
+    $parent_name = trim(ucfirst(strtolower($parent_row['name'])));
+    $parent_rank_name = getRankName($parent_row['rankcode']);
     
-/*
-    // unnecessary, if not links, then we'll just put Bryozoa as the parent
-    // check if this child links all the way back to Bryozoa
-    if (!linksToBryozoa($row, FALSE))
-    {
-      continue;
-    }
-*/
-    
-    print("$rank_name\t$rank_name $unit_name1\t$unit_name2\t$parent_rank_name $parent_name\t$usage\n");
+    //print("$rank_name\t$rank_name $unit_name1\t$unit_name2\t$parent_rank_name $parent_name\t$usage\n");
+    print("$rank_name\t$unit_name1\t$unit_name2\t$parent_name\t$usage\n");
 /*
     // graphviz output
     $name = trim(implode(" ", array($unit_name1, $unit_name2)));
