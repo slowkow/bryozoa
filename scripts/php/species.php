@@ -24,28 +24,34 @@ $db_selected = mysql_select_db('bock', $link);
 if (!$db_selected) { die ('Could not use database: ' . mysql_error()); }
 
 $result = mysql_query(
-  "SELECT `name`"
+  "SELECT `name`, `familyname`"
   . " FROM `bryozoans`"
   . " WHERE `name` IS NOT NULL"
   . " AND `valid`=1"
 );
 
 $bryozone_ranks  = array();
+$bryozone_count  = 0;
+
 $bryan_ranks     = array();
 $bryan_unmatched = array();
-$bryozone_count  = 0;
 $bryan_count     = 0;
+
+// print the ITIS header
+print("rank_name\tunit_name1\tunit_name2\tparent_name\tusage\n");
+
 // loop through results
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   list($genus, $species) = split(" ", $row['name']);
-  $bryozoans_genus = trim($genus);
-  
-  $bryozoans_genus = preg_replace("/[^a-zA-Z]/", "", $bryozoans_genus);
+  $bryozoans_family  = trim(ucfirst(strtolower(preg_replace("/[^a-zA-Z]/", "", $row['familyname']))));
+  $bryozoans_genus   = trim(ucfirst(strtolower(preg_replace("/[^a-zA-Z]/", "", $genus))));
+  $bryozoans_species = trim(strtolower(preg_replace("/[^a-zA-Z]/", "", $species)));
   
   if (!$bryozoans_genus) {
     continue;
   }
   
+/*
   $query = sprintf(
     "SELECT `taxonname`, `rankcode` FROM `bryozone_taxa`"
     . " WHERE `taxonname`='%s'",
@@ -61,6 +67,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     $bryozone_count++;
     $bryozone_ranks[$bryozone_rank] += 1;
   }
+*/
   
   $query = sprintf(
     "SELECT `name`, `rankcode` FROM `bryan_valid`"
@@ -72,28 +79,48 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   $bryan_genus = $match['name'];
   $bryan_rank  = $match['rankcode'];
   
-  if ($bryozoans_genus && $bryan_genus) {
-    //print("$bryozoans_genus $bryan_genus\n");
+  if ($bryan_genus) {
     $bryan_count++;
     $bryan_ranks[$bryan_rank] += 1;
     if ($bryan_rank < 90 && $bryan_ranks[$bryan_rank] == 1) {
-      print(getRankName($bryan_rank) . " $bryan_genus\n");
+      //print(getRankName($bryan_rank) . " $bryan_genus\n");
+    }
+    print("Species\t$bryozoans_genus\t$bryozoans_species\t$bryozoans_genus\tvalid\n");
+  }
+  else {
+    if ($bryozoans_family
+    && preg_match('/(unassigned|unplaced)/i', $bryozoans_family) == 0) {
+      // TODO check if the family name exists in Bryan's taxonomy
+/*
+      print("Genus\t$bryozoans_genus\t\t$bryozoans_family\tvalid\n");
+      print("Species\t$bryozoans_genus\t$bryozoans_species\t$bryozoans_genus\tvalid\n");
+*/
+    }
+    else {
+      $bryan_unmatched[$bryozoans_genus] += 1;
     }
   }
-  else if (!$bryan_genus) {
-    $bryan_unmatched[] = $bryozoans_genus;
-  }
 }
+/**
+ * Print a summary of the matches from bryozoans to bryozone_taxa and bryan_valid
+ */
+/*
 print("$bryozone_count genus names from `bryozoans` matched a record in `bryozone_taxa`\n");
 foreach ($bryozone_ranks as $rankcode => $count) {
   print("$count matches in `" . getRankName($rankcode) . "` in `bryozone_taxa`\n");
 }
+
 print("\n");
+
 print("$bryan_count genus names from `bryozoans` matched a record in `bryan_valid`\n");
 foreach ($bryan_ranks as $rankcode => $count) {
   print("$count matches in `" . getRankName($rankcode) . "` in `bryan_valid`\n");
 }
-/*
+
+$bryan_unmatched_total = 0;
 foreach ($bryan_unmatched as $key => $value) {
-  print($value . "\n");
-}*/
+  print("$key, $value\n");
+  $bryan_unmatched_total += $value;
+}
+print("$bryan_unmatched_total records from `bryozoans` without match in `bryan_valid` and without `familyname`\n");
+*/
