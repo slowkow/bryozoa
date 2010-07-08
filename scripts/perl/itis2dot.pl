@@ -47,7 +47,7 @@ while (<$file>) {
   my $rank   = trim($values{'rank_name'});
   
   # skip the ranks that have thousands of members
-  next if ($rank =~ /(Species|Genus|Family)/);
+  #~ next if ($rank =~ /(Species|Genus|Family)/);
   #~ $ranks{$rank} += 1;
   
   #~ print("$parent_name -> $child_name\n");
