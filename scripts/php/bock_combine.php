@@ -4,6 +4,42 @@
  * Combine Phil Bock's Bryozoans and CURRENTSPECIES
  */
 
+/**
+ * Delete a row that contains a match.
+ * 
+ * @param table
+ *   The name of the table from which to delete the row.
+ * @param deletetable
+ *   The name of the table where the deleted row will be inserted.
+ * @param column
+ *   The name of the column whose value will be checked.
+ * @param value
+ *   The value to match against the column's value.
+ */
+function deleteRow($table, $deletetable, $column, $value) {
+  print("Deleting $value from $table\n");
+  
+  $querystring = "INSERT INTO `%s`"
+    . " SELECT * FROM `%s`"
+    . " WHERE `%s`='%s'";
+  $query = sprintf($querystring
+    , mysql_real_escape_string($deletetable)
+    , mysql_real_escape_string($table)
+    , mysql_real_escape_string($column)
+    , mysql_real_escape_string($row[$column])
+  );
+  mysql_query($query);
+  
+  $querystring = "DELETE FROM `%s`"
+    . " WHERE `%s`='%s'";
+  $query = sprintf($querystring
+    , mysql_real_escape_string($table)
+    , mysql_real_escape_string($column)
+    , mysql_real_escape_string($row['name'])
+  );
+  mysql_query($query);
+}
+
 // connect to localhost
 $link = mysql_connect('localhost', 'kamil');
 if (!$link) {
@@ -38,8 +74,8 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   // if the record points to another one, grab the other name
   if ($row['id'] != $row['currentname']) {
     // find the name of this currentname
-    $query = sprintf("SELECT `name` FROM `bryozoans` WHERE `id`='%s'",
-      mysql_real_escape_string($row['currentname'])
+    $query = sprintf("SELECT `name` FROM `bryozoans` WHERE `id`='%s'"
+      , mysql_real_escape_string($row['currentname'])
     );
     // do the query and grab the result
     $row2 = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
@@ -54,9 +90,9 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     $querystring = "UPDATE `bryozoans`"
       . " SET `currentnamestring`='%s'"
       . " WHERE `name`='%s'";
-    $query = sprintf($querystring,
-      mysql_real_escape_string($currentnamestring),
-      mysql_real_escape_string($row['name'])
+    $query = sprintf($querystring
+      , mysql_real_escape_string($currentnamestring)
+      , mysql_real_escape_string($row['name'])
     );
     mysql_query($query);
   }
@@ -90,30 +126,41 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   preg_match('/^.*was(.+)=[^0-9]*([0-9]+)$/', $row['name'], $matches);
   $invalidname = trim($matches[1]);
   $validid = $matches[2];
+  
   // if the record points to another one, grab the other name
   if ($validid && $validid != $row['speciesid']) {
     // find this valid name
-    $query = sprintf("SELECT `name` FROM `currentspecies` WHERE `speciesid`='%s'",
-      mysql_real_escape_string($validid)
+    $query = sprintf("SELECT `name` FROM `currentspecies` WHERE `speciesid`='%s'"
+      , mysql_real_escape_string($validid)
     );
     // do the query and grab the result
     $row2 = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
     $validname = $row2['name'];
   }
+  // it points to itself
   else {
     $validname = $invalidname;
   }
+  
+  if (preg_match('/.*=.*/', $validname)) {
+    print("ERROR: STILL HAS EQUALS SIGN: $validname\n");
+  }
+  
   // we got names
   if ($invalidname && $validname) {
     $querystring = "UPDATE `currentspecies`"
       . " SET `name`='%s', `currentnamestring`='%s', `valid`=0"
       . " WHERE `name`='%s'";
-    $query = sprintf($querystring,
-      mysql_real_escape_string($invalidname),
-      mysql_real_escape_string($validname),
-      mysql_real_escape_string($row['name'])
+    $query = sprintf($querystring
+      , mysql_real_escape_string($invalidname)
+      , mysql_real_escape_string($validname)
+      , mysql_real_escape_string($row['name'])
     );
     mysql_query($query);
+  }
+  // we failed to get names, delete this troublesome record
+  else {
+    deleteRow('currentspecies', 'currentspecies_delete', 'name', $row['name']);
   }
 }
 mysql_free_result($result);
@@ -136,15 +183,21 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     $querystring = "UPDATE `currentspecies`"
       . " SET `name`='%s', `currentnamestring`='%s', `valid`=0"
       . " WHERE `name`='%s'";
-    $query = sprintf($querystring,
-      mysql_real_escape_string($invalidname),
-      mysql_real_escape_string($validname),
-      mysql_real_escape_string($row['name'])
+    $query = sprintf($querystring
+      , mysql_real_escape_string($invalidname)
+      , mysql_real_escape_string($validname)
+      , mysql_real_escape_string($row['name'])
     );
     mysql_query($query);
   }
+  // we failed to get names, delete this troublesome record
+  else {
+    deleteRow('currentspecies', 'currentspecies_delete', 'name', $row['name']);
+  }
 }
 mysql_free_result($result);
+
+// At this point, `currentspecies` should no longer have name like '%=%'
 
 /**
  * Step 2: Delete unshared and unused columns
@@ -222,8 +275,8 @@ $result = mysql_query("SELECT * FROM `bryozoans`");
 
 // loop through results
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-  $query = sprintf("SELECT * FROM `currentspecies` WHERE `name`='%s'",
-      mysql_real_escape_string($row['name'])
+  $query = sprintf("SELECT * FROM `currentspecies` WHERE `name`='%s'"
+      , mysql_real_escape_string($row['name'])
   );
   $result2 = mysql_query($query);
   if ($match = mysql_fetch_array($result2, MYSQL_ASSOC)) {
