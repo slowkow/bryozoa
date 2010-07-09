@@ -83,6 +83,9 @@ DELETE FROM `currentspecies`
 1478 records
 Non-alpha characters
 (equals sign and numbers are ok because some records reference others)
+
+PROBLEM:
+Some of the "was Foo Bar=123" point to these deleted records.
 */
 INSERT INTO `currentspecies_delete` SELECT * FROM `currentspecies`
   WHERE `name` REGEXP "[^A-Za-z =0-9]";
