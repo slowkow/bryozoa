@@ -4,8 +4,6 @@
  * Combine Phil Bock's Bryozoans and CURRENTSPECIES
  */
 
-// ALTER TABLE bryozoans ADD currentnamestring VARCHAR(512);
-
 // connect to localhost
 $link = mysql_connect('localhost', 'kamil');
 if (!$link) {
@@ -257,6 +255,5 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 }
 mysql_free_result($result);
 */
-
 
 mysql_close($link);
