@@ -25,13 +25,13 @@ while (<$file>) {
   $line++;
   chomp;
   if ($line == 1) {
-    die("Missing header!\n") unless (/unit_name1/ && /unit_name2/ && /parent_name/);
+    die("Missing header!\n") unless (/unit_name1/ && /unit_name2/ && /unit_name3/ && /parent_name/);
     @headers = split(/\t/);
     next;
   }
   my %values;
   @values{@headers} = split(/\t/);
-  my $full_name = join(' ', $values{'unit_name1'}, $values{'unit_name2'});
+  my $full_name = join(' ', $values{'unit_name1'}, $values{'unit_name2'}, $values{'unit_name3'});
   # count number of times this name appears
   $full_names{$full_name} += 1;
   # record line numbers with this name
