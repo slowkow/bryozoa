@@ -14,6 +14,13 @@
 use strict;
 use warnings;
 
+sub trim {
+  my $string = shift;
+  $string =~ s/^\s+//;
+  $string =~ s/\s+$//;
+  return $string;
+}
+
 open(my $file, "<", $ARGV[0]) or die $!;
 
 my %unit_name1;
@@ -31,7 +38,7 @@ while (<$file>) {
   }
   my %values;
   @values{@headers} = split(/\t/);
-  my $full_name = join(' ', $values{'unit_name1'}, $values{'unit_name2'}, $values{'unit_name3'});
+  my $full_name = trim(join(' ', $values{'unit_name1'}, $values{'unit_name2'}, $values{'unit_name3'}));
   # count number of times this name appears
   $full_names{$full_name} += 1;
   # record line numbers with this name
