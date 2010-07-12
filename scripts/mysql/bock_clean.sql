@@ -66,21 +66,27 @@ INSERT IGNORE INTO `bryozoans_delete` SELECT * FROM `bryozoans`
 /*
 633 records
 Current_name points to a record that doesn't exist
+
+Problem: Other records may point to these deleted records. We can continue
+to delete records until no records point to nonexistant records, but I prefer
+to leave them.
 */
+/*
 INSERT IGNORE INTO `bryozoans_delete` (
   SELECT * FROM `bryozoans` AS `t1`
     WHERE `currentname` IS NOT NULL
       AND (
-        /* the referenced record does not exist in bryozoans */
+        # the referenced record does not exist in bryozoans 
         NOT EXISTS (
           SELECT * FROM `bryozoans` AS `t2` WHERE `t2`.`id` = `t1`.`currentname`
         )
-        /* the referenced record has been deleted */
+        # the referenced record has been deleted 
         OR EXISTS (
           SELECT * FROM `bryozoans_delete` AS `t3` WHERE `t3`.`id` = `t1`.`currentname`
         )
       )
 );
+*/
 
 /* Delete the records */
 DELETE `t1` FROM `bryozoans` AS `t1`, `bryozoans_delete` AS `t2`
