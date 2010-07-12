@@ -43,6 +43,7 @@ SELECT "Loading bryozoans" AS "Action";
 load the tab-delimited file into the database, ignore the header line
 */
 LOAD DATA LOCAL INFILE '../../bock/Jun2010/Bryozoans_mysql.tab' INTO TABLE `bryozoans` IGNORE 1 LINES;
+SELECT COUNT(*) FROM `bryozoans`;
 
 /*
 let's see those warnings
@@ -82,6 +83,7 @@ SELECT "Loading currentspecies" AS "Action";
 load the tab-delimited file into the database, ignore the header line
 */
 LOAD DATA LOCAL INFILE '../../bock/Jun2010/CURRENTSPECIES_mysql.tab' INTO TABLE `currentspecies` IGNORE 1 LINES;
+SELECT COUNT(*) FROM `currentspecies`;
 
 /*
 let's see those warnings
