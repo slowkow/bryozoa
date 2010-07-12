@@ -51,6 +51,7 @@ while ((my $key, my $value) = each(%parent_name)) {
     print("($key) not found in unit_name1 on lines:\n$value\n");
   }
 }
+# check how many times a full name appears "unit_name1+unit_name2+unit_name3"
 while ((my $key, my $value) = each(%full_names)) {
   if ($value > 1) {
     print("($key) appears $value times\n");
