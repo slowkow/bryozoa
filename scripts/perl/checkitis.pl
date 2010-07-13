@@ -28,27 +28,30 @@ my %parent_name;
 my %full_names;
 my @headers;
 my $line = 0;
+my %parents;
 while (<$file>) {
   $line++;
   chomp;
   if ($line == 1) {
-    die("Missing header!\n") unless (/unit_name1/ && /unit_name2/ && /unit_name3/ && /parent_name/);
+    die("Missing header!\n") unless (/unit_name1/ && /unit_name2/
+      && /unit_name3/ && /parent_name/ && /rank_name/);
     @headers = split(/\t/);
     next;
   }
   my %values;
   @values{@headers} = split(/\t/);
   my $full_name = trim(join(' ', $values{'unit_name1'}, $values{'unit_name2'}, $values{'unit_name3'}));
+  $parents{$full_name} = \%values;
   # count number of times this name appears
   $full_names{$full_name} += 1;
   # record line numbers with this name
   $unit_name1{$values{'unit_name1'}} .= "$line ";
   $parent_name{$values{'parent_name'}} .= "$line ";
 }
-# check if parent_name is subset of unit_name1
+# check if parent_name is subset of full_names
 while ((my $key, my $value) = each(%parent_name)) {
-  if (!$unit_name1{$key}) {
-    print("($key) not found in unit_name1 on lines:\n$value\n");
+  if (!$full_names{$key}) {
+    print("($key) not found in full_names on lines:\n$value\n");
   }
 }
 # check how many times a full name appears "unit_name1+unit_name2+unit_name3"
@@ -56,4 +59,40 @@ while ((my $key, my $value) = each(%full_names)) {
   if ($value > 1) {
     print("($key) appears $value times\n");
   }
+}
+
+################################################################################
+# print the full hierarchy for every entry
+#~ my @full_hierarchy;
+#~ foreach my $child (keys %parents) {
+  #~ my $path = $parents{$child}->{'rank_name'} . " " . $child;
+  #~ while ($parents{$child}->{'parent_name'}) {
+    #~ $path = $parents{$parents{$child}->{'parent_name'}}->{'rank_name'} . " " . $parents{$child}->{'parent_name'} . "." . $path;
+    #~ $child = $parents{$child}->{'parent_name'};
+  #~ }
+  #~ #print($path . "\n");
+  #~ push(@full_hierarchy, $path);
+#~ }
+#~ 
+#~ @full_hierarchy = sort {length($a) <=> length($b)} @full_hierarchy;
+#~ foreach my $path (@full_hierarchy) {
+  #~ print($path . "\n");
+#~ }
+
+################################################################################
+# print the unique paths from Kingdom to Subspecies
+my %unique_paths;
+foreach my $child (keys %parents) {
+  my @path;
+  while ($parents{$child}->{'parent_name'}) {
+    push(@path, $parents{$child}->{'rank_name'});
+    $child = $parents{$child}->{'parent_name'};
+  }
+  push(@path, $parents{$child}->{'rank_name'});
+  $unique_paths{join('.', reverse @path)} += 1;
+}
+my @sortedkeys = sort {length($a) <=> length($b)} keys %unique_paths;
+foreach my $path (@sortedkeys) {
+  #print($unique_paths{$path} . "\t" . $path . "\n");
+  print($path . "\n");
 }
