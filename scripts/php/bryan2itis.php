@@ -167,9 +167,9 @@ $result = mysql_query(
 /*
  * Print the header
  */
-print("rank_name\tunit_name1\tunit_name2\tunit_name3\tparent_name\tusage\n");
+print("rank_name\tunit_name1\tunit_name2\tunit_name3\tparent_name\tusage\ttaxon_author\taccepted_name\tunacceptability_reason\n");
 //print("Phylum\tPhylum Bryozoa\t\t\t\tvalid\n");
-print("Phylum\tBryozoa\t\t\t\tvalid\n");
+print("Phylum\tBryozoa\t\t\t\tvalid\t\t\t\n");
 
 // loop through results
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
@@ -200,8 +200,12 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     $parent_name = trim(ucfirst(strtolower($parent_row['name'])));
     $parent_rank_name = getRankName($parent_row['rankcode']);
     
+    $taxon_author = "";
+    $accepted_name = "";
+    $unacceptability_reason = "";
+    
     //print("$rank_name\t$rank_name $unit_name1\t$unit_name2\t$unit_name3\t$parent_rank_name $parent_name\t$usage\n");
-    print("$rank_name\t$unit_name1\t$unit_name2\t$unit_name3\t$parent_name\t$usage\n");
+    print("$rank_name\t$unit_name1\t$unit_name2\t$unit_name3\t$parent_name\t$usage\t$taxon_author\t$accepted_name\t$unacceptability_reason\n");
 /*
     // graphviz output
     $name = trim(implode(" ", array($unit_name1, $unit_name2, $unit_name3)));
