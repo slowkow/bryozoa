@@ -89,8 +89,8 @@ INSERT IGNORE INTO `bryozoans_delete` (
 */
 
 /* Delete the records */
-DELETE `t1` FROM `bryozoans` AS `t1`, `bryozoans_delete` AS `t2`
-  WHERE `t1`.`name` = `t2`.`name`;
+DELETE FROM `bryozoans`
+  WHERE `name` IN (SELECT `name` from `bryozoans_delete`);
 
 SELECT "Finished cleaning `bryozoans`" AS "Action";
 SELECT COUNT(*) FROM `bryozoans`;
@@ -134,8 +134,8 @@ INSERT IGNORE INTO `currentspecies_delete` SELECT * FROM `currentspecies`
   WHERE `name` REGEXP "[^A-Za-z =0-9]";
 
 /* Delete the records */
-DELETE `t1` FROM `currentspecies` AS `t1`, `currentspecies_delete` AS `t2`
-  WHERE `t1`.`name` = `t2`.`name`;
+DELETE FROM `currentspecies`
+  WHERE `name` IN (SELECT `name` from `currentspecies_delete`);
 
 SELECT "Finished cleaning `currentspecies`" AS "Action";
 SELECT COUNT(*) FROM `currentspecies`;
