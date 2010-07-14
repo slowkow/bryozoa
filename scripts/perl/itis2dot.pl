@@ -30,7 +30,7 @@ my $g = GraphViz->new(
 
 my $line = 0;
 my @headers;
-#~ my %ranks;
+my %ranks;
 while (<$file>) {
   $line++;
   chomp;
@@ -47,8 +47,8 @@ while (<$file>) {
   my $rank   = trim($values{'rank_name'});
   
   # skip the ranks that have thousands of members
-  #~ next if ($rank =~ /(Species|Genus|Family)/);
-  #~ $ranks{$rank} += 1;
+  next if ($rank =~ /(Species|Genus|Family)/);
+  $ranks{$rank} += 1;
   
   #~ print("$parent_name -> $child_name\n");
   if (length($child) > 1) {
