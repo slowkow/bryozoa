@@ -1,33 +1,20 @@
 <?php
-/*
- * This script queries the bryan_* tables and can output a proper ITIS
- * output for uploading to Scratchpads.
+/**
+ * Get the author and year for the taxon name from `bryozone_easyauthors`.
  * 
- * bryan
- * 
-CREATE TABLE `bryan_valid` (
-  `oldid` INT,
-  `oldrefid` INT,
-  `name` VARCHAR(512),
-  `rankcode` INT,
-  `year` VARCHAR(128),
-  `newid` INT,
-  `newrefid` INT,
-  `comments` VARCHAR(2000),
-  KEY (`oldid`),
-  KEY (`oldrefid`),
-  KEY (`rankcode`),
-  KEY (`newid`),
-  KEY (`newrefid`),
-  KEY (`name`)
-);
- * 
- * ITIS
- * 
-unit_name1	rank_name	parent_name	usage
-bryozoa	Phylum	animalia	valid
+ * @param name
+ *   The name to use as a query.
+ * @return
+ *   An associative array with 'authorname' and 'year'.
  */
-
+function getAuthorYear($name) {
+  $query = sprintf(
+    "SELECT `authorname`, `year` FROM `bryozone_easyauthors`"
+    . " WHERE `taxonname`='%s'",
+    mysql_real_escape_string($name)
+  );
+  return mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+}
 /**
  * Query the bryan_valid table with a rank code and newid and return the
  * associated row.
@@ -47,7 +34,6 @@ function getRow($rankcode, $newid) {
   );
   return mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
 }
-
 /**
  * Query the bryan_rank table with a rank code and return the rank name.
  * 
@@ -63,7 +49,6 @@ function getRankName($rankcode) {
   $row = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
   return $row['rankname'];
 }
-
 /**
  * Return true or false if the rank code number is not equal to some values.
  * 
@@ -88,42 +73,31 @@ function isValidRankCode($rank_code) {
   }
   return false;
 }
-
 /**
  * Return the next parent that is a valid rank and is not called 'NULL' or
  * 'uncertain'.
  * 
  * @param row
  *   A row from bryozoa_taxa.
- * @param print
- *   If true, then print the path from row to the parent.
  * @return
  *   Parent row that is a valid rank and is not called 'NULL' or 'uncertain'.
  */
-function nextRealParent($row, $print) {
-  if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['name']; }
+function nextRealParent($row) {
   while ($row['newrefid']) {
     // we linked up to a Class, so return Bryozoa as the next real parent
     if ($row['rankcode'] == 20) {
       break;
     }
-    
     $row = getRow(nextValidRank($row['rankcode']), $row['newrefid']);
-    if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['name'] . " > " . $linkpath; }
-    
     // the name is not 'NULL' or 'uncertain'
-    if ($row['name'] != 'NULL' && $row['name'] != 'uncertain') {
-      if ($print) { print($linkpath . "\n"); }
+    if (!preg_match("/(?:null|uncertain)/i", $row['name'])) {
       return $row;
     }
   }
   // either we broke out of the loop or the row had no newrefid, so link
   // this guy to Bryozoa
-  $row = array('rankcode' => 10, 'name' => 'Bryozoa');
-  if ($print) { print(getRankName($row['rankcode']) . " " . $row['name'] . " > " . $linkpath . "\n"); }
-  return $row;
+  return array('rankcode' => 10, 'name' => 'Bryozoa');
 }
-
 /**
  * Return next higher valid rank code.
  * 
@@ -133,6 +107,7 @@ function nextRealParent($row, $print) {
  *   The next higher valid rank code.
  */
 function nextValidRank($rank_code) {
+  if ($rank_code <= 10) { return 10; }
   do {
     $rank_code--;
   } while (!isValidRankCode($rank_code));
@@ -146,34 +121,29 @@ if (!$link) { die('Could not connect: ' . mysql_error()); }
 $db_selected = mysql_select_db('bock', $link);
 if (!$db_selected) { die ('Could not use database: ' . mysql_error()); }
 
+// get author/year information from bryozone
+mysql_query("DROP TABLE IF EXISTS `bryozone_easyauthors`");
+mysql_query(
+  "CREATE TABLE `bryozone_easyauthors`"
+  . " AS SELECT `t`.`rankcode`, `t`.`taxonname`, `a`.`authorname`, `t`.`year`"
+  . " FROM `bryozone_taxa` `t`, `bryozone_authors` `a`, `bryozone_taxa_authors` `b`"
+  . " WHERE `t`.`taxonid`=`b`.`taxonid`"
+  . " AND `a`.`authorid`=`b`.`authorid`"
+  . " AND `t`.`rankcode` < 110"
+);
 
-
-// enable printing or not
-$g_print = FALSE;
-// execute sql queries or not
-$g_mysql = TRUE;
-
-/*
- * Print the header
- */
-if ($g_print) {
-  print("rank_name\tunit_name1\tunit_name2\tunit_name3\tparent_name\tusage\ttaxon_author\taccepted_name\tunacceptability_reason\n");
-  //print("Phylum\tPhylum Bryozoa\t\t\t\tvalid\n");
-  print("Phylum\tBryozoa\t\t\t\tvalid\t\t\t\n");
-}
-if ($g_mysql) {
-  mysql_query(
-    "INSERT INTO `scratchpads`"
-    . " (`rank_name`, `unit_name1`, `usage`, `full_name`)"
-    . " VALUES ('Phylum', 'Bryozoa', 'valid', 'Bryozoa')"
-    . " ON DUPLICATE KEY UPDATE"
-    . " `rank_name`='Phylum',"
-    . " `unit_name1`='Bryozoa',"
-    . " `usage`='valid',"
-    . " `full_name`='Bryozoa'"
-  );
-  if (mysql_error()) { print(mysql_error() . "\n"); }
-}
+// insert Bryozoa
+mysql_query(
+  "INSERT INTO `scratchpads`"
+  . " (`rank_name`, `unit_name1`, `usage`, `full_name`)"
+  . " VALUES ('Phylum', 'Bryozoa', 'valid', 'Bryozoa')"
+  . " ON DUPLICATE KEY UPDATE"
+  . " `rank_name`='Phylum',"
+  . " `unit_name1`='Bryozoa',"
+  . " `usage`='valid',"
+  . " `full_name`='Bryozoa'"
+);
+if (mysql_error()) { print(mysql_error() . "\n"); }
 
 // select some vars to put in row
 // "IS NOT NULL" will return true for rows with name='NULL'
@@ -197,62 +167,57 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   $unit_name2 = trim(strtolower($unit_name2));
   $unit_name3 = trim(strtolower($unit_name3));
   // get row's rank name by looking up row's rankcode
-  $rank_code = $row['rankcode'];
-  $rank_name = getRankName($rank_code);
-  // assume validity
-  $usage = 'valid';
+  $rank_name = getRankName($row['rankcode']);
   
-  // we got a name
-  if ($rank_name && $unit_name1 && $usage) {
-    // the name is not a real entry
-    if ($unit_name1 == 'Null' || $unit_name1 == 'Uncertain') {
-      continue;
-    }
-    // we're not printing invalid entries
-    if (!isValidRankCode($rank_code)) {
-      continue;
-    }
-    // find a parent that is named, don't print
+  // we still have a name after trimming
+  if ($unit_name1 && $rank_name
+  // the name is valid
+  && !preg_match("/(?:null|uncertain)/i", $unit_name1)
+  // the rank is valid
+  && isValidRankCode($row['rankcode'])) {
+    // find a parent that is named
     // if we don't find anyone, then Bryozoa is the parent
     $parent_row = nextRealParent($row, FALSE);
     $parent_name = trim(ucfirst(strtolower($parent_row['name'])));
     $parent_rank_name = getRankName($parent_row['rankcode']);
     
-    $taxon_author = "";
-    $accepted_name = "";
-    $unacceptability_reason = "";
+    $rank_name   = mysql_real_escape_string($rank_name);
+    $unit_name1  = mysql_real_escape_string($unit_name1);
+    $unit_name2  = mysql_real_escape_string($unit_name2);
+    $unit_name3  = mysql_real_escape_string($unit_name3);
+    $parent_name = mysql_real_escape_string($parent_name);
+    $usage       = 'valid';
+    // get author and year
+    $match = getAuthorYear($unit_name1);
+    $taxon_author = mysql_real_escape_string(trim($match['authorname'] . " " . $match['year']));
     
-    if ($g_print) {
-      print("$rank_name\t$unit_name1\t$unit_name2\t$unit_name3\t$parent_name\t$usage\t$taxon_author\t$accepted_name\t$unacceptability_reason\n");
-    }
-    if ($g_mysql) {
-      $full_name = trim($unit_name1 . " " . $unit_name2 . " " . $unit_name3);
-      
-      $rank_name   = mysql_real_escape_string($rank_name);
-      $unit_name1  = mysql_real_escape_string($unit_name1);
-      $unit_name2  = mysql_real_escape_string($unit_name2);
-      $unit_name3  = mysql_real_escape_string($unit_name3);
-      $parent_name = mysql_real_escape_string($parent_name);
-      $usage       = mysql_real_escape_string($usage);
-      $full_name   = mysql_real_escape_string($full_name);
-      
-      $query = sprintf("INSERT INTO `scratchpads`"
-        . " (`rank_name`, `unit_name1`, `unit_name2`, `unit_name3`, `parent_name`, `usage`, `full_name`)"
-        . " VALUES ('%s', '%s', '%s', '%s', '%s', '%s', '%s')"
-        . " ON DUPLICATE KEY UPDATE"
-        . " `rank_name`='%s',"
-        . " `unit_name1`='%s',"
-        . " `unit_name2`='%s',"
-        . " `unit_name3`='%s',"
-        . " `parent_name`='%s',"
-        . " `usage`='%s',"
-        . " `full_name`='%s'",
-        $rank_name, $unit_name1, $unit_name2, $unit_name3, $parent_name, $usage, $full_name,
-        $rank_name, $unit_name1, $unit_name2, $unit_name3, $parent_name, $usage, $full_name
-      );
-      mysql_query($query);
-      if (mysql_error()) { print(mysql_error() . "\n"); }
-    }
+    $full_name = trim($unit_name1 . " " . $unit_name2 . " " . $unit_name3);
+    $full_name   = mysql_real_escape_string($full_name);
+    
+    $query = sprintf("INSERT INTO `scratchpads`"
+      . " SET"
+      . " `rank_name`='%s',"
+      . "`unit_name1`='%s',"
+      . "`unit_name2`='%s',"
+      . "`unit_name3`='%s',"
+      . "`parent_name`='%s',"
+      . "`usage`='%s',"
+      . "`full_name`='%s',"
+      . "`taxon_author`='%s'"
+      . " ON DUPLICATE KEY UPDATE"
+      . " `rank_name`='%s',"
+      . "`unit_name1`='%s',"
+      . "`unit_name2`='%s',"
+      . "`unit_name3`='%s',"
+      . "`parent_name`='%s',"
+      . "`usage`='%s',"
+      . "`full_name`='%s',"
+      . "`taxon_author`='%s'",
+      $rank_name, $unit_name1, $unit_name2, $unit_name3, $parent_name, $usage, $full_name, $taxon_author,
+      $rank_name, $unit_name1, $unit_name2, $unit_name3, $parent_name, $usage, $full_name, $taxon_author
+    );
+    mysql_query($query);
+    if (mysql_error()) { die(mysql_error() . "\n"); }
   }
 }
 mysql_free_result($result);
