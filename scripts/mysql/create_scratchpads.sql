@@ -23,6 +23,7 @@ CREATE TABLE `scratchpads` (
   `taxon_author` VARCHAR(512),
   `accepted_name` VARCHAR(512),
   `unacceptability_reason` VARCHAR(512),
+  `comments` VARCHAR(6000),
   
   /* 
   this column is only used as a MySQL primary key, not uploaded to Scratchpads
