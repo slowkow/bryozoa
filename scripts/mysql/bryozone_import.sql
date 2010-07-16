@@ -158,7 +158,7 @@ Skip 1 line
 CREATE TABLE `bryozone_taxa_references` (
   `taxonid` INT,
   `articleid` INT,
-  PRIMARY KEY (`taxonid`),
+  KEY (`taxonid`),
   KEY (`articleid`)
 );
 
