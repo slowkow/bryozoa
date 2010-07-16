@@ -22,8 +22,12 @@ Phil Bock marked these for extra work or deletion.
 */
 CREATE TABLE `bryozoans_delete`
   AS SELECT * FROM `bryozoans`
-    WHERE `comments` LIKE '%delete%' OR `currentname` > 90000 OR `id` > 90000
-      OR `name` LIKE '%comment%' OR `name` LIKE '%ignore%';
+    WHERE `comments` LIKE '%delete%'
+      OR `currentname` > 90000
+      OR `id` > 90000
+      OR `name` LIKE '%comment%'
+      OR `name` LIKE '%ignore%'
+      OR `name` LIKE '%unknown%';
 ALTER TABLE `bryozoans_delete`
   ADD PRIMARY KEY (`name`),
   ADD KEY (`id`),
