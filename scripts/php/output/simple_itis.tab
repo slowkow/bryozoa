@@ -1,4 +1,5 @@
 rank_name	unit_name1	parent_name	usage
-Class	class1	Bryozoa	valid
+Phylum	phylum1		valid
+Class	class1	phylum1	valid
 Order	order1	class1	valid
 Family	family1	order1	valid
