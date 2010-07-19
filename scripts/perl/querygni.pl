@@ -13,14 +13,14 @@ use Getopt::Long;
 
 # set default web service parameters
 my %params = (
-  search_term => ''   # query
-  ,per_page => '1000' # number of results per page
-  ,page => 1          # which page to display
+  search_term => ''     # query
+  ,per_page   => '1000' # number of results per page
+  ,page       => 1      # which page to display
 );
 
 # grab commandline options from the user
 GetOptions(
-  'h|help'       => sub { exec('perldoc', $0); exit(0); }
+  'h|help'        => sub { exec('perldoc', $0); exit(0); }
   ,'n|per_page:i' => \$params{per_page}
   ,'p|page:i'     => \$params{page}
 );
@@ -117,16 +117,12 @@ sub filterMinYear {
   my @out;
   # find the minimum year
   my $minyear;
-  for my $a (@in) {
-    $a =~ /(\d{4})/;
+  foreach (@in) {
+    /(\d{4})/;
     if    (!$minyear)     { $minyear = $1; }
     elsif ($1 < $minyear) { $minyear = $1; }
   }
-  # grab the entries that contain the min year
-  foreach (@in) {
-    push(@out, $_) if (/$minyear/);
-  }
-  return @out;
+  return grep(/$minyear/, @in);
 }
 
 @authors = filterDuplicates(\@authors);
