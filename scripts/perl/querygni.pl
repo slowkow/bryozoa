@@ -35,17 +35,15 @@ my $xml = get("http://gni.globalnames.org/name_strings.xml?"
   . "&per_page=" . $params{per_page}
   . "&page=" . $params{page});
 
+$params{search_term} =~ s/(?:\*|ns:|can:|uni:|gen:|sp:|ssp:|au:|yr:)//g;
+
 # DEBUG use a local file for testing
 #~ my $xml = '/home/kamil/Downloads/name_strings.xml';
 # die if we can't get the xml
 die "Failed to retrieve the result!" unless defined $xml;
 
 # put the xml in a perl data structure
-$xml = XMLin(
-  $xml
-  ,ForceArray => ['name_string']
-  ,KeyAttr => []
-);
+$xml = XMLin($xml, ForceArray => ['name_string'], KeyAttr => []);
 
 # DEBUG display the data structure
 #~ use Data::Dumper;
@@ -63,33 +61,98 @@ my $allresults = $xml->{name_strings}->{name_string};
 #~ }
 #~ print "----\n";
 
-# print only the results that seem to have what we're looking for
+# our query
+my $name;
+# resulting authors
+my @authors;
+# save only the results that seem to have what we're looking for
 foreach my $result (@{$allresults}) {
   # skip results without a year
   next unless $result->{name} =~ /\d{4}/;
   
-  #~ $result->{name} =~ /^\s*${query}\s+(\(?\s*[A-Z]\w+.+\d{4}\s*\)?).*$/;
+  # this regular expression is too restrictive
+  # entries like "Flustrina van Beneden [1850]" are not accepted
+  #~ $result->{name} =~
+    #~ /^                 # start of string
+      #~ \s*              # any whitespace
+      #~ (                # start capture group, query
+        #~ (?i)           #   turn off case sensitivity
+        #~ $params{search_term}    #   our query
+        #~ (?-i)          #   turn on case sensitivity
+      #~ )                # end capture group
+      #~ \s+              # at least one whitespace
+      #~ (                # start capture group, author and year
+        #~ \(?            #   optional start paren
+        #~ \s*            #   optional whitespace after start paren
+        #~ (?:\w')?       #   optional letter followed by apostrophe
+        #~ [A-Z]\w+       #   capital first letter followed by word (author name)
+        #~ .+             #   anything, maybe additional authors or commas or &'s
+        #~ \d{4}          #   year
+        #~ \s*            #   optional whitespace before end paren
+        #~ \)?            #   optional end paren
+      #~ )                # end capture group
+      #~ .*               # anything, then the string ends
+    #~ $/xo;
+  
+  # this expression is much less restrictive
+  # it should not be used unless the extra parameters (can: uni: gen:) are used
+  # in the query
   $result->{name} =~
-    /^            # start of string
-      \s*         # any whitespace
-      (           # start capture group, query
-        (?i)      #   turn off case sensitivity
+    /^                 # start of string
+      \s*              # any whitespace
+      (                # begin capture group, NAME
+        (?i)           #   turn off case sensitivity
         $params{search_term}    #   our query
-        (?-i)     #   turn on case sensitivity
-      )           # end capture group
-      \s+         # at least one whitespace
-      (           # start capture group, author and year
-        \(?       #   optional start paren
-        \s*       #   optional whitespace after start paren
-        [A-Z]\w+  #   a word with a capital first letter, maybe first author
-        .+        #   anything, maybe additional authors or commas or &'s
-        \d{4}     #   year
-        \s*       #   optional whitespace before end paren
-        \)?       #   optional end paren
-      )           # end capture group
-      .*          # anything, then the string ends
+        (?-i)          #   turn on case sensitivity
+      )                # end capture group
+      \s+              # at least one whitespace
+      (                # begin capture group, AUTHOR
+        .+             #   anything
+      )                # end capture group
     $/xo;
   
-  # if we got an author and year, print the name and the author and year
-  if ($2) { print $1 . "\t" . $2 . "\n"; }
+  # if we have AUTHOR, save it
+  if ($2) {
+    #print $1 . "\t" . $2 . "\n";
+    $name ||= $1;
+    push(@authors, $2);
+  }
+}
+#~ use Data::Dumper;
+#~ print Dumper($bestresults{Flustrina});
+
+# input a list of Author Year entries
+# output a list with the duplicates removed
+# we prefer to keep the entries with symbols like "," or "&"
+sub removeDuplicates {
+  my $array = shift;
+  my @in = @{$array};
+  my @out;
+  for my $a (@in) {
+    my $keep = 1;
+    # compare every pair of values
+    for my $b (@in) {
+      next if $a eq $b;
+      # compare the values without non-alpha characters
+      my ($aw, $bw) = ($a, $b);
+      $aw =~ s/\W//g;
+      $bw =~ s/\W//g;
+      # if they're the same without non-alpha characters, we want the longer one
+      # for example, we prefer "Smitt, 1867" to "Smitt 1867"
+      if ($aw eq $bw && length($a) < length($b)) {
+        # print "Prefer '$b' over '$a'\n";
+        $keep = 0;
+      }
+    }
+    if ($keep) {
+      push(@out, $a);
+    }
+  }
+  return @out;
+}
+
+@authors = removeDuplicates(\@authors);
+
+foreach my $author (@authors) {
+  print $name . "\t" . $author . "\n";
 }
