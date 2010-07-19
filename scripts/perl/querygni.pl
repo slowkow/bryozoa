@@ -18,11 +18,17 @@ my %params = (
   ,page       => 1      # which page to display
 );
 
+# command line options for filtering by min year and removing duplicates
+my ($minyear, $duplicates, $lowercase);
+
 # grab commandline options from the user
 GetOptions(
   'h|help'        => sub { exec('perldoc', $0); exit(0); }
   ,'n|per_page:i' => \$params{per_page}
   ,'p|page:i'     => \$params{page}
+  ,'m|minyear'    => \$minyear
+  ,'d|duplicates' => \$duplicates
+  ,'l|lowercase' => \$lowercase
 );
 
 # grab the user's query from the command prompt
@@ -109,6 +115,14 @@ sub filterDuplicates {
   return @out;
 }
 
+# remove entries that start with lowercase words
+sub filterLowerCaseWords {
+  my $array = shift;
+  my @in = @{$array};
+  # 4, because there is "d'Orbigny", "de Gregorio", "von Hagenow", "van Beneden"
+  return grep(!/^[a-z]{4}/, @in);
+}
+
 # input a list of Author Year entries
 # output a list with only the entries that contain the minimum year
 sub filterMinYear {
@@ -116,18 +130,55 @@ sub filterMinYear {
   my @in = @{$array};
   my @out;
   # find the minimum year
-  my $minyear;
+  my $min;
   foreach (@in) {
     /(\d{4})/;
-    if    (!$minyear)     { $minyear = $1; }
-    elsif ($1 < $minyear) { $minyear = $1; }
+    if    (!$min)     { $min = $1; }
+    elsif ($1 < $min) { $min = $1; }
   }
-  return grep(/$minyear/, @in);
+  return grep(/$min/, @in);
 }
 
-@authors = filterDuplicates(\@authors);
-@authors = filterMinYear(\@authors);
+@authors = filterDuplicates(\@authors) if $duplicates;
+@authors = filterLowerCaseWords(\@authors) if $lowercase;
+@authors = filterMinYear(\@authors) if $minyear;
 
 foreach my $author (@authors) {
   print $name . "\t" . $author . "\n";
 }
+
+__END__
+
+=head1 NAME
+
+querygni.pl
+
+=head1 USAGE
+
+./querygni.pl Homo sapiens
+./querygni.pl -l -n 100 -m uni:Chilopora
+./querygni.pl -d -l -m uni:Chilopora
+
+=head1 OPTIONS
+
+ -h --help        Show this help.
+ 
+ GNI Options
+ -n --per_page    Default 1000. Number of results per page.
+ -p --page        Default 1. Page number in multipage results.
+ 
+ Filter Options (applied in this order)
+ -d --duplicates  Remove duplicates, prefer names with symbols like , & () [].
+ -l --lowercase   Remove authors that start with lowercase names (subspecies).
+ -m --minyear     Return entries only with the oldest available year.
+
+=head1 DESCRIPTION
+
+Query GNI (http://gni.globalnames.org) and try to get the best author/year.
+See http://wiki.github.com/dimus/gni/api
+
+=head1 AUTHOR
+
+Kamil Slowikowski, kslowikowski-at-gmail-dot-com
+
+=cut
