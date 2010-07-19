@@ -69,62 +69,20 @@ my @authors;
 foreach my $result (@{$allresults}) {
   # skip results without a year
   next unless $result->{name} =~ /\d{4}/;
-  
-  # this regular expression is too restrictive
-  # entries like "Flustrina van Beneden [1850]" are not accepted
-  #~ $result->{name} =~
-    #~ /^                 # start of string
-      #~ \s*              # any whitespace
-      #~ (                # start capture group, query
-        #~ (?i)           #   turn off case sensitivity
-        #~ $params{search_term}    #   our query
-        #~ (?-i)          #   turn on case sensitivity
-      #~ )                # end capture group
-      #~ \s+              # at least one whitespace
-      #~ (                # start capture group, author and year
-        #~ \(?            #   optional start paren
-        #~ \s*            #   optional whitespace after start paren
-        #~ (?:\w')?       #   optional letter followed by apostrophe
-        #~ [A-Z]\w+       #   capital first letter followed by word (author name)
-        #~ .+             #   anything, maybe additional authors or commas or &'s
-        #~ \d{4}          #   year
-        #~ \s*            #   optional whitespace before end paren
-        #~ \)?            #   optional end paren
-      #~ )                # end capture group
-      #~ .*               # anything, then the string ends
-    #~ $/xo;
-  
-  # this expression is much less restrictive
-  # it should not be used unless the extra parameters (can: uni: gen:) are used
-  # in the query
-  $result->{name} =~
-    /^                 # start of string
-      \s*              # any whitespace
-      (                # begin capture group, NAME
-        (?i)           #   turn off case sensitivity
-        $params{search_term}    #   our query
-        (?-i)          #   turn on case sensitivity
-      )                # end capture group
-      \s+              # at least one whitespace
-      (                # begin capture group, AUTHOR
-        .+             #   anything
-      )                # end capture group
-    $/xo;
-  
-  # if we have AUTHOR, save it
+  # first word assumed to be name, rest is author
+  $result->{name} =~ /^(.+?)\s+(.+)$/;
+  # if we have an author, save it
   if ($2) {
     #print $1 . "\t" . $2 . "\n";
     $name ||= $1;
     push(@authors, $2);
   }
 }
-#~ use Data::Dumper;
-#~ print Dumper($bestresults{Flustrina});
 
 # input a list of Author Year entries
 # output a list with the duplicates removed
 # we prefer to keep the entries with symbols like "," or "&"
-sub removeDuplicates {
+sub filterDuplicates {
   my $array = shift;
   my @in = @{$array};
   my @out;
@@ -151,7 +109,28 @@ sub removeDuplicates {
   return @out;
 }
 
-@authors = removeDuplicates(\@authors);
+# input a list of Author Year entries
+# output a list with only the entries that contain the minimum year
+sub filterMinYear {
+  my $array = shift;
+  my @in = @{$array};
+  my @out;
+  # find the minimum year
+  my $minyear;
+  for my $a (@in) {
+    $a =~ /(\d{4})/;
+    if    (!$minyear)     { $minyear = $1; }
+    elsif ($1 < $minyear) { $minyear = $1; }
+  }
+  # grab the entries that contain the min year
+  foreach (@in) {
+    push(@out, $_) if (/$minyear/);
+  }
+  return @out;
+}
+
+@authors = filterDuplicates(\@authors);
+@authors = filterMinYear(\@authors);
 
 foreach my $author (@authors) {
   print $name . "\t" . $author . "\n";
