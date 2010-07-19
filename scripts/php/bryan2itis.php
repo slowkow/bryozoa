@@ -151,6 +151,7 @@ $result = mysql_query(
   "SELECT `name`, `rankcode`, `newid`, `newrefid`"
   . " FROM `bryan_valid`"
   . " WHERE (`name` IS NOT NULL"
+  . " AND `name` NOT REGEXP 'null|uncertain'" // no bad names
   . " AND `rankcode` IS NOT NULL"
   . " AND `newid` IS NOT NULL"      // if null, then it cannot be linked to
   //. " AND `newrefid` IS NOT NULL" // if null, we'll link them to Bryozoa
@@ -169,12 +170,8 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   // get row's rank name by looking up row's rankcode
   $rank_name = getRankName($row['rankcode']);
   
-  // we still have a name after trimming
-  if ($unit_name1 && $rank_name
-  // the name is valid
-  && !preg_match("/(?:null|uncertain)/i", $unit_name1)
-  // the rank is valid
-  && isValidRankCode($row['rankcode'])) {
+  // we still have a name after trimming and rank is valid
+  if ($unit_name1 && $rank_name && isValidRankCode($row['rankcode'])) {
     // find a parent that is named
     // if we don't find anyone, then Bryozoa is the parent
     $parent_row = nextRealParent($row, FALSE);
