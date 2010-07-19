@@ -39,7 +39,7 @@ while (<$file>) {
   chomp;
   if ($line == 1) {
     die("Missing some headers!\n") unless (/unit_name1/ && /unit_name2/
-      && /unit_name3/ && /parent_name/ && /rank_name/);
+      && /unit_name3/ && /parent_name/ && /rank_name/ && /taxon_author/);
     # save the headers for the hash
     @headers = split(/\t/);
     next;
@@ -48,7 +48,7 @@ while (<$file>) {
   my %values;
   @values{@headers} = split(/\t/);
   # a full name is the concatenation of all unit names
-  my $full_name = trim(join(' ', $values{'unit_name1'}, $values{'unit_name2'}, $values{'unit_name3'}));
+  my $full_name = trim(join(' ', $values{'unit_name1'}, $values{'unit_name2'} || '', $values{'unit_name3'} || '', $values{'taxon_author'} || ''));
   # the whole file is slurped into the parents hash
   $parents{$full_name} = \%values;
   # count number of times this name appears
