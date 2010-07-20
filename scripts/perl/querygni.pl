@@ -120,7 +120,7 @@ sub filterLowerCaseWords {
   my $array = shift;
   my @in = @{$array};
   # 4, because there is "d'Orbigny", "de Gregorio", "von Hagenow", "van Beneden"
-  return grep(!/^[a-z]{4}/, @in);
+  return grep(!/[a-z]{4}.*?[A-Z].*?\d{4}/, @in);
 }
 
 # input a list of Author Year entries
@@ -132,12 +132,19 @@ sub filterMinYear {
   # find the minimum year
   my $min;
   foreach (@in) {
-    /(\d{4})/;
+    next unless /\W(\d{4})\W?/;
     if    (!$min)     { $min = $1; }
     elsif ($1 < $min) { $min = $1; }
   }
   return grep(/$min/, @in);
 }
+
+# some bad author entries
+#~ Chaperiopsis	(C.) cervicornis (Busk, 1854)
+#~ Chaperiopsis	(C.) cf. multifida (Busk, 1884)
+#~ Chaperiopsis	(C.) colensoi (Brown, 1952)
+#~ Chaperiopsis	(C.) funda (Uttley & Bullivant, 1972) E
+#~ Tubulipora	n. sp.* Kah0204/09 E
 
 @authors = filterDuplicates(\@authors) if $duplicates;
 @authors = filterLowerCaseWords(\@authors) if $lowercase;
