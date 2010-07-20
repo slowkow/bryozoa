@@ -120,7 +120,7 @@ sub filterLowerCaseWords {
   my $array = shift;
   my @in = @{$array};
   # 4, because there is "d'Orbigny", "de Gregorio", "von Hagenow", "van Beneden"
-  return grep(!/[a-z]{4}.*?[A-Z].*?\d{4}/, @in);
+  return grep(!/\b[a-z]{4,}\b.*?\b[A-Z].*?\d{4}/, @in);
 }
 
 # input a list of Author Year entries
