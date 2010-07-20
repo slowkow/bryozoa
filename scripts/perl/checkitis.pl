@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 use Getopt::Long;
+use Data::Dumper;
 
 $ARGV[0] or die
 "Usage: checkitis.pl [OPTION]... [FILE]\
@@ -48,7 +49,9 @@ while (<$file>) {
   my %values;
   @values{@headers} = split(/\t/);
   # a full name is the concatenation of all unit names
-  my $full_name = trim(join(' ', $values{'unit_name1'}, $values{'unit_name2'} || '', $values{'unit_name3'} || '', $values{'taxon_author'} || ''));
+  my $full_name = trim(join(' ', $values{'unit_name1'},
+    $values{'unit_name2'} || '', $values{'unit_name3'} || ''));
+  $full_name = trim(join(' ', $full_name, $values{'taxon_author'} || ''));
   # the whole file is slurped into the parents hash
   $parents{$full_name} = \%values;
   # count number of times this name appears
