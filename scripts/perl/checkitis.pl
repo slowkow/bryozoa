@@ -99,7 +99,7 @@ elsif ($option =~ /fu?l?l?h?i?e?r?a?r?c?h?y?/) {
       $child = $parents{$child}->{'parent_name'};
     }
     
-    push(@full_hierarchy, join('.', reverse @path));
+    push(@full_hierarchy, join('@', reverse @path));
   }
   # sort the paths before printing
   @full_hierarchy = sort {length($a) <=> length($b)} @full_hierarchy;
@@ -118,7 +118,7 @@ elsif ($option =~ /pa?t?h?s?/) {
       $child = $parents{$child}->{'parent_name'};
     }
     push(@path, $parents{$child}->{'rank_name'});
-    $unique_paths{join('.', reverse @path)} += 1;
+    $unique_paths{join('@', reverse @path)} += 1;
   }
   my @sortedkeys = sort {length($a) <=> length($b)} keys %unique_paths;
   foreach my $path (@sortedkeys) {

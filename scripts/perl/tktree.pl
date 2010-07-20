@@ -15,7 +15,7 @@ $ARGV[0] or die("Display a Tk Tree.\nUsage: tktree.pl <file>\n");
 my $main = MainWindow->new(-title => "Bryozoa");
 my $tree = $main->ScrlTree(
     -itemtype   => 'text',
-    -separator  => '.',
+    -separator  => '@',
     -scrollbars => "se",
     -selectmode => 'single',
 );
@@ -26,8 +26,8 @@ open(my $file, "<", $ARGV[0]) or die $!;
 while (<$file>) {
   # remove newline
   chomp;
-  # grab last item in list delimited by periods
-  /(?:.+\.)?(.+)$/;
+  # grab last item in list delimited by @'s
+  /(?:.+@)?(.+)$/;
   #print($_ . "\t" . $1 . "\n");
   $tree->add($_, -text => $1, -state => 'normal');
   # hide species
