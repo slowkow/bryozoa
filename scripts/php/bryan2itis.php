@@ -1,5 +1,21 @@
 <?php
 /**
+ * Get taxon_author by full_name from the `scratchpads` table.
+ * 
+ * @param full_name
+ *   The full name to use as a query.
+ * @return
+ *   The taxon_author of the returned entry.
+ */
+function getTaxonAuthorByFullName($full_name) {
+  $query = sprintf("SELECT `taxon_author` FROM `scratchpads`"
+    . " WHERE `full_name`='%s'",
+    mysql_real_escape_string($full_name)
+  );
+  $result = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  return $result['taxon_author'];
+}
+/**
  * Get the author and year for the taxon name from `bryozone_easyauthors`.
  * 
  * @param name
@@ -218,3 +234,26 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   }
 }
 mysql_free_result($result);
+
+/*******************************************************************************
+ * Fix parent_name to include the author and year.
+ */
+$result = mysql_query("SELECT * FROM `scratchpads`");
+// loop through results
+while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  $parent_name = trim($row['parent_name']
+    . " " . getTaxonAuthorByFullName($row['parent_name']));
+  $parent_name = mysql_real_escape_string($parent_name);
+  $query = sprintf("INSERT INTO `scratchpads`"
+    . " SET"
+    . "`full_name`='%s',"
+    . "`parent_name`='%s'"
+    . " ON DUPLICATE KEY UPDATE"
+    . "`full_name`='%s',"
+    . "`parent_name`='%s'",
+    $row['full_name'], $parent_name,
+    $row['full_name'], $parent_name
+  );
+  mysql_query($query);
+  if (mysql_error()) { die(mysql_error() . "\n"); }
+}
