@@ -5,6 +5,23 @@ require 'ezc/Base/ezc_bootstrap.php';
 $store = new ezcTreeXmlInternalDataStore();
 exit();
 */
+
+/**
+ * Get taxon_author by full_name from the `scratchpads` table.
+ * 
+ * @param full_name
+ *   The full name to use as a query.
+ * @return
+ *   The taxon_author of the returned entry.
+ */
+function getTaxonAuthorByFullName($full_name) {
+  $query = sprintf("SELECT `taxon_author` FROM `scratchpads`"
+    . " WHERE `full_name`='%s'",
+    mysql_real_escape_string($full_name)
+  );
+  $result = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  return $result['taxon_author'];
+}
 /**
  * Get a name and rankcode from the `bryan_valid` table.
  * 
@@ -140,7 +157,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
           'unit_name1'   => $bryozoans_genus,
           'unit_name2'   => $bryozoans_species,
           'unit_name3'   => $bryozoans_subspecies,
-          'parent_name'  => $bryozoans_genus,
+          'parent_name'  => trim($bryozoans_genus . " " . getTaxonAuthorByFullName($bryozoans_genus)),
           'usage'        => 'valid',
           'taxon_author' => $bryozoans_author,
           'comments'     => $row['comments']
@@ -168,7 +185,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
             'full_name'    => $bryozoans_genus,
             'rank_name'    => 'Genus',
             'unit_name1'   => $bryozoans_genus,
-            'parent_name'  => $bryozoans_family,
+            'parent_name'  => trim($bryozoans_family . " " . getTaxonAuthorByFullName($bryozoans_family)),
             'usage'        => 'valid',
           )
         );
@@ -180,7 +197,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
             'unit_name1'   => $bryozoans_genus,
             'unit_name2'   => $bryozoans_species,
             'unit_name3'   => $bryozoans_subspecies,
-            'parent_name'  => $bryozoans_genus,
+            'parent_name'  => trim($bryozoans_genus . " " . getTaxonAuthorByFullName($bryozoans_genus)),
             'usage'        => 'valid',
             'taxon_author' => $bryozoans_author,
             'comments'     => $row['comments'],
@@ -252,7 +269,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
         'unit_name1'    => $bryozoans_genus,
         'unit_name2'    => $bryozoans_species,
         'unit_name3'    => $bryozoans_subspecies,
-        'parent_name'   => $bryozoans_parentname,
+        'parent_name'   => trim($bryozoans_parentname . " " . getTaxonAuthorByFullName($bryozoans_parentname)),
         'usage'         => 'invalid',
         'accepted_name' => $bryozoans_currentname,
         'taxon_author'  => $bryozoans_author,
