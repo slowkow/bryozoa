@@ -28,7 +28,7 @@ $numresults = mysql_num_rows($result);
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   $results = array();
   // use "uni:" to tell the service that we want higher taxa
-  $cmd = "../perl/querygni.pl -n 100 " . "uni:" . $row['name'];
+  $cmd = "../perl/querygni.pl -d -l -m -n 100 " . "uni:" . $row['name'];
   exec($cmd, $results);
   print("Progress: " . ++$count . "/" . $numresults . "\t" . $row['name'] . "\n");
   foreach ($results as $value) {
