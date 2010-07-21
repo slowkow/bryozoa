@@ -95,10 +95,10 @@ function isValidRankCode($rank_code) {
  *   Return true if the row links all the way to Bryozoa via parentid.
  */
 function linksToBryozoa($row, $print) {
-  if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['taxonname']; }
+  if ($print) { $linkpath = getRankName($row['rankcode']) . ' ' . $row['taxonname']; }
   while ($row['parentid']) {
     $row = getRow($row['parentid']);
-    if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['taxonname'] . " > " . $linkpath;}
+    if ($print) { $linkpath = getRankName($row['rankcode']) . ' ' . $row['taxonname'] . " > " . $linkpath;}
     if ($row['taxonname'] == 'Bryozoa') {
       if ($print) { print($linkpath . "\n"); }
       return true;
@@ -123,10 +123,10 @@ function linksToBryozoa($row, $print) {
  *   Return the next parent that is not called 'Uncertain'.
  */
 function nextRealParent($row, $print) {
-  if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['taxonname']; }
+  if ($print) { $linkpath = getRankName($row['rankcode']) . ' ' . $row['taxonname']; }
   while ($row['parentid']) {
     $row = getRow($row['parentid']);
-    if ($print) { $linkpath = getRankName($row['rankcode']) . " " . $row['taxonname'] . " > " . $linkpath; }
+    if ($print) { $linkpath = getRankName($row['rankcode']) . ' ' . $row['taxonname'] . " > " . $linkpath; }
     if ($row['taxonname'] != 'Uncertain' && isValidRankCode($row['rankcode'])) {
       if ($print) { print($linkpath . "\n"); }
       return $row;
