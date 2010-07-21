@@ -1,8 +1,9 @@
 <?php
-
-/*
+/**
  * Combine Phil Bock's Bryozoans and CURRENTSPECIES
  */
+
+require 'include/connect.php';
 
 /**
  * Delete a row that contains a match.
@@ -38,18 +39,6 @@ function deleteRow($table, $deletetable, $column, $value) {
     , mysql_real_escape_string($row['name'])
   );
   mysql_query($query);
-}
-
-// connect to localhost
-$link = mysql_connect('localhost', 'kamil');
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
-}
-
-// make bock the current db
-$db_selected = mysql_select_db('bock', $link);
-if (!$db_selected) {
-    die ('Could not use database: ' . mysql_error());
 }
 
 /**
@@ -273,17 +262,17 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     //|| $match['status'] != $row['status']
     ) {
       print("`currentspecies`"
-        . " " . $match['name']
-        . " " . $match['currentnamestring']
-        . " " . $match['author']
-        . " " . $match['valid']
+        . ' ' . $match['name']
+        . ' ' . $match['currentnamestring']
+        . ' ' . $match['author']
+        . ' ' . $match['valid']
         . "\n");
       print("`bryozoans`"
-        . " " . $row['name']
-        . " " . $row['name']
-        . " " . $row['currentnamestring']
-        . " " . $row['author']
-        . " " . $row['valid']
+        . ' ' . $row['name']
+        . ' ' . $row['name']
+        . ' ' . $row['currentnamestring']
+        . ' ' . $row['author']
+        . ' ' . $row['valid']
         . "\n");
     }
   }
