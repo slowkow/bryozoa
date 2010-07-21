@@ -83,7 +83,7 @@ elsif ($option =~ /fu?l?l?h?i?e?r?a?r?c?h?y?/) {
     my @path;
     
     if ($withrank) {
-      push(@path, $parents{$child}->{'rank_name'} . " " . $child);
+      push(@path, $parents{$child}->{'rank_name'} . ' ' . $child);
     }
     else {
       push(@path, $child);
@@ -91,7 +91,7 @@ elsif ($option =~ /fu?l?l?h?i?e?r?a?r?c?h?y?/) {
     
     while ($parents{$child}->{'parent_name'}) {
       if ($withrank) {
-        push(@path, $parents{$parents{$child}->{'parent_name'}}->{'rank_name'} . " " . $parents{$child}->{'parent_name'});
+        push(@path, $parents{$parents{$child}->{'parent_name'}}->{'rank_name'} . ' ' . $parents{$child}->{'parent_name'});
       }
       else {
         push(@path, $parents{$child}->{'parent_name'});
