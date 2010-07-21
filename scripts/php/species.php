@@ -5,23 +5,9 @@ require 'ezc/Base/ezc_bootstrap.php';
 $store = new ezcTreeXmlInternalDataStore();
 exit();
 */
+require 'include/connect.php';
+require 'include/scratchpads.php';
 
-/**
- * Get taxon_author by full_name from the `scratchpads` table.
- * 
- * @param full_name
- *   The full name to use as a query.
- * @return
- *   The taxon_author of the returned entry.
- */
-function getTaxonAuthorByFullName($full_name) {
-  $query = sprintf("SELECT `taxon_author` FROM `scratchpads`"
-    . " WHERE `full_name`='%s'",
-    mysql_real_escape_string($full_name)
-  );
-  $result = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
-  return $result['taxon_author'];
-}
 /**
  * Get a name and rankcode from the `bryan_valid` table.
  * 
@@ -35,38 +21,6 @@ function getBryanNameRankCode($name) {
     mysql_real_escape_string($name)
   );
   return mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
-}
-/**
- * Insert into the `scratchpads` table.
- * 
- * @param params
- *   An associative array with fields to set.
- */
-function insertIntoScratchpads($params) {
-  $allowed_keys = array(
-    'rank_name','unit_name1','unit_name2','unit_name3','parent_name','usage',
-    'taxon_author','full_name','comments','accepted_name',
-    'unacceptability_reason',
-  );
-  // we can't insert a value unless params contains a value for key 'full_name'
-  if (!array_key_exists('full_name', $params)) {
-    die("Missing key 'full_name'!\n");
-  }
-  $full_name = mysql_real_escape_string($params['full_name']);
-  
-  foreach ($params as $key => $value) {
-    if ($key == 'full_name') { continue; }
-    // must be an allowed key as specified above
-    if (in_array($key, $allowed_keys)) {
-      $value     = mysql_real_escape_string($value);
-      $query = sprintf("INSERT INTO `scratchpads`"
-        . " SET `full_name`='%s', `%s`='%s'"
-        . " ON DUPLICATE KEY UPDATE `%s`='%s'",
-        $full_name, $key, $value, $key, $value);
-      mysql_query($query);
-      if (mysql_error()) { die(mysql_error() . "\n"); }
-    }
-  }
 }
 /**
  * Return true or false if the rank code number is not equal to some values.
@@ -92,14 +46,6 @@ function isValidRankCode($rank_code) {
   }
   return false;
 }
-
-// connect to localhost
-$link = mysql_connect('localhost', 'kamil');
-if (!$link) { die('Could not connect: ' . mysql_error()); }
-// make bock the current db
-$db_selected = mysql_select_db('bock', $link);
-if (!$db_selected) { die ('Could not use database: ' . mysql_error()); }
-
 
 // enable printing or not
 $g_print_stats = FALSE;
@@ -152,12 +98,12 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     if ($g_mysql) {
       insertIntoScratchpads(
         array(
-          'full_name'    => trim($bryozoans_genus . " " . $bryozoans_species . " " . $bryozoans_subspecies),
+          'full_name'    => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
           'rank_name'    => $bryozoans_subspecies ? 'Subspecies' : 'Species',
           'unit_name1'   => $bryozoans_genus,
           'unit_name2'   => $bryozoans_species,
           'unit_name3'   => $bryozoans_subspecies,
-          'parent_name'  => trim($bryozoans_genus . " " . getTaxonAuthorByFullName($bryozoans_genus)),
+          'parent_name'  => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
           'usage'        => 'valid',
           'taxon_author' => $bryozoans_author,
           'comments'     => $row['comments']
@@ -185,19 +131,19 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
             'full_name'    => $bryozoans_genus,
             'rank_name'    => 'Genus',
             'unit_name1'   => $bryozoans_genus,
-            'parent_name'  => trim($bryozoans_family . " " . getTaxonAuthorByFullName($bryozoans_family)),
+            'parent_name'  => trim($bryozoans_family . ' ' . getTaxonAuthor($bryozoans_family)),
             'usage'        => 'valid',
           )
         );
         // insert the species or subspecies
         insertIntoScratchpads(
           array(
-            'full_name'    => trim($bryozoans_genus . " " . $bryozoans_species . " " . $bryozoans_subspecies),
+            'full_name'    => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
             'rank_name'    => $bryozoans_subspecies ? 'Subspecies' : 'Species',
             'unit_name1'   => $bryozoans_genus,
             'unit_name2'   => $bryozoans_species,
             'unit_name3'   => $bryozoans_subspecies,
-            'parent_name'  => trim($bryozoans_genus . " " . getTaxonAuthorByFullName($bryozoans_genus)),
+            'parent_name'  => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
             'usage'        => 'valid',
             'taxon_author' => $bryozoans_author,
             'comments'     => $row['comments'],
@@ -242,7 +188,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   // the parent will be the first name of the currentnamestring
   list($bryozoans_parentname, $extra) = explode(" ", $bryozoans_currentname, 2);
   
-  $full_name = trim($bryozoans_genus . " " . $bryozoans_species . " " . $bryozoans_subspecies);
+  $full_name = trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies);
   
   // ensure that we have some data after trimming and replacing
   if (!$bryozoans_genus) {
@@ -264,12 +210,12 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   if ($g_mysql) {
     insertIntoScratchpads(
       array(
-        'full_name'     => trim($bryozoans_genus . " " . $bryozoans_species . " " . $bryozoans_subspecies),
+        'full_name'     => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
         'rank_name'     => $bryozoans_subspecies ? 'Subspecies' : 'Species',
         'unit_name1'    => $bryozoans_genus,
         'unit_name2'    => $bryozoans_species,
         'unit_name3'    => $bryozoans_subspecies,
-        'parent_name'   => trim($bryozoans_parentname . " " . getTaxonAuthorByFullName($bryozoans_parentname)),
+        'parent_name'   => trim($bryozoans_parentname . ' ' . getTaxonAuthor($bryozoans_parentname)),
         'usage'         => 'invalid',
         'accepted_name' => $bryozoans_currentname,
         'taxon_author'  => $bryozoans_author,
