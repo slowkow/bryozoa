@@ -2,7 +2,39 @@
 /**
  * Common functions for querying the `scratchpads` table.
  */
-
+/**
+ * Keys present in the `scratchpads` table.
+ */
+$allowed_keys = array(
+    'rank_name','unit_name1','unit_name2','unit_name3','parent_name','usage',
+    'taxon_author','full_name','comments','accepted_name',
+    'unacceptability_reason',
+  );
+/**
+ * Generic get rows by any field.
+ * 
+ * @param params
+ *   The field used for the query.
+ * @param value
+ *   The value put in the query.
+ * @return
+ *   An associative array of the resulting rows.
+ */
+function getRows($field, $value) {
+  global $allowed_keys;
+  if (!in_array($field, $allowed_keys)) {
+    die("Invalid field '$field'!\n");
+  }
+  $query = sprintf("SELECT * FROM `scratchpads`"
+    . "WHERE `%s` = '%s'",
+    $field, mysql_escape_string($value));
+  $result = mysql_query($query);
+  $rows = array();
+  while ($row = mysql_fetch_assoc($result)) {
+    $rows[] = $row;
+  }
+  return $rows;
+}
 /**
  * Insert into the `scratchpads` table.
  * 
@@ -10,11 +42,7 @@
  *   An associative array with fields to set.
  */
 function insertIntoScratchpads($params) {
-  $allowed_keys = array(
-    'rank_name','unit_name1','unit_name2','unit_name3','parent_name','usage',
-    'taxon_author','full_name','comments','accepted_name',
-    'unacceptability_reason',
-  );
+  global $allowed_keys;
   // we can't insert a value unless params contains a value for key 'full_name'
   if (!array_key_exists('full_name', $params)) {
     die("Missing key 'full_name'!\n");
