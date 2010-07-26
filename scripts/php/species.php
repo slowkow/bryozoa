@@ -220,7 +220,8 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
         'accepted_name' => $bryozoans_currentname,
         'taxon_author'  => $bryozoans_author,
         'comments'      => $row['comments'],
-        'unacceptability_reason' => $row['details'],
+        'details'       => $row['details'],
+        'unacceptability_reason' => parseUnacceptabilityReason($row['details']),
       )
     );
   }
