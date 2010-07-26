@@ -24,6 +24,7 @@ CREATE TABLE `scratchpads` (
   `accepted_name` VARCHAR(512),
   `unacceptability_reason` VARCHAR(512),
   `comments` VARCHAR(6000),
+  `details` VARCHAR(6000),
   
   /* 
   this column is only used as a MySQL primary key, not uploaded to Scratchpads
