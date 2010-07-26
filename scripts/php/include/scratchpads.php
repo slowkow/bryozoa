@@ -7,7 +7,7 @@
  */
 $allowed_keys = array(
     'rank_name','unit_name1','unit_name2','unit_name3','parent_name','usage',
-    'taxon_author','full_name','comments','accepted_name',
+    'taxon_author','full_name','comments','accepted_name','details',
     'unacceptability_reason',
   );
 /**
@@ -49,22 +49,24 @@ function insertIntoScratchpads($params) {
   }
   $full_name = mysql_real_escape_string($params['full_name']);
   
+  $keyvalues = array();
   foreach ($params as $key => $value) {
     if ($key == 'full_name') { continue; }
-    // must be an allowed key as specified above
     if (in_array($key, $allowed_keys)) {
-      $value     = mysql_real_escape_string($value);
-      $query = sprintf("INSERT INTO `scratchpads`"
-        . " SET `full_name`='%s', `%s`='%s'"
-        . " ON DUPLICATE KEY UPDATE `%s`='%s'",
-        $full_name, $key, $value, $key, $value);
-      mysql_query($query);
-      if (mysql_error()) { die(mysql_error() . "\n"); }
+      $keyvalues[] = "`$key`='" . mysql_real_escape_string($value) . "'";
     }
   }
+  $keyvalues_string = join(',', $keyvalues);
+  
+  $query = sprintf("INSERT INTO `scratchpads`"
+    . " SET `full_name`='%s',%s"
+    . " ON DUPLICATE KEY UPDATE %s",
+    $full_name, $keyvalues_string, $keyvalues_string);
+  mysql_query($query);
+  if (mysql_error()) { die(mysql_error() . "\n"); }
 }
 /**
- * Get plural form of a singular name.
+ * Get plural form of a singular rank name.
  */
 function plural($singular) {
   switch ($singular) {
@@ -78,6 +80,24 @@ function plural($singular) {
     case 'Genus': return 'Genera';
     case 'Species':
     case 'Subspecies': return $singular;
+  }
+  return $singular;
+}
+/**
+ * Get abbreviation of a rank name.
+ */
+function abbreviation($singular) {
+  switch ($singular) {
+    case 'Phylum': return 'phylum';
+    case 'Class': return 'class';
+    case 'Order': return 'ord';
+    case 'Suborder': return 'subord';
+    case 'Infraorder': return 'infraord';
+    case 'Superfamily': return 'superfam';
+    case 'Family': return 'fam';
+    case 'Genus': return 'gen';
+    case 'Species': return 'spp';
+    case 'Subspecies': return 'subspp';
   }
   return $singular;
 }
@@ -156,4 +176,23 @@ function getTaxonAuthor($full_name) {
   );
   $result = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
   return $result['taxon_author'];
+}
+/**
+ * Get unacceptability reason from a string with lots of other stuff.
+ * 
+ * @param string
+ *   String that might contain a valid unacceptability reason.
+ * @return
+ *   A valid unaccaptability reason or nothing.
+ */
+function parseUnacceptabilityReason($string) {
+  static $allowed_values = array('database artifact','misspelling',
+    'nomen nudem','incertae sedis','junior homonym','junior synonym',
+    'nomen dubium');
+  foreach ($allowed_values as $value) {
+    if (strstr($string, $value)) {
+      return $value;
+    }
+  }
+  return '';
 }
