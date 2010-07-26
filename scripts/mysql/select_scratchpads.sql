@@ -8,5 +8,20 @@ SELECT
   `usage`,
   `taxon_author`,
   `accepted_name`,
-  `unacceptability_reason`
-FROM `scratchpads`;
+  `unacceptability_reason`,
+  `comments`,
+  `details`
+FROM `scratchpads`
+ORDER BY FIELD(
+  `rank_name`,
+  'Phlylum',
+  'Class',
+  'Order',
+  'Suborder',
+  'Infraorder',
+  'Superfamily',
+  'Family',
+  'Genus',
+  'Species',
+  'Subspecies'
+);
