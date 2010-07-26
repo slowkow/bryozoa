@@ -18,7 +18,7 @@ $look_at_bryan = 0;
  * look at the entries in `scratchpads` without authors
  */
 if ($look_at_scratchpads) {
-  mysql_query("DROP TABLE IF EXISTS `gni_scratchpads_taxa_authors`");
+  //mysql_query("DROP TABLE IF EXISTS `gni_scratchpads_taxa_authors`");
   mysql_query(
     "CREATE TABLE `gni_scratchpads_taxa_authors` ("
     . " `name` VARCHAR(64) NOT NULL"
@@ -30,7 +30,9 @@ if ($look_at_scratchpads) {
     "SELECT `unit_name1`"
     . " FROM `scratchpads`"
     . " WHERE"
-    . " `taxon_author` NOT REGEXP '[0-9]'"
+    . " (`taxon_author` IS NULL"
+    . " OR `taxon_author` NOT REGEXP '[0-9]')"
+    . " AND `unit_name1` NOT IN (SELECT `name` FROM `gni_scratchpads_taxa_authors`)"
   );
 
   $count = 0;
@@ -40,7 +42,9 @@ if ($look_at_scratchpads) {
     // use "uni:" to tell the service that we want higher taxa
     $cmd = "../perl/querygni.pl -d -l -m -n 100 " . "uni:" . $row['unit_name1'];
     exec($cmd, $results);
-    print("Progress: " . ++$count . "/" . $numresults . "\t" . $row['unit_name1'] . "\n");
+    print("Progress: " . ++$count . "/" . $numresults . "\t"
+      . 'Taxon: ' . $row['unit_name1']
+      . "\tAuthor(s): " . join("\t", $results) . "\n");
     foreach ($results as $value) {
       list($name, $author) = explode("\t", $value);
       $query = sprintf("INSERT INTO `gni_scratchpads_taxa_authors`"
