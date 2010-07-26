@@ -7,7 +7,6 @@
  */
 
 require 'include/connect.php';
-require 'include/scratchpads.php';
 
 /**
  * Query the `bryozoans` table with a name.
@@ -40,13 +39,13 @@ function setCurrentNameString($name, $currentnamestring) {
   if (mysql_error()) { die(mysql_error() . "\n"); }
 }
 
+// 7131 rows, 2290 get set a new currentnamestring
 $result = mysql_query(
-  "SELECT `name`, `details` FROM `bryozoans`"
+  "SELECT `name`, `details`, `currentnamestring` FROM `bryozoans`"
   . " WHERE `valid` = 0"
   . " AND `name` IS NOT NULL"
   . " AND `author` IS NOT NULL"
   . " AND `currentnamestring` IS NULL"
-  . " AND `details` IS NOT NULL"
   . " AND `details` REGEXP '(etiam|vide|nunc) '"
 );
 
@@ -56,33 +55,40 @@ while ($row = mysql_fetch_assoc($result)) {
   $name       = ucfirst(strtolower($row['name']));
   $name_words = str_word_count($name, 1);
   
-  // grab one or more words after 'nunc', case insensitive
+  // various spellings of the word 'fide'
+  static $fide = array('fide', 'by', 'afide', 'fise', 'ab');
+  static $regexp =
+  '/\b(?:vide|etiam|nunc)\b\s+(\w+)\b(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?/i';
+  
+  $offset = 0;
   $matches = array();
-  if (preg_match('/nunc (\w+)\b(?: (\w+)\b)?(?: (\w+)\b)?/i', $row['details'], $matches)) {
-    // words up to 'fide' are assumed to be the accepted name
-    $accepted_name = '';
+  // match up to 5 words after vide or etiam or nunc
+  while (preg_match($regexp, $row['details'], $matches, 0, $offset)) {
+    // check the rest of the string on the next iteration
+    $offset += strlen($matches[0]);
+    
+    // words preceding 'fide' are assumed to be part of the accepted name
+    $details_name = '';
     foreach (array_slice($matches, 1) as $match) {
-      // various spellings of the word 'fide'
-      static $fide = array('fide', 'by', 'afide', 'fise', 'ab');
       if (in_array($match, $fide)) {
         break;
       }
-      $accepted_name .= ' ' . $match;
+      $details_name .= ' ' . $match;
     }
     // now we have the first part of the accepted name
-    $accepted_name = trim($accepted_name);
+    $details_name = trim(ucfirst(strtolower($details_name)));
     // grab the rest of the accepted name from the original name
-    $accepted_name = trim($accepted_name . ' '
-      . implode(' ', array_slice($name_words, str_word_count($accepted_name))));
+    $details_name = trim($details_name . ' '
+      . implode(' ', array_slice($name_words, str_word_count($details_name))));
     
     // check if this name exists
-    if ($accepted_row = getRow($accepted_name)) {
-      if ($accepted_row['valid'] == 1) {
-        setCurrentNameString($name, $accepted_name);
+    if ($accepted_row = getRow($details_name)) {
+      // check if this name is valid (not a synonym)
+      if ($accepted_row['valid'] == 1
+      // the currentnamestring hasn't already been set
+      && $row['currentnamestring'] != $details_name) {
+        setCurrentNameString($name, $details_name);
         $count++;
-      }
-      else {
-        print("the accepted name is also invalid! '$accepted_name'\n");
       }
     }
   }
