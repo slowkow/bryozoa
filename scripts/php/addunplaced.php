@@ -38,15 +38,14 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 */
 
   foreach (array_slice($children_ranks, 1) as $rank) {
-    $dummy_full_name = '~' . $row['full_name'] . ' ' . plural($rank);
+    $dummy_full_name = 'x_' . $row['full_name'] . '_' . abbreviation($rank);
     // insert dummy
     insertIntoScratchpads(
       array(
         'full_name'     => $dummy_full_name,
         'rank_name'     => $dummy_rank_name,
         'usage'         => 'invalid',
-        'unit_name1'    => '~' . $row['full_name'],
-        'unit_name2'    => plural($rank),
+        'unit_name1'    => $dummy_full_name,
         'parent_name'   => $dummy_parent_name,
         'accepted_name' => $dummy_parent_name,
         'comments'      => 'dummy taxon for unplaced ' . plural($rank),
