@@ -25,6 +25,11 @@ open(my $file, "<", $ARGV[0]) or die $!;
 my $g = GraphViz->new(
   layout => 'dot'
   , ratio => 'compress'
+  #, overlap => 'false'
+  , splines => 'true'
+  , overlap_scaling => 150
+  #~ , overlap => 'ipsep'
+  , overlap => 'prism1000'
   , rankdir => 1
 );
 
@@ -35,24 +40,30 @@ while (<$file>) {
   $line++;
   chomp;
   if ($line == 1) {
-    die("Missing header!\n") unless (/unit_name1/ && /unit_name2/ && /rank_name/ && /parent_name/ && /usage/);
+    die("Missing header!\n") unless (/unit_name1/ && /unit_name2/
+      && /unit_name3/ && /rank_name/ && /parent_name/ && /taxon_author/);
     @headers = split(/\t/);
     next;
   }
   my %values;
   @values{@headers} = split(/\t/);
   
-  my $child  = trim(join(" ", $values{'unit_name1'}, $values{'unit_name2'}));
+  my $child  = trim(join(' ', $values{'unit_name1'}, $values{'unit_name2'} || '', $values{'unit_name3'} || ''));
+  $child     = trim(join(' ', $child, $values{'taxon_author'} || ''));
   my $parent = trim($values{'parent_name'});
   my $rank   = trim($values{'rank_name'});
   
   # skip the ranks that have thousands of members
-  next if ($rank =~ /(Species|Genus|Family)/);
+  next if ($rank =~ /^(?:Subspecies|Species|Genus|Family)$/i);
   $ranks{$rank} += 1;
   
   #~ print("$parent_name -> $child_name\n");
   if (length($child) > 1) {
-    $g->add_node($child, rank => $rank);
+    $g->add_node($child
+      , rank => $rank
+      , style => 'filled'
+      , color => 'skyblue'
+      , label => '');
     if (length($parent) > 1) {
       $g->add_edge($parent => $child);
     }
