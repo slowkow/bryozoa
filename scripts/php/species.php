@@ -185,9 +185,6 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   $bryozoans_currentname = trim(ucfirst(strtolower($row['currentnamestring'])));
   $bryozoans_author      = trim($row['author']);
   
-  // the parent will be the first name of the currentnamestring
-  list($bryozoans_parentname, $extra) = explode(" ", $bryozoans_currentname, 2);
-  
   $full_name = trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies);
   
   // ensure that we have some data after trimming and replacing
@@ -197,13 +194,12 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   
   // check if the entry's parent is actually present
   $query = sprintf(
-    "SELECT `unit_name1`, `rank_name` FROM `scratchpads`"
-    . " WHERE `unit_name1`='%s'",
-    mysql_real_escape_string($bryozoans_parentname)
+    "SELECT `full_name` FROM `scratchpads`"
+    . " WHERE `full_name`='%s' AND `rank_name`='Genus'",
+    mysql_real_escape_string($bryozoans_genus)
   );
-  $match = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
   // the parent must exist and it must be a Genus
-  if (!$match['unit_name1'] || $match['rank_name'] != 'Genus') {
+  if (!($match = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC))) {
     continue;
   }
   
@@ -215,7 +211,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
         'unit_name1'    => $bryozoans_genus,
         'unit_name2'    => $bryozoans_species,
         'unit_name3'    => $bryozoans_subspecies,
-        'parent_name'   => trim($bryozoans_parentname . ' ' . getTaxonAuthor($bryozoans_parentname)),
+        'parent_name'   => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
         'usage'         => 'invalid',
         'accepted_name' => $bryozoans_currentname,
         'taxon_author'  => $bryozoans_author,
