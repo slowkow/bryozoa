@@ -13,7 +13,7 @@ my ($option, $withrank);
 GetOptions(
   'h|help'     => sub { exec('perldoc', $0); exit(0); },
   'o|option:s' => \$option,
-  'r|withrank' => \$withrank ,
+  'r|withrank' => \$withrank
 );
 
 # Remove whitespace from left and right sides of string.
@@ -26,8 +26,10 @@ sub trim {
 
 open(my $file, "<", $ARGV[0]) or die $!;
 
-# slurp the whole file into parents
-my %parents;
+# slurp the whole file into rows
+my %rows;
+# record the children of every taxon
+my %children;
 # record line numbers where parent name is used
 my %parent_name;
 # record number of times full name is used
@@ -52,12 +54,13 @@ while (<$file>) {
   my $full_name = trim(join(' ', $values{'unit_name1'},
     $values{'unit_name2'} || '', $values{'unit_name3'} || ''));
   $full_name = trim(join(' ', $full_name, $values{'taxon_author'} || ''));
-  # the whole file is slurped into the parents hash
-  $parents{$full_name} = \%values;
+  # the whole file is slurped into the rows hash
+  $rows{$full_name} = \%values;
   # count number of times this name appears
   $full_names{$full_name} += 1;
   # record line numbers with this name
   $parent_name{$values{'parent_name'}} .= "$line ";
+  push(@{$children{$values{'parent_name'}}}, $full_name);
 }
 ################################################################################
 # check file for validity
@@ -79,30 +82,38 @@ if (!$option || $option =~ /ch?e?c?k?/) {
 # print the full hierarchy for every entry
 elsif ($option =~ /fu?l?l?h?i?e?r?a?r?c?h?y?/) {
   my @full_hierarchy;
-  foreach my $child (keys %parents) {
+  foreach my $child (keys %rows) {
     my @path;
     
     if ($withrank) {
-      push(@path, $parents{$child}->{'rank_name'} . ' ' . $child);
+      push(@path, $rows{$child}->{'rank_name'} . ' ' . $child);
     }
     else {
       push(@path, $child);
     }
     
-    while ($parents{$child}->{'parent_name'}) {
+    while ($rows{$child}->{'parent_name'}) {
       if ($withrank) {
-        push(@path, $parents{$parents{$child}->{'parent_name'}}->{'rank_name'} . ' ' . $parents{$child}->{'parent_name'});
+        push(@path, $rows{$rows{$child}->{'parent_name'}}->{'rank_name'} . ' ' . $rows{$child}->{'parent_name'});
       }
       else {
-        push(@path, $parents{$child}->{'parent_name'});
+        push(@path, $rows{$child}->{'parent_name'});
       }
-      $child = $parents{$child}->{'parent_name'};
+      $child = $rows{$child}->{'parent_name'};
     }
     
     push(@full_hierarchy, join('@', reverse @path));
   }
   # sort the paths before printing
-  @full_hierarchy = sort {length($a) <=> length($b)} @full_hierarchy;
+  sub mysort {
+    my $acount = ($a =~ tr/@//);
+    my $bcount = ($b =~ tr/@//);
+    if ($acount != $bcount) { return $acount <=> $bcount; }
+    my @aa = split(/@/, reverse($a));
+    my @bb = split(/@/, reverse($b));
+    return reverse($aa[0]) cmp reverse($bb[0]);
+  }
+  @full_hierarchy = sort mysort @full_hierarchy;
   foreach my $path (@full_hierarchy) {
     print($path . "\n");
   }
@@ -111,13 +122,13 @@ elsif ($option =~ /fu?l?l?h?i?e?r?a?r?c?h?y?/) {
 # print the unique paths from Kingdom to Subspecies
 elsif ($option =~ /pa?t?h?s?/) {
   my %unique_paths;
-  foreach my $child (keys %parents) {
+  foreach my $child (keys %rows) {
     my @path;
-    while ($parents{$child}->{'parent_name'}) {
-      push(@path, $parents{$child}->{'rank_name'});
-      $child = $parents{$child}->{'parent_name'};
+    while ($rows{$child}->{'parent_name'}) {
+      push(@path, $rows{$child}->{'rank_name'});
+      $child = $rows{$child}->{'parent_name'};
     }
-    push(@path, $parents{$child}->{'rank_name'});
+    push(@path, $rows{$child}->{'rank_name'});
     $unique_paths{join('@', reverse @path)} += 1;
   }
   my @sortedkeys = sort {length($a) <=> length($b)} keys %unique_paths;
@@ -126,6 +137,25 @@ elsif ($option =~ /pa?t?h?s?/) {
     #print($unique_paths{$path} . "\t" . $path . "\n");
     print($path . "\n");
   }
+}
+################################################################################
+# print newick format
+elsif ($option =~ /ne?w?i?c?k?/) {
+  #~ sub printchildren {
+    #~ my $parent = shift;
+    #~ if (defined $children{$parent}) {
+      #~ print "(";
+      #~ foreach my $child (@{$children{$parent}}) {
+        #~ print "$spaces$child\n";
+        #~ printchildren($child, $spaces . "\t")
+      #~ }
+      #~ print ")";
+    #~ }
+    #~ else {
+      #~ print $parent;
+    #~ }
+  #~ }
+  #~ printchildren('Bryozoa (Ehrenberg, 1831');
 }
 
 __END__
