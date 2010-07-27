@@ -11,29 +11,36 @@ $allowed_keys = array(
     'unacceptability_reason',
   );
 /**
- * Generic get rows by any field.
+ * Generic get rows that have matching values for the passed fields.
  * 
  * @param params
- *   The field used for the query.
- * @param value
- *   The value put in the query.
+ *   An associative array with fields and values.
  * @return
- *   An associative array of the resulting rows.
+ *   An associative array of the resulting rows or FALSE if there are no rows.
  */
-function getRows($field, $value) {
+function getRows($params) {
   global $allowed_keys;
-  if (!in_array($field, $allowed_keys)) {
-    die("Invalid field '$field'!\n");
+  
+  $keyvalues = array();
+  foreach ($params as $key => $value) {
+    if (in_array($key, $allowed_keys)) {
+      $keyvalues[] = "`$key`='" . mysql_real_escape_string($value) . "'";
+    }
+    else {
+      die("Invalid key '$key'!\n");
+    }
   }
-  $query = sprintf("SELECT * FROM `scratchpads`"
-    . "WHERE `%s` = '%s'",
-    $field, mysql_escape_string($value));
+  $keyvalues_string = join(' AND ', $keyvalues);
+  
+  $query = sprintf("SELECT * FROM `scratchpads` WHERE %s", $keyvalues_string);
   $result = mysql_query($query);
+  if (mysql_error()) { die(mysql_error() . "\n"); }
+  
   $rows = array();
   while ($row = mysql_fetch_assoc($result)) {
     $rows[] = $row;
   }
-  return $rows;
+  return count($rows) ? $rows : FALSE;
 }
 /**
  * Insert into the `scratchpads` table.
@@ -54,6 +61,9 @@ function insertIntoScratchpads($params) {
     if ($key == 'full_name') { continue; }
     if (in_array($key, $allowed_keys)) {
       $keyvalues[] = "`$key`='" . mysql_real_escape_string($value) . "'";
+    }
+    else {
+      die("Invalid key '$key'!\n");
     }
   }
   $keyvalues_string = join(',', $keyvalues);
