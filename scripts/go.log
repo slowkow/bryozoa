@@ -1,0 +1,172 @@
+Creating MySQL tables and importing Phil Bock's species...
+
+Loading into table bryozoans
+COUNT(*)
+42202
+
+Loading into table currentspecies
+COUNT(*)
+21039
+Cleaning Phil Bock's tables...
+
+Cleaning table bryozoans
+COUNT(*)
+42202
+
+Finished cleaning table bryozoans
+COUNT(*)
+34532
+
+Number of records in table bryozoans_delete
+COUNT(*)
+7670
+
+Cleaning table currentspecies
+COUNT(*)
+21039
+
+Finished cleaning currentspecies
+COUNT(*)
+19558
+
+Records in currentspecies_delete
+COUNT(*)
+1481
+Combining Phil Bock's tables...
+Parsing Phil Bock's nunc, etiam, vide...
+count: 2290
+Creating MySQL tables and importing Bryan Quach's data...
+
+Loading into table bryan_valid
+
+Loading into table bryan_invalid
+
+Loading into table bryan_rank
+Creating MySQL tables and importing Bryozone data...
+
+Loading into table bryozone_age
+
+Loading into table bryozone_authors_references
+
+Loading into table bryozone_authors
+Level	Code	Message
+Warning	1262	Row 336 was truncated; it contained more data than there were input columns
+Warning	1262	Row 3849 was truncated; it contained more data than there were input columns
+
+Loading into table bryozone_latin
+
+Loading into table bryozone_rank
+
+Loading into table bryozone_references_full
+
+Loading into table bryozone_references
+
+Loading into table bryozone_taxa_authors
+
+Loading into table bryozone_taxa_references
+
+Loading into table bryozone_taxa
+Level	Code	Message
+Warning	1265	Data truncated for column 'revised' at row 15073
+Warning	1261	Row 15336 doesn't contain data for all columns
+Creating MySQL scratchpads table...
+Importing Bryan Quach's higher taxonomy into scratchpads table...
+Importing Phil Bock's species into scratchpads table...
+Inserted 19974 valid species by genus name.
+Inserted 70 valid species by family name.
+264 valid species not inserted because parent genus and parent family do not exist.
+Inserted 7751 invalid species by genus name.
+2966 invalid species not inserted because parent genus doesn't exist.
+Querying GNI for missing authors...
+Progress: 1/85	Taxon: Batoporoidea	Author(s): 
+Progress: 2/85	Taxon: Arcanoporidae	Author(s): 
+Progress: 3/85	Taxon: Beisselinidae	Author(s): 
+Progress: 4/85	Taxon: Bicellariellidae	Author(s): 
+Progress: 5/85	Taxon: Columnothecidae	Author(s): 
+Progress: 6/85	Taxon: Hesychoxeniidae	Author(s): 
+Progress: 7/85	Taxon: Nematoporellidae	Author(s): 
+Progress: 8/85	Taxon: Palescharidae	Author(s): 
+Progress: 9/85	Taxon: Radioporidae	Author(s): 
+Progress: 10/85	Taxon: Taenioporinidae	Author(s): 
+Progress: 11/85	Taxon: Asatkinella	Author(s): 
+Progress: 12/85	Taxon: Grammanatosoecia	Author(s): 
+Progress: 13/85	Taxon: Klugenotus	Author(s): 
+Progress: 14/85	Taxon: Phosphasipho	Author(s): 
+Progress: 15/85	Taxon: Phosphotesta	Author(s): 
+Progress: 16/85	Taxon: Phylloporinella	Author(s): 
+Progress: 17/85	Taxon: Robinella	Author(s): 
+Progress: 18/85	Taxon: Schischcatella	Author(s): 
+Progress: 19/85	Taxon: Cystoporella	Author(s): 
+Progress: 20/85	Taxon: Cribriporella	Author(s): 
+Progress: 21/85	Taxon: Stephanollina	Author(s): 
+Progress: 22/85	Taxon: Sibiredictya	Author(s): 
+Progress: 23/85	Taxon: Nemacanthoclema	Author(s): 
+Progress: 24/85	Taxon: Hemiulrichostylus	Author(s): 
+Progress: 25/85	Taxon: Semifenestella	Author(s): 
+Progress: 26/85	Taxon: Fenestellata	Author(s): 
+Progress: 27/85	Taxon: Bashkirella	Author(s): 
+Progress: 28/85	Taxon: Polipora	Author(s): 
+Progress: 29/85	Taxon: Aviculofenestella	Author(s): 
+Progress: 30/85	Taxon: Esthonioporella	Author(s): 
+Progress: 31/85	Taxon: Permoleioclema	Author(s): 
+Progress: 32/85	Taxon: Abakana	Author(s): 
+Progress: 33/85	Taxon: Atactoporella	Author(s): 
+Progress: 34/85	Taxon: Anomalotoechus	Author(s): 
+Progress: 35/85	Taxon: Dunayeva	Author(s): 
+Progress: 36/85	Taxon: Hunanopora	Author(s): 
+Progress: 37/85	Taxon: Metelipora	Author(s): 
+Progress: 38/85	Taxon: Qilianopora	Author(s): 
+Progress: 39/85	Taxon: Orbiramus	Author(s): 
+Progress: 40/85	Taxon: Yunnanopora	Author(s): 
+Progress: 41/85	Taxon: Dybowskites	Author(s): 
+Progress: 42/85	Taxon: Cliocystiramus	Author(s): 
+Progress: 43/85	Taxon: Fistuliramus	Author(s): 
+Progress: 44/85	Taxon: Pakrydictya	Author(s): 
+Progress: 45/85	Taxon: Ganiella	Author(s): 
+Progress: 46/85	Taxon: Bactrellaria pacifica	Author(s): 
+Progress: 47/85	Taxon: Koneprusiella	Author(s): 
+Progress: 48/85	Taxon: Nekhoroshoviella	Author(s): 
+Progress: 49/85	Taxon: Cryptostyloecia	Author(s): 
+Progress: 50/85	Taxon: Inferusia	Author(s): 
+Progress: 51/85	Taxon: Leiosellina	Author(s): 
+Progress: 52/85	Taxon: Paulella	Author(s): 
+Progress: 53/85	Taxon: Reussinella	Author(s): 
+Progress: 54/85	Taxon: Ijimaiellia	Author(s): 
+Progress: 55/85	Taxon: Bowerbankia gracilis bengalensis	Author(s): 
+Progress: 56/85	Taxon: Fistulipora putunggouensis	Author(s): 
+Progress: 57/85	Taxon: Cyphotrypa putunggouensis	Author(s): 
+Progress: 58/85	Taxon: Eridotrypella gansuensis	Author(s): 
+Progress: 59/85	Taxon: Fistulipora procerula	Author(s): 
+Progress: 60/85	Taxon: Rhombopora dangdouensis	Author(s): 
+Progress: 61/85	Taxon: Hallopora congesta	Author(s): 
+Progress: 62/85	Taxon: Leioclema clarum	Author(s): 
+Progress: 63/85	Taxon: Leioclema claudestinum	Author(s): 
+Progress: 64/85	Taxon: Stereotoechus zonatus	Author(s): 
+Progress: 65/85	Taxon: Electra betula	Author(s): 
+Progress: 66/85	Taxon: Laxifenestella stuckenbergi	Author(s): 
+Progress: 67/85	Taxon: Flexifenestella reteporinaeformis	Author(s): 
+Progress: 68/85	Taxon: Fistuliramus tuberculatus	Author(s): 
+Progress: 69/85	Taxon: Fistulipora asteria	Author(s): 
+Progress: 70/85	Taxon: Permofenestella pentagonalis	Author(s): 
+Progress: 71/85	Taxon: Polyporella spininodatiformis	Author(s): 
+Progress: 72/85	Taxon: Asperopora inornatum	Author(s): 
+Progress: 73/85	Taxon: Hesyxochenia	Author(s): 
+Progress: 74/85	Taxon: Hincksina flustroides crassispinata	Author(s): 
+Progress: 75/85	Taxon: Laxifenestella stschugorensis	Author(s): 
+Progress: 76/85	Taxon: Leioclemella	Author(s): 
+Progress: 77/85	Taxon: Marsonniella	Author(s): 
+Progress: 78/85	Taxon: Permofenestella angustataeformis	Author(s): 
+Progress: 79/85	Taxon: Quadricellara	Author(s): 
+Progress: 80/85	Taxon: Pencilleta	Author(s): 
+Progress: 81/85	Taxon: Leioclema inornatum	Author(s): 
+Progress: 82/85	Taxon: Beania octaeeras	Author(s): 
+Progress: 83/85	Taxon: Crepidacantha crenispina	Author(s): 
+Progress: 84/85	Taxon: Chaperia bilamellata	Author(s): 
+Progress: 85/85	Taxon: Polypora spininodatiformis	Author(s): 
+Inserting dummy taxa for unplaced taxa...
+Filling missing authors...
+Exporting scratchpads table into tab-delimited file...
+Translating scratchpads file into full hierarchy...
+Translating scratchpads file into unique paths file...
+Checking scratchpads file for proper child-parent linkage...
+parent_name () not found in full names on lines: 2 
