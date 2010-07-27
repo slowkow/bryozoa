@@ -1,26 +1,23 @@
 <?php
 /*
- * This grabs `scratchpads` entries without authors and finds the author from
- * GNI.
- * Puts the data in `gni_scratchpads_taxa_authors`.
- * 
- * TODO
- *   Grab names from GNI for ALL of Bryan's taxa, so we can put missing
- *   parentheses and check what GNI says compared to Bryan.
+ * Find entries in table `scratchpads` without authors. Query GNI with the
+ * names of these taxa and put the results in `gni_scratchpads`.
  */
 
 require 'include/connect.php';
 
+// get gni authors for `scratchpads` entries without authors
 $look_at_scratchpads = 1;
+// get gni authors for all `bryan_valid` entries higher than species
 $look_at_bryan = 0;
 
 /*******************************************************************************
  * look at the entries in `scratchpads` without authors
  */
 if ($look_at_scratchpads) {
-  //mysql_query("DROP TABLE IF EXISTS `gni_scratchpads_taxa_authors`");
+  //mysql_query("DROP TABLE IF EXISTS `gni_scratchpads`");
   mysql_query(
-    "CREATE TABLE `gni_scratchpads_taxa_authors` ("
+    "CREATE TABLE `gni_scratchpads` ("
     . " `name` VARCHAR(64) NOT NULL"
     . ", `author` VARCHAR(256) NOT NULL"
     . ", KEY (`name`) )"
@@ -32,7 +29,7 @@ if ($look_at_scratchpads) {
     . " WHERE"
     . " (`taxon_author` IS NULL"
     . " OR `taxon_author` NOT REGEXP '[0-9]')"
-    . " AND `unit_name1` NOT IN (SELECT `name` FROM `gni_scratchpads_taxa_authors`)"
+    . " AND `unit_name1` NOT IN (SELECT `name` FROM `gni_scratchpads`)"
   );
 
   $count = 0;
@@ -47,7 +44,7 @@ if ($look_at_scratchpads) {
       . "\tAuthor(s): " . join("\t", $results) . "\n");
     foreach ($results as $value) {
       list($name, $author) = explode("\t", $value);
-      $query = sprintf("INSERT INTO `gni_scratchpads_taxa_authors`"
+      $query = sprintf("INSERT INTO `gni_scratchpads`"
         . " SET"
         . " `name`='%s',"
         . " `author`='%s'",
@@ -61,12 +58,12 @@ if ($look_at_scratchpads) {
 }
 
 /*******************************************************************************
- * look at all of bryan's taxa
+ * look at all of bryan's higher taxa
  */
 if ($look_at_bryan) {
-  mysql_query("DROP TABLE IF EXISTS `gni_bryan_taxa_authors`");
+  mysql_query("DROP TABLE IF EXISTS `gni_bryan`");
   mysql_query(
-    "CREATE TABLE `gni_bryan_taxa_authors` ("
+    "CREATE TABLE `gni_bryan` ("
     . " `name` VARCHAR(64) NOT NULL"
     . ", `author` VARCHAR(256) NOT NULL"
     . ", KEY (`name`) )"
@@ -90,7 +87,7 @@ if ($look_at_bryan) {
     print("Progress: " . ++$count . "/" . $numresults . "\t" . $row['name'] . "\n");
     foreach ($results as $value) {
       list($name, $author) = explode("\t", $value);
-      $query = sprintf("INSERT INTO `gni_bryan_taxa_authors`"
+      $query = sprintf("INSERT INTO `gni_bryan`"
         . " SET"
         . " `name`='%s',"
         . " `author`='%s'",

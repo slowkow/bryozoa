@@ -12,12 +12,12 @@ require 'include/scratchpads.php';
  * Get GNI author.
  * 
  * @param name
- *   The name to query `gni_scratchpads_taxa_authors`.
+ *   The name to query `gni_scratchpads`.
  * @return
  *   The author with longest strlen.
  */
 function getAuthor($name) {
-  $query = sprintf("SELECT `author` FROM `gni_scratchpads_taxa_authors`"
+  $query = sprintf("SELECT `author` FROM `gni_scratchpads`"
     . " WHERE `name` = '%s'",
     mysql_real_escape_string($name)
   );

@@ -7,7 +7,7 @@ require 'include/connect.php';
 
 $result = mysql_query(
   "SELECT `name`, `taxon_author`, `author`"
-  . " FROM `scratchpads`, `gni_bryan_taxa_authors`"
+  . " FROM `scratchpads`, `gni_bryan`"
   . " WHERE `full_name` = `name`"
   . " AND `taxon_author` != `author`"
 );
