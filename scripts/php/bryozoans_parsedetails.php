@@ -55,7 +55,7 @@ while ($row = mysql_fetch_assoc($result)) {
   $name_words = str_word_count($name, 1);
   
   // various spellings of the word 'fide'
-  static $fide = array('fide', 'by', 'afide', 'fise', 'ab');
+  static $fide = "/^(?:fide|by|afide|fise|ab)$/i";
   static $regexp =
   '/\b(?:vide|etiam|nunc)\b\s+(\w+)\b(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?/i';
   
@@ -69,7 +69,7 @@ while ($row = mysql_fetch_assoc($result)) {
     // words preceding 'fide' are assumed to be part of the accepted name
     $details_name = '';
     foreach (array_slice($matches, 1) as $match) {
-      if (in_array($match, $fide)) {
+      if (preg_match($fide, $match)) {
         break;
       }
       $details_name .= ' ' . $match;
