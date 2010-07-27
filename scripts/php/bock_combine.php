@@ -1,12 +1,13 @@
 <?php
 /**
- * Combine Phil Bock's Bryozoans and CURRENTSPECIES
+ * Combine two of Phil Bock's tables: `bryozoans` and `currentspecies`
  */
 
 require 'include/connect.php';
 
 /**
- * Delete a row that contains a match.
+ * Delete a row that contains a specified value in a specified field. Put
+ * the deleted row in a delete-table and delete the row from the original table.
  * 
  * @param table
  *   The name of the table from which to delete the row.
@@ -42,8 +43,7 @@ function deleteRow($table, $deletetable, $column, $value) {
 }
 
 /**
- * Step 1: Replace reference to name with actual name
- *   Bryozoans
+ * Step 1: Replace reference to name with actual name in table `bryozoans`
  */
 // add the currentnamestring column
 mysql_query("ALTER TABLE `bryozoans`"
@@ -95,10 +95,8 @@ mysql_free_result($result);
 //exit("Stopped after dereferencing `bryozoans`\n");
 
 /**
- * Step 1: Replace reference to name with actual name
- *   CURRENTSPECIES
+ * Step 1: Replace reference to name with actual name in table `currentspecies`
  */
-
 // add the currentnamestring column, change OK to valid
 mysql_query("ALTER TABLE `currentspecies`"
   . " ADD COLUMN `currentnamestring` VARCHAR(512)"
@@ -163,16 +161,13 @@ mysql_query("INSERT IGNORE INTO `currentspecies_delete`"
   . ", `date_created`, `date_modified`, `first_name`, `html_page`, `OK`"
   . ", `status`, `familyname` FROM `currentspecies` WHERE `name` LIKE '%=%'"
 );
-mysql_query("DELETE `t1` FROM"
-  . " `currentspecies` AS `t1`, `currentspecies_delete` AS `t2`"
-  . " WHERE `t1`.`name` = `t2`.`name`"
+mysql_query("DELETE FROM `currentspecies`"
+  . " WHERE `name` IN (SELECT `name` from `currentspecies_delete`)"
 );
-
 //exit("Stopped after dereferencing names in `bryozoans` and `currentspecies`\n");
 
 /**
- * Step 2: Delete unshared and unused columns
- *   Bryozoans
+ * Step 2: Delete unshared and unused columns in table `bryozoans`
  */
 mysql_query("ALTER TABLE `bryozoans`"
   . " DROP COLUMN `id`"
@@ -185,8 +180,7 @@ mysql_query("ALTER TABLE `bryozoans`"
 );
 
 /**
- * Step 2: Delete unshared and unused columns
- *   CURRENTSPECIES
+ * Step 2: Delete unshared and unused columns in table `currentspecies`
  */
 mysql_query("ALTER TABLE `currentspecies`"
   . " DROP COLUMN `speciesid`"
@@ -197,16 +191,14 @@ mysql_query("ALTER TABLE `currentspecies`"
 );
 
 /**
- * Step 3: Fix remaining columns
- *   Bryozoans
+ * Step 3: Fix remaining columns in table `bryozoans`
  */
 mysql_query("ALTER TABLE `bryozoans`"
   . " ADD COLUMN `familyname` VARCHAR(512)"
 );
 
 /**
- * Step 3: Fix remaining columns
- *   CURRENTSPECIES
+ * Step 3: Fix remaining columns in table `currentspecies`
  */
 mysql_query("ALTER TABLE `currentspecies`"
   . " CHANGE `remarks` `comments` VARCHAR(512)"
@@ -215,7 +207,7 @@ mysql_query("ALTER TABLE `currentspecies`"
 );
 
 /**
- * Step 4: Insert and Replace CURRENTSPECIES into Bryozoans
+ * Step 4: Insert and replace table `currentspecies` into table `bryozoans`
  */
 mysql_query("INSERT"
   . " INTO `bryozoans` ("
@@ -239,9 +231,13 @@ mysql_query("INSERT"
   . ", `bryozoans`.`familyname` = `currentspecies`.`familyname`"
 );
 
-/*
-// This is the PHP implementation, it allows for some more control
 
+/**
+ * Below is the PHP implementation of insert and replace, it allows for
+ * some more control.
+ */
+
+/*
 $result = mysql_query("SELECT * FROM `bryozoans`");
 
 // loop through results
@@ -279,5 +275,3 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
 }
 mysql_free_result($result);
 */
-
-mysql_close($link);
