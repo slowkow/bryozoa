@@ -1,6 +1,10 @@
 <?php
 /**
- * Compare Bryozone's authors to GNI's authors.
+ * Compare authors in tables `gni_bryan` and `scratchpads`.
+ * 
+ * This is called gni_vs_bryozone.php because the authors in `scratchpads` are
+ * from `bryozone_easyauthors`. Bryan Quach omitted authors in his taxonomy,
+ * so I assigned Bryozone authors to his taxa.
  */
 
 require 'include/connect.php';
