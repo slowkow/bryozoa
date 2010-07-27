@@ -1,15 +1,14 @@
 <?php
 /**
- * In Phil Bock's table `bryozoans`, look at invalid names that do not point
- * to a current name.
- * 
- * Parse the `details` field and try to figure out the current name.
+ * In Phil Bock's table `bryozoans`, look at valid=0 names that do not point
+ * to a current name. Parse the `details` field and try to figure out the
+ * current name. Set `currentnamestring` when we find a good name.
  */
 
 require 'include/connect.php';
 
 /**
- * Query the `bryozoans` table with a name.
+ * Get a row from table `bryozoans` by matching the name field.
  * 
  * @param name
  *   Name of a taxon.
@@ -23,7 +22,8 @@ function getRow($name) {
   return mysql_fetch_assoc(mysql_query($query));
 }
 /**
- * Set currentnamestring for a row.
+ * Set currentnamestring for a row in table `bryozoans`
+ * by matching the name field.
  * 
  * @param name
  *   Name of a taxon.
@@ -39,7 +39,6 @@ function setCurrentNameString($name, $currentnamestring) {
   if (mysql_error()) { die(mysql_error() . "\n"); }
 }
 
-// 7131 rows, 2290 get set a new currentnamestring
 $result = mysql_query(
   "SELECT `name`, `details`, `currentnamestring` FROM `bryozoans`"
   . " WHERE `valid` = 0"
@@ -94,4 +93,5 @@ while ($row = mysql_fetch_assoc($result)) {
   }
 }
 mysql_free_result($result);
+// tell us how many entries had a new currentnamestring set
 print("count: $count\n");
