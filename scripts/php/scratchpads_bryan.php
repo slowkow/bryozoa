@@ -1,11 +1,11 @@
 <?php
 /*
  * ORDER OF EXECUTION
- * bryan2itis.php
- * species.php
+ * scratchpads_bryan.php
+ * scratchpads_species.php
  * getgniauthors.php (only if you don't have GNI names already)
- * addunplaced.php
- * bryansetauthors.php
+ * scratchpads_dummies.php
+ * scratchpads_gniauthors.php
  */
 
 require 'include/connect.php';

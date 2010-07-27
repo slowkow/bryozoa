@@ -35,15 +35,15 @@ mysql < create_scratchpads.sql
 
 cd "$SCRIPTSDIR/php"
 echo "Importing Bryan Quach's higher taxonomy into scratchpads table..."
-php bryan2itis.php
+php scratchpads_bryan.php
 echo "Importing Phil Bock's species into scratchpads table..."
-php species.php
+php scratchpads_species.php
 echo "Querying GNI for missing authors..."
 php getgniauthors.php
 echo "Inserting dummy taxa for unplaced taxa..."
-php addunplaced.php
+php scratchpads_dummies.php
 echo "Filling missing authors..."
-php bryansetauthors.php
+php scratchpads_gniauthors.php
 
 cd "$SCRIPTSDIR/mysql"
 echo "Exporting scratchpads table into tab-delimited file..."
