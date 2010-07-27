@@ -25,7 +25,7 @@ $count = array(
   'uninserted' => 0,
 );
 
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   // atomize the name in the `bryozoans` table
   list($genus, $species, $subspecies) = explode(" ", $row['name'], 3);
   
@@ -119,7 +119,7 @@ $count = array(
   'uninserted' => 0,
 );
 
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   // atomize the name in the `bryozoans` table
   list($genus, $species, $subspecies) = explode(" ", $row['name'], 3);
   

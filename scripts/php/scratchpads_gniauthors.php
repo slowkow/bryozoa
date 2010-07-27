@@ -22,7 +22,7 @@ function getGNIAuthor($name) {
   );
   $result = mysql_query($query);
   $author = '';
-  while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  while ($row = mysql_fetch_assoc($result)) {
     if (strlen($row['author']) > strlen($author)) {
       $author = $row['author'];
     }
@@ -39,7 +39,7 @@ $result = mysql_query(
   . " OR `taxon_author` NOT REGEXP '[0-9]'"
 );
 
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   // get the gni author
   $taxon_author = getGNIAuthor($row['full_name']);
   if (!$taxon_author) {

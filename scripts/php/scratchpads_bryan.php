@@ -27,7 +27,7 @@ function getBryozoneAuthorYear($name) {
     mysql_real_escape_string($name)
   );
   $result = mysql_query($query);
-  $row = mysql_fetch_array($result, MYSQL_ASSOC);
+  $row = mysql_fetch_assoc($result);
   return trim($row['authorname'] . ' ' . $row['year']);
 }
 /**
@@ -167,7 +167,7 @@ $result = mysql_query(
 );
 
 // loop through results
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   // get row's unit names directly
   list($unit_name1, $unit_name2, $unit_name3) =
     explode(" ", $row['name'], 3);
@@ -204,7 +204,7 @@ mysql_free_result($result);
  */
 $result = mysql_query("SELECT * FROM `scratchpads`");
 // loop through results
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   insertIntoScratchpads(
     array(
       'full_name' => $row['full_name'],

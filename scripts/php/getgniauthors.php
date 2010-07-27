@@ -35,7 +35,7 @@ if ($look_at_scratchpads) {
 
   $count = 0;
   $numresults = mysql_num_rows($result);
-  while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  while ($row = mysql_fetch_assoc($result)) {
     $results = array();
     // use "uni:" to tell the service that we want higher taxa
     $cmd = "../perl/querygni.pl -d -l -m -n 100 " . "uni:" . $row['full_name'];
@@ -80,7 +80,7 @@ if ($look_at_bryan) {
 
   $count = 0;
   $numresults = mysql_num_rows($result);
-  while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  while ($row = mysql_fetch_assoc($result)) {
     $results = array();
     // use "uni:" to tell the service that we want higher taxa
     $cmd = "../perl/querygni.pl -d -l -m -n 100 " . "uni:" . $row['name'];

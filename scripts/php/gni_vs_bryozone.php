@@ -17,7 +17,7 @@ $result = mysql_query(
 );
 
 $count = 0;
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   $bryozone_author = $row['taxon_author'];
   $gni_author      = $row['author'];
   // differs only by a comma

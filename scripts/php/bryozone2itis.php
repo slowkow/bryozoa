@@ -160,7 +160,7 @@ print("rank_name\tunit_name1\tunit_name2\tunit_name3\tparent_name\tusage\n");
 print("Phylum\tPhylum Bryozoa\t\t\t\tvalid\n");
 
 // loop through results
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   // get parent's name by looking at row's parentid
   $parent_row = getRow($row['parentid']);
   $parent_name = $parent_row['taxonname'];

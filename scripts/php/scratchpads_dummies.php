@@ -19,7 +19,7 @@ $result = mysql_query(
 );
 
 // loop through results
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   $children_parent_name = trim($row['full_name'] . ' ' . $row['taxon_author']);
   $children_ranks = getChildrenRanks($children_parent_name);
   $children       = getChildren($children_parent_name);

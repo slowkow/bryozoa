@@ -145,7 +145,7 @@ function getChildrenRanks($parent_name) {
   );
   $result = mysql_query($query);
   $children_ranks = array();
-  while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  while ($row = mysql_fetch_assoc($result)) {
     $children_ranks[] = $row['rank_name'];
   }
   usort($children_ranks, "ranksort");
@@ -166,7 +166,7 @@ function getChildren($parent_name) {
   );
   $result = mysql_query($query);
   $children = array();
-  while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+  while ($row = mysql_fetch_assoc($result)) {
     $children[] = $row;
   }
   return $children;

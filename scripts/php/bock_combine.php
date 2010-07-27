@@ -58,7 +58,7 @@ $result = mysql_query(
 );
 
 // loop through results
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   $currentnamestring = NULL;
   // if the record points to another one, grab the other name
   if ($row['id'] != $row['currentname']) {
@@ -109,7 +109,7 @@ $result = mysql_query(
   . " WHERE `name` LIKE '%=%'");
 
 // loop through results
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   $invalidname = NULL;
   $validname   = NULL;
   preg_match('/^(.*)=(.*)$/', $row['name'], $matches);
@@ -241,7 +241,7 @@ mysql_query("INSERT"
 $result = mysql_query("SELECT * FROM `bryozoans`");
 
 // loop through results
-while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($row = mysql_fetch_assoc($result)) {
   $query = sprintf("SELECT * FROM `currentspecies` WHERE `name`='%s'"
       , mysql_real_escape_string($row['name'])
   );
