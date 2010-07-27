@@ -1,6 +1,6 @@
-USE `bock`;
+SOURCE db.sql;
 
-/* drop the bryozoans table if it exists already */
+/* drop the bryozone tables if they already exist */
 DROP TABLE IF EXISTS `bryozone_age`;
 DROP TABLE IF EXISTS `bryozone_authors_references`;
 DROP TABLE IF EXISTS `bryozone_authors`;
@@ -25,7 +25,7 @@ CREATE TABLE `bryozone_age` (
   PRIMARY KEY (`taxonid`)
 );
 
-SELECT "Loading bryozoan_age" AS "Action";
+SELECT 'Loading into table bryozone_age' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/age.tab'
 INTO TABLE `bryozone_age` IGNORE 1 LINES;
@@ -42,7 +42,7 @@ CREATE TABLE `bryozone_authors_references` (
   KEY (`articleid`)
 );
 
-SELECT "Loading bryozoan_authors_references" AS "Action";
+SELECT 'Loading into table bryozone_authors_references' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/authors_references.tab'
 INTO TABLE `bryozone_authors_references` IGNORE 1 LINES;
@@ -58,7 +58,7 @@ CREATE TABLE `bryozone_authors` (
   PRIMARY KEY (`authorid`)
 );
 
-SELECT "Loading bryozoan_authors" AS "Action";
+SELECT 'Loading into table bryozone_authors' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/authors.tab'
 INTO TABLE `bryozone_authors` IGNORE 1 LINES;
@@ -74,7 +74,7 @@ CREATE TABLE `bryozone_latin` (
   PRIMARY KEY (`taxonid`)
 );
 
-SELECT "Loading bryozoan_latin" AS "Action";
+SELECT 'Loading into table bryozone_latin' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/latin.tab'
 INTO TABLE `bryozone_latin` IGNORE 5 LINES;
@@ -90,7 +90,7 @@ CREATE TABLE `bryozone_rank` (
   PRIMARY KEY (`rankid`)
 );
 
-SELECT "Loading bryozoan_rank" AS "Action";
+SELECT 'Loading into table bryozone_rank' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/rank.tab'
 INTO TABLE `bryozone_rank` IGNORE 1 LINES;
@@ -111,7 +111,7 @@ CREATE TABLE `bryozone_references_full` (
   PRIMARY KEY (`referenceid`)
 );
 
-SELECT "Loading bryozoan_references_full" AS "Action";
+SELECT 'Loading into table bryozone_references_full' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/references_full.tab'
 INTO TABLE `bryozone_references_full` IGNORE 5 LINES;
@@ -128,7 +128,7 @@ CREATE TABLE `bryozone_references` (
   PRIMARY KEY (`referenceid`)
 );
 
-SELECT "Loading bryozoan_references" AS "Action";
+SELECT 'Loading into table bryozone_references' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/references.tab'
 INTO TABLE `bryozone_references` IGNORE 1 LINES;
@@ -145,7 +145,7 @@ CREATE TABLE `bryozone_taxa_authors` (
   KEY (`authorid`)
 );
 
-SELECT "Loading bryozoan_taxa_authors" AS "Action";
+SELECT 'Loading into table bryozone_taxa_authors' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/taxa_authors.tab'
 INTO TABLE `bryozone_taxa_authors` IGNORE 6 LINES;
@@ -162,7 +162,7 @@ CREATE TABLE `bryozone_taxa_references` (
   KEY (`articleid`)
 );
 
-SELECT "Loading bryozoan_taxa_references" AS "Action";
+SELECT 'Loading into table bryozone_taxa_references' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/taxa_references.tab'
 INTO TABLE `bryozone_taxa_references` IGNORE 1 LINES;
@@ -189,7 +189,7 @@ CREATE TABLE `bryozone_taxa` (
   KEY (`seniorid`)
 );
 
-SELECT "Loading bryozoan_taxa" AS "Action";
+SELECT 'Loading into table bryozone_taxa' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryozone/sheets/mysql/taxa.tab'
 INTO TABLE `bryozone_taxa` IGNORE 22 LINES;

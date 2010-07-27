@@ -1,25 +1,13 @@
-/*
-let's use a database called bock
-*/
-CREATE DATABASE IF NOT EXISTS `bock`;
-USE `bock`;
-
+SOURCE db.sql;
 /*
 we want to see a lot of errors if they exist
 */
 SET max_error_count=1000;
 
-/*
-drop the bryozoans table if it exists already
-*/
 DROP TABLE IF EXISTS `bryozoans`;
-
-/*
-create a table with the proper data types for each field
-*/
 CREATE TABLE `bryozoans` (
   `id` INT,
-  `name` VARCHAR(512),
+  `name` VARCHAR(333),
   `currentname` INT,
   `author` VARCHAR(512),
   `details` VARCHAR(6000),
@@ -38,7 +26,7 @@ CREATE TABLE `bryozoans` (
   KEY (`currentname`)
 );
 
-SELECT "Loading bryozoans" AS "Action";
+SELECT 'Loading into table bryozoans' AS ' ';
 /*
 load the tab-delimited file into the database, ignore the header line
 */
@@ -60,7 +48,7 @@ create a table with the proper data types for each field
 */
 CREATE TABLE `currentspecies` (
   `speciesid` INT,
-  `name` VARCHAR(512),
+  `name` VARCHAR(333),
   `author` VARCHAR(512),
   `famcode` INT,
   `recent` INT,
@@ -78,7 +66,7 @@ CREATE TABLE `currentspecies` (
 );
 
 
-SELECT "Loading currentspecies" AS "Action";
+SELECT 'Loading into table currentspecies' AS ' ';
 /*
 load the tab-delimited file into the database, ignore the header line
 */

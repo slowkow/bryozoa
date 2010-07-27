@@ -1,4 +1,5 @@
-USE `bock`;
+SOURCE db.sql;
+
 SELECT
   `rank_name`,
   `unit_name1`,

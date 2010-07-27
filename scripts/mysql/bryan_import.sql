@@ -1,4 +1,4 @@
-USE `bock`;
+SOURCE db.sql;
 
 DROP TABLE IF EXISTS `bryan_valid`;
 DROP TABLE IF EXISTS `bryan_invalid`;
@@ -28,7 +28,7 @@ CREATE TABLE `bryan_valid` (
   KEY (`name`)
 );
 
-SELECT "Loading bryan_valid" AS "Action";
+SELECT 'Loading into table bryan_valid' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryan/sheets/mysql/valid.tab'
 INTO TABLE `bryan_valid` IGNORE 1 LINES;
@@ -55,7 +55,7 @@ CREATE TABLE `bryan_invalid` (
   KEY (`seniorid`)
 );
 
-SELECT "Loading bryan_invalid" AS "Action";
+SELECT 'Loading into table bryan_invalid' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryan/sheets/mysql/invalid.tab'
 INTO TABLE `bryan_invalid` IGNORE 1 LINES;
@@ -71,7 +71,7 @@ CREATE TABLE `bryan_rank` (
   PRIMARY KEY (`rankcode`)
 );
 
-SELECT "Loading bryan_rank" AS "Action";
+SELECT 'Loading into table bryan_rank' AS ' ';
 
 LOAD DATA LOCAL INFILE '../../bryan/sheets/mysql/rank.tab'
 INTO TABLE `bryan_rank` IGNORE 1 LINES;

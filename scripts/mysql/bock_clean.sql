@@ -1,8 +1,7 @@
 /*
 Delete bad records and contradictory records.
 */
-
-USE `bock`;
+SOURCE db.sql;
 
 /*******************************************************************************
 Table `bryozoans`
@@ -13,7 +12,7 @@ Table `bryozoans`
 
 DROP TABLE IF EXISTS `bryozoans_delete`;
 
-SELECT "Cleaning `bryozoans`" AS "Action";
+SELECT 'Cleaning table bryozoans' AS ' ';
 SELECT COUNT(*) FROM `bryozoans`;
 
 /*
@@ -96,9 +95,9 @@ INSERT IGNORE INTO `bryozoans_delete` (
 DELETE FROM `bryozoans`
   WHERE `name` IN (SELECT `name` from `bryozoans_delete`);
 
-SELECT "Finished cleaning `bryozoans`" AS "Action";
+SELECT 'Finished cleaning table bryozoans' AS ' ';
 SELECT COUNT(*) FROM `bryozoans`;
-SELECT "Records in `bryozoans_delete`" AS "Action";
+SELECT 'Number of records in table bryozoans_delete' AS ' ';
 SELECT COUNT(*) FROM `bryozoans_delete`;
 
 /*******************************************************************************
@@ -110,7 +109,7 @@ Table `currentspecies`
 
 DROP TABLE IF EXISTS `currentspecies_delete`;
 
-SELECT "Cleaning `currentspecies`" AS "Action";
+SELECT 'Cleaning table currentspecies' AS ' ';
 SELECT COUNT(*) FROM `currentspecies`;
 
 /*
@@ -141,7 +140,7 @@ INSERT IGNORE INTO `currentspecies_delete` SELECT * FROM `currentspecies`
 DELETE FROM `currentspecies`
   WHERE `name` IN (SELECT `name` from `currentspecies_delete`);
 
-SELECT "Finished cleaning `currentspecies`" AS "Action";
+SELECT 'Finished cleaning currentspecies' AS ' ';
 SELECT COUNT(*) FROM `currentspecies`;
-SELECT "Records in `currentspecies_delete`" AS "Action";
+SELECT 'Records in currentspecies_delete' AS ' ';
 SELECT COUNT(*) FROM `currentspecies_delete`;
