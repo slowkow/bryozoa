@@ -1,74 +1,29 @@
 <?php
-// Require eZComponents library
-/*
-require 'ezc/Base/ezc_bootstrap.php';
-$store = new ezcTreeXmlInternalDataStore();
-exit();
-*/
+/**
+ * Insert Phil Bock's species from table `bryozoans` into `scratchpads`.
+ */
+
 require 'include/connect.php';
 require 'include/scratchpads.php';
-
-/**
- * Get a name and rankcode from the `bryan_valid` table.
- * 
- * @param name
- *   The name to use as a query.
- */
-function getBryanNameRankCode($name) {
-  $query = sprintf(
-    "SELECT `name`, `rankcode` FROM `bryan_valid`"
-    . " WHERE `name`='%s'",
-    mysql_real_escape_string($name)
-  );
-  return mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
-}
-/**
- * Return true or false if the rank code number is not equal to some values.
- * 
- * @param rank_code
- *   A rank code number.
- * @return
- *   Return true if the rank code is not equal to some values.
- */
-function isValidRankCode($rank_code) {
-  switch ($rank_code) {
-    case 10: // Phylum
-    case 20: // Class
-    case 30: // Order
-    case 40: // Suborder
-    case 50: // Infraorder
-    case 70: // Superfamily
-    case 80: // Family
-    case 90: // Genus
-    case 100: // Subgenus
-    case 110: // Species
-      return true;
-  }
-  return false;
-}
-
-// enable printing or not
-$g_print_stats = FALSE;
-// execute sql queries or not
-$g_mysql = TRUE;
-
 
 /*******************************************************************************
  * handle valid names
  */
 $result = mysql_query(
-  "SELECT `name`, `author`, `familyname`, `valid`, `comments`"
+  "SELECT `name`, `author`, `familyname`, `valid`, `details`, `comments`"
   . " FROM `bryozoans`"
   . " WHERE `name` IS NOT NULL"
-  . " AND `author` IS NOT NULL"
+  //. " AND `author` IS NOT NULL" // we can get the author later from gni
   . " AND `valid` = 1"
 );
 if (mysql_error()) { die(mysql_error() . "\n"); }
 
 // stats
-$bryan_ranks     = array();
-$bryan_unmatched = array();
-$bryan_count     = 0;
+$count = array(
+  'by_genus'   => 0,
+  'by_family'  => 0,
+  'uninserted' => 0,
+);
 
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   // atomize the name in the `bryozoans` table
@@ -86,78 +41,62 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     continue;
   }
   
-  // check if Bryan has this genus in his taxonomy
-  $match = getBryanNameRankCode($bryozoans_genus);
-  // bryozoans genus made a successful hit in bryan's taxonomy
-  //   we're linking a Genus name from bryozoans to bryan, so:
-  //     matches with rank Species and lower ranks not allowed
-  //     matches with invalid rank not allowed
-  if ($match['name'] && $match['rankcode'] < 110 && isValidRankCode($match['rankcode'])) {
-    $bryan_count++;
-    $bryan_ranks[$match['rankcode']] += 1;
-    if ($g_mysql) {
-      insertIntoScratchpads(
-        array(
-          'full_name'    => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
-          'rank_name'    => $bryozoans_subspecies ? 'Subspecies' : 'Species',
-          'unit_name1'   => $bryozoans_genus,
-          'unit_name2'   => $bryozoans_species,
-          'unit_name3'   => $bryozoans_subspecies,
-          'parent_name'  => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
-          'usage'        => 'valid',
-          'taxon_author' => $bryozoans_author,
-          'comments'     => $row['comments']
-        )
-      );
-    }
+  // check if the parent genus is present
+  if (getRows(array('full_name' => $bryozoans_genus, 'rank_name' => 'Genus'))) {
+    $count['by_genus'] += 1;
+    // insert the species or subspecies
+    insertIntoScratchpads(
+      array(
+        'full_name'    => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
+        'rank_name'    => $bryozoans_subspecies ? 'Subspecies' : 'Species',
+        'unit_name1'   => $bryozoans_genus,
+        'unit_name2'   => $bryozoans_species,
+        'unit_name3'   => $bryozoans_subspecies,
+        'parent_name'  => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
+        'usage'        => 'valid',
+        'taxon_author' => $bryozoans_author,
+        'comments'     => $row['comments'],
+        'details'      => $row['details'],
+      )
+    );
   }
-  // bryozoans genus failed to match in Bryan's table
-  // so, we can try the bryozoans family if it exists and is valid
-  else if (!$bryan_genus && $bryozoans_family
-    && !preg_match('/(unassigned|unplaced)/i', $bryozoans_family)) {
-    // let's see if bryan has this family somewhere
-    $match = getBryanNameRankCode($bryozoans_family);
-    # we're linking a Family name from bryozoans to bryan, so:
-    # matches with rank Genus and lower ranks not allowed
-    # matches with invalid rank not allowed
-    if ($match['name'] && $match['rankcode'] < 90 && isValidRankCode($match['rankcode'])) {
-      if ($g_mysql) {
-        // TODO
-        //   This will be a problem, because parent_name should also
-        //   have the author & year for the parent, which will be done later
-        // insert the genus
-        insertIntoScratchpads(
-          array(
-            'full_name'    => $bryozoans_genus,
-            'rank_name'    => 'Genus',
-            'unit_name1'   => $bryozoans_genus,
-            'parent_name'  => trim($bryozoans_family . ' ' . getTaxonAuthor($bryozoans_family)),
-            'usage'        => 'valid',
-          )
-        );
-        // insert the species or subspecies
-        insertIntoScratchpads(
-          array(
-            'full_name'    => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
-            'rank_name'    => $bryozoans_subspecies ? 'Subspecies' : 'Species',
-            'unit_name1'   => $bryozoans_genus,
-            'unit_name2'   => $bryozoans_species,
-            'unit_name3'   => $bryozoans_subspecies,
-            'parent_name'  => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
-            'usage'        => 'valid',
-            'taxon_author' => $bryozoans_author,
-            'comments'     => $row['comments'],
-          )
-        );
-      }
-    }
-    // bryozoans_family failed to match in Bryan's table
-    else {
-      $bryan_unmatched[$bryozoans_genus] += 1;
-    }
+  // the parent genus isn't present, so check if the parent family is present
+  else if (getRows(array('full_name' => $bryozoans_family, 'rank_name' => 'Family'))){
+    $count['by_family'] += 1;
+    // insert the genus
+    insertIntoScratchpads(
+      array(
+        'full_name'    => $bryozoans_genus,
+        'rank_name'    => 'Genus',
+        'unit_name1'   => $bryozoans_genus,
+        'parent_name'  => trim($bryozoans_family . ' ' . getTaxonAuthor($bryozoans_family)),
+        'usage'        => 'valid',
+      )
+    );
+    // insert the species or subspecies
+    insertIntoScratchpads(
+      array(
+        'full_name'    => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
+        'rank_name'    => $bryozoans_subspecies ? 'Subspecies' : 'Species',
+        'unit_name1'   => $bryozoans_genus,
+        'unit_name2'   => $bryozoans_species,
+        'unit_name3'   => $bryozoans_subspecies,
+        'parent_name'  => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
+        'usage'        => 'valid',
+        'taxon_author' => $bryozoans_author,
+        'comments'     => $row['comments'],
+        'details'      => $row['details'],
+      )
+    );
+  }
+  else {
+    $count['uninserted'] += 1;
   }
 }
 
+print('Inserted ' . $count['by_genus']  . " valid species by genus name.\n");
+print('Inserted ' . $count['by_family'] . " valid species by family name.\n");
+print($count['uninserted'] . " valid species not inserted because parent genus and parent family do not exist.\n");
 
 /*******************************************************************************
  * handle invalid names
@@ -166,13 +105,19 @@ $result = mysql_query(
   "SELECT `name`, `author`, `familyname`, `currentnamestring`, `details`, `comments`"
   . " FROM `bryozoans`"
   . " WHERE `name` IS NOT NULL"
-  . " AND `author` IS NOT NULL"
+  //. " AND `author` IS NOT NULL" // we can get author later from gni
   . " AND `currentnamestring` IS NOT NULL"
   . " AND `valid` = 0"
-  // currentnamestring should point to a valid name
-  . " AND `currentnamestring` IN (SELECT `name` FROM `bryozoans` WHERE `valid` = 1)"
+  // currentnamestring should point to a valid name in table `scratchpads`
+  . " AND `currentnamestring` IN (SELECT `full_name` FROM `scratchpads` WHERE `usage` = 'valid')"
 );
 if (mysql_error()) { die(mysql_error() . "\n"); }
+
+// stats
+$count = array(
+  'by_genus'   => 0,
+  'uninserted' => 0,
+);
 
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   // atomize the name in the `bryozoans` table
@@ -193,17 +138,9 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
   }
   
   // check if the entry's parent is actually present
-  $query = sprintf(
-    "SELECT `full_name` FROM `scratchpads`"
-    . " WHERE `full_name`='%s' AND `rank_name`='Genus'",
-    mysql_real_escape_string($bryozoans_genus)
-  );
-  // the parent must exist and it must be a Genus
-  if (!($match = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC))) {
-    continue;
-  }
-  
-  if ($g_mysql) {
+  if (getRows(array('full_name' => $bryozoans_genus, 'rank_name' => 'Genus'))) {
+    $count['by_genus'] += 1;
+    // insert species or subspecies
     insertIntoScratchpads(
       array(
         'full_name'     => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
@@ -221,44 +158,10 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
       )
     );
   }
+  else {
+    $count['uninserted'] += 1;
+  }
 }
 
-
-/**
- * Query the `bryan_rank` table with a rank code and return the rank name.
- * 
- * @param rankcode
- *   A rank code number.
- * @return
- *   The name associated with the rank code number.
- */
-function getRankName($rankcode) {
-  $query = sprintf("SELECT `rankname` FROM `bryan_rank` WHERE `rankid`='%s'",
-    mysql_real_escape_string($rankcode)
-  );
-  $row = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
-  return $row['rankname'];
-}
-/**
- * Print a summary of the matches from bryozoans to bryozone_taxa and bryan_valid
- */
-if ($g_print_stats) {
-  print("$bryozone_count genus names from `bryozoans` matched a record in `bryozone_taxa`\n");
-  foreach ($bryozone_ranks as $rankcode => $count) {
-    print("$count matches in `" . getRankName($rankcode) . "` in `bryozone_taxa`\n");
-  }
-
-  print("\n");
-
-  print("$bryan_count genus names from `bryozoans` matched a record in `bryan_valid`\n");
-  foreach ($bryan_ranks as $rankcode => $count) {
-    print("$count matches in `" . getRankName($rankcode) . "` in `bryan_valid`\n");
-  }
-
-  $bryan_unmatched_total = 0;
-  foreach ($bryan_unmatched as $key => $value) {
-    //print("$key, $value\n");
-    $bryan_unmatched_total += $value;
-  }
-  print("$bryan_unmatched_total records from `bryozoans` without match in `bryan_valid` and without `familyname`\n");
-}
+print('Inserted ' . $count['by_genus']  . " invalid species by genus name.\n");
+print($count['uninserted'] . " invalid species not inserted because parent genus doesn't exist.\n");
