@@ -1,5 +1,7 @@
 <?php
-/*
+/**
+ * Insert Bryan Quach's higher taxonomy into table `scratchpads`.
+ * 
  * ORDER OF EXECUTION
  * scratchpads_bryan.php
  * scratchpads_species.php
@@ -11,14 +13,14 @@
 require 'include/connect.php';
 require 'include/scratchpads.php';
 /**
- * Get the author and year for the taxon name from `bryozone_easyauthors`.
+ * Get the author and year for the taxon name from table `bryozone_easyauthors`.
  * 
  * @param name
  *   The name to use as a query.
  * @return
- *   An associative array with 'authorname' and 'year'.
+ *   A properly formatted string containing author name and year.
  */
-function getAuthorYear($name) {
+function getBryozoneAuthorYear($name) {
   $query = sprintf(
     "SELECT `authorname`, `year` FROM `bryozone_easyauthors`"
     . " WHERE `taxonname`='%s'",
@@ -29,7 +31,7 @@ function getAuthorYear($name) {
   return trim($row['authorname'] . ' ' . $row['year']);
 }
 /**
- * Query the bryan_valid table with a rank code and newid and return the
+ * Query table `bryan_valid` with a rank code and newid and return the
  * associated row.
  * 
  * @param rankcode
@@ -37,7 +39,7 @@ function getAuthorYear($name) {
  * @param newid
  *   An id number of a taxon.
  * @return
- *   The MySQL row that matches the rank code and id.
+ *   An associative array containing the row.
  */
 function getRow($rankcode, $newid) {
   $query = sprintf("SELECT * FROM `bryan_valid`"
@@ -45,21 +47,21 @@ function getRow($rankcode, $newid) {
     mysql_real_escape_string($rankcode),
     mysql_real_escape_string($newid)
   );
-  return mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  return mysql_fetch_assoc(mysql_query($query));
 }
 /**
- * Query the bryan_rank table with a rank code and return the rank name.
+ * Query table `bryan_rank` with a rank code and return the rank name.
  * 
  * @param rankcode
  *   A rank code number.
  * @return
- *   The name associated with the rank code number.
+ *   The name of the rank.
  */
 function getRankName($rankcode) {
   $query = sprintf("SELECT `rankname` FROM `bryan_rank` WHERE `rankcode`='%s'",
     mysql_real_escape_string($rankcode)
   );
-  $row = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  $row = mysql_fetch_assoc(mysql_query($query));
   return $row['rankname'];
 }
 /**
@@ -68,7 +70,7 @@ function getRankName($rankcode) {
  * @param rank_code
  *   A rank code number.
  * @return
- *   Return true if the rank code is not equal to some values.
+ *   Return true if the rank code is equal to some values.
  */
 function isValidRankCode($rank_code) {
   switch ($rank_code) {
@@ -91,9 +93,12 @@ function isValidRankCode($rank_code) {
  * 'uncertain'.
  * 
  * @param row
- *   A row from bryozoa_taxa.
+ *   An associative array containing a row from table `bryan_valid`.
  * @return
- *   Parent row that is a valid rank and is not called 'NULL' or 'uncertain'.
+ *   An associative array containing the parent row.
+ * 
+ * @see getRow()
+ * @see nextValidRank()
  */
 function nextRealParent($row) {
   while ($row['newrefid']) {
@@ -148,7 +153,7 @@ insertIntoScratchpads(
   )
 );
 
-// select some vars to put in row
+// select rows from `bryan_valid` to put in `scratchpads`
 // "IS NOT NULL" will return true for rows with name='NULL'
 $result = mysql_query(
   "SELECT `name`, `rankcode`, `newid`, `newrefid`"
@@ -156,7 +161,7 @@ $result = mysql_query(
   . " WHERE (`name` IS NOT NULL"
   . " AND `name` NOT REGEXP 'null|uncertain'" // no bad names
   . " AND `rankcode` IS NOT NULL"
-  . " AND `newid` IS NOT NULL"      // if null, then it cannot be linked to
+  . " AND `newid` IS NOT NULL"      // if null, then others can't link to it
   //. " AND `newrefid` IS NOT NULL" // if null, we'll link them to Bryozoa
   . " AND `rankcode` < 99990)"
 );
@@ -187,7 +192,7 @@ while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
         'parent_name'  => $parent_name,
         'usage'        => 'valid',
         'full_name'    => trim($unit_name1 . ' ' . $unit_name2 . ' ' . $unit_name3),
-        'taxon_author' => getAuthorYear($unit_name1),
+        'taxon_author' => getBryozoneAuthorYear($unit_name1),
       )
     );
   }
@@ -200,19 +205,10 @@ mysql_free_result($result);
 $result = mysql_query("SELECT * FROM `scratchpads`");
 // loop through results
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-  $parent_name = trim($row['parent_name']
-    . ' ' . getTaxonAuthor($row['parent_name']));
-  $parent_name = mysql_real_escape_string($parent_name);
-  $query = sprintf("INSERT INTO `scratchpads`"
-    . " SET"
-    . "`full_name`='%s',"
-    . "`parent_name`='%s'"
-    . " ON DUPLICATE KEY UPDATE"
-    . "`full_name`='%s',"
-    . "`parent_name`='%s'",
-    $row['full_name'], $parent_name,
-    $row['full_name'], $parent_name
+  insertIntoScratchpads(
+    array(
+      'full_name' => $row['full_name'],
+      'parent_name' => trim($row['parent_name'] . ' ' . getTaxonAuthor($row['parent_name'])),
+    )
   );
-  mysql_query($query);
-  if (mysql_error()) { die(mysql_error() . "\n"); }
 }
