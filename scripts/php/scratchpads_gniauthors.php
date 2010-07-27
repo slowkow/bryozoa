@@ -1,22 +1,21 @@
 <?php
-/*
- * Found authors for `scratchpads` entries that were missing authors.
- * This fills them in using data from GNI.
- * 79 left that don't get filled in.
+/**
+ * Set authors for entries in table `scratchpads` that were missing authors
+ * using data from `gni_scratchpads`.
  */
 
 require 'include/connect.php';
 require 'include/scratchpads.php';
 
 /**
- * Get GNI author.
+ * Get author from table `gni_scratchpads`.
  * 
  * @param name
  *   The name to query `gni_scratchpads`.
  * @return
  *   The author with longest strlen.
  */
-function getAuthor($name) {
+function getGNIAuthor($name) {
   $query = sprintf("SELECT `author` FROM `gni_scratchpads`"
     . " WHERE `name` = '%s'",
     mysql_real_escape_string($name)
@@ -31,9 +30,9 @@ function getAuthor($name) {
   return $author;
 }
 
-// look at the entries in `scratchpads` without authors
+// find entries in `scratchpads` without authors
 $result = mysql_query(
-  "SELECT `full_name`, `unit_name1`"
+  "SELECT `full_name`"
   . " FROM `scratchpads`"
   . " WHERE"
   . " `taxon_author` IS NULL"
@@ -41,8 +40,8 @@ $result = mysql_query(
 );
 
 while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-  // update the taxon with the new author
-  $taxon_author = getAuthor($row['unit_name1']);
+  // get the gni author
+  $taxon_author = getGNIAuthor($row['full_name']);
   if (!$taxon_author) {
     continue;
   }

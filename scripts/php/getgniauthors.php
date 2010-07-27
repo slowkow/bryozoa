@@ -24,12 +24,13 @@ if ($look_at_scratchpads) {
   );
 
   $result = mysql_query(
-    "SELECT `unit_name1`"
+    "SELECT `full_name`"
     . " FROM `scratchpads`"
     . " WHERE"
     . " (`taxon_author` IS NULL"
     . " OR `taxon_author` NOT REGEXP '[0-9]')"
-    . " AND `unit_name1` NOT IN (SELECT `name` FROM `gni_scratchpads`)"
+    // don't query GNI again if name already in gni_scratchpads
+    . " AND `full_name` NOT IN (SELECT `name` FROM `gni_scratchpads`)"
   );
 
   $count = 0;
@@ -37,10 +38,10 @@ if ($look_at_scratchpads) {
   while ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
     $results = array();
     // use "uni:" to tell the service that we want higher taxa
-    $cmd = "../perl/querygni.pl -d -l -m -n 100 " . "uni:" . $row['unit_name1'];
+    $cmd = "../perl/querygni.pl -d -l -m -n 100 " . "uni:" . $row['full_name'];
     exec($cmd, $results);
     print("Progress: " . ++$count . "/" . $numresults . "\t"
-      . 'Taxon: ' . $row['unit_name1']
+      . 'Taxon: ' . $row['full_name']
       . "\tAuthor(s): " . join("\t", $results) . "\n");
     foreach ($results as $value) {
       list($name, $author) = explode("\t", $value);
