@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * Find entries in table `scratchpads` without authors. Query GNI with the
  * names of these taxa and put the results in `gni_scratchpads`.
  */
