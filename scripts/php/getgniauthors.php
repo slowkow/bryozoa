@@ -28,7 +28,7 @@ if ($look_at_scratchpads) {
     . " FROM `scratchpads`"
     . " WHERE"
     . " (`taxon_author` IS NULL"
-    . " OR `taxon_author` NOT REGEXP '[0-9]')"
+    . " OR `taxon_author` NOT REGEXP '[0-9]{4}')"
     // don't query GNI again if name already in gni_scratchpads
     . " AND `full_name` NOT IN (SELECT `name` FROM `gni_scratchpads`)"
   );

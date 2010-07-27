@@ -36,7 +36,7 @@ $result = mysql_query(
   . " FROM `scratchpads`"
   . " WHERE"
   . " `taxon_author` IS NULL"
-  . " OR `taxon_author` NOT REGEXP '[0-9]'"
+  . " OR `taxon_author` NOT REGEXP '[0-9]{4}'"
 );
 
 while ($row = mysql_fetch_assoc($result)) {
