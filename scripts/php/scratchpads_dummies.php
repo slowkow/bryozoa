@@ -1,7 +1,7 @@
 <?php
-/*
- * Modify table `scratchpads`. Insert dummy "TAXONNAME Unplaced RANKNAME"
- * entries wherever appropriate. Relink entries to new parents.
+/**
+ * Insert dummy "TAXONNAME Unplaced RANKNAME" entries into table `scratchpads`
+ * wherever appropriate. Relink entries to new parents.
  * 
  * For example, Bryozoa has some Families in it. That's not cool. The solution
  * is to make an additional Class called "Bryozoa Unplaced Fam." and then put
