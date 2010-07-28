@@ -41,7 +41,7 @@ while (<$file>) {
   $line++;
   chomp;
   if ($line == 1) {
-    die("Missing some headers!\n") unless (/unit_name1/ && /unit_name2/
+    warn("Missing some headers!\n") unless (/unit_name1/ && /unit_name2/
       && /unit_name3/ && /parent_name/ && /rank_name/ && /taxon_author/);
     # save the headers for the hash
     @headers = split(/\t/);
