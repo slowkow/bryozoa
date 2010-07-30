@@ -76,7 +76,7 @@ while (<$file>) {
   $line++;
   chomp;
   if ($line == 1) {
-    warn("Missing some headers!\n") unless (/unit_name1/ && /unit_name2/
+    warn("Warning: Missing some headers!\n") unless (/unit_name1/ && /unit_name2/
       && /unit_name3/ && /parent_name/ && /rank_name/ && /taxon_author/);
     # save the headers for the hash
     @headers = split(/\t/);
@@ -115,13 +115,13 @@ if ($output =~ /^ch?e?c?k?$/i) {
   # check if parent_name is subset of full_names
   while ((my $key, my $value) = each(%parent_name)) {
     if (!$full_names{$key}) {
-      print("parent_name ($key) not found in full names on lines: $value\n");
+      print("parent_name '$key' not found in full names on lines: $value\n");
     }
   }
   # check how many times a full name appears "unit_name1+unit_name2+unit_name3"
   while ((my $key, my $value) = each(%full_names)) {
     if ($value > 1) {
-      print("full name ($key) appears $value times\n");
+      print("full name '$key' appears $value times\n");
     }
   }
 }
@@ -174,7 +174,8 @@ elsif ($output =~ /^pa?t?h?s?$/i) {
       push(@path, $rows{$child}->{'rank_name'});
       $child = $rows{$child}->{'parent_name'};
     }
-    push(@path, $rows{$child}->{'rank_name'});
+    warn("Warning: Missing parent for '$child'.\n") unless $rows{$child}->{'rank_name'};
+    $rows{$child}->{'rank_name'} && push(@path, $rows{$child}->{'rank_name'});
     $unique_paths{join('@', reverse @path)} += 1;
   }
   my @sortedkeys = sort { length $a <=> length $b } keys %unique_paths;
@@ -191,7 +192,7 @@ elsif ($output =~ /^ne?w?i?c?k?$/i) {
   use Bio::Tree::Tree;
   use Bio::TreeIO;
   
-  # get the root
+  # get the root (this fails unless the all taxa link to the root)
   my @allchildren = keys %rows;
   my $somechild   = $allchildren[0];
   my $root;
@@ -384,6 +385,13 @@ Read an ITIS-for-Scratchpads file.
 
 By default, check if all parent names are a subset of all full names and
 check if all full names are listed once. Print results.
+
+  Note
+  ----
+  Check the file before attempting to print a full hierarchy, unique paths,
+  newick format, or GraphViz format. It is expected that your root will have an
+  empty parent, but this script will complain about its empty parent, even in
+  a perfect file.
 
 Set --option to fullhierarchy to print each entry with all of its parents. Use
 --withrank to print the rank name for each item.
