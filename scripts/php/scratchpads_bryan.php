@@ -50,44 +50,52 @@ function getRow($rankcode, $newid) {
   return mysql_fetch_assoc(mysql_query($query));
 }
 /**
- * Query table `bryan_rank` with a rank code and return the rank name.
- * 
- * @param rankcode
- *   A rank code number.
- * @return
- *   The name of the rank.
+ * Associative array of all rank codes and rank names.
  */
-function getRankName($rankcode) {
-  $query = sprintf("SELECT `rankname` FROM `bryan_rank` WHERE `rankcode`='%s'",
-    mysql_real_escape_string($rankcode)
-  );
-  $row = mysql_fetch_assoc(mysql_query($query));
-  return $row['rankname'];
-}
+$ranknames = array(
+  0 => 'Invalid',
+  1 => 'Nomen Oblitum',
+  2 => 'Nomen Nudum',
+  3 => 'Uncertain Classification',
+  10 => 'Phylum',
+  20 => 'Class',
+  30 => 'Order',
+  36 => 'Subjective Junior Synonym',
+  40 => 'Suborder',
+  50 => 'Infraorder',
+  60 => 'Grade',
+  70 => 'Superfamily',
+  80 => 'Family',
+  85 => 'Family Synonym',
+  90 => 'Genus',
+  95 => 'Genus Synonym',
+  96 => 'Subjective Junior Synonym',
+  97 => 'Objective Junior Synonym',
+  98 => 'Homonym',
+  100 => 'Subgenus',
+  110 => 'Species',
+  113 => 'Uncertain Species',
+  115 => 'Species Synonym',
+  116 => 'Subjective Junior Synonym',
+  117 => 'Objective Junior Synonym',
+  118 => 'Homonym',
+  99999 => 'Error',
+);
 /**
- * Return true or false if the rank code number is not equal to some values.
- * 
- * @param rank_code
- *   A rank code number.
- * @return
- *   Return true if the rank code is equal to some values.
+ * Array of valid rank names.
  */
-function isValidRankCode($rank_code) {
-  switch ($rank_code) {
-    case 10: // Phylum
-    case 20: // Class
-    case 30: // Order
-    case 40: // Suborder
-    case 50: // Infraorder
-    case 70: // Superfamily
-    case 80: // Family
-    case 90: // Genus
-    case 100: // Subgenus
-    case 110: // Species
-      return true;
-  }
-  return false;
-}
+$validranks = array(
+  'Phylum',
+  'Class',
+  'Order',
+  'Suborder',
+  'Infraorder',
+  'Superfamily',
+  'Family',
+  'Genus',
+  'Subgenus',
+  'Species',
+);
 /**
  * Return the next parent that is a valid rank and is not called 'NULL' or
  * 'uncertain'.
@@ -125,10 +133,12 @@ function nextRealParent($row) {
  *   The next higher valid rank code.
  */
 function nextValidRank($rank_code) {
+  global $ranknames;
+  global $validranks;
   if ($rank_code <= 10) { return 10; }
   do {
     $rank_code--;
-  } while (!isValidRankCode($rank_code));
+  } while (!in_array($ranknames[$rank_code], $validranks));
   return $rank_code;
 }
 
@@ -177,7 +187,7 @@ while ($row = mysql_fetch_assoc($result)) {
   $unit_name3 = trim(strtolower($unit_name3));
   
   // we still have a name after trimming and rank is valid
-  if ($unit_name1 && isValidRankCode($row['rankcode'])) {
+  if ($unit_name1 && in_array($ranknames[$row['rank_code']], $validranks)) {
     // find a parent that is named
     // if we don't find anyone, then Bryozoa is the parent
     $parent_row = nextRealParent($row);
@@ -185,7 +195,7 @@ while ($row = mysql_fetch_assoc($result)) {
     
     insertIntoScratchpads(
       array(
-        'rank_name'    => getRankName($row['rankcode']),
+        'rank_name'    => $ranknames[$row['rankcode']],
         'unit_name1'   => $unit_name1,
         'unit_name2'   => $unit_name2,
         'unit_name3'   => $unit_name3,
