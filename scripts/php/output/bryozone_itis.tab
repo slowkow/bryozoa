@@ -1,5 +1,5 @@
 rank_name	unit_name1	unit_name2	unit_name3	parent_name	usage
-Phylum	Phylum Bryozoa				valid
+Phylum	Bryozoa				valid
 Class	Stenolaemata			Bryozoa	valid
 Class	Gymnolaemata			Bryozoa	valid
 Class	Phylactolaemata			Bryozoa	valid
@@ -149,7 +149,6 @@ Family	Crisinidae			Cancellata	valid
 Family	Crisuliporidae			Tubuliporina	valid
 Family	Crownoporidae			Paleotubuliporina	valid
 Family	Cytididae			Cancellata	valid
-Family	Densiporidae			Cerioporina	valid
 Family	Diaperoeciidae			Tubuliporina	valid
 Family	Diastoporidae			Tubuliporina	valid
 Family	Eleidae			Tubuliporina	valid
@@ -557,8 +556,6 @@ Genus	Atelestozoum			Cellariidae	valid
 Genus	Auchenopora			Cribrilinidae	valid
 Genus	Aulopocella			Lekythoporidae	valid
 Genus	Austroflustra			Flustridae	valid
-Genus	Celleporella			Hippothoidae	valid
-Genus	Amphiblestrum			Calloporidae	valid
 Genus	Aviculiera			Microporidae	valid
 Genus	Babickella			Bicorniferidae	valid
 Genus	Bactrellaria			Candidae	valid
@@ -659,7 +656,6 @@ Genus	Cellarinelloides			Sclerodomidae	valid
 Genus	Cellarinidra			Quadricellariidae	valid
 Genus	Cellepora			Celleporidae	valid
 Genus	Celleporaria			Lepraliellidae	valid
-Genus	Celleporella			Hippothoidae	valid
 Genus	Celleporina			Celleporidae	valid
 Genus	Ceratopora			Lepraliellidae	valid
 Genus	Chalastobugula			Bugulidae	valid
@@ -692,7 +688,6 @@ Genus	Cillia			Cribrilinidae	valid
 Genus	Claviporella			Catenicellidae	valid
 Genus	Clavodesia			Calloporidae	valid
 Genus	Cleidochasmidra			Cleidochasmatidae	valid
-Genus	Chaperiopsis			Chaperiidae	valid
 Genus	Clithriellum			Lacernidae	valid
 Genus	Coelopora			Cribrilinidae	valid
 Genus	Coleopora			Teuchoporidae	valid
@@ -766,7 +761,6 @@ Genus	Daisyella			Calloporidae	valid
 Genus	Dakariella			Smittinidae	valid
 Genus	Danocella			Electridae	valid
 Genus	Decurtaria			Cribrilinidae	valid
-Genus	Dendrobeania			Bugulidae	valid
 Genus	Dendroperistoma			Cribrilinidae	valid
 Genus	Dengordonia			Smittinidae	valid
 Genus	Dennisia			Lepraliellidae	valid
@@ -893,7 +887,6 @@ Genus	Gephyrophora			Gigantoporidae	valid
 Genus	Gephyrotes			Cribrilinidae	valid
 Genus	Gigantopora			Gigantoporidae	valid
 Genus	Gilbertopora			Calloporidae	valid
-Genus	Puellina			Cribrilinidae	valid
 Genus	Glenelgia			Calloporidae	valid
 Genus	Gontarella			Electridae	valid
 Genus	Goodonia			Adeonoidea	valid
@@ -1067,12 +1060,10 @@ Genus	Metacleidochasma			Phidoloporidae	valid
 Genus	Metracolposa			Cribrilinidae	valid
 Genus	Metradolium			Stomachetosellidae	valid
 Genus	Metrarabdotomorpha			Romancheinidae	valid
-Genus	Metrarabdotos			Metrarabdotosidae	valid
 Genus	Metrocrypta			Stomachetosellidae	valid
 Genus	Metroperiella			Bitectiporidae	valid
 Genus	Micropora			Microporidae	valid
 Genus	Microporella			Microporellidae	valid
-Genus	Microporelloides			Microporellidae	valid
 Genus	Microporina			Microporidae	valid
 Genus	Mixtopelta			Mixtopeltidae	valid
 Genus	Mobunula			Petraliellidae	valid
@@ -1104,7 +1095,6 @@ Genus	Neodakaria			Bitectiporidae	valid
 Genus	Neoeuthyris			Neoeuthyridae	valid
 Genus	Neoflustra			Calloporoidea	valid
 Genus	Neolagenipora			Romancheinidae	valid
-Genus	Celleporella			Hippothoidae	valid
 Genus	Nephropora			Nephroporidae	valid
 Genus	Nimba			Lacernidae	valid
 Genus	Nimbella			Lacernidae	valid
@@ -1246,10 +1236,8 @@ Genus	Psilopsella			Romancheinidae	valid
 Genus	Psilosecos			Phidoloporidae	valid
 Genus	Pterocella			Catenicellidae	valid
 Genus	Ptoboroa			Conescharellinidae	valid
-Genus	Puellina			Cribrilinidae	valid
 Genus	Punctiscutella			Phorioppniidae	valid
 Genus	Punctocellaria			Calloporidae	valid
-Genus	Puncturiella			Microporidae	valid
 Genus	Puncturiella			Microporidae	valid
 Genus	Pyrichaperia			Chaperiidae	valid
 Genus	Pyriflustrina			Calloporidae	valid
@@ -1336,7 +1324,6 @@ Genus	Scoriopora			Scorioporidae	valid
 Genus	Scorpiodina			Umbonulidae	valid
 Genus	Scorpiodinipora			Celleporidae	valid
 Genus	Scruparia			Scrupariidae	valid
-Genus	Scrupocellaria			Candidae	valid
 Genus	Scrupocellarinella			Candidae	valid
 Genus	Scuticella			Catenicellidae	valid
 Genus	Securiflustra			Flustridae	valid
@@ -1358,11 +1345,8 @@ Genus	Sessibugula			Bugulidae	valid
 Genus	Setosella			Setosellidae	valid
 Genus	Setosellina			Heliodomidae	valid
 Genus	Setosinella			Microporidae	valid
-Genus	Bryocryptella			Bryocryptellidae	valid
 Genus	Sinoflustra			Flustridae	valid
 Genus	Sinupetraliella			Petraliellidae	valid
-Genus	Celleporaria			Lepraliellidae	valid
-Genus	Celleporina			Celleporidae	valid
 Genus	Siphonicytara			Siphonicytaridae	valid
 Genus	Siphonoporella			Steginoporellidae	valid
 Genus	Skylonia			Skyloniidae	valid
@@ -1390,7 +1374,6 @@ Genus	Steginoporella			Steginoporellidae	valid
 Genus	Stenopsella			Gigantoporidae	valid
 Genus	Stenosipora			Ascosiidae	valid
 Genus	Stenostomaria			Catenicellidae	valid
-Genus	Stephanollona			Phidoloporidae	valid
 Genus	Stephanollona			Phidoloporidae	valid
 Genus	Stephanopora			Exechonellidae	valid
 Genus	Stephanotrema			Stomachetosellidae	valid
@@ -1435,7 +1418,6 @@ Genus	Tetraplaria			Tetraplariidae	valid
 Genus	Teuchopora			Teuchoporidae	valid
 Genus	Thairopora			Thalamoporellidae	valid
 Genus	Thalamoporella			Thalamoporellidae	valid
-Genus	Himantozoum			Bugulidae	valid
 Genus	Therenia			Escharinidae	valid
 Genus	Thoracopora			Cribrilinidae	valid
 Genus	Thornelya			Hippopodinidae	valid
@@ -1478,10 +1460,8 @@ Genus	Tylopora			Calloporidae	valid
 Genus	Tyloporella			Calloporidae	valid
 Genus	Ubaghsia			Cribrilinidae	valid
 Genus	Umbonula			Umbonulidae	valid
-Genus	Metrarabdotos			Metrarabdotosidae	valid
 Genus	Unidistelopora			Calloporidae	valid
 Genus	Unifissurinella			Pasytheidae	valid
-Genus	Urceolipora			Urceoliporidae	valid
 Genus	Uschakovia			Bugulidae	valid
 Genus	Uscia			Watersiporidae	valid
 Genus	Utinga			Petraliellidae	valid
@@ -1732,7 +1712,6 @@ Genus	Pachyteichopora			Cerioporidae	valid
 Genus	Paleocrisidia			Diastoporidae	valid
 Genus	Paracrescis			Lichenoporidae	valid
 Genus	Paratretocycloecia			Cerioporidae	valid
-Genus	Lichenopora			Lichenoporidae	valid
 Genus	Parleiosoecia			Leiosoeciidae	valid
 Genus	Partretocycloecia			Cerioporidae	valid
 Genus	Patenaria			Theonoidae	valid
@@ -2363,7 +2342,6 @@ Species	Catenicella	divaricata		Catenicella	invalid
 Species	Catenicella	frigida		Catenicella	invalid
 Species	Catenicella	hastata		Catenicella	invalid
 Species	Catenicella	maculata		Catenicella	invalid
-Species	Catenicella	maculata		Catenicella	invalid
 Species	Catenicella	margaritacea		Catenicella	invalid
 Species	Catenicella	rufa		Catenicella	invalid
 Species	Catenicella	taurina		Catenicella	invalid
@@ -2942,7 +2920,6 @@ Species	Hippoporina	chilota		Hippoporina	valid
 Species	Hippoporina	cincta		Hippoporina	invalid
 Species	Hippoporina	dentata		Hippoporina	valid
 Species	Hippoporina	elegans		Hippoporina	valid
-Species	Hippoporina	elegans		Hippoporina	valid
 Species	Hippoporina	epaxia		Hippoporina	invalid
 Species	Hippoporina	indica		Hippoporina	valid
 Species	Hippoporina	powelli		Hippoporina	valid
@@ -2969,8 +2946,6 @@ Species	Hippothoa	chilina		Hippothoa	invalid
 Species	Hippothoa	concava		Hippothoa	invalid
 Species	Hippothoa	conferta		Hippothoa	invalid
 Species	Hippothoa	cornuta		Hippothoa	invalid
-Species	Hippothoa	cornuta		Hippothoa	invalid
-Species	Hippothoa	cornuta		Hippothoa	invalid
 Species	Hippothoa	cornuta	aporosa	Hippothoa	invalid
 Species	Hippothoa	cornuta	holostoma	Hippothoa	invalid
 Species	Hippothoa	delta	parsimilis	Hippothoa	invalid
@@ -2992,7 +2967,6 @@ Species	Hippothoa	fenestrata		Hippothoa	invalid
 Species	Hippothoa	gigerium		Hippothoa	invalid
 Species	Hippothoa	holostoma		Hippothoa	invalid
 Species	Hippothoa	hyalina	catenifera	Hippothoa	invalid
-Species	Hippothoa	hyalina	cornuta	Hippothoa	invalid
 Species	Hippothoa	hyalina	cornuta	Hippothoa	invalid
 Species	Hippothoa	hyalina	divaricata	Hippothoa	invalid
 Species	Hippothoa	hyalina	incrassata	Hippothoa	invalid
@@ -3127,7 +3101,6 @@ Species	Melicerita	robusta		Melicerita	valid
 Species	Melicerita	temaukeli		Melicerita	valid
 Species	Membranipora	acuta		Membranipora	invalid
 Species	Membranipora	bispinosa		Membranipora	valid
-Species	Membranipora	bispinosa		Membranipora	valid
 Species	Membranipora	catenularia		Membranipora	invalid
 Species	Membranipora	chesapeakensis		Membranipora	valid
 Species	Membranipora	corbula		Membranipora	invalid
@@ -3213,7 +3186,6 @@ Species	Microporella	monilifera		Microporella	valid
 Species	Microporella	neocribroides		Microporella	valid
 Species	Microporella	ordo		Microporella	valid
 Species	Microporella	pulchra		Microporella	valid
-Species	Microporella	pulchra		Microporella	valid
 Species	Microporella	rogickae		Microporella	valid
 Species	Microporella	serrata		Microporella	valid
 Species	Microporella	speciosa		Microporella	valid
@@ -3292,7 +3264,6 @@ Species	Opaeophora	occulta		Opaeophora	valid
 Species	Opaeophora	browni		Opaeophora	valid
 Species	Opaeophora	gracilis		Opaeophora	invalid
 Species	Opaeophora	lepida		Opaeophora	valid
-Species	Opaeophora	lepida	monopia	Opaeophora	invalid
 Species	Oppiphorina	epaxia		Oppiphorina	valid
 Species	Orthoscuticella	innominata		Orthoscuticella	valid
 Species	Orthoscuticella	ventricosa		Orthoscuticella	valid
@@ -3907,7 +3878,6 @@ Species	Alcyonidium	erectum		Alcyonidium	valid
 Species	Alcyonidium	erectum		Alcyonidium	invalid
 Species	Alcyonidium	excavatum		Alcyonidium	valid
 Species	Alcyonidium	flabelliforme		Alcyonidium	valid
-Species	Alcyonidium	flabelliforme		Alcyonidium	valid
 Species	Alcyonidium	flavescens		Alcyonidium	valid
 Species	Alcyonidium	flustrelloides		Alcyonidium	valid
 Species	Alcyonidium	flustroides		Alcyonidium	valid
@@ -3957,7 +3927,6 @@ Species	Alcyonidium	proliferans		Alcyonidium	invalid
 Species	Alcyonidium	radiatum		Alcyonidium	valid
 Species	Alcyonidium	radicellatum		Alcyonidium	valid
 Species	Alcyonidium	ramosum		Alcyonidium	valid
-Species	Alcyonidium	ramosum		Alcyonidium	valid
 Species	Alcyonidium	rhomboidale		Alcyonidium	valid
 Species	Alcyonidium	rubrum		Alcyonidium	valid
 Species	Alcyonidium	rugosum		Alcyonidium	invalid
@@ -3979,7 +3948,6 @@ Species	Amathia	biseriata		Amathia	valid
 Species	Amathia	brasiliensis		Amathia	valid
 Species	Amathia	brongniartii		Amathia	valid
 Species	Amathia	connexa		Amathia	valid
-Species	Amathia	convoluta		Amathia	valid
 Species	Amathia	convoluta		Amathia	valid
 Species	Amathia	cornuta		Amathia	invalid
 Species	Amathia	crispa		Amathia	valid
@@ -4013,7 +3981,6 @@ Species	Amathia	semispiralis		Amathia	valid
 Species	Amathia	spinosa		Amathia	invalid
 Species	Amathia	spiralis		Amathia	valid
 Species	Amathia	tortuosa		Amathia	valid
-Species	Amathia	tricornis		Amathia	valid
 Species	Amathia	tricornis		Amathia	valid
 Species	Amathia	unilateralis		Amathia	invalid
 Species	Amathia	vermetiformis		Amathia	valid
@@ -4127,7 +4094,6 @@ Species	Farrella	dilatata		Farrella	valid
 Species	Farrella	elongata		Farrella	valid
 Species	Farrella	familiaria		Farrella	invalid
 Species	Farrella	fusca		Farrella	invalid
-Species	Farrella	fusca		Farrella	invalid
 Species	Farrella	gigantea		Farrella	invalid
 Species	Farrella	pedicellata		Farrella	invalid
 Species	Farrella	producta		Farrella	valid
@@ -4234,8 +4200,6 @@ Species	Nolella	spinifera		Nolella	valid
 Species	Nolella	stipata		Nolella	valid
 Species	Nolella	thalassae		Nolella	invalid
 Species	Norodoniana	cambodjiensis		Norodoniana	valid
-Species	Norodoniana	cambodjiensis		Norodoniana	valid
-Species	Norodoniana	sinensis		Norodoniana	valid
 Species	Norodoniana	sinensis		Norodoniana	valid
 Species	Pachyzoon	atlanticum		Pachyzoon	valid
 Species	Paludicella	ehrenbergi		Paludicella	valid
@@ -4457,7 +4421,6 @@ Species	Parantropora	penelope		Parantropora	valid
 Species	Malakosaria	dentata		Malakosaria	valid
 Species	Malakosaria	sinclairii		Malakosaria	valid
 Species	Celleporaria	prolifera		Celleporaria	valid
-Species	Cellaria	coronata		Cellaria	valid
 Species	Reteporella	abnormis		Reteporella	valid
 Species	Buffonellodes	edwardsiana		Buffonellodes	valid
 Species	Scrupocellaria	scruposa	puelcha	Scrupocellaria	valid
@@ -4506,7 +4469,6 @@ Species	Aspericreta	favulosa		Aspericreta	valid
 Species	Favosipora	otagoensis		Favosipora	valid
 Species	Pseudolunularia	enigma		Pseudolunularia	valid
 Species	Pseudolunularia	unguis		Pseudolunularia	valid
-Species	Reteporella	gracilis		Reteporella	valid
 Species	Biaviculigera	falaria		Biaviculigera	valid
 Species	Macropora	polymorpha		Macropora	valid
 Species	Lifuella	articulata		Lifuella	valid
@@ -4561,7 +4523,6 @@ Species	Galeopsis	bispiramina		Galeopsis	valid
 Species	Galeopsis	circella		Galeopsis	valid
 Species	Leiosalpinx	attenuata		Leiosalpinx	invalid
 Species	Leiosalpinx	australis		Leiosalpinx	valid
-Species	Leiosalpinx	attenuata		Leiosalpinx	invalid
 Species	Leiosalpinx	australis		Leiosalpinx	invalid
 Species	Celleporaria	ampliata		Celleporaria	valid
 Species	Psilopsella	foresti		Psilopsella	valid
@@ -4614,7 +4575,6 @@ Species	Catenicella	longicaudata		Catenicella	valid
 Species	Catenicella	tenella		Catenicella	valid
 Species	Catenicella	triangulifera		Catenicella	valid
 Species	Catenicella	tuberculifera		Catenicella	valid
-Species	Catenicella	uberrima		Catenicella	valid
 Species	Catenicella	uberrima		Catenicella	valid
 Species	Characodoma	longitudinale		Characodoma	valid
 Species	Galeopsis	bipatens		Galeopsis	valid
@@ -4739,7 +4699,6 @@ Species	Exochella	armata		Exochella	valid
 Species	Bitectipora	cincta		Bitectipora	valid
 Species	Bitectipora	ozalea		Bitectipora	valid
 Species	Calyptotheca	janua		Calyptotheca	valid
-Species	Hippothyris	ordinaria		Hippothyris	valid
 Species	Mucropetraliella	intermediata		Mucropetraliella	valid
 Species	Parkermavella	aurita		Parkermavella	valid
 Species	Parkermavella	pseudoneptuni		Parkermavella	valid
