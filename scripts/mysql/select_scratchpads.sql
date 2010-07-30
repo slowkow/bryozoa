@@ -13,7 +13,8 @@ SELECT
   `comments`,
   `details`
 FROM `scratchpads`
-ORDER BY FIELD(
+ORDER BY 
+  FIELD(
   `rank_name`,
   'Phlylum',
   'Class',
@@ -24,5 +25,5 @@ ORDER BY FIELD(
   'Family',
   'Genus',
   'Species',
-  'Subspecies'
-);
+  'Subspecies'),
+  `full_name`;
