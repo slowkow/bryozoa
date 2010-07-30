@@ -12,7 +12,7 @@ use Getopt::Long;
 
 $ARGV[0] or die("Display a Tk Tree.\nUsage: tktree.pl <file>\n");
 
-my $main = MainWindow->new(-title => "Bryozoa");
+my $main = MainWindow->new(-title => $ARGV[0]);
 my $tree = $main->ScrlTree(
     -itemtype   => 'text',
     -separator  => '@',
