@@ -60,30 +60,18 @@ $ranknames = array(
   99999 => 'Error',
 );
 
-/**
- * Return true or false if the rank code number is not equal to some values.
- * 
- * @param rank_code
- *   A rank code number.
- * @return
- *   Return true if the rank code is not equal to some values.
- */
-function isValidRankCode($rank_code) {
-  switch ($rank_code) {
-    case 10: // Phylum
-    case 20: // Class
-    case 30: // Order
-    case 40: // Suborder
-    case 50: // Infraorder
-    case 70: // Superfamily
-    case 80: // Family
-    case 90: // Genus
-    case 100: // Subgenus
-    case 110: // Species
-      return true;
-  }
-  return false;
-}
+$validranks = array(
+  'Phylum',
+  'Class',
+  'Order',
+  'Suborder',
+  'Infraorder',
+  'Superfamily',
+  'Family',
+  'Genus',
+  'Subgenus',
+  'Species',
+);
 /**
  * Query the bryozone_taxa table with a taxonid and return the associated row.
  * 
@@ -115,9 +103,12 @@ function getRow($taxonid) {
  * @see getRow()
  */
 function nextRealParent($row) {
+  global $ranknames;
+  global $validranks;
   while ($row['parentid']) {
     $row = getRow($row['parentid']);
-    if ($row['taxonname'] != 'Uncertain' && isValidRankCode($row['rankcode'])) {
+    if ($row['taxonname'] != 'Uncertain'
+      && in_array($ranknames[$row['rankcode']], $validranks)) {
       return $row;
     }
   }
@@ -138,12 +129,14 @@ $result = mysql_query(
  * Print the header
  */
 print("rank_name\tunit_name1\tunit_name2\tunit_name3\tparent_name\tusage\n");
-print("Phylum\tPhylum Bryozoa\t\t\t\tvalid\n");
+print("Phylum\tBryozoa\t\t\t\tvalid\n");
 
+// prevent repeated rows
+$allrows = array();
 // loop through results
 while ($row = mysql_fetch_assoc($result)) {
   // we don't care for invalid records at the moment
-  if (!isValidRankCode($row['rankcode'])) {
+  if (!in_array($ranknames[$row['rankcode']], $validranks)) {
     continue;
   }
   
@@ -183,8 +176,10 @@ while ($row = mysql_fetch_assoc($result)) {
   
   // we have what we need
   if ($rank_name && $unit_name1 && $parent_name && $usage) {
-    //print("$rank_name\t$rank_name $unit_name1\t$unit_name2\t$unit_name3\t$parent_rank_name $parent_name\t$usage\n");
-    print("$rank_name\t$unit_name1\t$unit_name2\t$unit_name3\t$parent_name\t$usage\n");
+    if (($allrows["$rank_name\t$unit_name1\t$unit_name2\t$unit_name3\t$parent_name\t$usage\n"] += 1)
+      == 1) {
+      print("$rank_name\t$unit_name1\t$unit_name2\t$unit_name3\t$parent_name\t$usage\n");
+    }
   }
 }
 mysql_free_result($result);
