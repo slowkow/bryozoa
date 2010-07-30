@@ -30,8 +30,8 @@ my %ranksort = (
 );
 
 $ARGV[0] or die
-"Usage: checkitis.pl [OPTION]... [FILE]\
-Try 'checkitis.pl --help' for more information.\n";
+"Usage: itis2.pl [OPTION]... [FILE]\
+Try 'itis2.pl --help' for more information.\n";
 
 my ($output, $withrank, $withauthor, $lowestrank, $graphviz, $withtext);
 GetOptions(
@@ -316,7 +316,7 @@ __END__
 
 =head1 NAME
 
-checkitis.pl
+itis2.pl
 
 Check an ITIS-for-Scratchpads file for proper linkage between children and
 parents. More functions available below.
@@ -324,26 +324,26 @@ parents. More functions available below.
 =head1 USAGE
 
  # check for proper linkage between children and parents, print results
- checkitis.pl itisfile.tab
+ itis2.pl itisfile.tab
 
  # print all unique paths from highest to lowest ranks
- checkitis.pl -o p itisfile.tab
+ itis2.pl -o p itisfile.tab
 
  # print full hierarchy for all taxa from highest rank to Order
- checkitis.pl -o fullhierarchy -l order itisfile.tab
+ itis2.pl -o fullhierarchy -l order itisfile.tab
 
  # print newick format with author appended to each taxon name
- checkitis.pl -o new -a itisfile.tab
- checkitis.pl --output newick --withauthor itisfile.tab
+ itis2.pl -o new -a itisfile.tab
+ itis2.pl --output newick --withauthor itisfile.tab
 
  # print dot format for GraphViz, nodes without text
- checkitis.pl --output graphviz itisfile.tab
+ itis2.pl --output graphviz itisfile.tab
  
  # print dot format for GraphViz, nodes with text
- checkitis.pl --output graphviz --withtext itisfile.tab
+ itis2.pl --output graphviz --withtext itisfile.tab
  
  # produce a jpeg of the GraphViz graph down to Order, nodes with text
- checkitis.pl --lowestrank order -o g --withtext --graphviz jpeg itisfile.tab
+ itis2.pl --lowestrank order -o g --withtext --graphviz jpeg itisfile.tab
 
 =head1 OPTIONS
 
