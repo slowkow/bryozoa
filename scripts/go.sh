@@ -1,5 +1,4 @@
-SCRIPTSDIR='/home/kamil/Dropbox/fieldmuseum/bryozoa/scripts'
-cd "$SCRIPTSDIR"
+SCRIPTSDIR=`pwd`
 
 ################################################################################
 # Phil Bock's files
@@ -36,6 +35,18 @@ mysql < create_scratchpads.sql
 cd "$SCRIPTSDIR/php"
 echo "Importing Bryan Quach's higher taxonomy into scratchpads table..."
 php scratchpads_bryan.php
+
+cd "$SCRIPTSDIR/mysql"
+echo "Exporting scratchpads table into tab-delimited file..."
+./output_scratchpads.sh
+
+cd "$SCRIPTSDIR/perl"
+echo "Translating scratchpads file into full hierarchy file for Bryan's taxonomy..."
+./itis2.pl -o f ../mysql/output/scratchpads.tab > output/bryan_fullhierarchy.txt
+echo "Translating scratchpads file into unique paths file for Bryan's taxonomy..."
+./itis2.pl -o p ../mysql/output/scratchpads.tab > output/bryan_uniquepaths.txt
+
+cd "$SCRIPTSDIR/php"
 echo "Importing Phil Bock's species into scratchpads table..."
 php scratchpads_species.php
 echo "Querying GNI for missing authors..."
@@ -51,8 +62,8 @@ echo "Exporting scratchpads table into tab-delimited file..."
 
 cd "$SCRIPTSDIR/perl"
 echo "Translating scratchpads file into full hierarchy..."
-./checkitis.pl -o f ../mysql/output/scratchpads.tab > output/scratchpads_fullhierarchy.txt
+./itis2.pl -o f ../mysql/output/scratchpads.tab > output/scratchpads_fullhierarchy.txt
 echo "Translating scratchpads file into unique paths file..."
-./checkitis.pl -o p ../mysql/output/scratchpads.tab > output/scratchpads_uniquepaths.txt
+./itis2.pl -o p ../mysql/output/scratchpads.tab > output/scratchpads_uniquepaths.txt
 echo "Checking scratchpads file for proper child-parent linkage..."
-./checkitis.pl ../mysql/output/scratchpads.tab
+./itis2.pl ../mysql/output/scratchpads.tab
