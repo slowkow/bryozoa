@@ -153,6 +153,11 @@ mysql_query(
   . " AND `t`.`rankcode` < 110"
 );
 
+// stats
+$count = array();
+
+$count['Phylum'] = 1;
+
 // insert Bryozoa
 insertIntoScratchpads(
   array(
@@ -185,17 +190,20 @@ while ($row = mysql_fetch_assoc($result)) {
   $unit_name1 = trim(ucfirst(strtolower($unit_name1)));
   $unit_name2 = trim(strtolower($unit_name2));
   $unit_name3 = trim(strtolower($unit_name3));
+  $rank_name  = $ranknames[$row['rankcode']];
   
   // we still have a name after trimming and rank is valid
-  if ($unit_name1 && in_array($ranknames[$row['rank_code']], $validranks)) {
+  if ($unit_name1 && in_array($rank_name, $validranks)) {
     // find a parent that is named
     // if we don't find anyone, then Bryozoa is the parent
     $parent_row = nextRealParent($row);
     $parent_name = trim(ucfirst(strtolower($parent_row['name'])));
     
+    $count[$ranknames[$row['rankcode']]] += 1;
+    
     insertIntoScratchpads(
       array(
-        'rank_name'    => $ranknames[$row['rankcode']],
+        'rank_name'    => $rank_name,
         'unit_name1'   => $unit_name1,
         'unit_name2'   => $unit_name2,
         'unit_name3'   => $unit_name3,
@@ -221,4 +229,9 @@ while ($row = mysql_fetch_assoc($result)) {
       'parent_name' => trim($row['parent_name'] . ' ' . getTaxonAuthor($row['parent_name'])),
     )
   );
+}
+
+// print some stats
+foreach ($count as $rank => $num) {
+  print('Inserted ' . $num . ' valid ' . plural($rank) . ".\n");
 }
