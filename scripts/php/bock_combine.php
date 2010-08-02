@@ -54,8 +54,12 @@ mysql_query("ALTER TABLE `bryozoans`"
 $result = mysql_query(
   "SELECT `id`, `name`, `currentname`"
   . " FROM `bryozoans`"
-  . " WHERE (`currentname` IS NOT NULL AND `currentname` < 99990)"
+  . " WHERE `currentname` IN"
+  . " (SELECT `id` from `bryozoans`)"
 );
+
+// stats
+$count = array();
 
 // loop through results
 while ($row = mysql_fetch_assoc($result)) {
@@ -67,7 +71,7 @@ while ($row = mysql_fetch_assoc($result)) {
       , mysql_real_escape_string($row['currentname'])
     );
     // do the query and grab the result
-    $row2 = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+    $row2 = mysql_fetch_assoc(mysql_query($query));
     $currentnamestring = $row2['name'];
   }
   // don't do second query if the record points to itself
@@ -76,6 +80,7 @@ while ($row = mysql_fetch_assoc($result)) {
   }
   // we got a name
   if ($currentnamestring !== NULL) {
+    $count['set'] += 1;
     $querystring = "UPDATE `bryozoans`"
       . " SET `currentnamestring`='%s'"
       . " WHERE `name`='%s'";
@@ -87,11 +92,16 @@ while ($row = mysql_fetch_assoc($result)) {
   }
   // we couldn't get a name, so leave it
   else {
+    $count['left unset'] += 1;
     //deleteRow('bryozoans', 'bryozoans_delete', 'name', $row['name']);
   }
 }
 mysql_free_result($result);
 
+// print some stats
+foreach ($count as $key => $value) {
+  print("$value records in table bryozoans had currentnamestring $key.\n";
+}
 //exit("Stopped after dereferencing `bryozoans`\n");
 
 /**
@@ -107,6 +117,9 @@ $result = mysql_query(
   "SELECT `speciesid`, `name`, `first_name`"
   . " FROM `currentspecies`"
   . " WHERE `name` LIKE '%=%'");
+
+// stats
+$count = array();
 
 // loop through results
 while ($row = mysql_fetch_assoc($result)) {
@@ -130,7 +143,7 @@ while ($row = mysql_fetch_assoc($result)) {
     , mysql_real_escape_string($validid)
   );
   // do the query and grab the result
-  $row2 = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  $row2 = mysql_fetch_assoc(mysql_query($query));
   $validname = $row2['name'];
   
   // if the validname is also a 'was Foo Bar=123' name, we want 'Foo Bar'
@@ -141,6 +154,7 @@ while ($row = mysql_fetch_assoc($result)) {
   
   // we got names
   if ($invalidname && $validname) {
+    $count['set'] += 1;
     $querystring = "UPDATE `currentspecies`"
       . " SET `name`='%s', `currentnamestring`='%s'"
       . " WHERE `name`='%s'";
@@ -151,8 +165,16 @@ while ($row = mysql_fetch_assoc($result)) {
     );
     mysql_query($query);
   }
+  else {
+    $count['left unset'] += 1;
+  }
 }
 mysql_free_result($result);
+
+// print some stats
+foreach ($count as $key => $value) {
+  print("$value records in table bryozoans had currentnamestring $key.\n";
+}
 
 // We handled as many 'was Foo Bar=123' records as possible
 // Delete any remaining records that still have an equals sign
@@ -246,7 +268,7 @@ while ($row = mysql_fetch_assoc($result)) {
       , mysql_real_escape_string($row['name'])
   );
   $result2 = mysql_query($query);
-  if ($match = mysql_fetch_array($result2, MYSQL_ASSOC)) {
+  if ($match = mysql_fetch_assoc($result2)) {
     if (
     $match['currentnamestring'] != $row['currentnamestring']
     //|| $match['author'] != $row['author']
