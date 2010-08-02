@@ -86,7 +86,7 @@ function getRow($taxonid) {
   $query = sprintf("SELECT * FROM `bryozone_taxa` WHERE `taxonid`='%s'",
     mysql_real_escape_string($taxonid)
   );
-  return mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  return mysql_fetch_assoc(mysql_query($query));
 }
 /**
  * input a row

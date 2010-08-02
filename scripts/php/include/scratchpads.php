@@ -184,7 +184,7 @@ function getTaxonAuthor($full_name) {
     . " WHERE `full_name`='%s'",
     mysql_real_escape_string($full_name)
   );
-  $result = mysql_fetch_array(mysql_query($query), MYSQL_ASSOC);
+  $result = mysql_fetch_assoc(mysql_query($query));
   return $result['taxon_author'];
 }
 /**
