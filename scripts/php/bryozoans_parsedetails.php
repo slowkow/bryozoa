@@ -3,6 +3,9 @@
  * In Phil Bock's table `bryozoans`, look at valid=0 names that do not point
  * to a current name. Parse the `details` field and try to figure out the
  * current name. Set `currentnamestring` when we find a good name.
+ * 
+ * Note:
+ * This should be performed AFTER merging `currentspecies` into `bryozoans`.
  */
 
 require 'include/connect.php';
