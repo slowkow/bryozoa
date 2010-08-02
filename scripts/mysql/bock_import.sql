@@ -30,7 +30,7 @@ SELECT 'Loading into table bryozoans' AS ' ';
 /*
 load the tab-delimited file into the database, ignore the header line
 */
-LOAD DATA LOCAL INFILE '../../bock/Jun2010/Bryozoans_mysql.tab' INTO TABLE `bryozoans` IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '../../bock/Jun2010/mysql/bryozoans.tab' INTO TABLE `bryozoans` IGNORE 1 LINES;
 SELECT COUNT(*) FROM `bryozoans`;
 
 /*
@@ -70,7 +70,7 @@ SELECT 'Loading into table currentspecies' AS ' ';
 /*
 load the tab-delimited file into the database, ignore the header line
 */
-LOAD DATA LOCAL INFILE '../../bock/Jun2010/CURRENTSPECIES_mysql.tab' INTO TABLE `currentspecies` IGNORE 1 LINES;
+LOAD DATA LOCAL INFILE '../../bock/Jun2010/mysql/currentspecies.tab' INTO TABLE `currentspecies` IGNORE 1 LINES;
 SELECT COUNT(*) FROM `currentspecies`;
 
 /*
