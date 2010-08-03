@@ -33,6 +33,9 @@ Records in currentspecies_delete
 COUNT(*)
 1481
 Combining Phil Bock's tables...
+24470 records in table bryozoans had currentnamestring set.
+551 records in table currentspecies had currentnamestring set.
+8 records in table currentspecies had currentnamestring left unset.
 Parsing Phil Bock's nunc, etiam, vide...
 count: 2290
 Creating MySQL tables and importing Bryan Quach's data...
@@ -71,109 +74,935 @@ Warning	1265	Data truncated for column 'revised' at row 15073
 Warning	1261	Row 15336 doesn't contain data for all columns
 Creating MySQL scratchpads table...
 Importing Bryan Quach's higher taxonomy into scratchpads table...
-Inserted 3 valid Classes
-Inserted 9 valid Orders
-Inserted 25 valid Suborders
-Inserted 2 valid Infraorders
-Inserted 342 valid Families
-Inserted 42 valid Superfamilies
-Inserted 2159 valid Genera
+Inserted 1 valid Phyla.
+Inserted 3 valid Classes.
+Inserted 9 valid Orders.
+Inserted 25 valid Suborders.
+Inserted 2 valid Infraorders.
+Inserted 342 valid Families.
+Inserted 42 valid Superfamilies.
+Inserted 2159 valid Genera.
+Exporting scratchpads table into tab-delimited file...
+Translating scratchpads file into full hierarchy file for Bryan's taxonomy...
+Translating scratchpads file into unique paths file for Bryan's taxonomy...
+Creating tab-delimited file for Bryozone taxonomy...
+Translating Bryozone file into full hierarchy...
+Translating Bryozone file into unique paths...
 Importing Phil Bock's species into scratchpads table...
 Inserted 19974 valid species by genus name.
 Inserted 70 valid species by family name.
 264 valid species not inserted because parent genus and parent family do not exist.
 Inserted 7751 invalid species by genus name.
 2966 invalid species not inserted because parent genus doesn't exist.
-Querying GNI for missing authors...
-Progress: 1/85	Taxon: Batoporoidea	Author(s): 
-Progress: 2/85	Taxon: Arcanoporidae	Author(s): 
-Progress: 3/85	Taxon: Beisselinidae	Author(s): 
-Progress: 4/85	Taxon: Bicellariellidae	Author(s): 
-Progress: 5/85	Taxon: Columnothecidae	Author(s): 
-Progress: 6/85	Taxon: Hesychoxeniidae	Author(s): 
-Progress: 7/85	Taxon: Nematoporellidae	Author(s): 
-Progress: 8/85	Taxon: Palescharidae	Author(s): 
-Progress: 9/85	Taxon: Radioporidae	Author(s): 
-Progress: 10/85	Taxon: Taenioporinidae	Author(s): 
-Progress: 11/85	Taxon: Asatkinella	Author(s): 
-Progress: 12/85	Taxon: Grammanatosoecia	Author(s): 
-Progress: 13/85	Taxon: Klugenotus	Author(s): 
-Progress: 14/85	Taxon: Phosphasipho	Author(s): 
-Progress: 15/85	Taxon: Phosphotesta	Author(s): 
-Progress: 16/85	Taxon: Phylloporinella	Author(s): 
-Progress: 17/85	Taxon: Robinella	Author(s): 
-Progress: 18/85	Taxon: Schischcatella	Author(s): 
-Progress: 19/85	Taxon: Cystoporella	Author(s): 
-Progress: 20/85	Taxon: Cribriporella	Author(s): 
-Progress: 21/85	Taxon: Stephanollina	Author(s): 
-Progress: 22/85	Taxon: Sibiredictya	Author(s): 
-Progress: 23/85	Taxon: Nemacanthoclema	Author(s): 
-Progress: 24/85	Taxon: Hemiulrichostylus	Author(s): 
-Progress: 25/85	Taxon: Semifenestella	Author(s): 
-Progress: 26/85	Taxon: Fenestellata	Author(s): 
-Progress: 27/85	Taxon: Bashkirella	Author(s): 
-Progress: 28/85	Taxon: Polipora	Author(s): 
-Progress: 29/85	Taxon: Aviculofenestella	Author(s): 
-Progress: 30/85	Taxon: Esthonioporella	Author(s): 
-Progress: 31/85	Taxon: Permoleioclema	Author(s): 
-Progress: 32/85	Taxon: Abakana	Author(s): 
-Progress: 33/85	Taxon: Atactoporella	Author(s): 
-Progress: 34/85	Taxon: Anomalotoechus	Author(s): 
-Progress: 35/85	Taxon: Dunayeva	Author(s): 
-Progress: 36/85	Taxon: Hunanopora	Author(s): 
-Progress: 37/85	Taxon: Metelipora	Author(s): 
-Progress: 38/85	Taxon: Qilianopora	Author(s): 
-Progress: 39/85	Taxon: Orbiramus	Author(s): 
-Progress: 40/85	Taxon: Yunnanopora	Author(s): 
-Progress: 41/85	Taxon: Dybowskites	Author(s): 
-Progress: 42/85	Taxon: Cliocystiramus	Author(s): 
-Progress: 43/85	Taxon: Fistuliramus	Author(s): 
-Progress: 44/85	Taxon: Pakrydictya	Author(s): 
-Progress: 45/85	Taxon: Ganiella	Author(s): 
-Progress: 46/85	Taxon: Bactrellaria pacifica	Author(s): 
-Progress: 47/85	Taxon: Koneprusiella	Author(s): 
-Progress: 48/85	Taxon: Nekhoroshoviella	Author(s): 
-Progress: 49/85	Taxon: Cryptostyloecia	Author(s): 
-Progress: 50/85	Taxon: Inferusia	Author(s): 
-Progress: 51/85	Taxon: Leiosellina	Author(s): 
-Progress: 52/85	Taxon: Paulella	Author(s): 
-Progress: 53/85	Taxon: Reussinella	Author(s): 
-Progress: 54/85	Taxon: Ijimaiellia	Author(s): 
-Progress: 55/85	Taxon: Bowerbankia gracilis bengalensis	Author(s): 
-Progress: 56/85	Taxon: Fistulipora putunggouensis	Author(s): 
-Progress: 57/85	Taxon: Cyphotrypa putunggouensis	Author(s): 
-Progress: 58/85	Taxon: Eridotrypella gansuensis	Author(s): 
-Progress: 59/85	Taxon: Fistulipora procerula	Author(s): 
-Progress: 60/85	Taxon: Rhombopora dangdouensis	Author(s): 
-Progress: 61/85	Taxon: Hallopora congesta	Author(s): 
-Progress: 62/85	Taxon: Leioclema clarum	Author(s): 
-Progress: 63/85	Taxon: Leioclema claudestinum	Author(s): 
-Progress: 64/85	Taxon: Stereotoechus zonatus	Author(s): 
-Progress: 65/85	Taxon: Electra betula	Author(s): 
-Progress: 66/85	Taxon: Laxifenestella stuckenbergi	Author(s): 
-Progress: 67/85	Taxon: Flexifenestella reteporinaeformis	Author(s): 
-Progress: 68/85	Taxon: Fistuliramus tuberculatus	Author(s): 
-Progress: 69/85	Taxon: Fistulipora asteria	Author(s): 
-Progress: 70/85	Taxon: Permofenestella pentagonalis	Author(s): 
-Progress: 71/85	Taxon: Polyporella spininodatiformis	Author(s): 
-Progress: 72/85	Taxon: Asperopora inornatum	Author(s): 
-Progress: 73/85	Taxon: Hesyxochenia	Author(s): 
-Progress: 74/85	Taxon: Hincksina flustroides crassispinata	Author(s): 
-Progress: 75/85	Taxon: Laxifenestella stschugorensis	Author(s): 
-Progress: 76/85	Taxon: Leioclemella	Author(s): 
-Progress: 77/85	Taxon: Marsonniella	Author(s): 
-Progress: 78/85	Taxon: Permofenestella angustataeformis	Author(s): 
-Progress: 79/85	Taxon: Quadricellara	Author(s): 
-Progress: 80/85	Taxon: Pencilleta	Author(s): 
-Progress: 81/85	Taxon: Leioclema inornatum	Author(s): 
-Progress: 82/85	Taxon: Beania octaeeras	Author(s): 
-Progress: 83/85	Taxon: Crepidacantha crenispina	Author(s): 
-Progress: 84/85	Taxon: Chaperia bilamellata	Author(s): 
-Progress: 85/85	Taxon: Polypora spininodatiformis	Author(s): 
-Inserting dummy taxa for unplaced taxa...
-Filling missing authors...
+Querying GNI for entries in scratchpads table with missing authors...
+Progress: 1/903	Taxon: Bryozoa	Author(s): Bryozoa	(Ehrenberg, 1831
+Progress: 2/903	Taxon: Batoporoidea	Author(s): 
+Progress: 3/903	Taxon: Colatooeciidae	Author(s): Colatooeciidae	Winston 2005
+Progress: 4/903	Taxon: Acoraniidae	Author(s): Acoraniidae	Lopez-Fe 2006
+Progress: 5/903	Taxon: Actinoporidae	Author(s): Actinoporidae	Vigneaux, 1949
+Progress: 6/903	Taxon: Arcanoporidae	Author(s): 
+Progress: 7/903	Taxon: Beisselinidae	Author(s): 
+Progress: 8/903	Taxon: Bicellariellidae	Author(s): 
+Progress: 9/903	Taxon: Columnothecidae	Author(s): 
+Progress: 10/903	Taxon: Cristatellidae	Author(s): Cristatellidae	Allman 1856
+Progress: 11/903	Taxon: Ditaxiporinidae	Author(s): Ditaxiporinidae	Cheetham 1963
+Progress: 12/903	Taxon: Exochellidae	Author(s): Exochellidae	Bassler, 1935
+Progress: 13/903	Taxon: Flabellotrypidae	Author(s): Flabellotrypidae	Dzik 1992
+Progress: 14/903	Taxon: Fredericellidae	Author(s): Fredericellidae	Hyatt 1868
+Progress: 15/903	Taxon: Hesychoxeniidae	Author(s): 
+Progress: 16/903	Taxon: Kielceporidae	Author(s): Kielceporidae	Dzik 1992
+Progress: 17/903	Taxon: Labioporellidae	Author(s): Labioporellidae	Harmer 1926
+Progress: 18/903	Taxon: Lophopodidae	Author(s): Lophopodidae	Rogick 1935
+Progress: 19/903	Taxon: Lyroporinae	Author(s): Lyroporinae	Goryunova 1992
+Progress: 20/903	Taxon: Nematoporellidae	Author(s): 
+Progress: 21/903	Taxon: Palescharidae	Author(s): 
+Progress: 22/903	Taxon: Panolicellidae	Author(s): Panolicellidae	Jebram 1985
+Progress: 23/903	Taxon: Pectinatellidae	Author(s): Pectinatellidae	Lacourt 1968
+Progress: 24/903	Taxon: Plagioeciidae	Author(s): Plagioeciidae	Canu 1918
+Progress: 25/903	Taxon: Calvetiidae	Author(s): Calvetiidae	Borg, 1944
+Progress: 26/903	Taxon: Diploclemidae	Author(s): Diploclemidae	Goryunova 1992
+Progress: 27/903	Taxon: Chiplonkarinidae	Author(s): Chiplonkarinidae	Taylor & Gordon 2007
+Progress: 28/903	Taxon: Gemelliporellidae	Author(s): Gemelliporellidae	Vigneaux, 1949
+Progress: 29/903	Taxon: Sfeniellidae	Author(s): Sfeniellidae	Gordon 2006
+Progress: 30/903	Taxon: Peedeesellidae	Author(s): Peedeesellidae	Taylor & McKinney 2006
+Progress: 31/903	Taxon: Phaceloporidae	Author(s): Phaceloporidae	Ulrich 1890
+Progress: 32/903	Taxon: Phragmoporidae	Author(s): Phragmoporidae	Pushkin 1987
+Progress: 33/903	Taxon: Plumatellidae	Author(s): Plumatellidae	Allman 1856
+Progress: 34/903	Taxon: Ptyloporidae	Author(s): Ptyloporidae	Goryunova 1992
+Progress: 35/903	Taxon: Radioporidae	Author(s): 
+Progress: 36/903	Taxon: Setosellinidae	Author(s): Setosellinidae	Hayward & Cook 1979
+Progress: 37/903	Taxon: Stephanellidae	Author(s): Stephanellidae	Lacourt 1968
+Progress: 38/903	Taxon: Taenioporinidae	Author(s): 
+Progress: 39/903	Taxon: Tamaroclemidae	Author(s): Tamaroclemidae	Goryunova 1992
+Progress: 40/903	Taxon: Vidronovellidae	Author(s): Vidronovellidae	Gorjunova 2006
+Progress: 41/903	Taxon: Hagenowinella	Author(s): Hagenowinella	Canu 1900
+Progress: 42/903	Taxon: Isoseculiflustra	Author(s): Isoseculiflustra	Liu & Hu 1991
+Progress: 43/903	Taxon: Virgocella	Author(s): Virgocella	Voigt 1957
+Progress: 44/903	Taxon: Asatkinella	Author(s): 
+Progress: 45/903	Taxon: Atagma	Author(s): Atagma	Lonsdale 1850
+Progress: 46/903	Taxon: Bitubigera	Author(s): Bitubigera	d'Orbigny 1852
+Progress: 47/903	Taxon: Brachysoecia	Author(s): Brachysoecia	Canu & Bassler 1922
+Progress: 48/903	Taxon: Calvetia	Author(s): Calvetia	Borg 1944
+Progress: 49/903	Taxon: Canalipora	Author(s): Canalipora	v. Hagenow [1851]	Canalipora	von Hagenow 1851
+Progress: 50/903	Taxon: Cardioecia	Author(s): Cardioecia	Canu & Bassler, 1922
+Progress: 51/903	Taxon: Cavarinella	Author(s): Cavarinella	Marsson 1887
+Progress: 52/903	Taxon: Chartecytis	Author(s): Chartecytis	Canu & Bassler 1926
+Progress: 53/903	Taxon: Choristopetalum	Author(s): Choristopetalum	Lonsdale 1849
+Progress: 54/903	Taxon: Circibipora	Author(s): Circibipora	Labracherie 1975
+Progress: 55/903	Taxon: Clausa	Author(s): Clausa	d'Orbigny 1852[3]
+Progress: 56/903	Taxon: Clypeina	Author(s): Clypeina	(Michelin 1845) Bassoullet et al.	Clypeina	(Michelin 1845) Bassoullet et al. 1978	Clypeina	J. L. H. Michelin, 1845	Clypeina	Michelin 1845
+Progress: 57/903	Taxon: Coelospiropora	Author(s): Coelospiropora	Voigt 1968
+Progress: 58/903	Taxon: Coronidmonea	Author(s): Coronidmonea	Voigt 1974
+Progress: 59/903	Taxon: Crescis	Author(s): Crescis	d'Orbigny 1854
+Progress: 60/903	Taxon: Crisia	Author(s): Crisia	Lamonroux 1812	Crisia	Lamouroux, 1812
+Progress: 61/903	Taxon: Crisulipora	Author(s): Crisulipora	Robertson 1910
+Progress: 62/903	Taxon: Cuffeyella	Author(s): Cuffeyella	Taylor & Wilson 1996
+Progress: 63/903	Taxon: Cytis	Author(s): Cytis	d'Orbigny 1854
+Progress: 64/903	Taxon: Densipora	Author(s): Densipora	MacGillivray 1881
+Progress: 65/903	Taxon: Diastopora	Author(s): Diastopora	Lamouroux, 1821
+Progress: 66/903	Taxon: Diastoporina	Author(s): Diastoporina	Ulrich 1890
+Progress: 67/903	Taxon: Diplopetalopora	Author(s): Diplopetalopora	Brood 1972
+Progress: 68/903	Taxon: Discocytis	Author(s): Discocytis	d'Orbigny 1854
+Progress: 69/903	Taxon: Echinocava	Author(s): Echinocava	d'Orbigny 1854
+Progress: 70/903	Taxon: Eohornera	Author(s): Eohornera	Brood 1972
+Progress: 71/903	Taxon: Erkosonea	Author(s): Erkosonea	Canu & Bassler 1920
+Progress: 72/903	Taxon: Exochoecia	Author(s): Exochoecia	Canu & Bassler 1920
+Progress: 73/903	Taxon: Fascipora	Author(s): Fascipora	d'Orbigny 1853
+Progress: 74/903	Taxon: Filicisparsa	Author(s): Filicisparsa	Voigt 1994
+Progress: 75/903	Taxon: Filisparsa	Author(s): Filisparsa	d'Orbigny 1852	Filisparsa	d'Orbigny 1852 [53]	Filisparsa	d'Orbigny 1852-3
+Progress: 76/903	Taxon: Fungella	Author(s): Fungella	Hagenow, 1851	Fungella	v. Hagenow [1851]	Fungella	von Hagenow 1851
+Progress: 77/903	Taxon: Grammanatosoecia	Author(s): 
+Progress: 78/903	Taxon: Hastingsia	Author(s): Hastingsia	S. Watson, 1879
+Progress: 79/903	Taxon: Heterohaplooecia	Author(s): Heterohaplooecia	Voigt & Viaud 1983
+Progress: 80/903	Taxon: Plagioecia	Author(s): Plagioecia	Canu, 1918
+Progress: 81/903	Taxon: Infundibulipora	Author(s): Infundibulipora	Brood 1972
+Progress: 82/903	Taxon: Klugenotus	Author(s): 
+Progress: 83/903	Taxon: Lekythionia	Author(s): Lekythionia	Canu & Bassler 1920
+Progress: 84/903	Taxon: Lunariopsis	Author(s): Lunariopsis	Voigt 1993
+Progress: 85/903	Taxon: Serpentipora	Author(s): Serpentipora	Brood 1976	Serpentipora	Brook 1976
+Progress: 86/903	Taxon: Spiritopora	Author(s): Spiritopora	Taylor & Gordon 2003
+Progress: 87/903	Taxon: Stathmepora	Author(s): Stathmepora	Canu & Bassler 1922
+Progress: 88/903	Taxon: Stellihagenowia	Author(s): Stellihagenowia	Bassler 1953
+Progress: 89/903	Taxon: Stigmatoechos	Author(s): Stigmatoechos	Marsson, 1887
+Progress: 90/903	Taxon: Tecticavea	Author(s): Tecticavea	d'Orbigny 1854
+Progress: 91/903	Taxon: Trochiliopora	Author(s): Trochiliopora	Gregory 1909
+Progress: 92/903	Taxon: Tubigerina	Author(s): Tubigerina	Canu 1911
+Progress: 93/903	Taxon: Laterocavea	Author(s): Laterocavea	d'Orbigny 1852[3]
+Progress: 94/903	Taxon: Anolotichiina	Author(s): Anolotichiina	Pushkin 1992	Anolotichiina	Pushkin in Pushkin & Gataulina 1992
+Progress: 95/903	Taxon: Antonoclema	Author(s): Antonoclema	Morozova & Lisitsyn 2002
+Progress: 96/903	Taxon: Ceidmonea	Author(s): Ceidmonea	Pergens 1893
+Progress: 97/903	Taxon: Claviradix	Author(s): Claviradix	Ferguson 1961
+Progress: 98/903	Taxon: Coeloclemis	Author(s): Coeloclemis	Girty 1910
+Progress: 99/903	Taxon: Eoheteropora	Author(s): Eoheteropora	Morozova 1984	Eoheteropora	Morozova in Morozova & Karnikova 1984	Eoheteropora	Morozova in Morozova & Zharnikova 1984
+Progress: 100/903	Taxon: Fasciculiporoides	Author(s): Fasciculiporoides	Kluge, 1955
+Progress: 101/903	Taxon: Feldmannia	Author(s): Feldmannia	G. Hamel, 1939
+Progress: 102/903	Taxon: Filicavea	Author(s): Filicavea	d'Orbigny 1852 [53]	Filicavea	d'Orbigny 1852-3
+Progress: 103/903	Taxon: Hyalotoechus	Author(s): Hyalotoechus	McNair 1942
+Progress: 104/903	Taxon: Inconobotopora	Author(s): Inconobotopora	Tang & Cuffey 1998
+Progress: 105/903	Taxon: Jifarahpora	Author(s): Jifarahpora	Buttler, Cherns & Massa 2007
+Progress: 106/903	Taxon: Kanoshopora	Author(s): Kanoshopora	Ernst, Taylor & Wilson 2007
+Progress: 107/903	Taxon: Lakkella	Author(s): Lakkella	Ernst, Senowbari-Daryan & Hamedani 2006
+Progress: 108/903	Taxon: Macgowanella	Author(s): Macgowanella	Nelson & Bolton 1980
+Progress: 109/903	Taxon: Mackinneyella	Author(s): Mackinneyella	Morozova & Lisitsyn 1996
+Progress: 110/903	Taxon: Maennilina	Author(s): Maennilina	Lavrentjeva 1996
+Progress: 111/903	Taxon: Micropylepora	Author(s): Micropylepora	Jiang 1982
+Progress: 112/903	Taxon: Minutolunaria	Author(s): Minutolunaria	Pushkin 1992	Minutolunaria	Pushkin in Pushkin & Gataulina 1992
+Progress: 113/903	Taxon: Nicholsonella	Author(s): Nicholsonella	Miller 1889	Nicholsonella	Ulrich 1889
+Progress: 114/903	Taxon: Niigaella	Author(s): Niigaella	Nekhorosheva 1977
+Progress: 115/903	Taxon: Omniretepora	Author(s): Omniretepora	d'Orbigny 1849
+Progress: 116/903	Taxon: Palaeocoryne	Author(s): Palaeocoryne	Duncan & Jenkins 1870
+Progress: 117/903	Taxon: Paramaychella	Author(s): Paramaychella	Morozova 2004
+Progress: 118/903	Taxon: Petaloporella	Author(s): Petaloporella	Prantl 1935
+Progress: 119/903	Taxon: Phosphasipho	Author(s): 
+Progress: 120/903	Taxon: Phosphotesta	Author(s): 
+Progress: 121/903	Taxon: Phylloporinella	Author(s): 
+Progress: 122/903	Taxon: Pileotrypella	Author(s): Pileotrypella	Goryunova 1993
+Progress: 123/903	Taxon: Pinnatopora	Author(s): Pinnatopora	Shrubsole 1884	Pinnatopora	Shrubsole in Shrubsole & Vine 1884	Pinnatopora	Vine 1884
+Progress: 124/903	Taxon: Pinocladia	Author(s): Pinocladia	Suttner & Ernst 2007
+Progress: 125/903	Taxon: Pseudobathyalozoon	Author(s): Pseudobathyalozoon	d'Hondt 2006
+Progress: 126/903	Taxon: Ptilotrypa	Author(s): Ptilotrypa	Miller 1889	Ptilotrypa	Ulrich 1889
+Progress: 127/903	Taxon: Ptilotrypina	Author(s): Ptilotrypina	Astrova 1965
+Progress: 128/903	Taxon: Radiotrypa	Author(s): Radiotrypa	Brood 1978
+Progress: 129/903	Taxon: Robinella	Author(s): 
+Progress: 130/903	Taxon: Schallreuterella	Author(s): Schallreuterella	Hillmer 1987
+Progress: 131/903	Taxon: Schischcatella	Author(s): 
+Progress: 132/903	Taxon: Spatiopora	Author(s): Spatiopora	Ulrich 1882
+Progress: 133/903	Taxon: Spirella	Author(s): Spirella	Hagenow 1851
+Progress: 134/903	Taxon: Spirentalophora	Author(s): Spirentalophora	Voigt 1968
+Progress: 135/903	Taxon: Stereodictya	Author(s): Stereodictya	Conti 1990
+Progress: 136/903	Taxon: Synocladiella	Author(s): Synocladiella	Lisitsyn 2004
+Progress: 137/903	Taxon: Taeniodictya	Author(s): Taeniodictya	Ulrich 1888
+Progress: 138/903	Taxon: Tetratoechus	Author(s): Tetratoechus	Boardman & McKinney 1976
+Progress: 139/903	Taxon: Trepocryptopora	Author(s): Trepocryptopora	Yang 1957
+Progress: 140/903	Taxon: Urnatella	Author(s): Urnatella	Leidy, 1851
+Progress: 141/903	Taxon: Varunella	Author(s): Varunella	Wiebach 1974
+Progress: 142/903	Taxon: Mitoclemella	Author(s): Mitoclemella	Bassler 1952
+Progress: 143/903	Taxon: Crisinella	Author(s): Crisinella	Hall 1883
+Progress: 144/903	Taxon: Semitubigera	Author(s): Semitubigera	d'Orbigny 1853
+Progress: 145/903	Taxon: Phacelopora	Author(s): Phacelopora	Miller 1889	Phacelopora	Ulrich 1889
+Progress: 146/903	Taxon: Paraguataia	Author(s): Paraguataia	Rusconi 1948
+Progress: 147/903	Taxon: Hemicellaria	Author(s): Hemicellaria	d'Orbigny 1850
+Progress: 148/903	Taxon: Jullienipora	Author(s): Jullienipora	Reverter-Gil & Fernandez-Pulpeiro 2005	Jullienipora	Reverter-Gil & Fernández-Pulpeiro, 2005
+Progress: 149/903	Taxon: Stoporatoma	Author(s): Stoporatoma	Viskova 2006
+Progress: 150/903	Taxon: Brestopora	Author(s): Brestopora	Pushkin 1977
+Progress: 151/903	Taxon: Pergensia	Author(s): Pergensia	Walford 1894
+Progress: 152/903	Taxon: Acanthopora	Author(s): Acanthopora	d'Orbigny 1849
+Progress: 153/903	Taxon: Buria	Author(s): Buria	Giebel 1857
+Progress: 154/903	Taxon: Cyclocites	Author(s): Cyclocites	Canu & Bassler 1922
+Progress: 155/903	Taxon: Globulipora	Author(s): Globulipora	Peron & Thomas 1893	Globulipora	Péron 1893
+Progress: 156/903	Taxon: Spinopora	Author(s): Spinopora	Blainville 1830
+Progress: 157/903	Taxon: Tretocycloecia	Author(s): Tretocycloecia	Canu 1910
+Progress: 158/903	Taxon: Chilopora	Author(s): Chilopora	Haime 1854	Chilopora	Kraatz nec Haime 1854, 1856
+Progress: 159/903	Taxon: Monticulipora	Author(s): Monticulipora	D'Orbigny 1350
+Progress: 160/903	Taxon: Actinotaxia	Author(s): Actinotaxia	Hamm 1881
+Progress: 161/903	Taxon: Paricavea	Author(s): Paricavea	d'Orbigny 1854
+Progress: 162/903	Taxon: Radiocavea	Author(s): Radiocavea	d'Orbigny 1852[3]
+Progress: 163/903	Taxon: Cystoporella	Author(s): 
+Progress: 164/903	Taxon: Hederopsis	Author(s): Hederopsis	C. B. Clarke in J. D. Hooker, 1879
+Progress: 165/903	Taxon: Hernodia	Author(s): Hernodia	Hall 1883
+Progress: 166/903	Taxon: Reptaria	Author(s): Reptaria	Rolle 1851
+Progress: 167/903	Taxon: Basslederella	Author(s): Basslederella	Solle 1968
+Progress: 168/903	Taxon: Diversipora	Author(s): Diversipora	Kiepura 1973
+Progress: 169/903	Taxon: Hederella	Author(s): Hederella	Hall 1881
+Progress: 170/903	Taxon: Magnederella	Author(s): Magnederella	Solle 1952
+Progress: 171/903	Taxon: Paralhederella	Author(s): Paralhederella	Solle 1952
+Progress: 172/903	Taxon: Rhenanerella	Author(s): Rhenanerella	Solle 1952
+Progress: 173/903	Taxon: Cephaloalcyonidium	Author(s): Cephaloalcyonidium	d'Hondt 2006
+Progress: 174/903	Taxon: Pherusa	Author(s): Pherusa	Oken 1805
+Progress: 175/903	Taxon: Aviculamphiblestrum	Author(s): Aviculamphiblestrum	Rosso 1999
+Progress: 176/903	Taxon: Bonellina	Author(s): Bonellina	Schmidt 2007
+Progress: 177/903	Taxon: Kristerina	Author(s): Kristerina	Taylor & McKinney 2006
+Progress: 178/903	Taxon: Pseudoallantopora	Author(s): Pseudoallantopora	Taylor & McKinney 2006
+Progress: 179/903	Taxon: Septentriopora	Author(s): Septentriopora	Kuklinski & Taylor 2006
+Progress: 180/903	Taxon: Clipeochaperia	Author(s): Clipeochaperia	Uttley & Bullivant 1972
+Progress: 181/903	Taxon: Puncturiellina	Author(s): Puncturiellina	Voigt 1987
+Progress: 182/903	Taxon: Beanodendria	Author(s): Beanodendria	D'Hondt & Gordon 1996
+Progress: 183/903	Taxon: Thaminozoum	Author(s): Thaminozoum	D'Hondt & Gordon 1996
+Progress: 184/903	Taxon: Amphibiobeania	Author(s): Amphibiobeania	Metcalfe, Gordon & Hayward 2007
+Progress: 185/903	Taxon: Retiscrupocellaria	Author(s): Retiscrupocellaria	d'Hondt 1988
+Progress: 186/903	Taxon: Cribrilaria	Author(s): Cribrilaria	Canu & Bassler, 1928
+Progress: 187/903	Taxon: Glabrilaria	Author(s): Glabrilaria	Bishop & Househam, 1987
+Progress: 188/903	Taxon: Turnerellina	Author(s): Turnerellina	Taylor & McKinney 2007
+Progress: 189/903	Taxon: Antarctothoa	Author(s): Antarctothoa	Moyano 1984
+Progress: 190/903	Taxon: Austrothoa	Author(s): Austrothoa	Moyano 1984
+Progress: 191/903	Taxon: Neothoa	Author(s): Neothoa	Moyano 1984
+Progress: 192/903	Taxon: Oshurkovia	Author(s): Oshurkovia	Grischenko & Mawatari 2005
+Progress: 193/903	Taxon: Biavicularium	Author(s): Biavicularium	Cheetham 1968
+Progress: 194/903	Taxon: Uniavicularium	Author(s): Uniavicularium	Cheetham 1968
+Progress: 195/903	Taxon: Reptescharellina	Author(s): Reptescharellina	d'Orbigny 1852
+Progress: 196/903	Taxon: Sinuporaria	Author(s): Sinuporaria	Pouyet 1973
+Progress: 197/903	Taxon: Cribriporella	Author(s): 
+Progress: 198/903	Taxon: Junerossia	Author(s): Junerossia	Dick, Tilbrook & Mawatari 2006
+Progress: 199/903	Taxon: Uniretepora	Author(s): Uniretepora	d'Orbigny 1849
+Progress: 200/903	Taxon: Simibryocryptella	Author(s): Simibryocryptella	Alvarez 1991
+Progress: 201/903	Taxon: Sinuporina	Author(s): Sinuporina	Pouyet 1973
+Progress: 202/903	Taxon: Primavelans	Author(s): Primavelans	De Blauwe 2006
+Progress: 203/903	Taxon: Cureolipora	Author(s): Cureolipora	Gordon 2000
+Progress: 204/903	Taxon: Peedeesella	Author(s): Peedeesella	Taylor & McKinney 2006
+Progress: 205/903	Taxon: Acorania	Author(s): Acorania	Lopez-Fe 2006
+Progress: 206/903	Taxon: Basslerinella	Author(s): Basslerinella	Taylor & McKinney 2006
+Progress: 207/903	Taxon: Sfeniella	Author(s): Sfeniella	Gordon 2006
+Progress: 208/903	Taxon: Stephanollina	Author(s): 
+Progress: 209/903	Taxon: Amalgamoporus	Author(s): Amalgamoporus	Farmer 1968
+Progress: 210/903	Taxon: Athrophragma	Author(s): Athrophragma	Karklins 1966
+Progress: 211/903	Taxon: Carinodictya	Author(s): Carinodictya	Astrova 1965
+Progress: 212/903	Taxon: Cricodictyum	Author(s): Cricodictyum	Farmer 1968
+Progress: 213/903	Taxon: Cystostictoporus	Author(s): Cystostictoporus	Farmer 1968
+Progress: 214/903	Taxon: Eopachydictya	Author(s): Eopachydictya	Ross 1963
+Progress: 215/903	Taxon: Eurydictya	Author(s): Eurydictya	Miller 1889	Eurydictya	Ulrich 1889
+Progress: 216/903	Taxon: Euspilopora	Author(s): Euspilopora	Roule 1889	Euspilopora	Ulrich 1889
+Progress: 217/903	Taxon: Goniotrypa	Author(s): Goniotrypa	Roule 1889	Goniotrypa	Ulrich 1889
+Progress: 218/903	Taxon: Junggarotrypa	Author(s): Junggarotrypa	Lu Linhuang 1999
+Progress: 219/903	Taxon: Metadictya	Author(s): Metadictya	Kopaevich 1975
+Progress: 220/903	Taxon: Orectodictya	Author(s): Orectodictya	Karklins 1983
+Progress: 221/903	Taxon: Pachydictya	Author(s): Pachydictya	Ulrich 1882
+Progress: 222/903	Taxon: Phyllodictya	Author(s): Phyllodictya	Ulrich 1882
+Progress: 223/903	Taxon: Prophyllodictya	Author(s): Prophyllodictya	Gorjunova 1987	Prophyllodictya	Gorjunova in Gorjunova & Lavrentjeva 1987
+Progress: 224/903	Taxon: Rhinidictya	Author(s): Rhinidictya	Ulrich 1882
+Progress: 225/903	Taxon: Sibiredictya	Author(s): 
+Progress: 226/903	Taxon: Stictopora	Author(s): Stictopora	Hall 1847
+Progress: 227/903	Taxon: Stictotrypa	Author(s): Stictotrypa	Ulrich 1889
+Progress: 228/903	Taxon: Trigonodictya	Author(s): Trigonodictya	Ulrich 1895
+Progress: 229/903	Taxon: Amurodictya	Author(s): Amurodictya	Romanchuk 1979
+Progress: 230/903	Taxon: Astrovidictya	Author(s): Astrovidictya	Goryunova & Lavrentjeva 1993
+Progress: 231/903	Taxon: Heliotrypa	Author(s): Heliotrypa	Ulrich 1883
+Progress: 232/903	Taxon: Pseudostictoporella	Author(s): Pseudostictoporella	Ross 1970
+Progress: 233/903	Taxon: Stictoporella	Author(s): Stictoporella	Ulrich 1882
+Progress: 234/903	Taxon: Stictoporellina	Author(s): Stictoporellina	Nekhoroshev 1956
+Progress: 235/903	Taxon: Pseudopachydictya	Author(s): Pseudopachydictya	Astrova 1965
+Progress: 236/903	Taxon: Virgatella	Author(s): Virgatella	Astrova 1955
+Progress: 237/903	Taxon: Championodictya	Author(s): Championodictya	Ross 1964
+Progress: 238/903	Taxon: Chazydictya	Author(s): Chazydictya	Ross 1963
+Progress: 239/903	Taxon: Eoescharopora	Author(s): Eoescharopora	Jiang 1982
+Progress: 240/903	Taxon: Escharopora	Author(s): Escharopora	Hall 1847
+Progress: 241/903	Taxon: Graptodictya	Author(s): Graptodictya	Ulrich 1882
+Progress: 242/903	Taxon: Oanduella	Author(s): Oanduella	Männil 1958
+Progress: 243/903	Taxon: Oanduellina	Author(s): Oanduellina	Pushkin 1977
+Progress: 244/903	Taxon: Proavella	Author(s): Proavella	Männil 1958
+Progress: 245/903	Taxon: Cladodictya	Author(s): Cladodictya	Lavrentjeva 1993	Cladodictya	Lavrentjeva in Goryunova & Lavrentjeva 1993
+Progress: 246/903	Taxon: Clathropora	Author(s): Clathropora	Hall 1851
+Progress: 247/903	Taxon: Ensiphragma	Author(s): Ensiphragma	Astrova 1968
+Progress: 248/903	Taxon: Ensipora	Author(s): Ensipora	Astrova 1965
+Progress: 249/903	Taxon: Insignia	Author(s): Insignia	Astrova 1965
+Progress: 250/903	Taxon: Phaenophragma	Author(s): Phaenophragma	Kopajevich 1984
+Progress: 251/903	Taxon: Phaenoporella	Author(s): Phaenoporella	Nekhoroshev 1956
+Progress: 252/903	Taxon: Pteropora	Author(s): Pteropora	Eichwald 1855	Pteropora	Hall [non Eichwald 1855] 1883
+Progress: 253/903	Taxon: Ptilodictya	Author(s): Ptilodictya	Lonsdale 1839
+Progress: 254/903	Taxon: Stellatodictya	Author(s): Stellatodictya	Gorjunova 1993	Stellatodictya	Gorjunova in Goryunova & Lavrentjeva 1993
+Progress: 255/903	Taxon: Coscinella	Author(s): Coscinella	Hall & Simpson 1887
+Progress: 256/903	Taxon: Intrapora	Author(s): Intrapora	Hall 1883
+Progress: 257/903	Taxon: Goldfussitrypa	Author(s): Goldfussitrypa	Bassler 1952
+Progress: 258/903	Taxon: Nemacanthoclema	Author(s): 
+Progress: 259/903	Taxon: Nemacanthopora	Author(s): Nemacanthopora	Termier & Termier 1971
+Progress: 260/903	Taxon: Paranicklesopora	Author(s): Paranicklesopora	Gorjunova 1988	Paranicklesopora	Gorjunova in Goryunova 1988
+Progress: 261/903	Taxon: Veroclema	Author(s): Veroclema	Goryuno 1992	Veroclema	Goryunova 1992
+Progress: 262/903	Taxon: Maychella	Author(s): Maychella	Morozova 1970
+Progress: 263/903	Taxon: Crockfordia	Author(s): Crockfordia	Morozova 2004
+Progress: 264/903	Taxon: Maychellina	Author(s): Maychellina	Gorjunova & Morozova 1979
+Progress: 265/903	Taxon: Ipmorella	Author(s): Ipmorella	Goryunova 1985
+Progress: 266/903	Taxon: Ogbinopora	Author(s): Ogbinopora	Shishova 1964
+Progress: 267/903	Taxon: Streblascopora	Author(s): Streblascopora	Bassier 1952	Streblascopora	Bassler 1952
+Progress: 268/903	Taxon: Eichwaldictya	Author(s): Eichwaldictya	Lavrenteva 1990
+Progress: 269/903	Taxon: Phaenopora	Author(s): Phaenopora	Hall 1851
+Progress: 270/903	Taxon: Paleschara	Author(s): Paleschara	Hall 1874
+Progress: 271/903	Taxon: Arthroclema	Author(s): Arthroclema	Billings 1862
+Progress: 272/903	Taxon: Heloclema	Author(s): Heloclema	Schulga Nesterenko 1955	Heloclema	Schulga-Nesterenko 1955	Heloclema	Shulga-Nesterenko 1955
+Progress: 273/903	Taxon: Hexites	Author(s): Hexites	Schulga-Nesterenko 1955	Hexites	Shulga-Nesterenko 1955
+Progress: 274/903	Taxon: Ottoseetaxis	Author(s): Ottoseetaxis	Bassler, 1952
+Progress: 275/903	Taxon: Permoheloclema	Author(s): Permoheloclema	Ozhgibesov, 1983
+Progress: 276/903	Taxon: Primorella	Author(s): Primorella	Romanchuk & Kiseleva 1968	Primorella	Romantchuk & Kiseleva 1968
+Progress: 277/903	Taxon: Clausotrypa	Author(s): Clausotrypa	Bassler 1929
+Progress: 278/903	Taxon: Kielanopora	Author(s): Kielanopora	Dzik 1992
+Progress: 279/903	Taxon: Moyerella	Author(s): Moyerella	Nekhoroshev, 1956
+Progress: 280/903	Taxon: Nematotrypa	Author(s): Nematotrypa	Bassler 1911
+Progress: 281/903	Taxon: Arcanopora	Author(s): Arcanopora	Shrubsole & Vine 1882
+Progress: 282/903	Taxon: Arthrostyloecia	Author(s): Arthrostyloecia	Bassler 1952
+Progress: 283/903	Taxon: Arthrostylus	Author(s): Arthrostylus	Ulrich 1888
+Progress: 284/903	Taxon: Arthrotrypa	Author(s): Arthrotrypa	Lobdell 1992
+Progress: 285/903	Taxon: Cuneatopora	Author(s): Cuneatopora	Siegfried 1963
+Progress: 286/903	Taxon: Cyclophaenopora	Author(s): Cyclophaenopora	Spjeldnaes 1985
+Progress: 287/903	Taxon: Heminematopora	Author(s): Heminematopora	Bassler 1952
+Progress: 288/903	Taxon: Hemiulrichostylus	Author(s): 
+Progress: 289/903	Taxon: Osburnostylus	Author(s): Osburnostylus	Bassler 1952
+Progress: 290/903	Taxon: Pseudonematopora	Author(s): Pseudonematopora	Balakin, 1974
+Progress: 291/903	Taxon: Sceptropora	Author(s): Sceptropora	Ulrich, 1888
+Progress: 292/903	Taxon: Tropidopora	Author(s): Tropidopora	Hall, 1886
+Progress: 293/903	Taxon: Ulrichostylus	Author(s): Ulrichostylus	Bassler, 1952
+Progress: 294/903	Taxon: Acanthoclema	Author(s): Acanthoclema	Hall 1886	Acanthoclema	Hull 1886
+Progress: 295/903	Taxon: Ascoporella	Author(s): Ascoporella	Kruchinina 1980
+Progress: 296/903	Taxon: Helopora	Author(s): Helopora	Hall 1851
+Progress: 297/903	Taxon: Hyphasmopora	Author(s): Hyphasmopora	Etheridge 1875
+Progress: 298/903	Taxon: Matsutrypa	Author(s): Matsutrypa	Goryunova 1985
+Progress: 299/903	Taxon: Mongoloclema	Author(s): Mongoloclema	Shishova 1970	Mongoloclema	Shlshova 1970
+Progress: 300/903	Taxon: Neorhombopora	Author(s): Neorhombopora	Shishova 1964
+Progress: 301/903	Taxon: Rozanovia	Author(s): Rozanovia	Goryuno 1992	Rozanovia	Goryunova 1992
+Progress: 302/903	Taxon: Streblotrypa	Author(s): Streblotrypa	Ulrich in Vine 1885	Streblotrypa	Vine 1885
+Progress: 303/903	Taxon: Klaucena	Author(s): Klaucena	Trizna 1958
+Progress: 304/903	Taxon: Megacanthoporina	Author(s): Megacanthoporina	Morozova 1992	Megacanthoporina	Morozova in Ariunchimeg & Morozo 1992
+Progress: 305/903	Taxon: Pamirella	Author(s): Pamirella	Enderlein 1933
+Progress: 306/903	Taxon: Pictatella	Author(s): Pictatella	Lisitsyn 1991
+Progress: 307/903	Taxon: Rhombopora	Author(s): Rhombopora	Meek 1872
+Progress: 308/903	Taxon: Saffordotaxis	Author(s): Saffordotaxis	Bassler 1952
+Progress: 309/903	Taxon: Shishoviclema	Author(s): Shishoviclema	Goryunova 1985
+Progress: 310/903	Taxon: Spira	Author(s): Spira	Brown (1844)
+Progress: 311/903	Taxon: Artchedella	Author(s): Artchedella	Goryunova 1985
+Progress: 312/903	Taxon: Nikiforovella	Author(s): Nikiforovella	Nekhoroshev 1948
+Progress: 313/903	Taxon: Pinegopora	Author(s): Pinegopora	Saishova 1965	Pinegopora	Shishova 1965
+Progress: 314/903	Taxon: Streblotrypella	Author(s): Streblotrypella	Nikiforova 1948
+Progress: 315/903	Taxon: Tebitopora	Author(s): Tebitopora	Hu 1984	Tebitopora	Zhao-xun 1984
+Progress: 316/903	Taxon: Archaeomeson	Author(s): Archaeomeson	Astrova 1965
+Progress: 317/903	Taxon: Ascopora	Author(s): Ascopora	Trautschold 1876
+Progress: 318/903	Taxon: Bigeyella	Author(s): Bigeyella	Morozova & Weis 2006
+Progress: 319/903	Taxon: Coelotubulipora	Author(s): Coelotubulipora	Yang, Huz & Xia 1988
+Progress: 320/903	Taxon: Denmeadopora	Author(s): Denmeadopora	Fleming 1969
+Progress: 321/903	Taxon: Euthyrhombopora	Author(s): Euthyrhombopora	Yang, Huz & Xia 1988
+Progress: 322/903	Taxon: Lutulentus	Author(s): Lutulentus	Gilmour 2007
+Progress: 323/903	Taxon: Mediaporina	Author(s): Mediaporina	Pushkin 1990	Mediaporina	Pushkin in Pushkin & Yaposhinskaya 1990
+Progress: 324/903	Taxon: Megacanthopora	Author(s): Megacanthopora	Moore 1929
+Progress: 325/903	Taxon: Nemataxidra	Author(s): Nemataxidra	Bassler 1952
+Progress: 326/903	Taxon: Nemataxis	Author(s): Nemataxis	Hall 1886
+Progress: 327/903	Taxon: Promediapora	Author(s): Promediapora	Goryuno 1992	Promediapora	Goryunova 1992
+Progress: 328/903	Taxon: Pseudorhabdomeson	Author(s): Pseudorhabdomeson	Gorjunova 2002
+Progress: 329/903	Taxon: Rhabdomeson	Author(s): Rhabdomeson	Young & Young 1874	Rhabdomeson	Young 1874	Rhabdomeson	Young and Young 1874
+Progress: 330/903	Taxon: Rhomboporella	Author(s): Rhomboporella	Bassler 1936
+Progress: 331/903	Taxon: Spirillopora	Author(s): Spirillopora	Guerich 1896	Spirillopora	Gürich 1896
+Progress: 332/903	Taxon: Streblocladia	Author(s): Streblocladia	Schmitz 1897	Streblocladia	Schmitz in Engler & Prantl 1897	Streblocladia	Schmitz in Engler et Prantl, 1897
+Progress: 333/903	Taxon: Strebloplax	Author(s): Strebloplax	Elias & Condra 1957	Strebloplax	Elias 1957
+Progress: 334/903	Taxon: Trematella	Author(s): Trematella	Hall 1886
+Progress: 335/903	Taxon: Uralotrypa	Author(s): Uralotrypa	Lisitsyn 1991
+Progress: 336/903	Taxon: Bactropora	Author(s): Bactropora	Hall & Simpson 1887
+Progress: 337/903	Taxon: Phragmophera	Author(s): Phragmophera	Gorjunova 1969
+Progress: 338/903	Taxon: Nudymiella	Author(s): Nudymiella	Goryunova 1985
+Progress: 339/903	Taxon: Tamaroclema	Author(s): Tamaroclema	Goryuno 1992	Tamaroclema	Goryunova 1992
+Progress: 340/903	Taxon: Mediapora	Author(s): Mediapora	Trizna 1958
+Progress: 341/903	Taxon: Pseudoascopora	Author(s): Pseudoascopora	Goryunova 1985
+Progress: 342/903	Taxon: Silenella	Author(s): Silenella	Fenchel, 1965
+Progress: 343/903	Taxon: Chasmatoporella	Author(s): Chasmatoporella	Nekhoroshev 1936
+Progress: 344/903	Taxon: Pesnastylus	Author(s): Pesnastylus	Crockford 1942
+Progress: 345/903	Taxon: Europora	Author(s): Europora	Yang, Huz & Xia 1988
+Progress: 346/903	Taxon: Nicklesopora	Author(s): Nicklesopora	Bassler 1952
+Progress: 347/903	Taxon: Flabellotrypa	Author(s): Flabellotrypa	Bassel 1952	Flabellotrypa	Bassler 1952
+Progress: 348/903	Taxon: Mojczatrypa	Author(s): Mojczatrypa	Dzik 1992
+Progress: 349/903	Taxon: Kielcepora	Author(s): Kielcepora	Dzik 1992
+Progress: 350/903	Taxon: Ojlepora	Author(s): Ojlepora	Dzik 1992
+Progress: 351/903	Taxon: Ralfinella	Author(s): Ralfinella	Lavrenteva 1985	Ralfinella	Lavrentjeva 1985
+Progress: 352/903	Taxon: Bajoola	Author(s): Bajoola	Fleming 1966
+Progress: 353/903	Taxon: Cyclopelta	Author(s): Cyclopelta	Amyot & Serville 1843	Cyclopelta	Arnyot & Serville 1843
+Progress: 354/903	Taxon: Eosemicoscinium	Author(s): Eosemicoscinium	Morozova 1987
+Progress: 355/903	Taxon: Ignotrypa	Author(s): Ignotrypa	Wass & Byrnes 1969
+Progress: 356/903	Taxon: Ikelarchimedes	Author(s): Ikelarchimedes	Ross 1961
+Progress: 357/903	Taxon: Isotrypa	Author(s): Isotrypa	Hall 1885
+Progress: 358/903	Taxon: Loculipora	Author(s): Loculipora	Hall 1885
+Progress: 359/903	Taxon: Medisemicoscinium	Author(s): Medisemicoscinium	Plamenskaja 1991
+Progress: 360/903	Taxon: Neoreteporina	Author(s): Neoreteporina	Miller 1962
+Progress: 361/903	Taxon: Praesemicoscinium	Author(s): Praesemicoscinium	Plamenskaja 1991
+Progress: 362/903	Taxon: Pseudounitrypa	Author(s): Pseudounitrypa	Nekhoroshev 1926
+Progress: 363/903	Taxon: Quadrisemicoscinium	Author(s): Quadrisemicoscinium	Plamenskaja 1991
+Progress: 364/903	Taxon: Reteporina	Author(s): Reteporina	d'Orbigny 1849
+Progress: 365/903	Taxon: Schischkatella	Author(s): Schischkatella	Waschurova 1964
+Progress: 366/903	Taxon: Semicoscinium	Author(s): Semicoscinium	Prout 1859
+Progress: 367/903	Taxon: Semifenestella	Author(s): 
+Progress: 368/903	Taxon: Speotrypa	Author(s): Speotrypa	Dessilly & Kräusel 1963	Speotrypa	Dessily & Krausel 1963
+Progress: 369/903	Taxon: Unitrypa	Author(s): Unitrypa	Hall 1885
+Progress: 370/903	Taxon: Viscovia	Author(s): Viscovia	Morozova & Lavrentjeva 1998
+Progress: 371/903	Taxon: Aequifenestella	Author(s): Aequifenestella	Termier & Termier 1971
+Progress: 372/903	Taxon: Alternifenestella	Author(s): Alternifenestella	Termier & Termier 1971
+Progress: 373/903	Taxon: Anastomopora	Author(s): Anastomopora	Simpson 1895
+Progress: 374/903	Taxon: Apertostella	Author(s): Apertostella	Snyder 1991
+Progress: 375/903	Taxon: Archaeofenestella	Author(s): Archaeofenestella	Miller 1962
+Progress: 376/903	Taxon: Archimedes	Author(s): Archimedes	Owen 1838
+Progress: 377/903	Taxon: Australofenestella	Author(s): Australofenestella	Engel 1979
+Progress: 378/903	Taxon: Australopolypora	Author(s): Australopolypora	Engel 1979
+Progress: 379/903	Taxon: Banastella	Author(s): Banastella	Snyder 1991
+Progress: 380/903	Taxon: Biarmiella	Author(s): Biarmiella	Morozova & Lisitsyn 1997
+Progress: 381/903	Taxon: Bicorbis	Author(s): Bicorbis	Condra & Elias 1945
+Progress: 382/903	Taxon: Cubifenestella	Author(s): Cubifenestella	Snyder 1991
+Progress: 383/903	Taxon: Dictyoretmon	Author(s): Dictyoretmon	Whitfield 1904
+Progress: 384/903	Taxon: Exfenestella	Author(s): Exfenestella	Morozova 1974
+Progress: 385/903	Taxon: Fabifenestella	Author(s): Fabifenestella	Morozova 1974
+Progress: 386/903	Taxon: Fenestella	Author(s): Fenestella	Bolten 1798	Fenestella	Röding 1798
+Progress: 387/903	Taxon: Fenestellata	Author(s): 
+Progress: 388/903	Taxon: Fenestepora	Author(s): Fenestepora	Frederiks [1914]
+Progress: 389/903	Taxon: Fenesteverta	Author(s): Fenesteverta	Elias & Condra 1957	Fenesteverta	Elias 1957
+Progress: 390/903	Taxon: Filites	Author(s): Filites	Barrande 1868
+Progress: 391/903	Taxon: Flexifenestella	Author(s): Flexifenestella	Morozova 1974
+Progress: 392/903	Taxon: Helicopora	Author(s): Helicopora	Claypole 1881
+Progress: 393/903	Taxon: Hemitrypa	Author(s): Hemitrypa	Phillips 1841
+Progress: 394/903	Taxon: Hemitrypella	Author(s): Hemitrypella	Nikiforova 1941
+Progress: 395/903	Taxon: Hinganotrypa	Author(s): Hinganotrypa	Romanchuk & Kiseleva 1968
+Progress: 396/903	Taxon: Ispanayella	Author(s): Ispanayella	Morozova 2001
+Progress: 397/903	Taxon: Kazarchimedes	Author(s): Kazarchimedes	Plamenskaja 1964	Kazarchimedes	Plamenskaya 1964
+Progress: 398/903	Taxon: Kingopora	Author(s): Kingopora	Morozova 1970
+Progress: 399/903	Taxon: Laxifenestella	Author(s): Laxifenestella	Morozova 1974
+Progress: 400/903	Taxon: Lunofenestella	Author(s): Lunofenestella	Morozova 2001
+Progress: 401/903	Taxon: Lyrocladia	Author(s): Lyrocladia	Schulga-Nesterenko 1930
+Progress: 402/903	Taxon: Lyropora	Author(s): Lyropora	Hall 1857
+Progress: 403/903	Taxon: Lyroporidra	Author(s): Lyroporidra	Simpson 1895
+Progress: 404/903	Taxon: Mirandifenestella	Author(s): Mirandifenestella	Termier & Termier 1971
+Progress: 405/903	Taxon: Moorephylloporina	Author(s): Moorephylloporina	Bassler 1952
+Progress: 406/903	Taxon: Narynella	Author(s): Narynella	Andreeva 1987
+Progress: 407/903	Taxon: Nebrodensia	Author(s): Nebrodensia	Gregorio 1883
+Progress: 408/903	Taxon: Neohemitrypa	Author(s): Neohemitrypa	Schastlivceva 2001	Neohemitrypa	Schastlivceva in Morozova 2001
+Progress: 409/903	Taxon: Neopolypora	Author(s): Neopolypora	Morozova & Lisitsyn 1996
+Progress: 410/903	Taxon: Ogbinofenestella	Author(s): Ogbinofenestella	Morozova 2001
+Progress: 411/903	Taxon: Parapolypora	Author(s): Parapolypora	Morozova & Lisitsyn 1996
+Progress: 412/903	Taxon: Paraptylopora	Author(s): Paraptylopora	Morozova 2001
+Progress: 413/903	Taxon: Paraseptopora	Author(s): Paraseptopora	Lisitsyn 1991
+Progress: 414/903	Taxon: Patellipora	Author(s): Patellipora	Rominger 1887
+Progress: 415/903	Taxon: Paucipora	Author(s): Paucipora	Termier & Termier 1971
+Progress: 416/903	Taxon: Polycladiopora	Author(s): Polycladiopora	Morozova 2001
+Progress: 417/903	Taxon: Polyporella	Author(s): Polyporella	Simpson 1894
+Progress: 418/903	Taxon: Polyporellina	Author(s): Polyporellina	Morozova & Lisitsyn 1996
+Progress: 419/903	Taxon: Protoretepora	Author(s): Protoretepora	de Koninck 1876	Protoretepora	Koninck 1876
+Progress: 420/903	Taxon: Pseudoisotrypa	Author(s): Pseudoisotrypa	Prantl 1929
+Progress: 421/903	Taxon: Pseudopolypora	Author(s): Pseudopolypora	Morozova & Lisitsyn 1996
+Progress: 422/903	Taxon: Ptilofenestella	Author(s): Ptilofenestella	Tavener-Smith 1965
+Progress: 423/903	Taxon: Ptilopora	Author(s): Ptilopora	Agassiz 1846
+Progress: 424/903	Taxon: Ptiloporella	Author(s): Ptiloporella	Hall & Simpson 1887
+Progress: 425/903	Taxon: Pustuloporina	Author(s): Pustuloporina	Voigt 1978
+Progress: 426/903	Taxon: Rectifenestella	Author(s): Rectifenestella	Morozova 1974
+Progress: 427/903	Taxon: Reteporidra	Author(s): Reteporidra	Nickles & Bassler 1900
+Progress: 428/903	Taxon: Rhombofenestella	Author(s): Rhombofenestella	Termier & Termier 1971
+Progress: 429/903	Taxon: Rugofenestella	Author(s): Rugofenestella	Termier & Termier 1971
+Progress: 430/903	Taxon: Ryhopora	Author(s): Ryhopora	Southwood 1990
+Progress: 431/903	Taxon: Shulgapora	Author(s): Shulgapora	Termier & Termier 1971
+Progress: 432/903	Taxon: Sphragiopora	Author(s): Sphragiopora	Miller 1889	Sphragiopora	Ulrich 1889
+Progress: 433/903	Taxon: Spinofenestella	Author(s): Spinofenestella	Termier & Termier 1971
+Progress: 434/903	Taxon: Utropora	Author(s): Utropora	Pocta 1894
+Progress: 435/903	Taxon: Wjatkella	Author(s): Wjatkella	Morozova 1970
+Progress: 436/903	Taxon: Aluverina	Author(s): Aluverina	Männil 1958
+Progress: 437/903	Taxon: Alwynopora	Author(s): Alwynopora	Taylor & Curry 1985
+Progress: 438/903	Taxon: Austraphylloporina	Author(s): Austraphylloporina	Ross 1961
+Progress: 439/903	Taxon: Bashkirella	Author(s): 
+Progress: 440/903	Taxon: Carinophylloporina	Author(s): Carinophylloporina	Bassler 1952
+Progress: 441/903	Taxon: Chasmatopora	Author(s): Chasmatopora	Eichwald 1855
+Progress: 442/903	Taxon: Esthonioporina	Author(s): Esthonioporina	Lavrent'eva 1975
+Progress: 443/903	Taxon: Hemibashkirella	Author(s): Hemibashkirella	Gorjunova 1966
+Progress: 444/903	Taxon: Kallodictyon	Author(s): Kallodictyon	Morozova 1981
+Progress: 445/903	Taxon: Oeciophylloporina	Author(s): Oeciophylloporina	Bassler 1952
+Progress: 446/903	Taxon: Parachasmatopora	Author(s): Parachasmatopora	Morozova & Lavrentyeva 1981
+Progress: 447/903	Taxon: Phylloporina	Author(s): Phylloporina	Ulrich 1887
+Progress: 448/903	Taxon: Pinnatoporella	Author(s): Pinnatoporella	Buttler 1991
+Progress: 449/903	Taxon: Polipora	Author(s): 
+Progress: 450/903	Taxon: Pseudohornera	Author(s): Pseudohornera	Roemer 1876
+Progress: 451/903	Taxon: Rhombocladia	Author(s): Rhombocladia	Rogers 1900
+Progress: 452/903	Taxon: Subretepora	Author(s): Subretepora	d'Orbigny 1849
+Progress: 453/903	Taxon: Trepostomina	Author(s): Trepostomina	Bassler 1952
+Progress: 454/903	Taxon: Acanthocladia	Author(s): Acanthocladia	King 1849
+Progress: 455/903	Taxon: Arborocladia	Author(s): Arborocladia	Nekhoroschev 1933
+Progress: 456/903	Taxon: Baculopora	Author(s): Baculopora	Wyse Jackson 1988
+Progress: 457/903	Taxon: Diploporaria	Author(s): Diploporaria	Nickles & Bassler 1900
+Progress: 458/903	Taxon: Eulyra	Author(s): Eulyra	Plamenskaya 1983
+Progress: 459/903	Taxon: Ichthyorachis	Author(s): Ichthyorachis	M'Coy 1844	Ichthyorachis	McCoy 1844
+Progress: 460/903	Taxon: Kalvariella	Author(s): Kalvariella	Morozova 1970
+Progress: 461/903	Taxon: Penniretepora	Author(s): Penniretepora	d'Orbigny 1849
+Progress: 462/903	Taxon: Ptiloporina	Author(s): Ptiloporina	Hall & Simpson 1887
+Progress: 463/903	Taxon: Samaria	Author(s): Samaria	Ragonot 1893
+Progress: 464/903	Taxon: Synocladiopsis	Author(s): Synocladiopsis	de Gregorio 1930
+Progress: 465/903	Taxon: Thamniscus	Author(s): Thamniscus	King 1849
+Progress: 466/903	Taxon: Parafenestralia	Author(s): Parafenestralia	Morozova 1963
+Progress: 467/903	Taxon: Triznella	Author(s): Triznella	Morozova 1963
+Progress: 468/903	Taxon: Septatopora	Author(s): Septatopora	Engel 1975
+Progress: 469/903	Taxon: Matheropora	Author(s): Matheropora	Bassler 1953
+Progress: 470/903	Taxon: Pseudoseptopora	Author(s): Pseudoseptopora	Shishova 1957
+Progress: 471/903	Taxon: Septopora	Author(s): Septopora	Prout 1859
+Progress: 472/903	Taxon: Silvaseptopora	Author(s): Silvaseptopora	Chronic 1949
+Progress: 473/903	Taxon: Synocladia	Author(s): Synocladia	King 1849
+Progress: 474/903	Taxon: Chasmatoporina	Author(s): Chasmatoporina	Lavrentjeva 1988
+Progress: 475/903	Taxon: Conphylloporina	Author(s): Conphylloporina	Kiepura 1962
+Progress: 476/903	Taxon: Enallopora	Author(s): Enallopora	d'Orbigny 1849
+Progress: 477/903	Taxon: Pushkinella	Author(s): Pushkinella	Lavrent'yeva 1979	Pushkinella	Lavrentjeva 1979
+Progress: 478/903	Taxon: Ralfina	Author(s): Ralfina	Lavrenteva 1985
+Progress: 479/903	Taxon: Sardesonina	Author(s): Sardesonina	Bassler 1952
+Progress: 480/903	Taxon: Chainodictyon	Author(s): Chainodictyon	Foerste 1887
+Progress: 481/903	Taxon: Admiranda	Author(s): Admiranda	Ariunchimeg 1996
+Progress: 482/903	Taxon: Admiratella	Author(s): Admiratella	Plamenskaya 1972
+Progress: 483/903	Taxon: Rarifenestella	Author(s): Rarifenestella	Morozova 1974
+Progress: 484/903	Taxon: Trataucladia	Author(s): Trataucladia	Morozova 1992
+Progress: 485/903	Taxon: Fenestralia	Author(s): Fenestralia	Prout 1858
+Progress: 486/903	Taxon: Polypora	Author(s): Polypora	M'Coy 1842	Polypora	McCoy 1842
+Progress: 487/903	Taxon: Carnocladia	Author(s): Carnocladia	Ernst 2001
+Progress: 488/903	Taxon: Aviculofenestella	Author(s): 
+Progress: 489/903	Taxon: Cavernella	Author(s): Cavernella	Morozova 1974
+Progress: 490/903	Taxon: Fenestrapora	Author(s): Fenestrapora	Hall 1885
+Progress: 491/903	Taxon: Ignotifenestella	Author(s): Ignotifenestella	Morozova 1974
+Progress: 492/903	Taxon: Mirifenestella	Author(s): Mirifenestella	Morozova 1974
+Progress: 493/903	Taxon: Permofenestella	Author(s): Permofenestella	Morozova 1974
+Progress: 494/903	Taxon: Polyfenestella	Author(s): Polyfenestella	Bancroft 1986
+Progress: 495/903	Taxon: Esthoniopora	Author(s): Esthoniopora	Bassler 1911
+Progress: 496/903	Taxon: Esthonioporella	Author(s): 
+Progress: 497/903	Taxon: Chondraulus	Author(s): Chondraulus	Duncan 1939
+Progress: 498/903	Taxon: Ibexella	Author(s): Ibexella	Ernst, Taylor & Wilson 2007
+Progress: 499/903	Taxon: Nekhorosheviella	Author(s): Nekhorosheviella	Modzalevskaya 1953
+Progress: 500/903	Taxon: Orbipora	Author(s): Orbipora	Eichwald 1856
+Progress: 501/903	Taxon: Balticoporella	Author(s): Balticoporella	Vinassa de Regny 1921
+Progress: 502/903	Taxon: Dittopora	Author(s): Dittopora	Dybowski 1878
+Progress: 503/903	Taxon: Hemiphragma	Author(s): Hemiphragma	Wallich, 1822
+Progress: 504/903	Taxon: Phragmopora	Author(s): Phragmopora	Vinassa de Regny 1920
+Progress: 505/903	Taxon: Phragmoporella	Author(s): Phragmoporella	Vinassa de Regny 1921
+Progress: 506/903	Taxon: Polyteichus	Author(s): Polyteichus	Pocta 1902
+Progress: 507/903	Taxon: Stromatotrypa	Author(s): Stromatotrypa	Ulrich 1893
+Progress: 508/903	Taxon: Dekayia	Author(s): Dekayia	Milne-Edwards & Haime 1851
+Progress: 509/903	Taxon: Eichwaldopora	Author(s): Eichwaldopora	Pushkin & Popov 2005
+Progress: 510/903	Taxon: Heterotrypa	Author(s): Heterotrypa	Nicholson 1879
+Progress: 511/903	Taxon: Jordanopora	Author(s): Jordanopora	Ross 1963
+Progress: 512/903	Taxon: Pedrogopora	Author(s): Pedrogopora	Buttler 1991
+Progress: 513/903	Taxon: Petigopora	Author(s): Petigopora	Ulrich 1882
+Progress: 514/903	Taxon: Phragmotrypa	Author(s): Phragmotrypa	Schafer & Fois 1987
+Progress: 515/903	Taxon: Reptonoditrypa	Author(s): Reptonoditrypa	Schafer & Fois 1987
+Progress: 516/903	Taxon: Stigmatella	Author(s): Stigmatella	Berk. & M.A. Curtis 1857	Stigmatella	Berkeley & M.A. Curtis 1857	Stigmatella	Berkeley and Curtis in Berkeley 1857 and Berkeley 1874	Stigmatella	M. J. Berkeley et M. A. Curtis in M. J. Berkeley, 1857	Stigmatella	M.J. Berkeley & M.A. Curtis in M.J. Berkeley 1857
+Progress: 517/903	Taxon: Hinaclema	Author(s): Hinaclema	Sakagami & Sugimura 1987
+Progress: 518/903	Taxon: Leioclema	Author(s): Leioclema	Ulrich 1882
+Progress: 519/903	Taxon: Leioclemina	Author(s): Leioclemina	Vinassa de Regny 1921
+Progress: 520/903	Taxon: Lioclemella	Author(s): Lioclemella	Foerste [1894]
+Progress: 521/903	Taxon: Paralioclema	Author(s): Paralioclema	Morozova 1960
+Progress: 522/903	Taxon: Permoleioclema	Author(s): 
+Progress: 523/903	Taxon: Calloporella	Author(s): Calloporella	Ulrich 1882
+Progress: 524/903	Taxon: Hallopora	Author(s): Hallopora	Bassler 1911	Hallopora	Gassier 1911
+Progress: 525/903	Taxon: Panderpora	Author(s): Panderpora	Bassler 1952
+Progress: 526/903	Taxon: Parvohallopora	Author(s): Parvohallopora	Singh 1979
+Progress: 527/903	Taxon: Tarphophragma	Author(s): Tarphophragma	Karklins 1984
+Progress: 528/903	Taxon: Abakana	Author(s): 
+Progress: 529/903	Taxon: Acanthotrypa	Author(s): Acanthotrypa	Vinassa de Regny 1915
+Progress: 530/903	Taxon: Aostipora	Author(s): Aostipora	Vinassa de Regny 1921
+Progress: 531/903	Taxon: Armillopora	Author(s): Armillopora	Yang & Hu 1981
+Progress: 532/903	Taxon: Balticopora	Author(s): Balticopora	Vinassa de Regny 1921
+Progress: 533/903	Taxon: Batostoma	Author(s): Batostoma	Ulrich 1882
+Progress: 534/903	Taxon: Calamotrypa	Author(s): Calamotrypa	Owen 1962
+Progress: 535/903	Taxon: Diatrypella	Author(s): Diatrypella	(Ces. & De Not.) De Not. 1863	Diatrypella	(Cesati & De Notaris) De Notaris 1863	Diatrypella	(Cesati et De Notaris) De Notaris, 1863
+Progress: 536/903	Taxon: Minussina	Author(s): Minussina	Morozova 1960
+Progress: 537/903	Taxon: Neotrematopora	Author(s): Neotrematopora	Morozova 1960
+Progress: 538/903	Taxon: Trematopora	Author(s): Trematopora	Hall 1851
+Progress: 539/903	Taxon: Trematoporina	Author(s): Trematoporina	Astrova 1965
+Progress: 540/903	Taxon: Acantholaminatus	Author(s): Acantholaminatus	Marintsch 1998
+Progress: 541/903	Taxon: Aspidopora	Author(s): Aspidopora	Ulrich 1882
+Progress: 542/903	Taxon: Gortanipora	Author(s): Gortanipora	Vinassa de Regny 1921
+Progress: 543/903	Taxon: Atactoporella	Author(s): 
+Progress: 544/903	Taxon: Diazipora	Author(s): Diazipora	Vinassa de Regny 1921
+Progress: 545/903	Taxon: Homotrypa	Author(s): Homotrypa	Ulrich 1882
+Progress: 546/903	Taxon: Mesopora	Author(s): Mesopora	Wesmael 1852
+Progress: 547/903	Taxon: Mesotrypa	Author(s): Mesotrypa	Ulrich 1893
+Progress: 548/903	Taxon: Peronopora	Author(s): Peronopora	Nicholson 1881
+Progress: 549/903	Taxon: Prasopora	Author(s): Prasopora	Nicholson & Etheridge 1877
+Progress: 550/903	Taxon: Prasoporina	Author(s): Prasoporina	Bassler 1952
+Progress: 551/903	Taxon: Roemeripora	Author(s): Roemeripora	Kraicz 1934
+Progress: 552/903	Taxon: Acanthotrypina	Author(s): Acanthotrypina	Vinassa de Regny 1921
+Progress: 553/903	Taxon: Amplexopora	Author(s): Amplexopora	Ulrich, 1882
+Progress: 554/903	Taxon: Amplexoporella	Author(s): Amplexoporella	Morozova 1958
+Progress: 555/903	Taxon: Anaphragma	Author(s): Anaphragma	Ulrich & Bassler, 1904
+Progress: 556/903	Taxon: Discotrypa	Author(s): Discotrypa	Ulrich, 1882
+Progress: 557/903	Taxon: Discotrypina	Author(s): Discotrypina	Astrova 1959
+Progress: 558/903	Taxon: Halloporina	Author(s): Halloporina	Bassler 1911
+Progress: 559/903	Taxon: Monotrypa	Author(s): Monotrypa	Nicholson, 1879
+Progress: 560/903	Taxon: Monotrypella	Author(s): Monotrypella	Ulrich 1882	Monotrypella	Vinassa de Regny [non Ulrich 1882] 1911
+Progress: 561/903	Taxon: Rhombotrypa	Author(s): Rhombotrypa	Ulrich & Bassler, 1904
+Progress: 562/903	Taxon: Triznotrypa	Author(s): Triznotrypa	Lavrentjeva, 1997
+Progress: 563/903	Taxon: Anomalotoechus	Author(s): 
+Progress: 564/903	Taxon: Atactotoechus	Author(s): Atactotoechus	Duncan 1939
+Progress: 565/903	Taxon: Cyphotrypa	Author(s): Cyphotrypa	Ulrich & Bassler 1904
+Progress: 566/903	Taxon: Leptotrypa	Author(s): Leptotrypa	Ulrich 1883
+Progress: 567/903	Taxon: Leptotrypella	Author(s): Leptotrypella	Vinassa de Regny 1921
+Progress: 568/903	Taxon: Loxophragma	Author(s): Loxophragma	Boardman 1960
+Progress: 569/903	Taxon: Multiphragma	Author(s): Multiphragma	Yang & Hu 1981
+Progress: 570/903	Taxon: Orbignyella	Author(s): Orbignyella	Ulrich & Bassler 1904
+Progress: 571/903	Taxon: Paratrachytoechus	Author(s): Paratrachytoechus	Hu 1980
+Progress: 572/903	Taxon: Polyspinopora	Author(s): Polyspinopora	Yang & Hu 1981
+Progress: 573/903	Taxon: Pycnobasis	Author(s): Pycnobasis	Boardman 1960
+Progress: 574/903	Taxon: Schulgina	Author(s): Schulgina	Morozova 1957
+Progress: 575/903	Taxon: Sinoatactotoechus	Author(s): Sinoatactotoechus	Yang & Hu 1981
+Progress: 576/903	Taxon: Triplopora	Author(s): Triplopora	Troitskaya 1970
+Progress: 577/903	Taxon: Eostenopora	Author(s): Eostenopora	Duncan 1939
+Progress: 578/903	Taxon: Eridocampylus	Author(s): Eridocampylus	Duncan 1939
+Progress: 579/903	Taxon: Eridotrypella	Author(s): Eridotrypella	Duncan 1939
+Progress: 580/903	Taxon: Eridotrypellina	Author(s): Eridotrypellina	Astrova 1965
+Progress: 581/903	Taxon: Hinganella	Author(s): Hinganella	Romantchuk 1966
+Progress: 582/903	Taxon: Idioclema	Author(s): Idioclema	Girty 1910
+Progress: 583/903	Taxon: Kysylschinipora	Author(s): Kysylschinipora	Volkova 1974
+Progress: 584/903	Taxon: Microcampylus	Author(s): Microcampylus	Duncan 1939
+Progress: 585/903	Taxon: Neoeridocampylus	Author(s): Neoeridocampylus	Kiseleva 1976
+Progress: 586/903	Taxon: Neoeridotrypella	Author(s): Neoeridotrypella	Morozova 1970
+Progress: 587/903	Taxon: Permopora	Author(s): Permopora	ELIAS 1947	Permopora	M. K. Elias, 1947
+Progress: 588/903	Taxon: Stenocladia	Author(s): Stenocladia	J. Agardh 1872	Stenocladia	J. G. Agardh, 1872
+Progress: 589/903	Taxon: Trachytoechus	Author(s): Trachytoechus	Duncan 1939
+Progress: 590/903	Taxon: Anisotrypa	Author(s): Anisotrypa	Ulrich, 1883
+Progress: 591/903	Taxon: Anisotrypella	Author(s): Anisotrypella	Dunayeva & Morozova 1968	Anisotrypella	Morozova 1968
+Progress: 592/903	Taxon: Boardmanella	Author(s): Boardmanella	Gorjunova & Weiss 2003
+Progress: 593/903	Taxon: Diplostenopora	Author(s): Diplostenopora	Ulrich & Bassler, 1912
+Progress: 594/903	Taxon: Callocladia	Author(s): Callocladia	Girty 1910
+Progress: 595/903	Taxon: Crustopora	Author(s): Crustopora	Dunaeva 1964
+Progress: 596/903	Taxon: Crustoporella	Author(s): Crustoporella	Gorjunova 2001	Crustoporella	Gorjunova in Makhlina, Alekseev, Goreva, Gorjunova, Isakova, Kossovaya, Lazarev, Lebedev & Shkolin 2001
+Progress: 597/903	Taxon: Dunayeva	Author(s): 
+Progress: 598/903	Taxon: Hunanopora	Author(s): 
+Progress: 599/903	Taxon: Leeporina	Author(s): Leeporina	Vinassa de Regny 1921
+Progress: 600/903	Taxon: Lioporidra	Author(s): Lioporidra	Bassler 1952
+Progress: 601/903	Taxon: Metelipora	Author(s): 
+Progress: 602/903	Taxon: Tabuliporella	Author(s): Tabuliporella	Nikiforova 1933
+Progress: 603/903	Taxon: Arcticopora	Author(s): Arcticopora	Fritz 1962
+Progress: 604/903	Taxon: Dyscritella	Author(s): Dyscritella	Girty 1910
+Progress: 605/903	Taxon: Dyscritellina	Author(s): Dyscritellina	Dunayeva & Morozova 1968
+Progress: 606/903	Taxon: Dyscritellopsis	Author(s): Dyscritellopsis	Schafer & Grant-Mackie 1994
+Progress: 607/903	Taxon: Eodyscritella	Author(s): Eodyscritella	Troitskaya 1970
+Progress: 608/903	Taxon: Pseudobatostomella	Author(s): Pseudobatostomella	Morozova 1960
+Progress: 609/903	Taxon: Stellahexaformis	Author(s): Stellahexaformis	Gilmour & Snyder 1986
+Progress: 610/903	Taxon: Asperopora	Author(s): Asperopora	Owen 1969
+Progress: 611/903	Taxon: Diaphragmopora	Author(s): Diaphragmopora	McFarlan 1926
+Progress: 612/903	Taxon: Dyoidophragma	Author(s): Dyoidophragma	Duncan 1939
+Progress: 613/903	Taxon: Fitzroyopora	Author(s): Fitzroyopora	Ross 1961
+Progress: 614/903	Taxon: Flabellirete	Author(s): Flabellirete	Dil, Termier, Termier & Vachard 1977
+Progress: 615/903	Taxon: Granivallum	Author(s): Granivallum	Ross 1961
+Progress: 616/903	Taxon: Nikiforopora	Author(s): Nikiforopora	Dunaeva 1964
+Progress: 617/903	Taxon: Parastenodiscus	Author(s): Parastenodiscus	Kiseleva 1976
+Progress: 618/903	Taxon: Percyopora	Author(s): Percyopora	Ross 1961
+Progress: 619/903	Taxon: Pycnopora	Author(s): Pycnopora	Girty 1910
+Progress: 620/903	Taxon: Qilianopora	Author(s): 
+Progress: 621/903	Taxon: Rhombotrypella	Author(s): Rhombotrypella	Nikiforova 1933
+Progress: 622/903	Taxon: Stenodiscus	Author(s): Stenodiscus	Reissek, 1858
+Progress: 623/903	Taxon: Stenophragmidium	Author(s): Stenophragmidium	Bassler 1952
+Progress: 624/903	Taxon: Stenopora	Author(s): Stenopora	Lonsdale 1844
+Progress: 625/903	Taxon: Tabulipora	Author(s): Tabulipora	Young 1883
+Progress: 626/903	Taxon: Petalotrypa	Author(s): Petalotrypa	Miller 1889	Petalotrypa	Ulrich 1889
+Progress: 627/903	Taxon: Ulrichotrypa	Author(s): Ulrichotrypa	Bassler 1929
+Progress: 628/903	Taxon: Ulrichotrypella	Author(s): Ulrichotrypella	Romanchuk 1968
+Progress: 629/903	Taxon: Bimuropora	Author(s): Bimuropora	Key 1990
+Progress: 630/903	Taxon: Champlainopora	Author(s): Champlainopora	Ross 1970
+Progress: 631/903	Taxon: Sonninopora	Author(s): Sonninopora	Vinassa de Regny 1921
+Progress: 632/903	Taxon: Aisenvergia	Author(s): Aisenvergia	Dunaeva 1964
+Progress: 633/903	Taxon: Eridotrypa	Author(s): Eridotrypa	Ulrich 1884
+Progress: 634/903	Taxon: Lamottopora	Author(s): Lamottopora	Ross 1963
+Progress: 635/903	Taxon: Newportopora	Author(s): Newportopora	Ross 1967
+Progress: 636/903	Taxon: Orbiramus	Author(s): 
+Progress: 637/903	Taxon: Polycylindricus	Author(s): Polycylindricus	Boardman 1960
+Progress: 638/903	Taxon: Volnovachia	Author(s): Volnovachia	Dunaeva, 1964
+Progress: 639/903	Taxon: Astroviella	Author(s): Astroviella	Pushkin 1973
+Progress: 640/903	Taxon: Astroviellina	Author(s): Astroviellina	Pushkin 1973
+Progress: 641/903	Taxon: Hemieridotrypa	Author(s): Hemieridotrypa	Astrova 1965
+Progress: 642/903	Taxon: Gilmouropora	Author(s): Gilmouropora	Morozova 1986
+Progress: 643/903	Taxon: Girtypora	Author(s): Girtypora	Morozova 1966
+Progress: 644/903	Taxon: Girtyporina	Author(s): Girtyporina	Morozova 1966
+Progress: 645/903	Taxon: Hayasakapora	Author(s): Hayasakapora	Sakagami 1960
+Progress: 646/903	Taxon: Morozovapora	Author(s): Morozovapora	Sakagami & Sugimura 1978
+Progress: 647/903	Taxon: Morozoviella	Author(s): Morozoviella	Gilmour & Snyder 1986
+Progress: 648/903	Taxon: Syringoclemis	Author(s): Syringoclemis	Girty 1910
+Progress: 649/903	Taxon: Tavayzopora	Author(s): Tavayzopora	Kiseleva 1969
+Progress: 650/903	Taxon: Iraidina	Author(s): Iraidina	Kiseleva 1982
+Progress: 651/903	Taxon: Stenoporella	Author(s): Stenoporella	Bassler 1936
+Progress: 652/903	Taxon: Proutella	Author(s): Proutella	Ulrich 1889
+Progress: 653/903	Taxon: Araxopora	Author(s): Araxopora	Morozova 1965	Araxopora	Rezhentzev & Sariecheva 1965
+Progress: 654/903	Taxon: Ruzhencevia	Author(s): Ruzhencevia	Kiseleva 1982
+Progress: 655/903	Taxon: Styloclema	Author(s): Styloclema	Schafer & Grant-Mackie 1994	Styloclema	Schäfer & Grant-Mackie, 1994
+Progress: 656/903	Taxon: Astralochoma	Author(s): Astralochoma	Ross, 1988
+Progress: 657/903	Taxon: Helenopora	Author(s): Helenopora	Ross 1988
+Progress: 658/903	Taxon: Diplotrypa	Author(s): Diplotrypa	Nicholson 1879
+Progress: 659/903	Taxon: Dianulites	Author(s): Dianulites	Eichwald 1829
+Progress: 660/903	Taxon: Nipponostenopora	Author(s): Nipponostenopora	Sakagami 1960
+Progress: 661/903	Taxon: Yunnanopora	Author(s): 
+Progress: 662/903	Taxon: Vysokella	Author(s): Vysokella	Zagorsek 1993
+Progress: 663/903	Taxon: Zozariella	Author(s): Zozariella	Schafer & Fois 1987
+Progress: 664/903	Taxon: Batostomella	Author(s): Batostomella	Ulrich 1882
+Progress: 665/903	Taxon: Batostomellina	Author(s): Batostomellina	Vinassa de Regny 1921
+Progress: 666/903	Taxon: Bythopora	Author(s): Bythopora	Miller & Dyer 1878
+Progress: 667/903	Taxon: Callotrypa	Author(s): Callotrypa	Hall & Simpson 1887
+Progress: 668/903	Taxon: Calacanthopora	Author(s): Calacanthopora	Duncan 1939
+Progress: 669/903	Taxon: Stereotoechus	Author(s): Stereotoechus	Duncan 1939
+Progress: 670/903	Taxon: Pseudocampylus	Author(s): Pseudocampylus	Troizkaya 1960
+Progress: 671/903	Taxon: Bodywskites	Author(s): Bodywskites	Gorjunova 2005
+Progress: 672/903	Taxon: Dybowskites	Author(s): 
+Progress: 673/903	Taxon: Nolvakites	Author(s): Nolvakites	Gorjunova 2005
+Progress: 674/903	Taxon: Ralfimartites	Author(s): Ralfimartites	Gorjunova 2005
+Progress: 675/903	Taxon: Rozhnovites	Author(s): Rozhnovites	Gorjunova 2005
+Progress: 676/903	Taxon: Mishulgella	Author(s): Mishulgella	Gorjunova 2001	Mishulgella	Gorjunova in Makhlina, Alekseev, Goreva, Gorjunova, Isakova, Kossovaya, Lazarev, Lebedev & Shkolin 2001
+Progress: 677/903	Taxon: Hennigopora	Author(s): Hennigopora	Bassler 1952
+Progress: 678/903	Taxon: Xenotrypa	Author(s): Xenotrypa	Bassler 1952
+Progress: 679/903	Taxon: Altshedata	Author(s): Altshedata	Morozova, 1959
+Progress: 680/903	Taxon: Anolotichia	Author(s): Anolotichia	Ulrich 1890
+Progress: 681/903	Taxon: Archaeotrypa	Author(s): Archaeotrypa	Fritz 1947
+Progress: 682/903	Taxon: Bythotrypa	Author(s): Bythotrypa	Ulrich 1893
+Progress: 683/903	Taxon: Crassaluna	Author(s): Crassaluna	Utgaard 1968
+Progress: 684/903	Taxon: Lamtshinopora	Author(s): Lamtshinopora	Astrova 1965
+Progress: 685/903	Taxon: Podljassipora	Author(s): Podljassipora	Pushkin 1990	Podljassipora	Pushkin in Pushkin & Yaposhinskaya 1990
+Progress: 686/903	Taxon: Profistulipora	Author(s): Profistulipora	Astrova 1964
+Progress: 687/903	Taxon: Scenellopora	Author(s): Scenellopora	Ulrich, 1882
+Progress: 688/903	Taxon: Constellaria	Author(s): Constellaria	Dana 1846	Constellaria	Dana 1846 U.S. Explor. Exp.
+Progress: 689/903	Taxon: Idiotrypa	Author(s): Idiotrypa	Ulrich 1883
+Progress: 690/903	Taxon: Lunaferamita	Author(s): Lunaferamita	Utgaard 1981
+Progress: 691/903	Taxon: Revalopora	Author(s): Revalopora	Vinassa de Regny 1921
+Progress: 692/903	Taxon: Stellipora	Author(s): Stellipora	Hall 1847
+Progress: 693/903	Taxon: Lichenalia	Author(s): Lichenalia	Hall 1851	Lichenalia	Hall in Silliman, Silliman & Dana 1851
+Progress: 694/903	Taxon: Rhinopora	Author(s): Rhinopora	Hall 1851
+Progress: 695/903	Taxon: Rhinoporella	Author(s): Rhinoporella	Goryuno 1992	Rhinoporella	Goryunova 1992
+Progress: 696/903	Taxon: Buskopora	Author(s): Buskopora	Ulrich 1890
+Progress: 697/903	Taxon: Canutrypa	Author(s): Canutrypa	Bassler 1952
+Progress: 698/903	Taxon: Cassianopora	Author(s): Cassianopora	Bizzarini & Braga 1978
+Progress: 699/903	Taxon: Cheilotrypa	Author(s): Cheilotrypa	Ulrich 1884
+Progress: 700/903	Taxon: Cliocystiramus	Author(s): 
+Progress: 701/903	Taxon: Cliotrypa	Author(s): Cliotrypa	Ulrich & Bassler 1929
+Progress: 702/903	Taxon: Coelocaulis	Author(s): Coelocaulis	Hall & Simpson 1887
+Progress: 703/903	Taxon: Cyclotrypa	Author(s): Cyclotrypa	Ulrich 1896
+Progress: 704/903	Taxon: Cystiramus	Author(s): Cystiramus	Morozova 1959
+Progress: 705/903	Taxon: Cystitrypa	Author(s): Cystitrypa	Schafer & Fois 1987
+Progress: 706/903	Taxon: Diamesopora	Author(s): Diamesopora	Hall 1852
+Progress: 707/903	Taxon: Discotrypella	Author(s): Discotrypella	Elias & Condra 1957	Discotrypella	Elias 1957
+Progress: 708/903	Taxon: Duncanoclema	Author(s): Duncanoclema	Bassler 1952
+Progress: 709/903	Taxon: Dybowskiella	Author(s): Dybowskiella	Waagen & Wentzel 1886
+Progress: 710/903	Taxon: Eofistulotrypa	Author(s): Eofistulotrypa	Morozova 1959
+Progress: 711/903	Taxon: Eridopora	Author(s): Eridopora	Ulrich 1882
+Progress: 712/903	Taxon: Favicella	Author(s): Favicella	Hall & Simpson 1887
+Progress: 713/903	Taxon: Fistulacanta	Author(s): Fistulacanta	Modzalevskaya 1979
+Progress: 714/903	Taxon: Fistuliphragma	Author(s): Fistuliphragma	Bassler 1934
+Progress: 715/903	Taxon: Fistuliphragmoides	Author(s): Fistuliphragmoides	Gorjunova 2003	Fistuliphragmoides	Gorjunova in Gorjunova & Weiss 2003
+Progress: 716/903	Taxon: Fistulipora	Author(s): Fistulipora	Rafinesque 1831
+Progress: 717/903	Taxon: Fistuliporella	Author(s): Fistuliporella	Simpson 1895
+Progress: 718/903	Taxon: Fistuliporidra	Author(s): Fistuliporidra	Simpson 1895
+Progress: 719/903	Taxon: Fistuliramus	Author(s): 
+Progress: 720/903	Taxon: Fistulocladia	Author(s): Fistulocladia	Bassler 1929
+Progress: 721/903	Taxon: Fistulotrypa	Author(s): Fistulotrypa	Bassler 1929
+Progress: 722/903	Taxon: Kasakhstanella	Author(s): Kasakhstanella	Nekhoroshev 1956
+Progress: 723/903	Taxon: Lichenotrypa	Author(s): Lichenotrypa	Ulrich 1886
+Progress: 724/903	Taxon: Odontotrypa	Author(s): Odontotrypa	Hall 1886
+Progress: 725/903	Taxon: Parametelipora	Author(s): Parametelipora	Morozova 1986	Parametelipora	Morozova in Morozova & Kruchinina 1986
+Progress: 726/903	Taxon: Pholidopora	Author(s): Pholidopora	Grubbs 1939
+Progress: 727/903	Taxon: Pileotrypa	Author(s): Pileotrypa	Hall 1886
+Progress: 728/903	Taxon: Pinacotrypa	Author(s): Pinacotrypa	Miller 1889	Pinacotrypa	Ulrich 1889	Pinacotrypa	Ulrich in Miller 1889
+Progress: 729/903	Taxon: Realeksella	Author(s): Realeksella	Goryunova 1993
+Progress: 730/903	Taxon: Selenopora	Author(s): Selenopora	Hall 1886
+Progress: 731/903	Taxon: Strotopora	Author(s): Strotopora	Miller 1889	Strotopora	Ulrich 1889
+Progress: 732/903	Taxon: Ceramella	Author(s): Ceramella	Hall & Simpson 1887
+Progress: 733/903	Taxon: Coscinium	Author(s): Coscinium	Colebrooke, 1821
+Progress: 734/903	Taxon: Coscinotrypa	Author(s): Coscinotrypa	Hall 1886
+Progress: 735/903	Taxon: Evactinopora	Author(s): Evactinopora	Meek & Worthen 1865
+Progress: 736/903	Taxon: Evactinostella	Author(s): Evactinostella	Crockford 1957
+Progress: 737/903	Taxon: Fistulamina	Author(s): Fistulamina	Crockford 1947
+Progress: 738/903	Taxon: Galtopora	Author(s): Galtopora	Ariunchimeg 1996
+Progress: 739/903	Taxon: Glyptopora	Author(s): Glyptopora	Ulrich 1884
+Progress: 740/903	Taxon: Hexagonella	Author(s): Hexagonella	Waagen & Wentzel 1886
+Progress: 741/903	Taxon: Meekopora	Author(s): Meekopora	Miller 1889	Meekopora	Ulrich 1889	Meekopora	Ulrich in Miller 1889
+Progress: 742/903	Taxon: Meekoporella	Author(s): Meekoporella	Moore & Dudley 1944
+Progress: 743/903	Taxon: Pakrydictya	Author(s): 
+Progress: 744/903	Taxon: Prismopora	Author(s): Prismopora	Hall 1883
+Progress: 745/903	Taxon: Scalaripora	Author(s): Scalaripora	Hall 1883
+Progress: 746/903	Taxon: Volgia	Author(s): Volgia	Stuckenberg 1908
+Progress: 747/903	Taxon: Botryllopora	Author(s): Botryllopora	Nicholson 1874
+Progress: 748/903	Taxon: Acrogenia	Author(s): Acrogenia	Hall 1883
+Progress: 749/903	Taxon: Cystodictya	Author(s): Cystodictya	Ulrich 1882
+Progress: 750/903	Taxon: Dichotrypa	Author(s): Dichotrypa	Miller 1889	Dichotrypa	Ulrich 1889
+Progress: 751/903	Taxon: Filiramoporina	Author(s): Filiramoporina	Fry & Cuffey 1976
+Progress: 752/903	Taxon: Lophoclema	Author(s): Lophoclema	Morozova 1955
+Progress: 753/903	Taxon: Mongolodictya	Author(s): Mongolodictya	Gorjunova 1988	Mongolodictya	Gorjunova in Goryunova 1988
+Progress: 754/903	Taxon: Ptilocella	Author(s): Ptilocella	Simpson 1895
+Progress: 755/903	Taxon: Semiopora	Author(s): Semiopora	Hall 1883
+Progress: 756/903	Taxon: Stictocella	Author(s): Stictocella	Simpson [1895]
+Progress: 757/903	Taxon: Sulcoretepora	Author(s): Sulcoretepora	d'Orbigny 1849
+Progress: 758/903	Taxon: Taeniopora	Author(s): Taeniopora	Nicholson 1874
+Progress: 759/903	Taxon: Thamnotrypa	Author(s): Thamnotrypa	Hall & Simpson 1887
+Progress: 760/903	Taxon: Amsassipora	Author(s): Amsassipora	Jaroshinskaja 1960
+Progress: 761/903	Taxon: Belorussipora	Author(s): Belorussipora	Pushkin 1990
+Progress: 762/903	Taxon: Ceramophylla	Author(s): Ceramophylla	Ulrich 1893
+Progress: 763/903	Taxon: Ceramopora	Author(s): Ceramopora	Hall 1851	Ceramopora	Hall in Silliman, Silliman & Dana 1851
+Progress: 764/903	Taxon: Ceramoporella	Author(s): Ceramoporella	Ulrich 1882
+Progress: 765/903	Taxon: Crepipora	Author(s): Crepipora	Ulrich 1882
+Progress: 766/903	Taxon: Favositella	Author(s): Favositella	Etheridge & Foord 1884
+Progress: 767/903	Taxon: Ganiella	Author(s): 
+Progress: 768/903	Taxon: Haplotrypa	Author(s): Haplotrypa	Bassler 1936
+Progress: 769/903	Taxon: Isphairamella	Author(s): Isphairamella	Orlovski 1964
+Progress: 770/903	Taxon: Papillalunaria	Author(s): Papillalunaria	Utgaard 1969
+Progress: 771/903	Taxon: Vasalemmapora	Author(s): Vasalemmapora	Pushkin 1990
+Progress: 772/903	Taxon: Actinotrypa	Author(s): Actinotrypa	Ulrich 1889
+Progress: 773/903	Taxon: Actinotrypella	Author(s): Actinotrypella	Goryunova 1972
+Progress: 774/903	Taxon: Epiactinotrypa	Author(s): Epiactinotrypa	Kiseleva 1973
+Progress: 775/903	Taxon: Aetomacladia	Author(s): Aetomacladia	Bretnall 1926
+Progress: 776/903	Taxon: Cystocladia	Author(s): Cystocladia	Ernst & Minwegen 2006
+Progress: 777/903	Taxon: Goniocladia	Author(s): Goniocladia	Etheridge 1876
+Progress: 778/903	Taxon: Ramipora	Author(s): Ramipora	Toula 1875
+Progress: 779/903	Taxon: Ramiporalia	Author(s): Ramiporalia	Shulga-Nesterenko 1933
+Progress: 780/903	Taxon: Ramiporella	Author(s): Ramiporella	Shulga-Nesterenko 1933
+Progress: 781/903	Taxon: Etherella	Author(s): Etherella	Crockford 1957
+Progress: 782/903	Taxon: Liguloclema	Author(s): Liguloclema	Crockford 1957
+Progress: 783/903	Taxon: Revalotrypa	Author(s): Revalotrypa	Bassler 1952
+Progress: 784/903	Taxon: Acanthoceramoporella	Author(s): Acanthoceramoporella	Utgaard 1968
+Progress: 785/903	Taxon: Sakagamiina	Author(s): Sakagamiina	Gilmour & Snyder 2000
+Progress: 786/903	Taxon: Timanodictya	Author(s): Timanodictya	Nikiforova 1933
+Progress: 787/903	Taxon: Timanotrypa	Author(s): Timanotrypa	Nikiforova 1938
+Progress: 788/903	Taxon: Uldzapora	Author(s): Uldzapora	Gorjunova 1994	Uldzapora	Gorjunova in Goryuno 1994
+Progress: 789/903	Taxon: Worthenopora	Author(s): Worthenopora	Miller 1889	Worthenopora	Ulrich 1889	Worthenopora	Ulrich in Miller 1889
+Progress: 790/903	Taxon: Murengoloclema	Author(s): Murengoloclema	Gorjunova 1994	Murengoloclema	Gorjunova in Goryuno 1994
+Progress: 791/903	Taxon: Cristatella	Author(s): Cristatella	Cuvier, 1798	Cristatella	Lamarck [non Cuvier 1798] 1801
+Progress: 792/903	Taxon: Asajirella	Author(s): Asajirella	Oda & Mukai 1989
+Progress: 793/903	Taxon: Lophopodella	Author(s): Lophopodella	Rousselet, 1904
+Progress: 794/903	Taxon: Lophopus	Author(s): Lophopus	Dumortier, 1835
+Progress: 795/903	Taxon: Fredericella	Author(s): Fredericella	Gervais, 1836
+Progress: 796/903	Taxon: Afrindella	Author(s): Afrindella	Annandale 1912
+Progress: 797/903	Taxon: Gelatinella	Author(s): Gelatinella	Toriumi 1955
+Progress: 798/903	Taxon: Hyalinella	Author(s): Hyalinella	Jullien, 1885
+Progress: 799/903	Taxon: Internectella	Author(s): Internectella	Gruncharova, 1971
+Progress: 800/903	Taxon: Plumatella	Author(s): Plumatella	Lamarck, 1816
+Progress: 801/903	Taxon: Stephanella	Author(s): Stephanella	Hinde 1891
+Progress: 802/903	Taxon: Stolella	Author(s): Stolella	Annandale, 1909
+Progress: 803/903	Taxon: Swarupella	Author(s): Swarupella	Shrivastava 1981
+Progress: 804/903	Taxon: Pectinatella	Author(s): Pectinatella	Leidy [1851]
+Progress: 805/903	Taxon: Compressocoenites	Author(s): Compressocoenites	Brood 1976
+Progress: 806/903	Taxon: Vidronovella	Author(s): Vidronovella	Gorjunova 2006
+Progress: 807/903	Taxon: Minilya	Author(s): Minilya	Crockford 1944
+Progress: 808/903	Taxon: Permolioclema	Author(s): Permolioclema	Romanchuk 1966
+Progress: 809/903	Taxon: Hexaporites	Author(s): Hexaporites	Pander 1830
+Progress: 810/903	Taxon: Levifenestella	Author(s): Levifenestella	Miller 1961
+Progress: 811/903	Taxon: Spiridmonea	Author(s): Spiridmonea	Hennig 1894
+Progress: 812/903	Taxon: Verella	Author(s): Verella	Dalmatskaya, 1951
+Progress: 813/903	Taxon: Ptylopora	Author(s): Ptylopora	M'Coy 1842	Ptylopora	McCoy 1842
+Progress: 814/903	Taxon: Homotrypella	Author(s): Homotrypella	Ulrich 1886
+Progress: 815/903	Taxon: Cauloramphus	Author(s): Cauloramphus	Norman, 1903
+Progress: 816/903	Taxon: Heteroporella	Author(s): Heteroporella	Busk 1859
+Progress: 817/903	Taxon: Catenicellopsis	Author(s): Catenicellopsis	Keable 1880	Catenicellopsis	Wilson 1880
+Progress: 818/903	Taxon: Dakaria	Author(s): Dakaria	Jullien & Calvet 1903
+Progress: 819/903	Taxon: Leptotrypellina	Author(s): Leptotrypellina	Vinassa de Regny 1921
+Progress: 820/903	Taxon: Stephanosella	Author(s): Stephanosella	Canu & Bassler 1917
+Progress: 821/903	Taxon: Dartevellia	Author(s): Dartevellia	Brian 1939
+Progress: 822/903	Taxon: Dimorphozoum	Author(s): Dimorphozoum	Levinsen, 1909
+Progress: 823/903	Taxon: Bactrellaria pacifica	Author(s): 
+Progress: 824/903	Taxon: Koneprusiella	Author(s): 
+Progress: 825/903	Taxon: Reptonodicava	Author(s): Reptonodicava	d'Orbigny 1854	Reptonodicava	d'Orhigny 1854
+Progress: 826/903	Taxon: Marcusodictyon	Author(s): Marcusodictyon	Bassler 1952
+Progress: 827/903	Taxon: Eifelipora	Author(s): Eifelipora	Ernst 2008
+Progress: 828/903	Taxon: Prolixicella	Author(s): Prolixicella	Ernst & Schroeder 2007
+Progress: 829/903	Taxon: Geranopora	Author(s): Geranopora	Gorjunova 2007
+Progress: 830/903	Taxon: Nekhoroshoviella	Author(s): 
+Progress: 831/903	Taxon: Uharella	Author(s): Uharella	Taylor, Casadio & Gordon 2008
+Progress: 832/903	Taxon: Cryptostyloecia	Author(s): 
+Progress: 833/903	Taxon: Inferusia	Author(s): 
+Progress: 834/903	Taxon: Neuropora	Author(s): Neuropora	Bronn 1825
+Progress: 835/903	Taxon: Membrendoecium	Author(s): Membrendoecium	Canu & Bassler 1917
+Progress: 836/903	Taxon: Leiosellina	Author(s): 
+Progress: 837/903	Taxon: Alysidota	Author(s): Alysidota	Agassiz 1846
+Progress: 838/903	Taxon: Stenopsella	Author(s): Stenopsella	Canu & Bassler 1927
+Progress: 839/903	Taxon: Enantiosula	Author(s): Enantiosula	Canu & Bassler 1930
+Progress: 840/903	Taxon: Reptoceritites	Author(s): Reptoceritites	Gregory 1899
+Progress: 841/903	Taxon: Hemismittina	Author(s): Hemismittina	Vigneaux 1940
+Progress: 842/903	Taxon: Paulella	Author(s): 
+Progress: 843/903	Taxon: Reptotubigera	Author(s): Reptotubigera	d'Orbigny 1853
+Progress: 844/903	Taxon: Reussinella	Author(s): 
+Progress: 845/903	Taxon: Ijimaiellia	Author(s): 
+Progress: 846/903	Taxon: Bidiastopora	Author(s): Bidiastopora	d'Orbigny 1849
+Progress: 847/903	Taxon: Claviclausa	Author(s): Claviclausa	d'Orbigny 1852[3]
+Progress: 848/903	Taxon: Retepora	Author(s): Retepora	Soldani 1795
+Progress: 849/903	Taxon: Turnerella	Author(s): Turnerella	Fr. Schmitz in Engler & Prantl 1896	Turnerella	Fr. Schmitz in Engler et Prantl, 1896	Turnerella	Schmitz 1896
+Progress: 850/903	Taxon: Linotaxis	Author(s): Linotaxis	Bassler 1952
+Progress: 851/903	Taxon: Watersiana	Author(s): Watersiana	Calvet 1912
+Progress: 852/903	Taxon: Desmepora	Author(s): Desmepora	Lonsdale 1850
+Progress: 853/903	Taxon: Einhornia	Author(s): Einhornia	Nikulina 2007
+Progress: 854/903	Taxon: Euteleia	Author(s): Euteleia	Raffray 1904
+Progress: 855/903	Taxon: Diphragmoides	Author(s): Diphragmoides	Ernst 2008
+Progress: 856/903	Taxon: Multihemiphragma	Author(s): Multihemiphragma	Ernst 2008
+Progress: 857/903	Taxon: Bowerbankia gracilis bengalensis	Author(s): 
+Progress: 858/903	Taxon: Fistulipora putunggouensis	Author(s): 
+Progress: 859/903	Taxon: Cyphotrypa putunggouensis	Author(s): 
+Progress: 860/903	Taxon: Eridotrypella gansuensis	Author(s): 
+Progress: 861/903	Taxon: Fistulipora procerula	Author(s): 
+Progress: 862/903	Taxon: Rhombopora dangdouensis	Author(s): 
+Progress: 863/903	Taxon: Hallopora congesta	Author(s): 
+Progress: 864/903	Taxon: Leioclema clarum	Author(s): 
+Progress: 865/903	Taxon: Leioclema claudestinum	Author(s): 
+Progress: 866/903	Taxon: Stereotoechus zonatus	Author(s): 
+Progress: 867/903	Taxon: Porelloides	Author(s): Porelloides	Hayward, 1979
+Progress: 868/903	Taxon: Electra betula	Author(s): 
+Progress: 869/903	Taxon: Laxifenestella stuckenbergi	Author(s): 
+Progress: 870/903	Taxon: Flexifenestella reteporinaeformis	Author(s): 
+Progress: 871/903	Taxon: Fistuliramus tuberculatus	Author(s): 
+Progress: 872/903	Taxon: Fistulipora asteria	Author(s): 
+Progress: 873/903	Taxon: Cycloidotrypa	Author(s): Cycloidotrypa	Chapman 1920
+Progress: 874/903	Taxon: Permofenestella pentagonalis	Author(s): 
+Progress: 875/903	Taxon: Hemipachydictya	Author(s): Hemipachydictya	Kopaevich 1968	Hemipachydictya	Kopaevitch 1968	Hemipachydictya	Kopajevitch 1968
+Progress: 876/903	Taxon: Polyporella spininodatiformis	Author(s): 
+Progress: 877/903	Taxon: Filiflustra	Author(s): Filiflustra	d'Orbigny 1852
+Progress: 878/903	Taxon: Graysonia	Author(s): Graysonia	Butts, 1926
+Progress: 879/903	Taxon: Reptelea	Author(s): Reptelea	d'Orbigny 1853
+Progress: 880/903	Taxon: Asperopora inornatum	Author(s): 
+Progress: 881/903	Taxon: Bolopora	Author(s): Bolopora	Lewis 1926
+Progress: 882/903	Taxon: Cervella	Author(s): Cervella	Chronic 1949
+Progress: 883/903	Taxon: Cycloporina	Author(s): Cycloporina	Simpson 1894
+Progress: 884/903	Taxon: Dicranopora	Author(s): Dicranopora	Ulrich 1882
+Progress: 885/903	Taxon: Hesyxochenia	Author(s): 
+Progress: 886/903	Taxon: Hincksina flustroides crassispinata	Author(s): 
+Progress: 887/903	Taxon: Isosecuriflustra	Author(s): Isosecuriflustra	Liu & Hu 1991
+Progress: 888/903	Taxon: Laxifenestella stschugorensis	Author(s): 
+Progress: 889/903	Taxon: Leioclemella	Author(s): 
+Progress: 890/903	Taxon: Marsonniella	Author(s): 
+Progress: 891/903	Taxon: Mastigophora	Author(s): Mastigophora	C. G. D. Nees, 1833
+Progress: 892/903	Taxon: Pakridictya	Author(s): Pakridictya	Goryuno 1992	Pakridictya	Goryunova 1992
+Progress: 893/903	Taxon: Parafenestella	Author(s): Parafenestella	Miller 1961
+Progress: 894/903	Taxon: Permofenestella angustataeformis	Author(s): 
+Progress: 895/903	Taxon: Phyllopora	Author(s): Phyllopora	Ehrenberg (1834)	Phyllopora	Tenison-Woods [non Ehrenberg 1834] 1878
+Progress: 896/903	Taxon: Quadricellara	Author(s): 
+Progress: 897/903	Taxon: Trochopora	Author(s): Trochopora	d'Orbigny 1849
+Progress: 898/903	Taxon: Pencilleta	Author(s): 
+Progress: 899/903	Taxon: Leioclema inornatum	Author(s): 
+Progress: 900/903	Taxon: Beania octaeeras	Author(s): 
+Progress: 901/903	Taxon: Crepidacantha crenispina	Author(s): 
+Progress: 902/903	Taxon: Chaperia bilamellata	Author(s): 
+Progress: 903/903	Taxon: Polypora spininodatiformis	Author(s): 
+Inserting dummy taxa for unplaced taxa into scratchpads table...
+Inserting GNI authors into scratchpads table...
 Exporting scratchpads table into tab-delimited file...
-Translating scratchpads file into full hierarchy...
-Translating scratchpads file into unique paths file...
 Checking scratchpads file for proper child-parent linkage...
 parent_name '' not found in full names on lines: 2 
+Translating scratchpads file into full hierarchy...
+Translating scratchpads file into unique paths file...
+Translating scratchpads file into newick...
