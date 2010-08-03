@@ -100,7 +100,7 @@ mysql_free_result($result);
 
 // print some stats
 foreach ($count as $key => $value) {
-  print("$value records in table bryozoans had currentnamestring $key.\n";
+  print("$value records in table bryozoans had currentnamestring $key.\n");
 }
 //exit("Stopped after dereferencing `bryozoans`\n");
 
@@ -173,7 +173,7 @@ mysql_free_result($result);
 
 // print some stats
 foreach ($count as $key => $value) {
-  print("$value records in table bryozoans had currentnamestring $key.\n";
+  print("$value records in table currentspecies had currentnamestring $key.\n");
 }
 
 // We handled as many 'was Foo Bar=123' records as possible
