@@ -51,7 +51,9 @@ $result = mysql_query(
   . " AND `details` REGEXP '(etiam|vide|nunc) '"
 );
 
-$count = 0;
+// stats
+$count = array();
+
 while ($row = mysql_fetch_assoc($result)) {
   // get words in taxon name
   $name       = ucfirst(strtolower($row['name']));
@@ -61,6 +63,8 @@ while ($row = mysql_fetch_assoc($result)) {
   static $fide = "/^(?:fide|by|afide|fise|ab)$/i";
   static $regexp =
   '/\b(?:vide|etiam|nunc)\b\s+(\w+)\b(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?(?:\s+(\w+)\b)?/i';
+  
+  $count['total'] += 1;
   
   $offset = 0;
   $matches = array();
@@ -90,11 +94,12 @@ while ($row = mysql_fetch_assoc($result)) {
       // the currentnamestring hasn't already been set
       && $row['currentnamestring'] != $details_name) {
         setCurrentNameString($name, $details_name);
-        $count++;
+        $count['set'] += 1;
       }
     }
   }
 }
 mysql_free_result($result);
 // tell us how many entries had a new currentnamestring set
-print("count: $count\n");
+print($count['set'] . '/' . $count['total']
+  . " records no longer missing currentnamestring.\n");
