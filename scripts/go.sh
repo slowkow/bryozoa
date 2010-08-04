@@ -37,12 +37,13 @@ php scratchpads_bryan.php
 cd "$SCRIPTSDIR/mysql"
 echo "Exporting scratchpads table into tab-delimited file..."
 ./output_scratchpads.sh
+mv scratchpads.tab bryan.tab
 # translate Bryan tab-delimited file into a full hierarchy and unique paths
 cd "$SCRIPTSDIR/perl"
 echo "Translating scratchpads file into full hierarchy file for Bryan's taxonomy..."
-./itis2.pl -o f ../mysql/output/scratchpads.tab > output/bryan_fullhierarchy.txt
+./itis2.pl -o f ../mysql/output/bryan.tab > output/bryan_fullhierarchy.txt
 echo "Translating scratchpads file into unique paths file for Bryan's taxonomy..."
-./itis2.pl -o p ../mysql/output/scratchpads.tab > output/bryan_uniquepaths.txt
+./itis2.pl -o p ../mysql/output/bryan.tab > output/bryan_uniquepaths.txt
 
 # make the Bryozone tab-delimited file
 cd "$SCRIPTSDIR/php"
