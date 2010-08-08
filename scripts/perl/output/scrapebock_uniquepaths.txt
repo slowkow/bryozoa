@@ -1,0 +1,15 @@
+Phylum
+Phylum@Class
+Phylum@Class@Order
+Phylum@Class@Order@Genus
+Phylum@Class@Order@Family
+Phylum@Class@Order@Suborder
+Phylum@Class@Order@Superfamily
+Phylum@Class@Order@Suborder@Family
+Phylum@Class@Order@Superfamily@Genus
+Phylum@Class@Order@Superfamily@Family
+Phylum@Class@Order@Suborder@Infraorder
+Phylum@Class@Order@Suborder@Superfamily
+Phylum@Class@Order@Suborder@Superfamily@Family
+Phylum@Class@Order@Suborder@Infraorder@Superfamily
+Phylum@Class@Order@Suborder@Infraorder@Superfamily@Family
