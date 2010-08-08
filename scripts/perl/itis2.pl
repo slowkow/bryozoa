@@ -95,7 +95,9 @@ while (<$file>) {
   }
   # remove author name from parent_name unless the user wants it
   unless ($withauthor) {
-    $values{'parent_name'} =~ s/^(.+?\b).*/$1/;
+    if ($values{'parent_name'} && $values{'parent_name'} =~ /^(.+?\b).*/) {
+      $values{'parent_name'} = $1;
+    }
   }
   # the whole file is slurped into the rows hash
   $rows{$full_name} = \%values;
@@ -103,10 +105,10 @@ while (<$file>) {
     # count number of times this full name appears
     $full_names{$full_name} += 1;
     # record line numbers with this name
-    $parent_name{$values{'parent_name'}} .= "$line ";
+    if ($values{'parent_name'}) { $parent_name{$values{'parent_name'}} .= "$line "; }
   }
   elsif ($output =~ /^ne?w?i?c?k?$/i) {
-    push(@{$children{$values{'parent_name'}}}, $full_name);
+    if ($values{'parent_name'}) { push(@{$children{$values{'parent_name'}}}, $full_name); }
   }
 }
 ################################################################################
