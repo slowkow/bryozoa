@@ -100,7 +100,6 @@ Family	Streblascoporidae	Rhabdomesina
 Suborder	Timanodictyina	Cryptostomida
 Family	Timanodictyidae	Timanodictyina
 Family	Murengoloclemidae	Timanodictyina
-Family	Girtyporidae	Timanodictyina
 Suborder	Goldfussitrypina	Cryptostomida
 Family	Goldfussitrypidae	Goldfussitrypina
 Family	Maychellidae	Goldfussitrypina
@@ -113,7 +112,6 @@ Family	Nudymiellidae	Streblotrypina
 Family	Nematoporidae	Streblotrypina
 Family	Nematotrypidae	Streblotrypina
 Family	Tamaroclemidae	Cryptostomida
-Family	Flabellotrypidae	Cryptostomida
 Family	Kielceporidae	Cryptostomida
 Family	Palescharidae	Cryptostomida
 Genus	Antonoclema	Cryptostomida
@@ -272,7 +270,6 @@ Genus	Fischerella	Ctenostomata
 Genus	Foraripora	Ctenostomata
 Genus	Haimeina	Ctenostomata
 Genus	Marcusopora	Ctenostomata
-Genus	Protobenedenipora	Ctenostomata
 Order	Cheilostomata	Gymnolaemata
 Superfamily	Labiostomelloidea	Cheilostomata
 Genus		Labiostomelloidea
