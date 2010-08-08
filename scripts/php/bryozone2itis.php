@@ -2,30 +2,6 @@
 /*
  * This script queries the bryozone_* tables and can output a proper ITIS
  * output for uploading to Scratchpads.
- * 
- * Bryozone
- * 
-CREATE TABLE `bryozone_taxa` (
-  `taxonid` INT,
-  `parentid` INT,
-  `taxonname` VARCHAR(512),
-  `rankcode` INT,
-  `seniorid` INT,
-  `year` INT,
-  `expert` VARCHAR(512),
-  `revised` DATE,
-  `comments` VARCHAR(6000),
-  PRIMARY KEY (`taxonid`),
-  KEY (`parentid`),
-  KEY (`taxonname`),
-  KEY (`rankcode`),
-  KEY (`seniorid`)
-);
- * 
- * ITIS
- * 
-unit_name1	rank_name	parent_name	usage
-bryozoa	Phylum	animalia	valid
  */
 
 require 'include/connect.php';
