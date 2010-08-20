@@ -31,5 +31,6 @@ CREATE TABLE `scratchpads` (
   PRIMARY KEY (`full_name`),
   KEY (`rank_name`),
   KEY (`unit_name1`),
-  KEY (`parent_name`)
+  KEY (`parent_name`),
+  KEY (`accepted_name`)
 );
