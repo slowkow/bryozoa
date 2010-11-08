@@ -138,9 +138,8 @@ function ranksort($a, $b) {
  *   List of ranks of all children of the specified taxon.
  */
 function getChildrenRanks($parent_name) {
-  $query = sprintf("SELECT `rank_name` FROM `scratchpads`"
-    . " WHERE `parent_name` = '%s'"
-    . " GROUP BY `rank_name`",
+  $query = sprintf("SELECT DISTINCT(`rank_name`) FROM `scratchpads`"
+    . " WHERE `parent_name` = '%s'",
     mysql_real_escape_string($parent_name)
   );
   $result = mysql_query($query);
