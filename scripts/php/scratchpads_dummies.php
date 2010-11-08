@@ -23,11 +23,13 @@ while ($row = mysql_fetch_assoc($result)) {
   $children_parent_name = trim($row['full_name'] . ' ' . $row['taxon_author']);
   $children_ranks = getChildrenRanks($children_parent_name);
   $children       = getChildren($children_parent_name);
-  // handle case when parent has children of various ranks
+  
+  // handle the case when children are not all of the same rank
   if (count($children_ranks) <= 1) {
     continue;
   }
   
+  // the dummies will be of the same rank as the child with the highest rank
   $dummy_rank_name   = $children_ranks[0];
   $dummy_parent_name = trim($row['full_name'] . ' ' . $row['taxon_author']);
   
@@ -35,7 +37,8 @@ while ($row = mysql_fetch_assoc($result)) {
   print($row['full_name'] . "\n");
   var_dump($children_ranks);
 */
-
+  // the children in the highest rank don't need a dummy
+  // the children in the next highest ranks need dummies
   foreach (array_slice($children_ranks, 1) as $rank) {
     $dummy_full_name = 'x_' . $row['full_name'] . '_' . abbreviation($rank);
     // insert dummy
@@ -46,7 +49,7 @@ while ($row = mysql_fetch_assoc($result)) {
         'usage'         => 'invalid',
         'unit_name1'    => $dummy_full_name,
         'parent_name'   => $dummy_parent_name,
-        'accepted_name' => $dummy_parent_name,
+        'accepted_name' => $row['full_name'],
         'comments'      => 'dummy taxon for unplaced ' . plural($rank),
       )
     );
