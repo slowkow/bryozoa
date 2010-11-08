@@ -13,7 +13,11 @@ SELECT
   `comments`,
   `details`
 FROM `scratchpads`
-ORDER BY 
+ORDER BY
+  FIELD(
+  `usage`,
+  'valid',
+  'invalid'),
   FIELD(
   `rank_name`,
   'Phlylum',
