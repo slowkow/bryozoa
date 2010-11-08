@@ -15,12 +15,8 @@ SELECT
 FROM `scratchpads`
 ORDER BY
   FIELD(
-  `usage`,
-  'valid',
-  'invalid'),
-  FIELD(
   `rank_name`,
-  'Phlylum',
+  'Phylum',
   'Class',
   'Order',
   'Suborder',
@@ -30,4 +26,8 @@ ORDER BY
   'Genus',
   'Species',
   'Subspecies'),
+  FIELD(
+  `usage`,
+  'valid',
+  'invalid'),
   `full_name`;
