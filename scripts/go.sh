@@ -37,7 +37,7 @@ php scratchpads_bryan.php
 cd "$SCRIPTSDIR/mysql"
 echo "Exporting scratchpads table into tab-delimited file..."
 ./output_scratchpads.sh
-mv scratchpads.tab bryan.tab
+mv output/scratchpads.tab output/bryan.tab
 # translate Bryan tab-delimited file into a full hierarchy and unique paths
 cd "$SCRIPTSDIR/perl"
 echo "Translating scratchpads file into full hierarchy file for Bryan's taxonomy..."
