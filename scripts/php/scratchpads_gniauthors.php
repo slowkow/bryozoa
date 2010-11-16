@@ -8,7 +8,7 @@ require 'include/connect.php';
 require 'include/scratchpads.php';
 
 /**
- * Get author from table `gni_scratchpads`.
+ * Get author with the longest strlen from table `gni_scratchpads`.
  * 
  * @param name
  *   The name to query `gni_scratchpads`.
@@ -21,6 +21,9 @@ function getGNIAuthor($name) {
     mysql_real_escape_string($name)
   );
   $result = mysql_query($query);
+  if (mysql_num_rows($result) < 1) {
+    return FALSE;
+  }
   $author = '';
   while ($row = mysql_fetch_assoc($result)) {
     if (strlen($row['author']) > strlen($author)) {
