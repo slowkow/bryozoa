@@ -14,25 +14,24 @@ $look_at_bryan = 0;
 /*******************************************************************************
  * look at the entries in `scratchpads` without authors
  */
-if ($look_at_scratchpads) {
+if ($look_at_scratchpads) {  
   //mysql_query("DROP TABLE IF EXISTS `gni_scratchpads`");
   mysql_query(
-    "CREATE TABLE `gni_scratchpads` ("
+    "CREATE TABLE IF NOT EXISTS `gni_scratchpads` ("
     . " `name` VARCHAR(64) NOT NULL"
     . ", `author` VARCHAR(256) NOT NULL"
     . ", KEY (`name`) )"
   );
-
+  
   $result = mysql_query(
-    "SELECT `full_name`"
-    . " FROM `scratchpads`"
+    "SELECT `full_name` FROM `scratchpads`"
     . " WHERE"
     . " (`taxon_author` IS NULL"
     . " OR `taxon_author` NOT REGEXP '[0-9]{4}')"
-    // don't query GNI again if name already in gni_scratchpads
+    // don't query GNI again if name already in table `gni_scratchpads`
     . " AND `full_name` NOT IN (SELECT `name` FROM `gni_scratchpads`)"
   );
-
+  
   $count = 0;
   $numresults = mysql_num_rows($result);
   while ($row = mysql_fetch_assoc($result)) {
