@@ -5,49 +5,8 @@
  */
 
 require 'include/connect.php';
+require 'include/scratchpads.php';
 
-$ranknames = array(
-  0 => 'Invalid',
-  1 => 'Nomen Oblitum',
-  2 => 'Nomen Nudum',
-  3 => 'Uncertain Classification',
-  10 => 'Phylum',
-  20 => 'Class',
-  30 => 'Order',
-  36 => 'Subjective Junior Synonym',
-  40 => 'Suborder',
-  50 => 'Infraorder',
-  60 => 'Grade',
-  70 => 'Superfamily',
-  80 => 'Family',
-  85 => 'Family Synonym',
-  90 => 'Genus',
-  95 => 'Genus Synonym',
-  96 => 'Subjective Junior Synonym',
-  97 => 'Objective Junior Synonym',
-  98 => 'Homonym',
-  100 => 'Subgenus',
-  110 => 'Species',
-  113 => 'Uncertain Species',
-  115 => 'Species Synonym',
-  116 => 'Subjective Junior Synonym',
-  117 => 'Objective Junior Synonym',
-  118 => 'Homonym',
-  99999 => 'Error',
-);
-
-$validranks = array(
-  'Phylum',
-  'Class',
-  'Order',
-  'Suborder',
-  'Infraorder',
-  'Superfamily',
-  'Family',
-  'Genus',
-  'Subgenus',
-  'Species',
-);
 /**
  * Query the bryozone_taxa table with a taxonid and return the associated row.
  * 

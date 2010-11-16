@@ -1,6 +1,6 @@
 <?php
 /**
- * Common functions for querying the `scratchpads` table.
+ * Common functions for querying the `scratchpads` table, among other things.
  */
 /**
  * Keys present in the `scratchpads` table.
@@ -187,6 +187,22 @@ function getTaxonAuthor($full_name) {
   return $result['taxon_author'];
 }
 /**
+ * Get parent_name by full_name from the `scratchpads` table.
+ * 
+ * @param full_name
+ *   The full name to use as a query.
+ * @return
+ *   The taxon_author of the returned entry.
+ */
+function getParentName($full_name) {
+  $query = sprintf("SELECT `parent_name` FROM `scratchpads`"
+    . " WHERE `full_name`='%s'",
+    mysql_real_escape_string($full_name)
+  );
+  $result = mysql_fetch_assoc(mysql_query($query));
+  return $result['parent_name'];
+}
+/**
  * Get unacceptability reason from a string with lots of other stuff.
  * 
  * @param string
@@ -205,3 +221,51 @@ function parseUnacceptabilityReason($string) {
   }
   return '';
 }
+
+/**
+ * Associative array of all rank codes and rank names.
+ */
+$ranknames = array(
+  0 => 'Invalid',
+  1 => 'Nomen Oblitum',
+  2 => 'Nomen Nudum',
+  3 => 'Uncertain Classification',
+  10 => 'Phylum',
+  20 => 'Class',
+  30 => 'Order',
+  36 => 'Subjective Junior Synonym',
+  40 => 'Suborder',
+  50 => 'Infraorder',
+  60 => 'Grade',
+  70 => 'Superfamily',
+  80 => 'Family',
+  85 => 'Family Synonym',
+  90 => 'Genus',
+  95 => 'Genus Synonym',
+  96 => 'Subjective Junior Synonym',
+  97 => 'Objective Junior Synonym',
+  98 => 'Homonym',
+  100 => 'Subgenus',
+  110 => 'Species',
+  113 => 'Uncertain Species',
+  115 => 'Species Synonym',
+  116 => 'Subjective Junior Synonym',
+  117 => 'Objective Junior Synonym',
+  118 => 'Homonym',
+  99999 => 'Error',
+);
+/**
+ * Array of valid rank names.
+ */
+$validranks = array(
+  'Phylum',
+  'Class',
+  'Order',
+  'Suborder',
+  'Infraorder',
+  'Superfamily',
+  'Family',
+  'Genus',
+  'Subgenus',
+  'Species',
+);
