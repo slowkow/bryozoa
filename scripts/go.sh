@@ -33,6 +33,11 @@ cd "$SCRIPTSDIR/php"
 echo "Importing Bryan Quach's higher taxonomy into scratchpads table..."
 php scratchpads_bryan.php
 
+# insert higher taxa synonyms
+cd "$SCRIPTSDIR/php"
+echo "Inserting higher taxa synonyms from bryan_invalid table into scratchpads table..."
+php scratchpads_higher_synonyms.php
+
 # make the Bryan tab-delimited file
 cd "$SCRIPTSDIR/mysql"
 echo "Exporting scratchpads table into tab-delimited file..."
@@ -46,19 +51,27 @@ echo "Translating scratchpads file into unique paths file for Bryan's taxonomy..
 ./itis2.pl -o p ../mysql/output/bryan.tab > output/bryan_uniquepaths.txt
 
 # make the Bryozone tab-delimited file
-cd "$SCRIPTSDIR/php"
-echo "Creating tab-delimited file for Bryozone taxonomy..."
-php bryozone2itis.php > output/bryozone.tab
-# translate Bryozone tab-delimited file into a full hierarchy and unique paths
-cd "$SCRIPTSDIR/perl"
-echo "Translating Bryozone file into full hierarchy..."
-./itis2.pl -o f ../php/output/bryozone.tab > output/bryozone_fullhierarchy.txt
-echo "Translating Bryozone file into unique paths..."
-./itis2.pl -o p ../php/output/bryozone.tab > output/bryozone_uniquepaths.txt
+#~ cd "$SCRIPTSDIR/php"
+#~ echo "Creating tab-delimited file for Bryozone taxonomy..."
+#~ php bryozone2itis.php > output/bryozone.tab
+#~ # translate Bryozone tab-delimited file into a full hierarchy and unique paths
+#~ cd "$SCRIPTSDIR/perl"
+#~ echo "Translating Bryozone file into full hierarchy..."
+#~ ./itis2.pl -o f ../php/output/bryozone.tab > output/bryozone_fullhierarchy.txt
+#~ echo "Translating Bryozone file into unique paths..."
+#~ ./itis2.pl -o p ../php/output/bryozone.tab > output/bryozone_uniquepaths.txt
 
 cd "$SCRIPTSDIR/php"
 echo "Importing Phil Bock's species into scratchpads table..."
 php scratchpads_species.php
+
+# delete 'Bock 1999' before querying GNI for authors
+cd "$SCRIPTSDIR/mysql"
+echo "Replacing 'Bock 1999' with NULL in scratchpads table..."
+mysql < delete_bock1999.sql
+
+cd "$SCRIPTSDIR/php"
+# find authors via GNI
 echo "Querying GNI for entries in scratchpads table with missing authors..."
 php getgniauthors.php
 echo "Inserting dummy taxa for unplaced taxa into scratchpads table..."
