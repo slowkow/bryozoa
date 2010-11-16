@@ -64,6 +64,8 @@ while ($row = mysql_fetch_assoc($result)) {
   else if (getRows(array('full_name' => $bryozoans_family, 'rank_name' => 'Family'))){
     $count['by_family'] += 1;
     // insert the genus
+    // This code inserted some invalid genera as valid genera.
+/*
     insertIntoScratchpads(
       array(
         'full_name'    => $bryozoans_genus,
@@ -73,6 +75,7 @@ while ($row = mysql_fetch_assoc($result)) {
         'usage'        => 'valid',
       )
     );
+*/
     // insert the species or subspecies
     insertIntoScratchpads(
       array(
@@ -81,7 +84,8 @@ while ($row = mysql_fetch_assoc($result)) {
         'unit_name1'   => $bryozoans_genus,
         'unit_name2'   => $bryozoans_species,
         'unit_name3'   => $bryozoans_subspecies,
-        'parent_name'  => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
+        'parent_name'  => trim($bryozoans_family . ' ' . getTaxonAuthor($bryozoans_family)),
+        //'parent_name'  => trim($bryozoans_genus . ' ' . getTaxonAuthor($bryozoans_genus)),
         'usage'        => 'valid',
         'taxon_author' => $bryozoans_author,
         'comments'     => $row['comments'],
@@ -158,10 +162,32 @@ while ($row = mysql_fetch_assoc($result)) {
       )
     );
   }
+  // the parent genus isn't present, so check if the parent family is present
+  else if (getRows(array('full_name' => $bryozoans_family, 'rank_name' => 'Family'))){
+    $count['by_family'] += 1;
+    // insert the species or subspecies
+    insertIntoScratchpads(
+      array(
+        'full_name'     => trim($bryozoans_genus . ' ' . $bryozoans_species . ' ' . $bryozoans_subspecies),
+        'rank_name'     => $bryozoans_subspecies ? 'Subspecies' : 'Species',
+        'unit_name1'    => $bryozoans_genus,
+        'unit_name2'    => $bryozoans_species,
+        'unit_name3'    => $bryozoans_subspecies,
+        'parent_name'   => trim($bryozoans_family . ' ' . getTaxonAuthor($bryozoans_family)),
+        'usage'         => 'invalid',
+        'accepted_name' => $bryozoans_currentname,
+        'taxon_author'  => $bryozoans_author,
+        'comments'      => $row['comments'],
+        'details'       => $row['details'],
+        'unacceptability_reason' => parseUnacceptabilityReason($row['details']),
+      )
+    );
+  }
   else {
     $count['uninserted'] += 1;
   }
 }
 
 print('Inserted ' . $count['by_genus']  . " invalid species by genus name.\n");
+print('Inserted ' . $count['by_family']  . " invalid species by family name.\n");
 print($count['uninserted'] . " invalid species not inserted because parent genus doesn't exist.\n");
